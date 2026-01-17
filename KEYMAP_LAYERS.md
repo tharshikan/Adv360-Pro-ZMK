@@ -30,6 +30,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 ### Layer Switching Keys
 - **`sl 1`**: Sticky Layer 1 (Symbols+Numpad) - activates for next keypress only
+  - Available in **two locations**: Top-left corner AND right home row (after S key)
 - **`mo 2`**: Momentary Layer 2 (Function) - active while held
 - **`mo 3`**: Momentary Layer 3 (Mod) - active while held
 
@@ -66,7 +67,7 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │   -   │
+│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │ SL(1) │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -105,7 +106,9 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
 - Number row (1-0)
 - Function layer access via MO(2) bottom corners
 - Mod layer access via MO(3) top right
-- **Sticky Layer access via SL(1) top left** - one keypress from Symbols+Numpad layer
+- **Sticky Layer access in TWO locations:**
+  - **SL(1) top left** - easy reach with left hand
+  - **SL(1) right home row** - replaces minus key, ergonomic pinky access
 - Custom control row with X and Z for quick access
 
 ### Thumb Cluster Command Keys:
@@ -464,9 +467,15 @@ The firmware includes several useful macros defined in `config/macros.dtsi`:
 
 ### Sticky Layer (Symbols + Numpad)
 
-**Status:** ✅ Active - Top-left key on base and function layers
+**Status:** ✅ Active - **Two locations** for easy access
 
 Layer 1 (Symbols + Numpad) uses a **sticky layer** activation instead of a toggle. This means the layer activates for exactly one keypress, then automatically returns to the previous layer.
+
+**Two activation keys available:**
+1. **Top-left corner** (= position): Easy reach for left hand
+2. **Right home row** (after S key, pinky): Ergonomic home-row access
+
+Both keys do the same thing - activate Layer 1 for one keypress. Use whichever is more convenient!
 
 **Benefits:**
 - **No mental overhead:** Don't need to remember to turn layer off
@@ -476,11 +485,28 @@ Layer 1 (Symbols + Numpad) uses a **sticky layer** activation instead of a toggl
 - **Efficient for numbers:** Type single digits from numpad without commitment
 
 **How to use:**
-1. Press `SL 1` (top-left key labeled `=`)
+1. Press `SL 1` - either:
+   - Top-left key (= position) with left hand, or
+   - Right home row (right pinky) after S key
 2. The layer indicator shows Sym+Num is active
 3. Press any key (e.g., `(`, `7`, `}`)
 4. Automatically returns to base layer
 5. Repeat as needed for each symbol/number
+
+**Which key to use?**
+- **Top-left (left hand):** Use when typing with right hand or need top-row reach
+- **Right home row (right pinky):** Most ergonomic - no hand movement from home position
+  - ✅ **Recommended for frequent use** - keeps fingers on home row
+  - ✅ Perfect for coding workflows - type letter, hit SL with pinky, type bracket, continue
+  - ✅ Replaces minus key (which is now available on Layer 1 anyway)
+- **Personal preference:** Try both and use whichever feels better for your workflow
+
+**Why two locations?**
+Having sticky layer access in two spots gives you flexibility:
+- Use **top-left** when your right hand is on the mouse
+- Use **home row** when actively typing (most efficient)
+- Both activate the same layer - no difference in functionality
+- **Ergonomic advantage:** Home row access means zero hand movement for layer switching
 
 **Comparison with other layer types:**
 - **Toggle (`tog`):** Press once to turn on, press again to turn off - can forget and stay in layer
