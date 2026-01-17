@@ -19,7 +19,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 | Layer # | Name | Display Name | Purpose | Access Method |
 |---------|------|--------------|---------|---------------|
 | 0 | default_layer | Base | Custom Dvorak-inspired layout | Default active layer |
-| 1 | sym_numpad | Sym+Num | Symbols/brackets on left, numpad on right | Toggle with top-left key or Layer 2 |
+| 1 | sym_numpad | Sym+Num | Symbols/brackets on left, numpad on right | **Sticky Layer** - Press top-left key (SL 1) |
 | 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
 | 4-7 | extra1-4 | Red/Purple/Cyan/Yellow | Reserved for future use | Not yet configured |
@@ -29,9 +29,29 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ## Layer Access
 
 ### Layer Switching Keys
-- **`tog 1`**: Toggle Layer 1 (Keypad) on/off
+- **`sl 1`**: Sticky Layer 1 (Symbols+Numpad) - activates for next keypress only
 - **`mo 2`**: Momentary Layer 2 (Function) - active while held
 - **`mo 3`**: Momentary Layer 3 (Mod) - active while held
+
+### What is a Sticky Layer?
+A **sticky layer** activates temporarily for just the **next keypress**, then automatically returns to the base layer. This is perfect for typing a single symbol or number without staying in that layer.
+
+**How it works:**
+1. Press `SL 1` (top-left key)
+2. Layer 1 activates and waits
+3. Press any key (e.g., `(` or `7`)
+4. That key is sent, then automatically returns to base layer
+
+**Example usage:**
+- Need a `(`? Press SL 1, then press the `(` key → Returns to base
+- Need number 7? Press SL 1, then press `7` → Returns to base
+- Want multiple symbols? Press SL 1 before each one
+
+**Benefits over toggle:**
+- ✅ No need to remember to turn layer off
+- ✅ Faster for single symbols/numbers
+- ✅ Prevents accidentally staying in wrong layer
+- ✅ More efficient workflow for occasional symbol use
 
 ---
 
@@ -42,7 +62,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
-│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ TOG(1) │                                       │ MO(3)  │ 6  │ 7  │ 8  │ 9  │ 0  │   [   │
+│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ SL(1)  │                                       │ MO(3)  │ 6  │ 7  │ 8  │ 9  │ 0  │   [   │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
@@ -62,9 +82,11 @@ This document provides a comprehensive visual reference for all keyboard layers 
             │   LGUI       │                                                     │              │
             ├──────┬───────┤                                                     ├──────┬───────┤
             │ HOME │ PG_UP │                                                     │ END  │ PG_DN │
-            ├──────┼───────┤                                                     ├──────┼───────┤
-            │ BSPC │  DEL  │                                                     │ ENTER│ SPACE │
+            ├──────┼───────┤                                                     ├──────┬───────┤
+            │ BSPC │  CMD  │                                                     │ENTER │ SPACE │
+            │      │ (GUI) │                                                     │CMD^  │       │
             └──────┴───────┘                                                     └──────┴───────┘
+                                                                                  ^ Tap=Enter, Hold=CMD
 ```
 
 ### Key Features:
@@ -73,13 +95,42 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - Home row vowels: A-O-E-I on left hand
 - Home row consonants: D-H-T-N-S on right hand
 - Bottom row: X-J-,-==' (left) | C-M-V-W-. (right)
-- Full modifier keys available on thumb cluster
+- **Thumb cluster with Command access:**
+  - **Left thumb:** Backspace, Command/GUI
+  - **Right thumb:** Enter (tap) / Command (hold), Space
+  - Quick access to Command key without leaving thumb position
+  - Enter key doubles as Command when held for shortcuts
+- Full modifier keys also available on upper thumb cluster (Ctrl, Alt, GUI)
 - Dedicated arrow keys
 - Number row (1-0)
 - Function layer access via MO(2) bottom corners
 - Mod layer access via MO(3) top right
-- Toggle Keypad layer via TOG(1) top left
+- **Sticky Layer access via SL(1) top left** - one keypress from Symbols+Numpad layer
 - Custom control row with X and Z for quick access
+
+### Thumb Cluster Command Keys:
+The bottom thumb keys provide easy access to the Command/GUI modifier:
+
+- **Left thumb bottom-right:** Direct Command key
+  - Always Command when pressed
+  - Use for shortcuts like Cmd+C, Cmd+V, etc.
+
+- **Right thumb bottom-left:** Dual-function Enter/Command
+  - **Tap:** Sends Enter (most common use)
+  - **Hold:** Acts as Command modifier
+  - 200ms tapping term with "tap-preferred" flavor
+  - Perfect for Enter in normal typing, Command for shortcuts
+
+**Example usage:**
+- Tap Enter normally: Press and release quickly → Enter
+- Cmd+Enter shortcuts: Hold Enter + press another key → Command modifier
+- Cmd+Space (Spotlight): Hold right Enter + tap Space
+- Quick Command access: Use dedicated left thumb Command key
+
+This gives you three Command key options:
+1. Upper thumb cluster (traditional position)
+2. Left thumb bottom (dedicated, always Command)
+3. Right thumb Enter key (dual-function when held)
 
 ### Home Row Mods Status:
 ⚠️ **Currently Disabled** - Home row modifiers are defined in the firmware but not active on the base layer. The home row keys (A, O, E, I, H, T, N, S) currently function as regular letters only.
@@ -198,7 +249,7 @@ This changes:
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────────┬──────────┬──────────┬──────────┬───────┐
-│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ TRANS  │                                       │ MO(3)  │ 6  │ NUMLOCK│ KP_EQUAL │ KP_DIV   │ KP_MULT  │   -   │
+│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │  ---   │                                       │ MO(3)  │ 6  │ NUMLOCK│ KP_EQUAL │ KP_DIV   │ KP_MULT  │   -   │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────────┼──────────┼──────────┼──────────┼───────┤
 │  TAB   │  ) │  } │ -  │ ]  │ ]  │        │                                       │        │ Y  │  KP_7  │   KP_8   │   KP_9   │ KP_MINUS │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────────┼──────────┼──────────┼──────────┼───────┤
@@ -242,10 +293,14 @@ This changes:
 - NumLock toggle for compatibility
 
 #### Usage:
-- **Toggle on:** Press top-left key (TOG 1) or hold MO(2) then press toggle
-- **Toggle off:** Press TRANS position or toggle again
-- **Dual purpose:** Code on left, calculate on right
-- **Efficient workflow:** Write code with symbols without reaching, then switch to numpad for data entry
+- **Sticky Layer Access:** Press SL(1) top-left key from base layer
+- **One key at a time:** Layer activates for next keypress only, then returns to base
+- **Perfect for single symbols:** Press SL(1), type `(`, automatically back to base
+- **Perfect for single numbers:** Press SL(1), type `7`, automatically back to base
+- **Multiple symbols:** Press SL(1) before each symbol you need
+- **No toggle-off needed:** Automatically returns to base layer after each keypress
+- **Dual purpose:** Code symbols on left, numpad on right
+- **Efficient workflow:** Quick access to any bracket or number without staying in the layer
 
 ---
 
@@ -256,7 +311,7 @@ This changes:
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
-│   F1   │ F2 │ F3 │ F4 │ F5 │ F6 │ TOG(1) │                                       │ MO(3)  │ F7 │ F8 │ F9 │ F10│ F11│  F12  │
+│   F1   │ F2 │ F3 │ F4 │ F5 │ F6 │ SL(1)  │                                       │ MO(3)  │ F7 │ F8 │ F9 │ F10│ F11│  F12  │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │ TRANS  │    │    │    │    │    │        │                                       │        │    │    │    │    │    │       │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
@@ -284,9 +339,10 @@ This changes:
 ### Key Features:
 - Number row becomes F1-F12
 - All other keys transparent (pass through to base layer)
-- Can still toggle Keypad layer
+- **Can activate Sticky Layer** via SL(1) for one symbol/number
 - Can access Mod layer via MO(3)
 - Accessed by holding MO(2) keys (bottom corners)
+- Perfect for Function key shortcuts while having quick symbol access
 
 ---
 
@@ -406,6 +462,85 @@ The firmware includes several useful macros defined in `config/macros.dtsi`:
 
 ## Special Behaviors
 
+### Sticky Layer (Symbols + Numpad)
+
+**Status:** ✅ Active - Top-left key on base and function layers
+
+Layer 1 (Symbols + Numpad) uses a **sticky layer** activation instead of a toggle. This means the layer activates for exactly one keypress, then automatically returns to the previous layer.
+
+**Benefits:**
+- **No mental overhead:** Don't need to remember to turn layer off
+- **Faster workflow:** Press SL(1), type symbol, already back to base
+- **Prevents errors:** Can't accidentally stay stuck in wrong layer
+- **Perfect for coding:** Quick access to brackets without layer management
+- **Efficient for numbers:** Type single digits from numpad without commitment
+
+**How to use:**
+1. Press `SL 1` (top-left key labeled `=`)
+2. The layer indicator shows Sym+Num is active
+3. Press any key (e.g., `(`, `7`, `}`)
+4. Automatically returns to base layer
+5. Repeat as needed for each symbol/number
+
+**Comparison with other layer types:**
+- **Toggle (`tog`):** Press once to turn on, press again to turn off - can forget and stay in layer
+- **Momentary (`mo`):** Active only while held - requires holding key down
+- **Sticky (`sl`):** Active for next keypress only - best of both worlds ✓
+
+**Practical examples:**
+```
+Typing: if (condition) {
+1. Type: if
+2. Press SL(1), press ( → if (
+3. Type: condition
+4. Press SL(1), press ) → if (condition)
+5. Type: space
+6. Press SL(1), press { → if (condition) {
+```
+
+```
+Entering a number: Item #7
+1. Type: Item #
+2. Press SL(1), press 7 → Item #7
+```
+
+```
+Multiple brackets in sequence:
+1. Press SL(1), press ( → (
+2. Press SL(1), press { → ({
+3. Press SL(1), press [ → ({[
+4. Type code...
+5. Press SL(1), press ] → ({[...]
+6. Press SL(1), press } → ({[...]}
+7. Press SL(1), press ) → ({[...]})
+```
+
+---
+
+### Enter/Command Dual-Function Key
+
+**Status:** ✅ Active on base layer (right thumb Enter key)
+
+The Enter key on the right thumb doubles as a Command/GUI modifier when held:
+
+**Configuration (`enter_cmd`):**
+- **Tapping term:** 200ms
+- **Quick tap:** 175ms
+- **Flavor:** tap-preferred (prioritizes tap/Enter for normal typing)
+- **Behavior:** Tap = Enter, Hold = Command/GUI
+
+**How it works:**
+- Quick press and release → Enter key (normal line breaks)
+- Press and hold while tapping another key → Command modifier
+- The "tap-preferred" flavor ensures you get Enter even if you're slightly slow to release
+
+**Perfect for:**
+- Normal typing: Quick taps send Enter as expected
+- Shortcuts: Hold for Cmd+Enter, Cmd+K, etc.
+- One-handed shortcuts: Hold Enter (right thumb) + press keys with left hand
+
+---
+
 ### Timeless Home Row Modifiers (Bilateral Combinations)
 
 ⚠️ **Status: Defined but not currently active on base layer**
@@ -477,7 +612,7 @@ Each layer has a display name shown on the keyboard's status display:
 | CAPS | Caps Lock | ENTER | Enter/Return |
 | PG_UP | Page Up | PG_DN | Page Down |
 | TRANS | Transparent (pass-through) | MO(n) | Momentary layer n |
-| TOG(n) | Toggle layer n | BOOTL | Bootloader mode |
+| SL(n) | Sticky layer n (one keypress) | BOOTL | Bootloader mode |
 
 ---
 
