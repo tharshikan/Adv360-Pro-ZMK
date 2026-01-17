@@ -96,10 +96,10 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
 - Home row vowels: A-O-E-I on left hand
 - Home row consonants: D-H-T-N-S on right hand
 - Bottom row: X-J-,-==' (left) | C-M-W-V-. (right)
-- **Thumb cluster with Command access:**
-  - **Left thumb:** Backspace, Command/GUI
-  - **Right thumb:** Enter (tap) / Command (hold), Space
-  - Quick access to Command key without leaving thumb position
+- **Thumb cluster with Command + Shift access:**
+  - **Left thumb:** Backspace (tap) / Left Shift (hold) plus dedicated Command/GUI key
+  - **Right thumb:** Enter (tap) / Command (hold) plus Space (tap) / Right Shift (hold)
+  - Dual-role thumbs keep both Shift modifiers close without sacrificing Command reach
   - Enter key doubles as Command when held for shortcuts
 - Full modifier keys also available on upper thumb cluster (Ctrl, Alt, GUI)
 - Dedicated arrow keys
@@ -111,29 +111,31 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
   - **SL(1) right home row** - replaces minus key, ergonomic pinky access
 - Custom control row with X and Z for quick access
 
-### Thumb Cluster Command Keys:
-The bottom thumb keys provide easy access to the Command/GUI modifier:
+### Thumb Cluster Command & Shift Keys:
+The bottom thumb keys now cover both GUI and Shift modifiers without leaving home row:
 
-- **Left thumb bottom-right:** Direct Command key
-  - Always Command when pressed
-  - Use for shortcuts like Cmd+C, Cmd+V, etc.
+- **Backspace ↔ Left Shift (`bs_shift`):**
+  - **Tap:** Sends Backspace on every layer
+  - **Hold:** Acts as Left Shift using a forgiving 240 ms tapping term so you can roll into modifiers without misfires
 
-- **Right thumb bottom-left:** Dual-function Enter/Command
-  - **Tap:** Sends Enter (most common use)
-  - **Hold:** Acts as Command modifier
-  - 200ms tapping term with "tap-preferred" flavor
-  - Perfect for Enter in normal typing, Command for shortcuts
+- **Dedicated Command key:**
+  - Left inner thumb key remains a plain Command/GUI key for combo-heavy workflows
+
+- **Enter ↔ Command (`enter_cmd`):**
+  - **Tap:** Enter
+  - **Hold:** Command/GUI (tap-preferred, 200 ms)
+
+- **Space (or KP_0) ↔ Right Shift (`sp_shift`):**
+  - **Tap:** Space on the base layer, KP_0 on Sym+Num
+  - **Hold:** Acts as Right Shift with a snappy 200 ms tapping term for quick rolls
+
+Because `bs_shift` and `sp_shift` are dedicated behaviors, the Shift hold works even after layer switches—perfect for typing symbols or numbers while still getting uppercase characters.
 
 **Example usage:**
-- Tap Enter normally: Press and release quickly → Enter
-- Cmd+Enter shortcuts: Hold Enter + press another key → Command modifier
-- Cmd+Space (Spotlight): Hold right Enter + tap Space
-- Quick Command access: Use dedicated left thumb Command key
-
-This gives you three Command key options:
-1. Upper thumb cluster (traditional position)
-2. Left thumb bottom (dedicated, always Command)
-3. Right thumb Enter key (dual-function when held)
+- Hold Backspace and tap a letter to capitalize it without moving pinkies
+- Hold Space while pressing arrow keys to select text (acts like Shift+Arrow)
+- Tap Enter normally; hold Enter then tap a key for Cmd/Win shortcuts
+- Cmd+Space (Spotlight) still works: hold Enter (Command) + tap the Space/Shift key
 
 ### Home Row Mods Status:
 ⚠️ **Currently Disabled** - Home row modifiers are defined in the firmware but not active on the base layer. The home row keys (A, O, E, I, H, T, N, S) currently function as regular letters only.
@@ -304,6 +306,10 @@ This changes:
 - **No toggle-off needed:** Automatically returns to base layer after each keypress
 - **Dual purpose:** Code symbols on left, numpad on right
 - **Efficient workflow:** Quick access to any bracket or number without staying in the layer
+
+#### Thumb Behavior:
+- **Backspace ↔ Left Shift:** Same `bs_shift` behavior from the base layer lives here, so you can hold the left thumb key to Shift while still tapping brackets or symbols.
+- **Space/KP_0 ↔ Right Shift:** `sp_shift` now taps `KP_0` for the numpad but still provides Right Shift on hold for typing `)`/`}` or doing Shift+Numpad combos.
 
 ---
 
