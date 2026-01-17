@@ -19,7 +19,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 | Layer # | Name | Display Name | Purpose | Access Method |
 |---------|------|--------------|---------|---------------|
 | 0 | default_layer | Base | Custom Dvorak-inspired layout | Default active layer |
-| 1 | keypad | Kp | Numpad functionality on right side | Toggle with top-left key or Layer 2 |
+| 1 | sym_numpad | Sym+Num | Symbols/brackets on left, numpad on right | Toggle with top-left key or Layer 2 |
 | 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
 | 4-7 | extra1-4 | Red/Purple/Cyan/Yellow | Reserved for future use | Not yet configured |
@@ -191,20 +191,20 @@ This changes:
 
 ---
 
-## Layer 1: Keypad Layer
+## Layer 1: Symbols + Numpad Layer
 
-**Display Name:** Kp
-**Purpose:** Numpad functionality on the right half
+**Display Name:** Sym+Num
+**Purpose:** Programming symbols and brackets on left, numpad on right
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────────┬──────────┬──────────┬──────────┬───────┐
 │   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ TRANS  │                                       │ MO(3)  │ 6  │ NUMLOCK│ KP_EQUAL │ KP_DIV   │ KP_MULT  │   -   │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────────┼──────────┼──────────┼──────────┼───────┤
-│  TAB   │ Q  │ W  │ E  │ R  │ T  │        │                                       │        │ Y  │  KP_7  │   KP_8   │   KP_9   │ KP_MINUS │   \   │
+│  TAB   │  ) │  } │ -  │ ]  │ ]  │        │                                       │        │ Y  │  KP_7  │   KP_8   │   KP_9   │ KP_MINUS │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────────┼──────────┼──────────┼──────────┼───────┤
-│  ESC   │ A  │ S  │ D  │ F  │ G  │        │                                       │        │ H  │  KP_4  │   KP_5   │   KP_6   │ KP_PLUS  │   '   │
+│  ESC   │ (  │ {  │ _  │ [  │    │        │                                       │        │ H  │  KP_4  │   KP_5   │   KP_6   │ KP_PLUS  │   '   │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────────┼──────────┼──────────┼──────────┼───────┤
-│ SHIFT  │ Z  │ X  │ C  │ V  │ B           │                                       │           N │  KP_1  │   KP_2   │   KP_3   │ KP_ENTER │ SHIFT │
+│ SHIFT  │ Z  │    │ `  │ ~  │             │                                       │           N │  KP_1  │   KP_2   │   KP_3   │ KP_ENTER │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────────┼──────────┼──────────┼──────────┴───────┴┐
   │MO(2) │ `  │CAPS│ ←  │ →                                                                               │    ↑     │    ↓     │  KP_DOT  │    ]   │MO(2) │
   └──────┴────┴────┴────┘                                                                                 └──────────┴──────────┴──────────┴────────┘
@@ -224,12 +224,28 @@ This changes:
 ```
 
 ### Key Features:
-- Full numpad on right half (7-8-9, 4-5-6, 1-2-3, 0)
-- Numpad operators (/, *, -, +)
-- Numpad Enter and Decimal point
-- NumLock toggle
-- Left half remains mostly same as Base layer
-- Exit keypad mode using TRANS (transparent) or toggle again
+
+#### Left Hand - Programming Symbols:
+- **Brackets & Parentheses:**
+  - Top row: `)` `}` `-` `]` `]`
+  - Home row: `(` `{` `_` `[`
+- **Special Characters:**
+  - Bottom row: `` ` `` `~`
+- **Perfect for coding:** All common bracket pairs easily accessible
+- **Symmetric placement:** Opening brackets on home row, closing on top row
+
+#### Right Hand - Full Numpad:
+- Calculator-style layout: 7-8-9, 4-5-6, 1-2-3, 0
+- Numpad operators: `/` `*` `-` `+`
+- Numpad Enter for quick calculations
+- Decimal point (`.`) for numbers
+- NumLock toggle for compatibility
+
+#### Usage:
+- **Toggle on:** Press top-left key (TOG 1) or hold MO(2) then press toggle
+- **Toggle off:** Press TRANS position or toggle again
+- **Dual purpose:** Code on left, calculate on right
+- **Efficient workflow:** Write code with symbols without reaching, then switch to numpad for data entry
 
 ---
 
@@ -438,7 +454,7 @@ If you experience issues:
 ### Layer Status Display
 Each layer has a display name shown on the keyboard's status display:
 - Layer 0: **Base**
-- Layer 1: **Kp** (Keypad)
+- Layer 1: **Sym+Num** (Symbols + Numpad)
 - Layer 2: **Fn** (Function)
 - Layer 3: **Mod** (Modifier)
 - Layer 4: **Red** (Reserved)
