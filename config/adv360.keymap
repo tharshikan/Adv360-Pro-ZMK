@@ -108,6 +108,39 @@
             slow-release;
         };
 
+        /* Left Command + D/H/T/N → Vim-style arrows */
+        combo_lcmd_left {
+            timeout-ms = <50>;
+            key-positions = <66 40>; /* Left Cmd + D */
+            bindings = <&kp LEFT>;
+            layers = <0>;
+            slow-release;
+        };
+
+        combo_lcmd_down {
+            timeout-ms = <50>;
+            key-positions = <66 41>; /* Left Cmd + H */
+            bindings = <&kp DOWN>;
+            layers = <0>;
+            slow-release;
+        };
+
+        combo_lcmd_up {
+            timeout-ms = <50>;
+            key-positions = <66 42>; /* Left Cmd + T */
+            bindings = <&kp UP>;
+            layers = <0>;
+            slow-release;
+        };
+
+        combo_lcmd_right {
+            timeout-ms = <50>;
+            key-positions = <66 43>; /* Left Cmd + N */
+            bindings = <&kp RIGHT>;
+            layers = <0>;
+            slow-release;
+        };
+
         combo_cmd_undo {
             timeout-ms = <50>;
             key-positions = <69 17>; /* Enter + U */
