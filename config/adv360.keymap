@@ -130,7 +130,7 @@
 &kp LG(TAB)   &kp LG(Q)  &kp LG(P)  &kp LG(U)    &kp LG(Y)     &kp LG(SEMI) &trans                                     &trans &kp LG(K)  &kp LG(F)  &kp LG(L)  &kp LG(R)  &kp LG(B)  &kp LG(BSLH)
 &kp LG(ESC)   &kp LG(A)  &kp LG(O)  &kp LG(E)    &kp LG(I)     &kp LG(G)  &trans   &trans  &trans      &trans  &trans  &trans &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp LG(S)  &trans
 &kp LG(LSHFT) &kp LG(X)  &kp LG(J)  &kp LG(COMMA) &kp LG(EQUAL) &kp LG(SQT)              &trans      &trans                     &kp LG(C)  &kp LG(M)  &kp LG(W)  &kp LG(V)  &kp LG(DOT) &kp LG(RSHFT)
-&trans        &kp LG(X)  &kp LG(Z)  &kp LG(LEFT) &kp LG(RIGHT)            &trans   &trans  &trans      &trans  &trans  &trans          &kp LG(UP) &kp LG(DOWN) &kp LG(RBKT) &kp LG(BSLH) &trans
+&trans        &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)            &trans   &trans  &trans      &trans  &trans  &trans          &kp LG(UP) &kp LG(DOWN) &kp LG(RBKT) &kp LG(BSLH) &trans
             >;
         };
 
