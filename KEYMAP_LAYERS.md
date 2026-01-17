@@ -95,7 +95,7 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
 - Top row: Q-P-U-Y-; (left) | K-F-L-R-B (right)
 - Home row vowels: A-O-E-I on left hand
 - Home row consonants: D-H-T-N-S on right hand
-- Bottom row: X-J-,-==' (left) | C-M-V-W-. (right)
+- Bottom row: X-J-,-==' (left) | C-M-W-V-. (right)
 - **Thumb cluster with Command access:**
   - **Left thumb:** Backspace, Command/GUI
   - **Right thumb:** Enter (tap) / Command (hold), Space

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="symbols">
+    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="thumb clusters">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KEYMAP_LAYERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/KEYMAP_LAYERS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/adv360.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/adv360.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <workItem from="1768262190949" duration="10000" />
       <workItem from="1768626567318" duration="5000" />
       <workItem from="1768626583629" duration="16000" />
-      <workItem from="1768626712919" duration="4466000" />
+      <workItem from="1768626712919" duration="5693000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
@@ -129,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768630834530</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="thumb clusters">
+      <option name="closed" value="true" />
+      <created>1768631368401</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768631368401</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,7 @@
     <MESSAGE value="timeless" />
     <MESSAGE value="disable timeless for novvivwwwvvv" />
     <MESSAGE value="symbols" />
-    <option name="LAST_COMMIT_MESSAGE" value="symbols" />
+    <MESSAGE value="thumb clusters" />
+    <option name="LAST_COMMIT_MESSAGE" value="thumb clusters" />
   </component>
 </project>

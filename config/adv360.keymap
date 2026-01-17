@@ -59,7 +59,7 @@
 &kp EQUAL  &kp N1     &kp N2    &kp N3       &kp N4        &kp N5     &sl 1                                                       &mo 3          &kp N6     &kp N7      &kp N8      &kp N9      &kp N0      &kp LBKT
 &kp TAB    &kp Q      &kp P     &kp U        &kp Y         &kp SEMI   &none                                                       &none          &kp K      &kp F       &kp L       &kp R       &kp B       &kp BSLH
 &kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &sl 1
-&kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &kp PG_UP                              &kp C      &kp M       &kp V       &kp W       &kp DOT     &kp RSHFT
+&kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &kp PG_UP                              &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
 &mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &kp BSPC  &kp LGUI   &kp END       &kp PG_DN  &enter_cmd LGUI ENTER  &kp SPACE    &kp UP      &kp DOWN    &kp RBKT    &kp BSLH    &mo 2
             >;
         };
