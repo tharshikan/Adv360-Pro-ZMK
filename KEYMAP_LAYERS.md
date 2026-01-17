@@ -46,8 +46,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │ A  │ O  │ E  │ I  │ G  │        │  HOME ROW MODS (bilateral)            │        │ D  │ H  │ T  │ N  │ S  │   -   │
-│        │SHFT│CTRL│ ALT│ GUI│    │        │                                       │        │    │ GUI│ ALT│CTRL│SHFT│       │
+│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │   -   │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -71,16 +70,10 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ### Key Features:
 - **Custom Dvorak-inspired layout** optimized for ergonomic typing
 - Top row: Q-P-U-Y-; (left) | K-F-L-R-B (right)
-- **Timeless Home Row Modifiers with Bilateral Combinations:**
-  - **Left hand home row:** A (Shift) | O (Ctrl) | E (Alt) | I (Cmd/GUI) | G
-  - **Right hand home row:** D | H (Cmd/GUI) | T (Alt) | N (Ctrl) | S (Shift)
-  - Tap for letter, hold for modifier
-  - Bilateral system prevents accidental activation - left mods only work with right hand keys and vice versa
-  - 280ms tapping term, 125ms prior-idle requirement for reliable operation
 - Home row vowels: A-O-E-I on left hand
 - Home row consonants: D-H-T-N-S on right hand
 - Bottom row: X-J-,-==' (left) | C-M-V-W-. (right)
-- Full modifier keys also available on thumb cluster
+- Full modifier keys available on thumb cluster
 - Dedicated arrow keys
 - Number row (1-0)
 - Function layer access via MO(2) bottom corners
@@ -88,8 +81,13 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - Toggle Keypad layer via TOG(1) top left
 - Custom control row with X and Z for quick access
 
-### Home Row Mods Explained:
-The home row keys double as modifiers when held, allowing you to keep your fingers on the home row while accessing all modifier combinations. This implementation uses **bilateral combinations** (positional hold-taps) which means:
+### Home Row Mods Status:
+⚠️ **Currently Disabled** - Home row modifiers are defined in the firmware but not active on the base layer. The home row keys (A, O, E, I, H, T, N, S) currently function as regular letters only.
+
+To enable home row mods, you would need to replace the home row `&kp` bindings with `&hml` (left) and `&hmr` (right) behaviors in the keymap file. See the detailed configuration below for instructions.
+
+### Home Row Mods Explained (Available But Not Active):
+The home row modifiers are fully defined and ready to use. When enabled, the home row keys would double as modifiers when held, allowing you to keep your fingers on the home row while accessing all modifier combinations. This implementation uses **bilateral combinations** (positional hold-taps) which means:
 - Left-hand mods (A, O, E, I) only activate when you press a **right-hand** key while holding them
 - Right-hand mods (H, T, N, S) only activate when you press a **left-hand** key while holding them
 - This prevents accidental modifier activation when typing same-hand combinations like "as" or "in"
@@ -164,11 +162,32 @@ The home row keys double as modifiers when held, allowing you to keep your finge
 | Index  | I         | GUI/Cmd  | H          | GUI/Cmd  |
 | Index  | G         | (none)   | D          | (none)   |
 
-**Example usage:**
+**Example usage (when enabled):**
 - Hold **O** (Ctrl) + press **K** (right hand) = Ctrl+K
 - Hold **T** (Alt) + press **Q** (left hand) = Alt+Q
 - Hold **A** (Shift) + press **L** (right hand) = Shift+L (capital L)
 - Typing "oil" normally works fine because O-I-L doesn't trigger mods (no cross-hand combo)
+
+#### How to Enable Home Row Mods:
+To activate home row modifiers, edit `config/adv360.keymap` line 50 and replace:
+```
+&kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &kp MINUS
+```
+
+With:
+```
+&kp ESC    &hml LSHFT A    &hml LCTRL O   &hml LALT E  &hml LGUI I   &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &hmr RGUI H    &hmr RALT T   &hmr RCTRL N &hmr RSHFT S    &kp MINUS
+```
+
+This changes:
+- **A** → Shift when held (left)
+- **O** → Ctrl when held (left)
+- **E** → Alt when held (left)
+- **I** → GUI/Cmd when held (left)
+- **H** → GUI/Cmd when held (right)
+- **T** → Alt when held (right)
+- **N** → Ctrl when held (right)
+- **S** → Shift when held (right)
 
 ---
 
@@ -373,7 +392,9 @@ The firmware includes several useful macros defined in `config/macros.dtsi`:
 
 ### Timeless Home Row Modifiers (Bilateral Combinations)
 
-The firmware implements advanced home row modifiers using **bilateral combinations** (positional hold-taps) for maximum reliability:
+⚠️ **Status: Defined but not currently active on base layer**
+
+The firmware has advanced home row modifiers fully configured using **bilateral combinations** (positional hold-taps) for maximum reliability. The behaviors are ready to use but not currently applied to the home row keys:
 
 #### Left Hand Home Row Mods (`hml`)
 - **Keys**: A (Shift), O (Ctrl), E (Alt), I (GUI/Cmd)
