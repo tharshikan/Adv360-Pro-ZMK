@@ -100,6 +100,7 @@ A **sticky layer** activates temporarily for just the **next keypress**, then au
   - **Left thumb:** Backspace (tap) / Left Shift (hold) plus dedicated Command/GUI key
   - **Right thumb:** Enter (tap) / Command (hold) plus Space (tap) / Right Shift (hold)
   - Dual-role thumbs keep both Shift modifiers close without sacrificing Command reach
+  - **Right Command + D/H/T/N:** Hold the right Command (Enter) key with D/H/T/N to send ← ↓ ↑ → for Vim-style navigation without leaving home row
   - Enter key doubles as Command when held for shortcuts
 - Full modifier keys also available on upper thumb cluster (Ctrl, Alt, GUI)
 - Dedicated arrow keys
@@ -130,6 +131,10 @@ The bottom thumb keys now cover both GUI and Shift modifiers without leaving hom
   - **Hold:** Acts as Right Shift with a snappy 200 ms tapping term for quick rolls
 
 Because `bs_shift` and `sp_shift` are dedicated behaviors, the Shift hold works even after layer switches—perfect for typing symbols or numbers while still getting uppercase characters.
+
+- **Vim-style navigation chord:**
+  - Hold the right Command (Enter) key and tap **D / H / T / N** to send **← / ↓ / ↑ / →** respectively
+  - Gives you instant home-row navigation when you temporarily need arrow keys
 
 **Example usage:**
 - Hold Backspace and tap a letter to capitalize it without moving pinkies

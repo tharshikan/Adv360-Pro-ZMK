@@ -75,6 +75,43 @@
     keymap {
         compatible = "zmk,keymap";
 
+        combos {
+            compatible = "zmk,combos";
+
+            /* Right Command (Enter hold) + D/H/T/N → Vim-style arrows */
+            combo_cmd_left {
+                timeout-ms = <50>;
+                key-positions = <69 40>; /* Enter + D */
+                bindings = <&kp LEFT>;
+                layers = <0>;
+                slow-release;
+            };
+
+            combo_cmd_down {
+                timeout-ms = <50>;
+                key-positions = <69 41>; /* Enter + H */
+                bindings = <&kp DOWN>;
+                layers = <0>;
+                slow-release;
+            };
+
+            combo_cmd_up {
+                timeout-ms = <50>;
+                key-positions = <69 42>; /* Enter + T */
+                bindings = <&kp UP>;
+                layers = <0>;
+                slow-release;
+            };
+
+            combo_cmd_right {
+                timeout-ms = <50>;
+                key-positions = <69 43>; /* Enter + N */
+                bindings = <&kp RIGHT>;
+                layers = <0>;
+                slow-release;
+            };
+        };
+
         default_layer {
             display-name = "Base";
             bindings = <
