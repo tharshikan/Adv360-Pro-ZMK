@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="added diagarms">
+    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="my layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KEYMAP_LAYERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/KEYMAP_LAYERS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/adv360.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/adv360.keymap" afterDir="false" />
@@ -88,7 +88,7 @@
       <workItem from="1768262190949" duration="10000" />
       <workItem from="1768626567318" duration="5000" />
       <workItem from="1768626583629" duration="16000" />
-      <workItem from="1768626712919" duration="1079000" />
+      <workItem from="1768626712919" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768627039002</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="my layout">
+      <option name="closed" value="true" />
+      <created>1768628004215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768628004215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added diagarms" />
-    <option name="LAST_COMMIT_MESSAGE" value="added diagarms" />
+    <MESSAGE value="my layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="my layout" />
   </component>
 </project>

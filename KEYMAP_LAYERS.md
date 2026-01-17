@@ -46,7 +46,8 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │   -   │
+│  ESC   │ A  │ O  │ E  │ I  │ G  │        │  HOME ROW MODS (bilateral)            │        │ D  │ H  │ T  │ N  │ S  │   -   │
+│        │SHFT│CTRL│ ALT│ GUI│    │        │                                       │        │    │ GUI│ ALT│CTRL│SHFT│       │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -70,16 +71,104 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ### Key Features:
 - **Custom Dvorak-inspired layout** optimized for ergonomic typing
 - Top row: Q-P-U-Y-; (left) | K-F-L-R-B (right)
+- **Timeless Home Row Modifiers with Bilateral Combinations:**
+  - **Left hand home row:** A (Shift) | O (Ctrl) | E (Alt) | I (Cmd/GUI) | G
+  - **Right hand home row:** D | H (Cmd/GUI) | T (Alt) | N (Ctrl) | S (Shift)
+  - Tap for letter, hold for modifier
+  - Bilateral system prevents accidental activation - left mods only work with right hand keys and vice versa
+  - 280ms tapping term, 125ms prior-idle requirement for reliable operation
 - Home row vowels: A-O-E-I on left hand
 - Home row consonants: D-H-T-N-S on right hand
 - Bottom row: X-J-,-==' (left) | C-M-V-W-. (right)
-- Full modifier keys (Ctrl, Alt, GUI/Win, Shift)
+- Full modifier keys also available on thumb cluster
 - Dedicated arrow keys
 - Number row (1-0)
 - Function layer access via MO(2) bottom corners
 - Mod layer access via MO(3) top right
 - Toggle Keypad layer via TOG(1) top left
 - Custom control row with X and Z for quick access
+
+### Home Row Mods Explained:
+The home row keys double as modifiers when held, allowing you to keep your fingers on the home row while accessing all modifier combinations. This implementation uses **bilateral combinations** (positional hold-taps) which means:
+- Left-hand mods (A, O, E, I) only activate when you press a **right-hand** key while holding them
+- Right-hand mods (H, T, N, S) only activate when you press a **left-hand** key while holding them
+- This prevents accidental modifier activation when typing same-hand combinations like "as" or "in"
+- The "balanced" flavor and hold-trigger-on-release setting provide the most reliable behavior
+
+#### Home Row Mods Visual Reference:
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        HOME ROW MODIFIERS                               │
+│                     (Bilateral Combinations)                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+         LEFT HAND                                    RIGHT HAND
+    ┌─────────────────┐                          ┌─────────────────┐
+    │  Pinky  Ring Mid│ Index                Index│ Mid  Ring Pinky │
+    └─────────────────┘                          └─────────────────┘
+
+         TAP (Normal):
+    ┌─────┬─────┬─────┬─────┬─────┐        ┌─────┬─────┬─────┬─────┬─────┐
+    │  A  │  O  │  E  │  I  │  G  │        │  D  │  H  │  T  │  N  │  S  │
+    └─────┴─────┴─────┴─────┴─────┘        └─────┴─────┴─────┴─────┴─────┘
+
+         HOLD (Modifier):
+    ┌─────┬─────┬─────┬─────┬─────┐        ┌─────┬─────┬─────┬─────┬─────┐
+    │SHIFT│CTRL │ ALT │ GUI │  G  │        │  D  │ GUI │ ALT │CTRL │SHIFT│
+    └─────┴─────┴─────┴─────┴─────┘        └─────┴─────┴─────┴─────┴─────┘
+       ▲     ▲     ▲     ▲                            ▲     ▲     ▲     ▲
+       │     │     │     │                            │     │     │     │
+       └─────┴─────┴─────┴────────────────────────────┴─────┴─────┴─────┘
+                    Only work with opposite hand!
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  ACTIVATION RULES:                                                      │
+│                                                                          │
+│  ✓ Left mods (A/O/E/I) + Right keys → Modifier activates               │
+│  ✓ Right mods (H/T/N/S) + Left keys → Modifier activates               │
+│  ✗ Same-hand combinations → No modifier (normal typing)                │
+│                                                                          │
+│  Examples:                                                              │
+│  • Hold O (Ctrl) + Press K (right) = Ctrl+K         ✓                  │
+│  • Hold T (Alt) + Press Q (left) = Alt+Q            ✓                  │
+│  • Hold A (Shift) + Press L (right) = Capital L     ✓                  │
+│  • Type "oil" fast = o-i-l (no mods triggered)      ✓                  │
+│  • Type "as" fast = a-s (no mods triggered)         ✓                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  COMMON SHORTCUTS:                                                      │
+│                                                                          │
+│  Left Hand Mods:                     Right Hand Mods:                   │
+│  • A+Click → Shift+Click             • H+Q → Cmd/Win+Q                  │
+│  • O+K → Ctrl+K                      • T+Tab → Alt+Tab                  │
+│  • E+F → Alt+F                       • N+W → Ctrl+W                     │
+│  • I+Space → Cmd/Win+Space           • S+Click → Shift+Click            │
+│                                                                          │
+│  Multi-Mod Combinations:                                                │
+│  • Hold O+I → Ctrl+Cmd (both left)                                     │
+│  • Then press right key for combo: Ctrl+Cmd+K                          │
+│  • Hold T+N → Alt+Ctrl (both right)                                    │
+│  • Then press left key for combo: Alt+Ctrl+Q                           │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Quick Reference Table:
+
+| Finger | Left Hand | Modifier | Right Hand | Modifier |
+|--------|-----------|----------|------------|----------|
+| Pinky  | A         | Shift    | S          | Shift    |
+| Ring   | O         | Ctrl     | N          | Ctrl     |
+| Middle | E         | Alt      | T          | Alt      |
+| Index  | I         | GUI/Cmd  | H          | GUI/Cmd  |
+| Index  | G         | (none)   | D          | (none)   |
+
+**Example usage:**
+- Hold **O** (Ctrl) + press **K** (right hand) = Ctrl+K
+- Hold **T** (Alt) + press **Q** (left hand) = Alt+Q
+- Hold **A** (Shift) + press **L** (right hand) = Shift+L (capital L)
+- Typing "oil" normally works fine because O-I-L doesn't trigger mods (no cross-hand combo)
 
 ---
 
@@ -282,12 +371,48 @@ The firmware includes several useful macros defined in `config/macros.dtsi`:
 
 ## Special Behaviors
 
-### Homerow Mods
-The firmware includes a `homerow_mods` behavior configured with:
-- **Tapping term**: 200ms
-- **Quick tap**: 175ms
-- **Flavor**: tap-preferred
-- Currently not actively used in the default keymap but available for customization
+### Timeless Home Row Modifiers (Bilateral Combinations)
+
+The firmware implements advanced home row modifiers using **bilateral combinations** (positional hold-taps) for maximum reliability:
+
+#### Left Hand Home Row Mods (`hml`)
+- **Keys**: A (Shift), O (Ctrl), E (Alt), I (GUI/Cmd)
+- **Configuration**:
+  - Tapping term: 280ms
+  - Quick tap: 175ms
+  - Prior idle requirement: 125ms
+  - Flavor: balanced
+  - Hold-trigger positions: Right hand keys only (38-74)
+  - Hold-trigger-on-release: enabled
+- **Behavior**: These mods only activate when you press a right-hand key while holding them
+
+#### Right Hand Home Row Mods (`hmr`)
+- **Keys**: H (GUI/Cmd), T (Alt), N (Ctrl), S (Shift)
+- **Configuration**:
+  - Tapping term: 280ms
+  - Quick tap: 175ms
+  - Prior idle requirement: 125ms
+  - Flavor: balanced
+  - Hold-trigger positions: Left hand keys only (0-37)
+  - Hold-trigger-on-release: enabled
+- **Behavior**: These mods only activate when you press a left-hand key while holding them
+
+#### Why Bilateral Combinations?
+This approach prevents accidental modifier activation when:
+- Typing fast same-hand combinations (e.g., "as", "in", "the")
+- Rolling fingers on the same hand
+- Performing common typing patterns
+
+The "balanced" flavor provides optimal behavior by:
+- Preferring hold if you're slow to release
+- Preferring tap if you quickly move to the next key
+- Using hold-trigger-on-release to wait until key release before deciding
+
+#### Adjustment Tips
+If you experience issues:
+- **Too many misfires**: Increase `tapping-term-ms` (try 300-320ms)
+- **Mods too slow to activate**: Decrease `require-prior-idle-ms` (try 100ms)
+- **Trouble with rolling**: Increase `quick-tap-ms` (try 200ms)
 
 ### Layer Status Display
 Each layer has a display name shown on the keyboard's status display:
