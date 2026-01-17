@@ -18,7 +18,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 | Layer # | Name | Display Name | Purpose | Access Method |
 |---------|------|--------------|---------|---------------|
-| 0 | default_layer | Base | Standard QWERTY layout | Default active layer |
+| 0 | default_layer | Base | Custom Dvorak-inspired layout | Default active layer |
 | 1 | keypad | Kp | Numpad functionality on right side | Toggle with top-left key or Layer 2 |
 | 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
@@ -38,19 +38,19 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ## Layer 0: Base Layer
 
 **Display Name:** Base
-**Purpose:** Standard QWERTY typing layout with modifiers
+**Purpose:** Custom Dvorak-inspired layout with modifiers
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
-│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ TOG(1) │                                       │ MO(3)  │ 6  │ 7  │ 8  │ 9  │ 0  │   -   │
+│   =    │ 1  │ 2  │ 3  │ 4  │ 5  │ TOG(1) │                                       │ MO(3)  │ 6  │ 7  │ 8  │ 9  │ 0  │   [   │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
-│  TAB   │ Q  │ W  │ E  │ R  │ T  │        │                                       │        │ Y  │ U  │ I  │ O  │ P  │   \   │
+│  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │ A  │ S  │ D  │ F  │ G  │        │                                       │        │ H  │ J  │ K  │ L  │ ;  │   '   │
+│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │   -   │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
-│ SHIFT  │ Z  │ X  │ C  │ V  │ B           │                                       │           N │ M  │ ,  │ .  │ /  │ SHIFT │
+│ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
-  │MO(2) │ `  │CAPS│ ←  │ →                                                                          │ ↑  │ ↓  │ [  │ ]  │MO(2) │
+  │MO(2) │ X  │ Z  │ ←  │ →                                                                          │ ↑  │ ↓  │ ]  │ \  │MO(2) │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
 
             Left Thumb Cluster                                                   Right Thumb Cluster
@@ -68,13 +68,18 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ```
 
 ### Key Features:
-- Standard QWERTY layout
+- **Custom Dvorak-inspired layout** optimized for ergonomic typing
+- Top row: Q-P-U-Y-; (left) | K-F-L-R-B (right)
+- Home row vowels: A-O-E-I on left hand
+- Home row consonants: D-H-T-N-S on right hand
+- Bottom row: X-J-,-==' (left) | C-M-V-W-. (right)
 - Full modifier keys (Ctrl, Alt, GUI/Win, Shift)
 - Dedicated arrow keys
 - Number row (1-0)
 - Function layer access via MO(2) bottom corners
 - Mod layer access via MO(3) top right
 - Toggle Keypad layer via TOG(1) top left
+- Custom control row with X and Z for quick access
 
 ---
 
