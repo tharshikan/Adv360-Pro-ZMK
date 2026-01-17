@@ -110,6 +110,30 @@
                 layers = <0>;
                 slow-release;
             };
+
+            combo_cmd_undo {
+                timeout-ms = <50>;
+                key-positions = <69 17>; /* Enter + U */
+                bindings = <&kp LG(Z)>;
+                layers = <0>;
+                slow-release;
+            };
+
+            combo_cmd_copy {
+                timeout-ms = <50>;
+                key-positions = <69 49>; /* Enter + , */
+                bindings = <&kp LG(C)>;
+                layers = <0>;
+                slow-release;
+            };
+
+            combo_cmd_paste {
+                timeout-ms = <50>;
+                key-positions = <69 50>; /* Enter + = */
+                bindings = <&kp LG(V)>;
+                layers = <0>;
+                slow-release;
+            };
         };
 
         default_layer {
