@@ -125,7 +125,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │ CMD+Tab│CMDQ│CMDP│CMDU│CMDY│CMD;│        │                                       │        │CMDK│CMDF│CMDL│CMDR│CMDB│ CMD+\ │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │ ←  │ ↓  │ ↑  │ →  │CMDS│       │
+│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↓  │ ↑  │ →  │       │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ CMD+Sft│Undo│Cut │Copy│Pste│CMD'         │                                       │             │CMDC│CMDM│CMDW│CMDV│CMD. │ CMD+Sft│
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -141,11 +141,13 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - Works with **either hand** (Nav layer uses Left Command regardless of which thumb activates it).
 
 #### 2. Arrow Keys (Right Hand Home Row)
-- **D**: Left Arrow
-- **H**: Down Arrow
-- **T**: Up Arrow
-- **N**: Right Arrow
-- **Why?** Keeps your hand on the home row while navigating.
+- **Shifted VIM-Style Arrows**: Arrow keys are shifted one column to the right (to H/T/N/S positions) compared to standard VIM (usually H/J/K/L, but here aligned with Dvorak home row).
+    - **Index Inner (D):** `Command + D`
+    - **Index (H):** `Left Arrow`
+    - **Middle (T):** `Down Arrow`
+    - **Ring (N):** `Up Arrow`
+    - **Pinky (S):** `Right Arrow`
+
 
 #### 3. One-Handed Copy/Paste (Left Hand Row 4)
 Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positions):

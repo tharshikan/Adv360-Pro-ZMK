@@ -120,7 +120,7 @@
         td_nav: tap_dance_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
             bindings = <&sl 4>, <&tog 4>;
         };
@@ -129,13 +129,14 @@
         ht_nav: hold_tap_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_NAV";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "balanced";
-            bindings = <&mo 4>, <&td_nav>;
+            bindings = <&mo>, <&td_nav>;
         };
     };
+
 
 
 
@@ -151,7 +152,7 @@
 &kp TAB    &kp Q      &kp P     &kp U        &kp Y         &kp SEMI   &none                                                       &none          &kp K      &kp F       &kp L       &kp R       &kp B       &kp BSLH
 &kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &sl 1
 &kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &tog 5                                 &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
-&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &ht_nav &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &mo 5       &mo 2
+&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &ht_nav 4 &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &mo 5       &mo 2
             >;
         };
 
@@ -193,7 +194,7 @@
             bindings = <
 &kp LG(EQUAL) &kp LG(N1) &kp LG(N2) &kp LG(N3)   &kp LG(N4)    &kp LG(N5) &trans                                       &trans &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(N0) &kp LG(LBKT)
 &kp LG(TAB)   &kp LG(Q)  &kp LG(P)  &kp LG(U)    &kp LG(Y)     &kp LG(SEMI) &trans                                     &trans &kp LG(K)  &kp LG(F)  &kp LG(L)  &kp LG(R)  &kp LG(B)  &kp LG(BSLH)
-&kp LG(ESC)   &kp LG(A)  &kp LG(O)  &kp LG(E)    &kp LG(I)     &kp LG(G)  &trans   &trans  &trans      &trans  &trans  &trans &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp LG(S)  &trans
+&kp LG(ESC)   &kp LG(A)  &kp LG(O)  &kp LG(E)    &kp LG(I)     &kp LG(G)  &trans   &trans  &trans      &trans  &trans  &trans &kp LG(D)  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
 &kp LG(LSHFT) &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)     &kp LG(SQT)              &trans      &trans                     &kp LG(C)  &kp LG(M)  &kp LG(W)  &kp LG(V)  &kp LG(DOT) &kp LG(RSHFT)
 &trans        &kp LG(X)  &kp LG(Z)  &kp LG(LEFT) &kp LG(RIGHT)            &kp LG(BSPC) &trans &kp LG(END)      &kp LG(PG_DN) &kp LG(ENTER) &kp LG(SPACE)          &kp LG(UP) &kp LG(DOWN) &kp LG(RBKT) &kp LG(BSLH) &trans
             >;
