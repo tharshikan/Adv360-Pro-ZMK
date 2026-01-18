@@ -125,7 +125,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │ CMD+Tab│CMDQ│CMDP│CMDU│CMDY│CMD;│        │                                       │        │CMDK│CMDF│CMDL│CMDR│CMDB│ CMD+\ │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↓  │ ↑  │ →  │       │
+│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↑  │ ↓  │ →  │       │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ CMD+Sft│Undo│Cut │Copy│Pste│CMD'         │                                       │             │CMDC│CMDM│CMDW│CMDV│CMD. │ CMD+Sft│
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -144,8 +144,8 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Shifted VIM-Style Arrows**: Arrow keys are shifted one column to the right (to H/T/N/S positions) compared to standard VIM (usually H/J/K/L, but here aligned with Dvorak home row).
     - **Index Inner (D):** `Command + D`
     - **Index (H):** `Left Arrow`
-    - **Middle (T):** `Down Arrow`
-    - **Ring (N):** `Up Arrow`
+    - **Middle (T):** `Up Arrow`
+    - **Ring (N):** `Down Arrow`
     - **Pinky (S):** `Right Arrow`
 
 
@@ -170,7 +170,7 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┬───────┼───────┼───────┤
 │ Search │ Sft(S) │  Redo  │  Undo  │  BSPC  │  Cut   │ WinMsn │                                       │        │ Cut  │ BSPC │ Undo │ Redo  │ Sft(S)│ Search│
 ├────────┼────────┼────────┼────────┼────────┼────────┤ Ctrl   │                                       │  Tab   ├──────┼──────┼──────┼───────┼───────┼───────┤-------------------------------------------------------------------------------------------------------------------------------
-│ CMD+Tab│  GUI   │  Alt   │  Ctrl  │ Shift  │ Copy │ CtrlTab│  Tab   │ trans  │ trans  │ trans  │ trans  │ Copy │ Left   │  Up    │ Down   │ Right  │ CMD+L  │
+│ CMD+Tab│  GUI   │  Alt   │  Ctrl  │ Shift  │ Copy │ CtrlTab│  Tab   │ trans  │ trans  │ trans  │ trans  │ Copy │ Left   │ Down   │ Up     │ Right  │ CMD+L  │
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
 │ DwnLd  │ SelAll │ SelLn  │ SelWd  │  Find  │ Paste           │                                       │ Paste         │ Home │ PgUp │ PgDn  │  End  │ DwnLd │
 └─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼───────┴───────┴───────┘
@@ -216,7 +216,7 @@ The new Cursor Layer is a complete command center for text editing and navigatio
 - **Window Management**: Mission Control (WinTab) and App Switcher (AltTab) on left thumb.
 
 - **Row 4 (Lower)**: `Downloads` | `Select All` | `Select Line` | `Select Word` | `Find` | `Paste`
-- **Row 5 (Bottom)**: `Find & Replace` | `Find Prev` | `Extend Line` | `Extend Word` | `Find Next`
+- **Arrow Keys (Right Home)**: `CMD+D` | `Left` | `Down` | `Up` | `Right` (Ergonomic cluster).
 - **Thumbs (Left)**:
     - **Big Keys**: `App Switcher` (Cmd+Tab), `Mission Control` (Ctrl+Up), `Unlock Layer` (Exit).
     - **Small Keys**: `Tab Switcher` (Ctrl+Tab), `Tab`.
