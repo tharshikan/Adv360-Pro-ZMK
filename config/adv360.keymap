@@ -127,6 +127,15 @@
             flavor = "balanced";
             bindings = <&mo>, <&sl>;
         };
+
+        /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky(via ht), DoubleTap=Lock(tog) */
+        td_nav: tap_dance_nav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_NAV";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht_nav 4 4>, <&tog 4>;
+        };
     };
 
 
@@ -144,7 +153,7 @@
 &kp TAB    &kp Q      &kp P     &kp U        &kp Y         &kp SEMI   &none                                                       &none          &kp K      &kp F       &kp L       &kp R       &kp B       &kp BSLH
 &kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &sl 1
 &kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &tog 5                                 &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
-&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &ht_nav 4 4 &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &mo 5       &mo 2
+&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &td_nav &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &mo 5       &mo 2
             >;
         };
 
