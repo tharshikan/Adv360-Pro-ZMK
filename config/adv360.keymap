@@ -206,7 +206,7 @@
             bindings = <
 &kp ESC     &kp ENTER       &kp SPACE       &kp TAB        &kp BSPC          &kp INS          &kp LG(TAB)                                                 &kp LG(LA(TAB)) &kp INS          &kp DEL           &kp TAB           &kp SPACE         &kp ENTER      &kp ESC
 &Mac_Search_Bar &sk LSHFT       &Mac_Redo       &Mac_Undo      &kp BSPC          &Mac_Cut         &kp LC(UP)                                                  &none           &Mac_Cut         &kp BSPC          &Mac_Undo         &Mac_Redo         &sk LSHFT      &Mac_Search_Bar
-&Mac_URL_Bar    &kp LGUI        &kp LALT        &kp LCTRL      &kp LSHFT         &Mac_Copy        &kp LC(TAB)  &kp TAB    &tog 5         &trans     &trans      &trans          &Mac_Copy        &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT      &Mac_URL_Bar
+&Mac_URL_Bar    &kp LGUI        &kp LALT        &kp LCTRL      &kp LSHFT         &Mac_Copy        &select_word &trans   &select_line   &extend_word &extend_line &kp ESC         &Mac_Copy        &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT      &Mac_URL_Bar
 &Mac_Downloads  &Mac_Select_All &select_line    &select_word   &Mac_Find         &Mac_Paste                               &trans         &trans                             &Mac_Paste       &kp HOME          &kp PG_UP         &kp PG_DN         &kp END        &Mac_Downloads
 &Mac_Find_Replace &Mac_Find_Prev &extend_line   &extend_word   &Mac_Find_Next                     &trans       &trans     &trans         &trans     &trans      &trans                           &Mac_Find_Next    &extend_word      &extend_line      &Mac_Find_Prev &Mac_Find_Replace
             >;
