@@ -163,23 +163,26 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                                       ┌────────┬──────┬──────┬──────┬──────┬───────┬───────┐
 │        │        │        │        │        │        │        │                                       │        │      │      │      │      │       │       │
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┼──────┼───────┼───────┤
-│        │  ESC   │  INS   │ S+Tab  │  DEL   │        │        │                                       │        │      │      │      │      │       │       │
+│        │  ESC   │  INS   │ S+Tab  │  DEL   │  Cut   │        │                                       │        │      │      │      │      │       │       │
 ├────────┼────────┼────────┼────────┼────────┼────────┤        │                                       │        ├──────┼──────┼──────┼──────┼───────┼───────┤
-│        │ Enter  │ Space  │  Tab   │  BSPC  │  Cut   │        │                                       │        │ Home │  ←   │  ↑   │  ↓   │   →   │       │
+│        │ Enter  │ Space  │  Tab   │  BSPC  │  Copy  │        │                                       │        │ Home │  ←   │  ↑   │  ↓   │   →   │       │
 ├────────┼────────┼────────┼────────┼────────┼────────┴────────┤                                       ├────────┴──────┼──────┼──────┼──────┼───────┼───────┤
-│        │  Copy  │ Paste  │  Undo  │  Redo  │                 │                                       │               │ ⌥←   │ ⌘←   │ ⌘↑   │  ⌘↓   │  ⌥→   │
+│        │        │  Undo  │  Redo  │        │ Paste           │                                       │               │ ⌥←   │ ⌘←   │ ⌘↑   │  ⌘↓   │  ⌥→   │
 └─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼──────┼───────┴───────┴┐
-  │      │SelLine │SelWord │  Find  │ Next                                                                                    │ Prev │ Ext→ │ExtLine│       │ HELD  │
-  └──────┴────────┴────────┴────────┘                                                                                         └──────┴──────┴──────┴───────────┘
+  │      │ SelAll │        │  Find  │ Next                                                                                    │ Prev │      │       │       │ HELD  │
+  └──────┴────────┴────────┴────────┘      ┌───────┐┌───────┐──┐                                       ┌──┌───────┐┌───────┐  └──────┴──────┴──────┴───────────┘
+                                           │SelLine││SelWord│                                             │ExtWord││ExtLine│
+                                           └───────┘└───────┘                                             └───────┘└───────┘
 
             Legend:
-            SelLine  = Select Line (bidirectional)
-            SelWord  = Select Word (bidirectional)
+            SelLine  = Select Line (Bidirectional, on Thumb)
+            SelWord  = Select Word (Bidirectional, on Thumb)
+            ExtWord  = Extend Word (Bidirectional, on Thumb)
+            ExtLine  = Extend Line (Bidirectional, on Thumb)
+            SelAll   = Select All (Cmd+A)
             Find     = Cmd+F (Find)
             Next     = Cmd+G (Find Next)
             Prev     = Cmd+Shift+G (Find Previous)
-            Ext→     = Extend Word (bidirectional)
-            ExtLine  = Extend Line (bidirectional)
             ⌥←/⌥→    = Option+Left/Right (word jump)
             ⌘←/⌘↓/⌘↑ = Cmd+Left/Down/Up (paragraph/document)
 ```
@@ -195,16 +198,31 @@ The right home row becomes arrow keys, keeping your hands in optimal typing posi
 - **S position** (Pinky): **→** Right Arrow
 - **Why?** Middle finger (longest) maps to Up, Ring finger to Down, following natural hand contour.
 
-#### 2. Bidirectional Text Selection (Left Bottom Row)
-Smart macros that select text in different directions based on Shift modifier:
+#### 2. Bidirectional Text Selection (Thumb Cluster)
+Smart macros that select/extend text, placed on the thumbs for easy "pinching" with the index finger:
 
-**Select Word** (position: second from left):
-- **Normal press**: Selects word moving **right** from cursor
-- **Shift + press**: Selects word moving **left** from cursor
-- **How it works**: Jumps to word boundaries, then selects the entire word
+**Left Thumbs**:
+- **Inner Thumb**: **Select Line** (Shift reverses direction)
+- **Outer Thumb**: **Select Word** (Shift reverses direction)
 
-**Select Line** (position: leftmost):
-- **Normal press**: Selects from cursor to **end of line**
+**Right Thumbs**:
+- **Inner Thumb**: **Extend Word** (Shift reverses direction)
+- **Outer Thumb**: **Extend Line** (Shift reverses direction)
+
+**Select All** (Left Ring Finger, Bottom Row):
+- Useful for pinch-to-copy gestures (Thumb works Select All, Index triggers Copy).
+
+#### 3. Stacked Editing Keys (Left Inner Column)
+Copy and Paste keys are stacked vertically to allow the index finger to rake down:
+- **Row 2**: **Cut**
+- **Row 3**: **Copy**
+- **Row 4**: **Paste**
+
+#### 4. Find Operations (Bottom Row)
+Quick access to search commands:
+- **Find** (Index): Opens find dialog (Cmd+F)
+- **Find Next** (Inner Index): Cycles to next match (Cmd+G)
+- **Find Previous** (Right Bottom Row): Cycles to previous match (Cmd+Shift+G)
 - **Shift + press**: Selects from cursor to **beginning of line**
 - **How it works**: Jumps to line boundaries, then selects to the opposite end
 

@@ -183,10 +183,10 @@
             display-name = "Cursor";
             bindings = <
 &trans      &trans          &trans          &trans         &trans            &trans         &trans                                                      &trans      &trans            &trans            &trans            &trans            &trans         &trans
-&trans      &kp ESC         &kp INS         &kp LS(TAB)    &kp DEL           &trans         &none                                                       &none       &trans            &trans            &trans            &trans            &trans         &trans
-&trans      &kp ENTER       &kp SPACE       &kp TAB        &kp BSPC          &Mac_Cut       &none       &trans     &trans         &trans     &trans      &none       &kp HOME          &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT      &trans
-&trans      &Mac_Copy       &Mac_Paste      &Mac_Undo      &Mac_Redo         &trans                                &trans         &trans                             &kp LA(LEFT)      &kp LG(LEFT)      &kp LG(UP)        &kp LG(DOWN)      &kp LA(RIGHT)  &trans
-&trans      &select_line    &select_word    &Mac_Find      &Mac_Find_Next                   &trans      &trans     &trans         &trans     &trans      &trans                        &Mac_Find_Prev    &extend_word      &extend_line      &trans         &trans
+&trans      &kp ESC         &kp INS         &kp LS(TAB)    &kp DEL           &Mac_Cut       &none                                                       &none       &trans            &trans            &trans            &trans            &trans         &trans
+&trans      &kp ENTER       &kp SPACE       &kp TAB        &kp BSPC          &Mac_Copy      &none       &trans     &trans         &trans     &trans      &none       &kp HOME          &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT      &trans
+&trans      &trans          &Mac_Undo       &Mac_Redo      &trans            &Mac_Paste                                                                 &trans                             &kp LA(LEFT)      &kp LG(LEFT)      &kp LG(UP)        &kp LG(DOWN)      &kp LA(RIGHT)  &trans
+&trans      &Mac_Select_All &trans          &Mac_Find      &Mac_Find_Next                   &select_line &select_word &extend_line   &extend_word &trans      &trans                        &Mac_Find_Prev    &trans            &trans            &trans         &trans
             >;
         };
 
