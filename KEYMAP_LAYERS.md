@@ -67,14 +67,17 @@ This document provides a comprehensive visual reference for all keyboard layers 
             ├──────┬───────┤                                                     ├──────┬───────┤
             │ HOME │ PG_UP │                                                     │ END  │ TD(1)^│
             ├──────┼───────┤                                                     ├──────┬───────┤
-            │ BSPC │  NAV  │                                                     │ NAV  │ SPACE │
+            │ BSPC │SmrtNav│                                                     │ NAV  │ SPACE │
             │      │ (Hold)│                                                     │(Hold)│       │
             └──────┴───────┘                                                     └──────┴───────┘
                                                                                ^ Smart Toggle: Tap=Stick, Dbl=Tog
+                                                                               + Smart Nav (Left): Tap=Stick, Dbl=Tog (Lock)
 ```
 
 ### Key Features:
-- **Navigation Layer (NAV):** Hold either Command thumb key (Left inner or Right inner/Enter) to access arrows and shortcuts.
+- **Navigation Layer (NAV):**
+  - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky, **Double Tap** to Toggle Lock.
+  - **Right Thumb:** Hold to access arrows and shortcuts.
 - **Cursor Layer:** Hold the **bottom-right corner key** (MO(5), second from right) to access VIM arrows, text selection, and find operations. See [Layer 5: Cursor Layer](#layer-5-cursor-layer) for details.
 - **Smart Toggle (TD 1):** The Page Down key (right thumb) creates a smart layer toggle:
   - **Tap:** Activates Sym layer for ONE keypress (Sticky).
@@ -114,7 +117,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 **Display Name:** Nav
 **Purpose:** Navigation Arrows, Shortcuts (Copy/Paste), and Command Modifiers
-**Access:** **Hold** Left Command or Right Command/Enter (Thumb Keys)
+**Access:** **Hold** Right Command OR **Hold/Tap/DoubleTap** Left Command (Smart Toggle)
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
