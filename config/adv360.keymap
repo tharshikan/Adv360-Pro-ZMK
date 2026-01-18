@@ -68,7 +68,16 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+        bindings = <&kp>, <&kp>;
+        };
+
+        /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Toggle */
+        td_sym: tap_dance_sym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SYM";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sl 1>, <&tog 1>;
         };
     };
 
@@ -86,7 +95,7 @@
 &kp TAB    &kp Q      &kp P     &kp U        &kp Y         &kp SEMI   &none                                                       &none          &kp K      &kp F       &kp L       &kp R       &kp B       &kp BSLH
 &kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &sl 1
 &kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &kp PG_UP                              &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
-&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &mo 4   &kp END       &kp PG_DN  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &kp BSLH    &mo 2
+&mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &mo 4   &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &kp BSLH    &mo 2
             >;
         };
 
@@ -97,7 +106,7 @@
 &kp TAB    &kp RPAR   &kp RBRC  &kp MINUS    &kp RBKT      &kp RBKT   &none                                                       &none      &kp Y   &kp KP_N7     &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp LPAR   &kp LBRC  &kp UNDER    &kp LBKT      &trans     &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none      &kp H   &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &trans    &kp GRAVE    &kp TILDE     &trans                          &kp HOME      &kp PG_UP                          &kp N   &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER    &sp_shift RSHFT KP_N0          &kp UP        &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &kp DEL    &kp END       &trans     &kp ENTER    &sp_shift RSHFT KP_N0          &kp UP        &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
