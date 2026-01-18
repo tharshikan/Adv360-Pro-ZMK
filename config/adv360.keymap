@@ -122,9 +122,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_NAV";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <175>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&mo>, <&sl>;
         };
 
