@@ -166,6 +166,26 @@
             tapping-term-ms = <300>;
             bindings = <&ht_nav 4 4>, <&tog 4>;
         };
+
+        /* Hold-Tap for Cursor Layer: Hold=Momentary(5), Tap=Sticky(5) */
+        ht_cursor: hold_tap_cursor {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CURSOR";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <175>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&sl>;
+        };
+
+        /* Smart Toggle for Cursor Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
+        td_cursor: tap_dance_cursor {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CURSOR";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht_cursor 5 5>, <&tog 5>;
+        };
     };
 
     keymap {
@@ -177,8 +197,8 @@
 &kp EQUAL  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                 &mo 3                  &kp N6  &kp N7  &kp N8    &kp N9    &kp N0   &kp LBKT
 &kp TAB    &kp Q   &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                 &none                  &kp K   &kp F   &kp L     &kp R     &kp B    &kp BSLH
 &kp ESC    &kp A   &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL    &none                  &kp D   &kp H   &kp T     &kp N     &kp S    &sl 1
-&kp LSHFT  &kp X   &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &tog 5                                        &kp C   &kp M   &kp W     &kp V     &kp DOT  &kp RSHFT
-&mo 2      &kp X   &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN &lt 4 ENTER  &sp_shift RSHFT SPACE          &td_sym &kp DOWN  &kp RBKT  &mo 5    &mo 2
+&kp LSHFT  &kp X   &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &kp PG_UP                                     &kp C   &kp M   &kp W     &kp V     &kp DOT  &kp RSHFT
+&mo 2      &kp X   &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN &lt 4 ENTER  &sp_shift RSHFT SPACE          &td_sym &td_cursor  &kp RBKT  &mo 5    &mo 2
             >;
         };
 
