@@ -161,30 +161,59 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 
 ```
 ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                                       ┌────────┬──────┬──────┬──────┬──────┬───────┬───────┐
-│        │        │        │        │        │        │        │                                       │        │      │      │      │      │       │       │
-├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┼──────┼───────┼───────┤
-│        │  ESC   │  INS   │ S+Tab  │  DEL   │  Cut   │        │                                       │        │      │      │      │      │       │       │
-├────────┼────────┼────────┼────────┼────────┼────────┤        │                                       │        ├──────┼──────┼──────┼──────┼───────┼───────┤
-│        │ Enter  │ Space  │  Tab   │  BSPC  │  Copy  │        │                                       │        │ Home │  ←   │  ↑   │  ↓   │   →   │       │
-├────────┼────────┼────────┼────────┼────────┼────────┴────────┤                                       ├────────┴──────┼──────┼──────┼──────┼───────┼───────┤
-│        │        │  Undo  │  Redo  │        │ Paste           │                                       │               │ ⌥←   │ ⌘←   │ ⌘↑   │  ⌘↓   │  ⌥→   │
-└─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼──────┼───────┴───────┴┐
-  │      │ SelAll │        │  Find  │ Next                                                                                    │ Prev │      │       │       │ HELD  │
-  └──────┴────────┴────────┴────────┘      ┌───────┐┌───────┐──┐                                       ┌──┌───────┐┌───────┐  └──────┴──────┴──────┴───────────┘
-                                           │SelLine││SelWord│                                             │ExtWord││ExtLine│
-                                           └───────┘└───────┘                                             └───────┘└───────┘
+│  ESC   │ Enter  │ Space  │  Tab   │  BSPC  │  INS   │ WinTab │                                       │ AltTab │ INS  │ DEL  │ Tab  │ Space │ Enter │  ESC  │
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┼───────┼───────┼───────┤
+│ Search │ Sft(S) │  Redo  │  Undo  │  BSPC  │  Cut   │ WinMsn │                                       │        │ Cut  │ BSPC │ Undo │ Redo  │ Sft(S)│ Search│
+├────────┼────────┼────────┼────────┼────────┼────────┤ Ctrl   │                                       │  Tab   ├──────┼──────┼──────┼───────┼───────┼───────┤
+│ URLBar │  Win   │  Alt   │  Ctrl  │ Shift  │  Copy  │ Tab    │                                       │        │ Copy │  ←   │  ↑   │  ↓    │   →   │ URLBar│
+├────────┼────────┼────────┼────────┼────────┼────────┴────────┤                                       ├────────┴──────┼──────┼──────┼───────┼───────┼───────┤
+│ DwnLd  │ SelAll │ SelLn  │ SelWd  │  Find  │ Paste           │                                       │ Paste         │ Home │ PgUp │ PgDn  │  End  │ DwnLd │
+└─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼───────┴───────┴───────┘
+  │FindRep│FindPrv│ ExtLn  │ ExtWd  │ FindNxt                                                                 FindNxt │ ExtWd│ ExtLn│FindPrv│FindRep│
+  └───────┴───────┴────────┴────────┴───────┘      ┌───────┐┌───────┐┌──────┐   ┌───────┐┌───────┐┌──────┐    └───────┴──────┴──────┴───────┴───────┘
+                                                   │UnlckL5││  Tab  ││CtrlTb│   │SelNone││ExtLine││ExtWrd│
+                                                   └───────┘└───────┘└──────┘   └───────┘└───────┘└──────┘
 
             Legend:
-            SelLine  = Select Line (Bidirectional, on Thumb)
-            SelWord  = Select Word (Bidirectional, on Thumb)
-            ExtWord  = Extend Word (Bidirectional, on Thumb)
-            ExtLine  = Extend Line (Bidirectional, on Thumb)
+            Search   = Spotlight Search (Cmd+Space)
+            URLBar   = Focus URL Bar (Cmd+L)
+            DwnLd    = Downloads (Cmd+Opt+L)
+            FindRep  = Find & Replace (Cmd+Opt+F)
+            WinTab   = Mission Control (Ctrl+Up)
+            AltTab   = App Switcher (Cmd+Tab) / CtrlTab = Tab Switcher
+            Sft(S)   = Sticky Shift
+            SelLn/Wd = Select Line/Word (Thumb/Keys)
+            ExtLn/Wd = Extend Line/Word (Thumb/Keys)
             SelAll   = Select All (Cmd+A)
             Find     = Cmd+F (Find)
-            Next     = Cmd+G (Find Next)
-            Prev     = Cmd+Shift+G (Find Previous)
-            ⌥←/⌥→    = Option+Left/Right (word jump)
-            ⌘←/⌘↓/⌘↑ = Cmd+Left/Down/Up (paragraph/document)
+            FindNxt  = Find Next (Cmd+G) / FindPrv = Find Prev (Cmd+Shift+G)
+```
+
+### Key Features:
+
+#### 1. Fully Integrated Editing Environment
+The new Cursor Layer is a complete command center for text editing and navigation, inspired by Sunaku's Glove80 layout.
+- **Top Rows**: Common keys (Esc, Enter, Space, Tab) mirrored on both sides for easy access.
+- **Home Row**: Modifiers (Left) and Arrows (Right) for "home row computing".
+- **Inner Columns**: Editing stack (Cut, Copy, Paste) available to both index fingers.
+- **Outer Columns**: App navigation (Search, URL Bar, Downloads).
+
+#### 2. VIM-Style Arrow Keys (Right Home Row)
+- **H position**: **←** Left Arrow
+- **J position**: **↑** Up Arrow
+- **K position**: **↓** Down Arrow
+- **L position**: **→** Right Arrow
+*(Note: Mapped to physical Dvorak positions H, T, N, S)*
+
+#### 3. Smart Macros
+- **Search Bar**: Quickly open Spotlight/App Launcher.
+- **URL Bar**: Instantly focus browser address bar.
+- **Downloads**: Open downloads folder/tab.
+- **Find & Replace**: Trigger advanced find.
+- **Window Management**: Mission Control (WinTab) and App Switcher (AltTab) on left thumb.
+
+#### 4. Selection & Extension
+Dedicated keys for selecting and extending text by character, word, or line, available on both the main matrix and thumb clusters.
 ```
 
 ### Key Features:

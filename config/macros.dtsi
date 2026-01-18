@@ -328,3 +328,38 @@
     bindings = <&kp LS(UP)>, <&kp LG(LS(LEFT))>;
     display-name = "Mac Extend Line Up";
   };
+
+  Mac_Search_Bar: Mac_Search_Bar {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(SPACE)>;
+    display-name = "Mac Spotlight Search";
+  };
+
+  Mac_URL_Bar: Mac_URL_Bar {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(L)>;
+    display-name = "Mac URL Bar";
+  };
+
+  Mac_Downloads: Mac_Downloads {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LA(L))>;
+    display-name = "Mac Downloads";
+  };
+
+  Mac_Find_Replace: Mac_Find_Replace {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LA(F))>;
+    display-name = "Mac Find Replace";
+  };
+
+  Mac_Emoji: Mac_Emoji {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LC(LG(SPACE))>;
+    display-name = "Mac Emoji Picker";
+  };
