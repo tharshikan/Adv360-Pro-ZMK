@@ -4,79 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="wv">
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/all-layer-diagrams.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Colemak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Colemak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Dvorak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Dvorak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Enthium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-Enthium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-QWERTY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram-QWERTY.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/base-layer-photograph-Enthium.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/cursor-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/cursor-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/emoji-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/emoji-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/factory-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/factory-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/function-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/function-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/gaming-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/gaming-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/installing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/lower-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/lower-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/magic-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/magic-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/monkeytype-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/mouse-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/mouse-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/number-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/number-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/repeat-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/repeat-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/symbol-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/symbol-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/symbol-layer-video.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/system-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/system-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/typing-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/typing-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/world-layer-diagram.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/README/world-layer-diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/define.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/define.dot.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/define.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/define.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/device.dtsi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/emoji.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/flash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/keymap.dtsi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/keymap.dtsi.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/keymap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/keymap.zmk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Colemak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/ColemakDHm.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Dvorak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Engrammer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Enthium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Halmak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Norman.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/QWERTY.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/layouts/Workman.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/rake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glove80-keymaps/world.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UPGRADE.md" beforeDir="false" afterPath="$PROJECT_DIR$/UPGRADE.md" afterDir="false" />
+    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="sunaku layouts">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KEYMAP_LAYERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/KEYMAP_LAYERS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adv360.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/adv360.keymap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/macros.dtsi" beforeDir="false" afterPath="$PROJECT_DIR$/config/macros.dtsi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/version.dtsi" beforeDir="false" afterPath="$PROJECT_DIR$/config/version.dtsi" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +69,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -158,7 +96,7 @@
       <workItem from="1768626567318" duration="5000" />
       <workItem from="1768626583629" duration="16000" />
       <workItem from="1768626712919" duration="8948000" />
-      <workItem from="1768636025548" duration="14333000" />
+      <workItem from="1768636025548" duration="15783000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
@@ -224,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768635294367</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sunaku layouts">
+      <option name="closed" value="true" />
+      <created>1768712070912</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768712070912</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sunaku layouts">
+      <option name="closed" value="true" />
+      <created>1768712092301</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768712092301</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +192,8 @@
     <MESSAGE value="symbols" />
     <MESSAGE value="thumb clusters" />
     <MESSAGE value="wv" />
-    <option name="LAST_COMMIT_MESSAGE" value="wv" />
+    <MESSAGE value="sunaku layouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="sunaku layouts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -222,3 +222,109 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  // Find Operations
+  Mac_Find: Mac_Find {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(F)>;
+    display-name = "Mac Find";
+  };
+
+  Mac_Find_Next: Mac_Find_Next {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(G)>;
+    display-name = "Mac Find Next";
+  };
+
+  Mac_Find_Prev: Mac_Find_Prev {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(G))>;
+    display-name = "Mac Find Previous";
+  };
+
+  // Redo
+  Mac_Redo: Mac_Redo {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(Z))>;
+    display-name = "Mac Redo";
+  };
+
+  // Select Word (bidirectional)
+  Mac_Select_Word_Right: Mac_Select_Word_Right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LA(RIGHT)>, <&kp LA(LEFT)>, <&kp LA(LS(RIGHT))>;
+    display-name = "Mac Select Word Right";
+  };
+
+  Mac_Select_Word_Left: Mac_Select_Word_Left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LA(LEFT)>, <&kp LA(RIGHT)>, <&kp LA(LS(LEFT))>;
+    display-name = "Mac Select Word Left";
+  };
+
+  // Select Line (bidirectional)
+  Mac_Select_Line_Right: Mac_Select_Line_Right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LG(LEFT)>, <&kp LG(LS(RIGHT))>;
+    display-name = "Mac Select Line Right";
+  };
+
+  Mac_Select_Line_Left: Mac_Select_Line_Left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LG(RIGHT)>, <&kp LG(LS(LEFT))>;
+    display-name = "Mac Select Line Left";
+  };
+
+  // Extend Word (extend existing selection)
+  Mac_Extend_Word_Right: Mac_Extend_Word_Right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LA(LS(RIGHT))>;
+    display-name = "Mac Extend Word Right";
+  };
+
+  Mac_Extend_Word_Left: Mac_Extend_Word_Left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LA(LS(LEFT))>;
+    display-name = "Mac Extend Word Left";
+  };
+
+  // Extend Line
+  Mac_Extend_Line_Down: Mac_Extend_Line_Down {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LS(DOWN)>, <&kp LG(LS(RIGHT))>;
+    display-name = "Mac Extend Line Down";
+  };
+
+  Mac_Extend_Line_Up: Mac_Extend_Line_Up {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings = <&kp LS(UP)>, <&kp LG(LS(LEFT))>;
+    display-name = "Mac Extend Line Up";
+  };

@@ -10,6 +10,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - [Layer 2: Function Layer](#layer-2-function-layer)
 - [Layer 3: Mod Layer](#layer-3-mod-layer)
 - [Layer 4: Nav Layer](#layer-4-nav-layer)
+- [Layer 5: Cursor Layer](#layer-5-cursor-layer)
 - [Special Behaviors](#special-behaviors)
 
 ---
@@ -23,6 +24,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 | 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
 | 4 | nav | Nav | Navigation Arrows & Copy/Paste shortcuts | **Hold either Command (Thumb)** |
+| 5 | cursor | Cursor | VIM arrows, text selection, find operations | **Hold bottom-right corner key** |
 
 ---
 
@@ -52,7 +54,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
-  │MO(2) │ X  │ Z  │ ←  │ →                                                                          │ ↑  │ ↓  │ ]  │ \  │MO(2) │
+  │MO(2) │ X  │ Z  │ ←  │ →                                                                          │ ↑  │ ↓  │ ]  │MO(5)│MO(2) │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
 
             Left Thumb Cluster                                                   Right Thumb Cluster
@@ -73,6 +75,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 ### Key Features:
 - **Navigation Layer (NAV):** Hold either Command thumb key (Left inner or Right inner/Enter) to access arrows and shortcuts.
+- **Cursor Layer:** Hold the **bottom-right corner key** (MO(5), second from right) to access VIM arrows, text selection, and find operations. See [Layer 5: Cursor Layer](#layer-5-cursor-layer) for details.
 - **Smart Toggle (TD 1):** The Page Down key (right thumb) creates a smart layer toggle:
   - **Tap:** Activates Sym layer for ONE keypress (Sticky).
   - **Double Tap:** Toggles Sym layer ON until you double-tap again.
@@ -80,6 +83,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Dual-role Thumbs:**
   - **Left Outer:** Backspace (Tap) / Shift (Hold)
   - **Right Outer:** Space (Tap) / Shift (Hold)
+- **Note:** Backslash (\\) is still accessible via Symbol Layer (Layer 1), as the bottom-right corner key now activates the Cursor layer.
 
 ---
 
@@ -146,6 +150,140 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 - **Ring (X key pos)**: **Cut** (`Cmd+X`)
 - **Middle (C key pos)**: **Copy** (`Cmd+C`)
 - **Index (V key pos)**: **Paste** (`Cmd+V`)
+
+---
+
+## Layer 5: Cursor Layer
+
+**Display Name:** Cursor
+**Purpose:** Advanced text editing with VIM-style arrows, text selection macros, find operations, and one-handed editing
+**Access:** **Hold** the bottom-right corner key (replaces backslash on base layer)
+
+```
+┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                                       ┌────────┬──────┬──────┬──────┬──────┬───────┬───────┐
+│        │        │        │        │        │        │        │                                       │        │      │      │      │      │       │       │
+├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┼──────┼───────┼───────┤
+│        │  ESC   │  INS   │ S+Tab  │  DEL   │        │        │                                       │        │      │      │      │      │       │       │
+├────────┼────────┼────────┼────────┼────────┼────────┤        │                                       │        ├──────┼──────┼──────┼──────┼───────┼───────┤
+│        │ Enter  │ Space  │  Tab   │  BSPC  │  Cut   │        │                                       │        │ Home │  ←   │  ↓   │  ↑   │   →   │       │
+├────────┼────────┼────────┼────────┼────────┼────────┴────────┤                                       ├────────┴──────┼──────┼──────┼──────┼───────┼───────┤
+│        │  Copy  │ Paste  │  Undo  │  Redo  │                 │                                       │               │ ⌥←   │ ⌘←   │ ⌘↓   │  ⌘↑   │  ⌥→   │
+└─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼──────┼───────┴───────┴┐
+  │      │SelLine │SelWord │  Find  │ Next                                                                                    │ Prev │ Ext→ │ExtLine│       │ HELD  │
+  └──────┴────────┴────────┴────────┘                                                                                         └──────┴──────┴──────┴───────────┘
+
+            Legend:
+            SelLine  = Select Line (bidirectional)
+            SelWord  = Select Word (bidirectional)
+            Find     = Cmd+F (Find)
+            Next     = Cmd+G (Find Next)
+            Prev     = Cmd+Shift+G (Find Previous)
+            Ext→     = Extend Word (bidirectional)
+            ExtLine  = Extend Line (bidirectional)
+            ⌥←/⌥→    = Option+Left/Right (word jump)
+            ⌘←/⌘↓/⌘↑ = Cmd+Left/Down/Up (paragraph/document)
+```
+
+### Key Features:
+
+#### 1. VIM-Style Arrow Keys (Right Home Row)
+The right home row becomes arrow keys, keeping your hands in optimal typing position:
+- **D position** (Home row): **←** Left Arrow
+- **H position** (Home row): **↓** Down Arrow
+- **T position** (Home row): **↑** Up Arrow
+- **N position** (Home row): **→** Right Arrow
+- **S position** (Home row): **Home** key
+- **Why VIM layout?** The D-H-T-N positions mirror VIM's H-J-K-L navigation, making it intuitive for programmers.
+
+#### 2. Bidirectional Text Selection (Left Bottom Row)
+Smart macros that select text in different directions based on Shift modifier:
+
+**Select Word** (position: second from left):
+- **Normal press**: Selects word moving **right** from cursor
+- **Shift + press**: Selects word moving **left** from cursor
+- **How it works**: Jumps to word boundaries, then selects the entire word
+
+**Select Line** (position: leftmost):
+- **Normal press**: Selects from cursor to **end of line**
+- **Shift + press**: Selects from cursor to **beginning of line**
+- **How it works**: Jumps to line boundaries, then selects to the opposite end
+
+#### 3. Find Operations (Bottom Row)
+Quick access to search commands:
+- **Find** (third from left): Opens find dialog (Cmd+F)
+- **Find Next** (fourth from left): Cycles to next match (Cmd+G)
+- **Find Previous** (right bottom row): Cycles to previous match (Cmd+Shift+G)
+
+#### 4. Extend Selection (Right Bottom Row)
+Dynamically grow existing selections:
+
+**Extend Word** (second from right):
+- **Normal press**: Extends selection **one word to the right**
+- **Shift + press**: Extends selection **one word to the left**
+- **Use case**: Select a word, then keep pressing to grow selection by words
+
+**Extend Line** (third from right):
+- **Normal press**: Extends selection **one line down**
+- **Shift + press**: Extends selection **one line up**
+- **Use case**: Select text, then keep pressing to grow selection by lines
+
+#### 5. One-Handed Editing Shortcuts (Left Hand)
+Ergonomic editing shortcuts on the left hand (row 2 & 3):
+- **Row 2**: Enter, Space, Tab, Backspace, Cut
+- **Row 3**: Copy, Paste, Undo, Redo
+- **Why one-handed?** Allows you to use the mouse or touchpad with your right hand while editing with your left
+
+#### 6. Advanced Navigation (Right Row 3)
+Word and paragraph jumping with Command/Option modifiers:
+- **⌥←** (Option+Left): Jump to previous word
+- **⌘←** (Cmd+Left): Jump to beginning of line/paragraph
+- **⌘↓** (Cmd+Down): Jump to end of document
+- **⌘↑** (Cmd+Up): Jump to beginning of document
+- **⌥→** (Option+Right): Jump to next word
+
+### Usage Examples:
+
+#### Example 1: Select Multiple Words
+1. Hold **Cursor layer key** (bottom-right corner)
+2. Press **Select Word** to select the current word
+3. Keep holding Cursor layer, press **Extend Word** multiple times to grow selection
+4. Release to return to base layer
+
+#### Example 2: Find and Replace Workflow
+1. Hold **Cursor layer key**
+2. Press **Find** to open find dialog (Cmd+F)
+3. Type search term, press Enter
+4. While holding Cursor layer, use **Find Next**/**Find Prev** to cycle through matches
+5. Use **Undo**/**Redo** to manage changes
+
+#### Example 3: VIM-Style Navigation + Editing
+1. Hold **Cursor layer key**
+2. Use **D-H-T-N** (VIM arrows) to navigate
+3. Press **Select Word** to select text
+4. Press **Cut** or **Copy** (left hand stays on Cursor layer)
+5. Navigate with arrows, then **Paste**
+
+#### Example 4: One-Handed Text Manipulation
+1. Hold **Cursor layer key** with right pinky
+2. Left hand controls: Select, Copy, Paste, Undo, Redo
+3. Right hand stays free for mouse/touchpad
+4. Switch between editing actions without leaving Cursor layer
+
+### Implementation Details:
+
+**Macro Timing:**
+- Selection macros use `wait-ms = 10` and `tap-ms = 10` for optimal speed
+- If macros execute too fast/slow in your applications, timing can be adjusted in `config/macros.dtsi`
+
+**Mod-Morph Behaviors:**
+- Select Word/Line and Extend Word/Line use mod-morph to detect Shift modifier
+- Allows bidirectional selection without additional keys
+- Defined in `config/adv360.keymap` behaviors section
+
+**Layer Activation:**
+- Momentary layer (hold to activate, release to deactivate)
+- No conflict with Nav layer (different activation key)
+- Backslash (\\) still accessible via Symbol layer
 
 ---
 
