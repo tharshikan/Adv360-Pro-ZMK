@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="sunaku layouts">
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KEYMAP_LAYERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/KEYMAP_LAYERS.md" afterDir="false" />
+    <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="integrating sunaku cursor layer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/adv360.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/adv360.keymap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/macros.dtsi" beforeDir="false" afterPath="$PROJECT_DIR$/config/macros.dtsi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/version.dtsi" beforeDir="false" afterPath="$PROJECT_DIR$/config/version.dtsi" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1768626567318" duration="5000" />
       <workItem from="1768626583629" duration="16000" />
       <workItem from="1768626712919" duration="8948000" />
-      <workItem from="1768636025548" duration="15783000" />
+      <workItem from="1768636025548" duration="20974000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
@@ -178,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768712092301</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="integrating sunaku cursor layer">
+      <option name="closed" value="true" />
+      <created>1768713501104</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1768713501104</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +198,8 @@
     <MESSAGE value="thumb clusters" />
     <MESSAGE value="wv" />
     <MESSAGE value="sunaku layouts" />
-    <option name="LAST_COMMIT_MESSAGE" value="sunaku layouts" />
+    <MESSAGE value="integrating sunaku cursor layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrating sunaku cursor layer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

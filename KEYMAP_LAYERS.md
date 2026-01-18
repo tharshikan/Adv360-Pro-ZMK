@@ -219,7 +219,7 @@ The new Cursor Layer is a complete command center for text editing and navigatio
 
 #### 4. Selection & Extension
 Dedicated keys for selecting and extending text by character, word, or line, available on both the main matrix and thumb clusters.
-```
+
 
 ### Key Features:
 
