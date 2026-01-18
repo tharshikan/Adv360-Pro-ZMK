@@ -13,7 +13,7 @@ This sort of breaking change shouldn't happen again in the future.
 In order to solve the merge conflict all that has to be done is for the conflicting key behaviours to be manually removed from two files.
 - adv360.keymap
 
-![The highlighted &none behaviours that need removing](/assets/keymap.jpg)
+
 - keymap.json
 
 ![The highlighted &none behaviours that need removing](/assets/json.jpg)
