@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SYM";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&ht_sym 1 1>, <&tog 1>;
         };
 
