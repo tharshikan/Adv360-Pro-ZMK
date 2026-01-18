@@ -79,8 +79,11 @@ This document provides a comprehensive visual reference for all keyboard layers 
   - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky, **Double Tap** to Toggle Lock.
   - **Right Thumb:** Hold to access arrows and shortcuts.
 - **Cursor Layer:** Hold the **bottom-right corner key** (MO(5), second from right) to access VIM arrows, text selection, and find operations. See [Layer 5: Cursor Layer](#layer-5-cursor-layer) for details.
-- **Smart Toggle (TD 1):** The Page Down key (right thumb) creates a smart layer toggle:
-  - **Tap:** Activates Sym layer for ONE keypress (Sticky).
+- **Smart Sym Toggle (SymTog)**:
+  - **Location**: Replaces the **Up Arrow** key (Right Hand).
+  - **Tap**: Sticky Symbol Layer.
+  - **Hold**: Momentary Symbol Layer.
+  - **Double Tap**: Lock Symbol Layer.
   - **Double Tap:** Toggles Sym layer ON until you double-tap again.
 - **Dvorak-inspired Layout:** A-O-E-I (left home) and D-H-T-N-S (right home).
 - **Dual-role Thumbs:**
@@ -107,8 +110,8 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────────┼──────────┼──────────┼──────────┼───────┤
 │ SHIFT  │ !  │ $  │ %  │ ^  │ ~           │                                       │           : │  KP_1  │   KP_2   │   KP_3   │ KP_ENTER │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────────┼──────────┼──────────┼──────────┴───────┴┐
-  │MO(2) │ `  │ *  │ |  │ :                                                                               │    ↑     │    ↓     │  KP_DOT  │    ]   │MO(2) │
-  └──────┴────┴────┴────┘                                                                                 └──────────┴──────────┴──────────┴────────┘
+  │MO(2) │ `  │ *  │ |  │ :                                                                               │SymTog│    ↓     │  KP_DOT  │    ]   │MO(2) │
+  └──────┴────┴────┴────┘                                                                                 └──────┴──────────┴──────────┴────────┘
 ```
 
 ---
