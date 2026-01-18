@@ -130,7 +130,7 @@
 &kp EQUAL  &kp N1     &kp N2    &kp N3       &kp N4        &kp N5     &sl 1                                                       &mo 3          &kp N6     &kp N7      &kp N8      &kp N9      &kp N0      &kp LBKT
 &kp TAB    &kp Q      &kp P     &kp U        &kp Y         &kp SEMI   &none                                                       &none          &kp K      &kp F       &kp L       &kp R       &kp B       &kp BSLH
 &kp ESC    &kp A      &kp O     &kp E        &kp I         &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none          &kp D      &kp H       &kp T       &kp N       &kp S       &sl 1
-&kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &kp PG_UP                              &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
+&kp LSHFT  &kp X      &kp J     &kp COMMA    &kp EQUAL     &kp SQT                         &kp HOME      &tog 5                                 &kp C      &kp M       &kp W       &kp V       &kp DOT     &kp RSHFT
 &mo 2      &kp X      &kp Z     &kp LEFT     &kp RIGHT                &bs_shift LSHFT BSPC  &mo 4   &kp END       &td_sym  &lt 4 ENTER  &sp_shift RSHFT SPACE    &kp UP      &kp DOWN    &kp RBKT    &mo 5       &mo 2
             >;
         };
@@ -184,8 +184,8 @@
             bindings = <
 &trans      &trans          &trans          &trans         &trans            &trans         &trans                                                      &trans      &trans            &trans            &trans            &trans            &trans         &trans
 &trans      &kp ESC         &kp INS         &kp LS(TAB)    &kp DEL           &trans         &none                                                       &none       &trans            &trans            &trans            &trans            &trans         &trans
-&trans      &kp ENTER       &kp SPACE       &kp TAB        &kp BSPC          &Mac_Cut       &none       &trans     &trans         &trans     &trans      &none       &kp HOME          &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT      &trans
-&trans      &Mac_Copy       &Mac_Paste      &Mac_Undo      &Mac_Redo         &trans                                &trans         &trans                             &kp LA(LEFT)      &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)        &kp LA(RIGHT)  &trans
+&trans      &kp ENTER       &kp SPACE       &kp TAB        &kp BSPC          &Mac_Cut       &none       &trans     &trans         &trans     &trans      &none       &kp HOME          &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT      &trans
+&trans      &Mac_Copy       &Mac_Paste      &Mac_Undo      &Mac_Redo         &trans                                &trans         &trans                             &kp LA(LEFT)      &kp LG(LEFT)      &kp LG(UP)        &kp LG(DOWN)      &kp LA(RIGHT)  &trans
 &trans      &select_line    &select_word    &Mac_Find      &Mac_Find_Next                   &trans      &trans     &trans         &trans     &trans      &trans                        &Mac_Find_Prev    &extend_word      &extend_line      &trans         &trans
             >;
         };

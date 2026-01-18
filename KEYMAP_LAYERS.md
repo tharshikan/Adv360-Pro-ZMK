@@ -157,7 +157,7 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 
 **Display Name:** Cursor
 **Purpose:** Advanced text editing with VIM-style arrows, text selection macros, find operations, and one-handed editing
-**Access:** **Hold** the bottom-right corner key (replaces backslash on base layer)
+**Access:** **Toggle** via the **Page Up** key on the inner thumb cluster (Base Layer)
 
 ```
 ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                                       ┌────────┬──────┬──────┬──────┬──────┬───────┬───────┐
@@ -165,9 +165,9 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┼──────┼───────┼───────┤
 │        │  ESC   │  INS   │ S+Tab  │  DEL   │        │        │                                       │        │      │      │      │      │       │       │
 ├────────┼────────┼────────┼────────┼────────┼────────┤        │                                       │        ├──────┼──────┼──────┼──────┼───────┼───────┤
-│        │ Enter  │ Space  │  Tab   │  BSPC  │  Cut   │        │                                       │        │ Home │  ←   │  ↓   │  ↑   │   →   │       │
+│        │ Enter  │ Space  │  Tab   │  BSPC  │  Cut   │        │                                       │        │ Home │  ←   │  ↑   │  ↓   │   →   │       │
 ├────────┼────────┼────────┼────────┼────────┼────────┴────────┤                                       ├────────┴──────┼──────┼──────┼──────┼───────┼───────┤
-│        │  Copy  │ Paste  │  Undo  │  Redo  │                 │                                       │               │ ⌥←   │ ⌘←   │ ⌘↓   │  ⌘↑   │  ⌥→   │
+│        │  Copy  │ Paste  │  Undo  │  Redo  │                 │                                       │               │ ⌥←   │ ⌘←   │ ⌘↑   │  ⌘↓   │  ⌥→   │
 └─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼──────┼───────┴───────┴┐
   │      │SelLine │SelWord │  Find  │ Next                                                                                    │ Prev │ Ext→ │ExtLine│       │ HELD  │
   └──────┴────────┴────────┴────────┘                                                                                         └──────┴──────┴──────┴───────────┘
@@ -187,13 +187,13 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 ### Key Features:
 
 #### 1. VIM-Style Arrow Keys (Right Home Row)
-The right home row becomes arrow keys, keeping your hands in optimal typing position:
-- **D position** (Home row): **←** Left Arrow
-- **H position** (Home row): **↓** Down Arrow
-- **T position** (Home row): **↑** Up Arrow
-- **N position** (Home row): **→** Right Arrow
-- **S position** (Home row): **Home** key
-- **Why VIM layout?** The D-H-T-N positions mirror VIM's H-J-K-L navigation, making it intuitive for programmers.
+The right home row becomes arrow keys, keeping your hands in optimal typing position (Dvorak Positions):
+- **D position** (Index Inner): **Home** Key
+- **H position** (Index): **←** Left Arrow
+- **T position** (Middle): **↑** Up Arrow
+- **N position** (Ring): **↓** Down Arrow
+- **S position** (Pinky): **→** Right Arrow
+- **Why?** Middle finger (longest) maps to Up, Ring finger to Down, following natural hand contour.
 
 #### 2. Bidirectional Text Selection (Left Bottom Row)
 Smart macros that select text in different directions based on Shift modifier:
