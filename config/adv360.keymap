@@ -133,7 +133,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&ht_nav 4 4>, <&tog 4>;
         };
     };
