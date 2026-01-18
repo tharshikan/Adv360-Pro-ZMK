@@ -170,12 +170,12 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                                       ├────────┼──────┼──────┼──────┬───────┼───────┼───────┤
 │ Search │ Sft(S) │  Redo  │  Undo  │  BSPC  │  Cut   │ WinMsn │                                       │        │ Cut  │ BSPC │ Undo │ Redo  │ Sft(S)│ Search│
 ├────────┼────────┼────────┼────────┼────────┼────────┤ Ctrl   │                                       │  Tab   ├──────┼──────┼──────┼───────┼───────┼───────┤-------------------------------------------------------------------------------------------------------------------------------
-│ CMD+Tab│  GUI   │  Alt   │  Ctrl  │ Shift  │ Copy │ trans  │trans   │ Tog 5  │ trans  │ trans  │ trans  │ Copy │ Left   │  Up    │ Down   │ Right  │ CMD+L  │
+│ CMD+Tab│  GUI   │  Alt   │  Ctrl  │ Shift  │ Copy │ CtrlTab│  Tab   │ trans  │ trans  │ trans  │ trans  │ Copy │ Left   │  Up    │ Down   │ Right  │ CMD+L  │
 ├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-│ DwnLd  │ FindRep│ Prev   │ Next   │  Find  │ Paste           │                                       │ Paste         │ Home │ PgUp │ PgDn  │  End  │ DwnLd │
+│ DwnLd  │ SelAll │ SelLn  │ SelWd  │  Find  │ Paste           │                                       │ Paste         │ Home │ PgUp │ PgDn  │  End  │ DwnLd │
 └─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼───────┴───────┴───────┘
-  │FindRep│  Prev  │  Next  │ trans  │ trans             ┌───────┐┌───────┐┌──────┐   ┌───────┐┌───────┐┌──────┐            │ trans│ trans│ Next  │ Prev  │FindRep│
-  └───────┴───────┴────────┴────────┴───────┘            │Wrd(In)││Ln(Out)││SelAll│   │ExtWrd ││ExtLn  ││ Esc  │            └──────┴──────┴───────┴───────┴───────┘
+  │FindRep│  Prev  │ ExtLn  │ ExtWd  │  Next   │ CMD+Tab             ┌───────┐┌───────┐┌──────┐   ┌───────┐┌───────┐┌──────┐               │ Esc  │ ExtLn│ ExtWd │  Find │FindRep│
+  └───────┴───────┴────────┴────────┴───────┘            │WinTab ││UnlckL5││UnlckL5│   │ Esc   ││ExtLn  ││ExtWrd│            └──────┴──────┴───────┴───────┴───────┘
                                                          └───────┘└───────┘└──────┘   └───────┘└───────┘└──────┘│SelNone││ExtLine││ExtWrd│
 
             Legend:
@@ -215,16 +215,13 @@ The new Cursor Layer is a complete command center for text editing and navigatio
 - **Find & Replace**: Trigger advanced find.
 - **Window Management**: Mission Control (WinTab) and App Switcher (AltTab) on left thumb.
 
-4. **Selection & Extension (Thumb Cluster)**
-- **Left Big Thumbs**:
-    - **Inner (Thumb 1)**: `Select Word`
-    - **Outer (Thumb 2)**: `Select Line`
-    - **Mod (Thumb 3)**: `Select All`
-- **Right Big Thumbs**:
-    - **Inner (Thumb 1)**: `Extend Word`
-    - **Outer (Thumb 2)**: `Extend Line`
-    - **Mod (Thumb 3)**: `Select None` (Esc)
-- **Exit**: Use `tog 5` on the **Left Small Thumb (Mod)** or Toggle Layer key.
+- **Row 4 (Lower)**: `Downloads` | `Select All` | `Select Line` | `Select Word` | `Find` | `Paste`
+- **Row 5 (Bottom)**: `Find & Replace` | `Find Prev` | `Extend Line` | `Extend Word` | `Find Next`
+- **Thumbs (Left)**:
+    - **Big Keys**: `App Switcher` (Cmd+Tab), `Mission Control` (Ctrl+Up), `Unlock Layer` (Exit).
+    - **Small Keys**: `Tab Switcher` (Ctrl+Tab), `Tab`.
+- **Thumbs (Right)**:
+    - **Big Keys**: `Esc`, `Extend Line`, `Extend Word`.
 
 
 ### Key Features:
