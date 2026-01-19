@@ -81,25 +81,11 @@
         /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Toggle */
         /* Hold-Tap for Sym Layer: Hold=Momentary(1), Tap=Sticky(1) */
 
-        ht_sym: hold_tap_sym {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_SYM";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <175>;
-            flavor = "hold-preferred";
-            bindings = <&mo>, <&sl>;
-        };
+
 
         /* Smart Toggle for Sym Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
 
-        td_sym: tap_dance_sym {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SYM";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&ht_sym 1 1>, <&tog 1>;
-        };
+
 
         /* Select Word: Normal=right, Shift=left */
 
@@ -148,16 +134,6 @@
         /* Hold-Tap for Nav Layer: Hold=Momentary(4), Tap=Sticky(4) */
         /* Note: Double-tap to toggle is removed to fix build compatibility constraints */
 
-        ht_nav: hold_tap_nav {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_NAV";
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            quick-tap-ms = <175>;
-            flavor = "balanced";
-            bindings = <&mo>, <&sl>;
-        };
-
         lt_nav_enter: layer_tap_nav_enter {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_NAV_ENTER";
@@ -168,36 +144,34 @@
             bindings = <&mo>, <&kp>;
         };
 
-        /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky(via ht), DoubleTap=Lock(tog) */
-
+        /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, DoubleTap=Lock(tog) */
+        /* Note: &sl behaves as Momentary if held, so ht_nav is not needed. */
         td_nav: tap_dance_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
-            bindings = <&ht_nav 4 4>, <&tog 4>;
+            tapping-term-ms = <200>;
+            bindings = <&sl 4>, <&tog 4>;
         };
 
         /* Hold-Tap for Cursor Layer: Hold=Momentary(5), Tap=Sticky(5) */
 
-        ht_cursor: hold_tap_cursor {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_CURSOR";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <175>;
-            flavor = "hold-preferred";
-            bindings = <&mo>, <&sl>;
+        /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Lock(tog) */
+        td_sym: tap_dance_sym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SYM";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sl 1>, <&tog 1>;
         };
 
-        /* Smart Toggle for Cursor Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
-
+        /* Smart Toggle for Cursor Layer: Tap=Sticky, DoubleTap=Lock(tog) */
         td_cursor: tap_dance_cursor {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CURSOR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ht_cursor 5 5>, <&tog 5>;
+            bindings = <&sl 5>, <&tog 5>;
         };
     };
 
