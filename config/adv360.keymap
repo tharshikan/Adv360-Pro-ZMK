@@ -80,13 +80,7 @@
 
         /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Toggle */
         /* Hold-Tap for Sym Layer: Hold=Momentary(1), Tap=Sticky(1) */
-
-
-
         /* Smart Toggle for Sym Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
-
-
-
         /* Select Word: Normal=right, Shift=left */
 
         select_word: select_word {
@@ -146,6 +140,7 @@
 
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, DoubleTap=Lock(tog) */
         /* Note: &sl behaves as Momentary if held, so ht_nav is not needed. */
+
         td_nav: tap_dance_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_NAV";
@@ -155,8 +150,8 @@
         };
 
         /* Hold-Tap for Cursor Layer: Hold=Momentary(5), Tap=Sticky(5) */
-
         /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Lock(tog) */
+
         td_sym: tap_dance_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SYM";
@@ -166,6 +161,7 @@
         };
 
         /* Smart Toggle for Cursor Layer: Tap=Sticky, DoubleTap=Lock(tog) */
+
         td_cursor: tap_dance_cursor {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CURSOR";
@@ -181,11 +177,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                  &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9    &kp N0   &kp LBKT
-&kp TAB    &kp Q   &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                  &none                  &kp K   &kp F    &kp L       &kp R     &kp B    &kp BSLH
-&kp ESC    &kp A   &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none                  &kp D   &kp H    &kp T       &kp N     &kp S    &sl 1
-&kp LSHFT  &kp X   &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &kp PG_UP                                      &kp C   &kp M    &kp W       &kp V     &kp DOT  &kp RSHFT
-&mo 2      &kp X   &kp Z   &kp LEFT   &kp ESC              &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN  &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE  &td_sym  &td_cursor  &kp RBKT  &mo 5    &mo 2
+&kp EQUAL  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                            &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9    &kp N0   &kp LBKT
+&kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                            &none                  &kp K   &kp F    &kp L       &kp R     &kp B    &kp BSLH
+&kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N     &kp S    &sl 1
+&kp LSHFT  &kp Z         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V     &kp DOT  &kp RSHFT
+&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN  &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &kp RBKT  &mo 0    &mo 2
             >;
         };
 
