@@ -158,6 +158,16 @@
             bindings = <&mo>, <&sl>;
         };
 
+        lt_nav_enter: layer_tap_nav_enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_NAV_ENTER";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+        };
+
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky(via ht), DoubleTap=Lock(tog) */
 
         td_nav: tap_dance_nav {
@@ -201,7 +211,7 @@
 &kp TAB    &kp Q   &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                  &none                  &kp K   &kp F    &kp L       &kp R     &kp B    &kp BSLH
 &kp ESC    &kp A   &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL    &none                  &kp D   &kp H    &kp T       &kp N     &kp S    &sl 1
 &kp LSHFT  &kp X   &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &kp PG_UP                                      &kp C   &kp M    &kp W       &kp V     &kp DOT  &kp RSHFT
-&mo 2      &kp X   &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN  &lt 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &kp RBKT  &mo 5    &mo 2
+&mo 2      &kp X   &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &td_nav    &kp END       &kp PG_DN  &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE  &td_sym  &td_cursor  &kp RBKT  &mo 5    &mo 2
             >;
         };
 
