@@ -232,11 +232,11 @@
         cursor {
             display-name = "Cursor";
             bindings = <
-&kp ESC            &kp ENTER        &kp SPACE     &kp TAB       &kp BSPC        &kp INS     &kp LG(TAB)                                                 &kp LG(LA(TAB))  &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
-&Mac_Search_Bar    &sk LSHFT        &Mac_Redo     &Mac_Undo     &kp BSPC        &Mac_Cut    &kp LC(UP)                                                  &none            &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
-&Mac_URL_Bar       &kp LGUI         &kp LALT      &kp LCTRL     &kp LSHFT       &Mac_Copy   &kp LC(TAB)  &kp TAB     &trans      &trans   &trans        &trans           &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
-&Mac_Downloads     &Mac_Select_All  &select_line  &select_word  &Mac_Find       &Mac_Paste                           &trans      &trans                                  &Mac_Paste  &kp HOME   &kp PG_UP       &kp PG_DN       &kp END         &Mac_Downloads
-&Mac_Find_Replace  &Mac_Find_Prev   &extend_line  &extend_word  &Mac_Find_Next              &kp LG(TAB)  &kp LC(UP)  &tog 5      &kp ESC  &extend_line  &extend_word                 &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
+&kp ESC            &kp ENTER        &kp SPACE     &kp TAB       &kp BSPC        &kp INS     &kp LG(TAB)                                                  &kp LG(LA(TAB))  &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
+&Mac_Search_Bar    &sk LSHFT        &Mac_Redo     &Mac_Undo     &kp BSPC        &Mac_Cut    &kp LC(UP)                                                   &none            &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
+&Mac_URL_Bar       &kp LGUI         &kp LALT      &kp LCTRL     &kp LSHFT       &Mac_Copy   &kp LC(TAB)   &kp TAB     &trans      &trans   &trans        &trans           &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
+&Mac_Downloads     &Mac_Select_All  &select_line  &select_word  &Mac_Find       &Mac_Paste                            &trans      &trans                                  &Mac_Paste  &kp HOME   &kp PG_UP       &kp PG_DN       &kp END         &Mac_Downloads
+&Mac_Find_Replace  &Mac_Find_Prev   &extend_line  &extend_word  &Mac_Find_Next              &select_word  &kp LC(UP)  &tog 5      &kp ESC  &extend_line  &extend_word                 &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
             >;
         };
 
