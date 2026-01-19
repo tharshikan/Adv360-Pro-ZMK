@@ -184,7 +184,7 @@ Ergonomic shortcuts placed on the row above the thumbs (mimicking Z/X/C/V positi
 │ DwnLd  │ SelAll │ SelLn  │ SelWd  │  Find  │ Paste           │                                       │ Paste         │ Home │ PgUp │ PgDn  │  End  │ DwnLd │
 └─┬──────┼────────┼────────┼────────┼────────┴─────────────────┘                                       └───────────────┴──────┼──────┼───────┴───────┴───────┘
   │FindRep│  Prev  │ ExtLn  │ ExtWd  │  Next   │ SelWrd              ┌───────┐┌───────┐┌──────┐   ┌───────┐┌───────┐┌──────┐               │ Esc  │ ExtLn│ ExtWd │  Find │FindRep│
-  └───────┴───────┴────────┴────────┴───────┘            │WinTab ││UnlckL5││UnlckL5│   │ Esc   ││ExtLn  ││ExtWrd│            └──────┴──────┴───────┴───────┴───────┘
+  └───────┴───────┴────────┴────────┴───────┘            │SelLin ││UnlckL5││UnlckL5│   │ Esc   ││ExtLn  ││ExtWrd│            └──────┴──────┴───────┴───────┴───────┘
                                                          └───────┘└───────┘└──────┘   └───────┘└───────┘└──────┘│SelNone││ExtLine││ExtWrd│
 
             Legend:
