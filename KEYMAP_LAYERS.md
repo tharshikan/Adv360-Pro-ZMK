@@ -78,7 +78,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Navigation Layer (NAV):**
   - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky, **Double Tap** to Toggle Lock.
   - **Right Thumb:** Hold to access arrows and shortcuts.
-- **Cursor Layer:** Accessible via **CurTog** (Down Arrow) or by holding the **bottom-right corner key** (MO(5)).
+- **Cursor Layer:** Accessible via **CurTog** (Down Arrow). (Corner hold removed).
 - **Smart Sym Toggle (SymTog)**:
   - **Location**: Replaces the **Up Arrow** key (Right Hand).
   - **Tap**: Sticky Symbol Layer.
@@ -114,9 +114,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────────┼──────────┼──────────┼──────────┼───────┤
 │  ESC   │  [ │  { │ _  │ (  │ \  │        │                                       │        │ #  │  KP_4  │   KP_5   │   KP_6   │ KP_PLUS  │   '   │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────────┼──────────┼──────────┼──────────┼───────┤
-│ SHIFT  │ !  │ $  │ %  │ ^  │ ~           │                                       │           : │  KP_1  │   KP_2   │   KP_3   │ KP_ENTER │ SHIFT │
-└─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────────┼──────────┼──────────┼──────────┴───────┴┐
-  │MO(2) │ `  │ *  │ |  │ :                                                                               │SymTog│CurTog│  KP_DOT  │    ]   │MO(2) │
+│ SHIFT  │ Z  │ J  │ ,  │ =  │ '           │                                       │           C │  M   │   W    │   V    │    .   │ SHIFT │
+└─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼──────────┼──────────┼──────────┴───────┴┐
+  │MO(2) │  1   │  Z   │  ←   │  →                                                                              │SymTog│CurTog│  KP_DOT  │    ]   │MO(0) │
   └──────┴────┴────┴────┘                                                                                 └──────┴──────────┴──────────┴────────┘
 ```
 
