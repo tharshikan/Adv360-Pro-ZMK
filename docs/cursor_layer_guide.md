@@ -22,21 +22,22 @@ This layer turns your thumbs into text selection tools. You can "pinch" text to 
 | **Extend Word** | Right Inner Thumb | Grows selection by one word. |
 | **Extend Line** | Right Outer Thumb | Grows selection by one line. |
 
-## 3. Structural Editing (New!)
-We have optimized the layout for "selecting blocks" and "destroying blocks".
+## 3. Structural Editing (Left Hand Focused)
+We have moved the most powerful editing tools to the Left Hand for easier access.
 
-### Selection Cluster (Left Hand Bottom)
-*   **Select Paragraph:** Bottom Left Corner. **New!** Selects the entire paragraph block.
-*   **Select Next (`Cmd+D`):** Bottom Row (Index). Selects the next instance of the current word.
-*   **Select Word:** Bottom Row (Left).
-*   **Select All:** Bottom Row (Outer).
+### The "Destruction & Selection" Cluster (Left Row 2)
+Replaces the old Undo/Redo keys.
+*   **Delete Word (`Opt+Bsp`):** Row 2 (Index Finger). **New!**
+*   **Select Paragraph:** Row 2 (Middle Finger). **New!**
 
-### Destruction Cluster (Right Hand Bottom)
-*   **Delete Word (`Opt+Bsp`):** Bottom Row (Inner Inder). **New!** Deletes the word to the left of cursor.
-*   **Home/End/PgUp/PgDn:** Remainder of the bottom row.
+### Bottom Row Actions
+*   **Select Next (`Cmd+D`):** Index Finger.
+*   **Select Word:** Middle Finger.
+*   **Select All:** Ring Finger.
+*   **Downloads:** Pinky (Corner).
 
 ### Formatting
-*   **Comment Code (`Cmd+/`):** Inner Column (Right). **New!** Toggles comments on the current line or selection.
+*   **Comment Code (`Cmd+/`):** Inner Column (Right Hand).
 
 ## 4. The "Editing Stack" (Left Hand)
 Your left index finger controls a vertical stack of editing commands.
@@ -52,12 +53,12 @@ Navigate tabs and apps with your left index/inner fingers.
 
 ## Cheatsheet Summary
 
-**Right Hand (Movement & Destruction):**
+**Right Hand (Movement):**
 *   `H/T/N/S`: Arrows
-*   `Del Word`: Bottom Row (Start)
 *   `Comment`: Inner Column
 
-**Left Hand (Selection & Action):**
+**Left Hand (Action Powerhouse):**
 *   `Y/I/K`: Cut/Copy/Paste
-*   `Select Next`: Bottom Row (Middle)
-*   `Select Paragraph`: Bottom Corner
+*   `Del Word`: Row 2 (Index)
+*   `Sel Para`: Row 2 (Middle)
+*   `Sel Next`: Bottom Row (Index)
