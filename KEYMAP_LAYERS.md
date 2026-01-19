@@ -134,7 +134,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │ CMD+Tab│CMDQ│CMDP│CMDU│CMDY│CMD;│        │                                       │        │CMDK│CMDF│CMDL│CMDR│CMDB│ CMD+\ │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↑  │ ↓  │ →  │       │
+│ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↓  │ ↑  │ →  │       │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ CMD+Sft│Undo│Cut │Copy│Pste│CMD'         │                                       │             │CMDC│CMDM│CMDW│CMDV│CMD. │ CMD+Sft│
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -153,8 +153,8 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Shifted VIM-Style Arrows**: Arrow keys are shifted one column to the right (to H/T/N/S positions) compared to standard VIM (usually H/J/K/L, but here aligned with Dvorak home row).
     - **Index Inner (D):** `Command + D`
     - **Index (H):** `Left Arrow`
-    - **Middle (T):** `Up Arrow`
-    - **Ring (N):** `Down Arrow`
+    - **Middle (T):** `Down Arrow`
+    - **Ring (N):** `Up Arrow`
     - **Pinky (S):** `Right Arrow`
 
 
