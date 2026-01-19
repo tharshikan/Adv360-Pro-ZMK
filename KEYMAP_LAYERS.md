@@ -78,7 +78,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 ### Key Features:
 - **Navigation Layer (NAV):**
-  - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky, **Double Tap** to Toggle Lock.
+  - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky. (Zero-latency).
   - **Right Thumb:** Hold to access arrows and shortcuts.
 - **Cursor Layer:** Accessible via **CurTog** (Down Arrow). (Corner hold removed).
 - **Smart Sym Toggle (SymTog)**:
@@ -116,9 +116,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────────┼──────────┼──────────┼──────────┼───────┤
 │  ESC   │  [ │  { │ _  │ (  │ \  │        │                                       │        │ #  │  KP_4  │   KP_5   │   KP_6   │ KP_PLUS  │   '   │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────────┼──────────┼──────────┼──────────┼───────┤
-│ SHIFT  │ Z  │ J  │ ,  │ =  │ '           │                                       │           C │  M   │   W    │   V    │    .   │ SHIFT │
+│ SHIFT  │ !  │ $  │ %  │ ^  │ ~           │                                       │           : │  1   │   2    │   3    │   Ent  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼──────────┼──────────┼──────────┴───────┴┐
-  │MO(2) │  1   │  Z   │  ←   │  →                                                                              │SymTog│CurTog│  KP_DOT  │    ]   │MO(0) │
+  │MO(2) │ `  │ *  │ |  │ ?                                                                           │SymTog│CurTog│  KP_DOT  │    ]   │MO(2) │
   └──────┴────┴────┴────┘                                                                                 └──────┴──────────┴──────────┴────────┘
 ```
 
