@@ -19,25 +19,22 @@ This layer turns your thumbs into text selection tools. You can "pinch" text to 
 | :--- | :--- | :--- |
 | **Select Word** | Left Outer Thumb | Selects current word. |
 | **Select Line** | Left Inner Thumb | Selects entire line. |
-| **Extend Word** | Right Inner Thumb | Grows selection by one word. |
-| **Extend Line** | Right Outer Thumb | Grows selection by one line. |
+| **Extend Word** | Right Inner Thumb | Grows selection by one word (Forward). |
+| **Extend Line** | Right Outer Thumb | Grows selection by one line (Down). |
 
-## 3. Structural Editing (Left Hand Focused)
-We have moved the most powerful editing tools to the Left Hand for easier access.
+## 3. Structural Editing
 
-### The "Destruction & Selection" Cluster (Left Row 2)
-Replaces the old Undo/Redo keys.
-*   **Delete Word (`Opt+Bsp`):** Row 2 (Index Finger). **New!**
-*   **Select Paragraph:** Row 2 (Middle Finger). **New!**
+### Left Hand Generation
+*   **Select Paragraph:** Row 2 (Middle). **New!** Selects the entire paragraph block.
+*   **Select Next (`Cmd+D`):** Bottom Row (Index). Selects the next instance of the current word.
 
-### Bottom Row Actions
-*   **Select Next (`Cmd+D`):** Index Finger.
-*   **Select Word:** Middle Finger.
-*   **Select All:** Ring Finger.
-*   **Downloads:** Pinky (Corner).
+### Right Hand Navigation
+*   **Extend Prev Word:** Inner Column Row 3. **New!** Extends selection left (backwards).
+*   **Extend Prev Line:** Inner Column Row 2. **New!** Extends selection up.
+*   **Delete Word:** Row 2 (Index).
 
 ### Formatting
-*   **Comment Code (`Cmd+/`):** Inner Column (Right Hand).
+*   **Comment Code (`Cmd+/`):** Inner Column Bottom.
 
 ## 4. The "Editing Stack" (Left Hand)
 Your left index finger controls a vertical stack of editing commands.
@@ -45,20 +42,13 @@ Your left index finger controls a vertical stack of editing commands.
 *   **Copy:** Home Row (`I` pos)
 *   **Paste:** Bottom Row (`K` pos)
 
-## 5. Tab & App Navigation (Left Inner)
-Navigate tabs and apps with your left index/inner fingers.
-*   **Next Tab:** Row 3 (`Ctrl+Tab`)
-*   **Prev Tab:** Row 4 (`Ctrl+Shift+Tab`)
-*   **Mission Control:** Row 2 (`Ctrl+Up`)
-
 ## Cheatsheet Summary
 
-**Right Hand (Movement):**
+**Right Hand (Movement & Destruction):**
 *   `H/T/N/S`: Arrows
-*   `Comment`: Inner Column
+*   `Inner Col`: Extend Back/Up, Comment
 
 **Left Hand (Action Powerhouse):**
 *   `Y/I/K`: Cut/Copy/Paste
 *   `Del Word`: Row 2 (Index)
 *   `Sel Para`: Row 2 (Middle)
-*   `Sel Next`: Bottom Row (Index)
