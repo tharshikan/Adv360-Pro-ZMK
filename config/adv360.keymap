@@ -182,7 +182,7 @@
 &kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                            &none                  &kp K   &kp F    &kp L       &kp R     &kp B    &kp BSLH
 &kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N     &kp S    &sl 1
 &kp LSHFT  &kp Z         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                    &kp HOME      &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V     &kp DOT  &kp RSHFT
-&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &ht_nav 4 4  &kp END       &kp PG_DN  &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &kp RBKT  &mo 0    &mo 2
+&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &ht_nav 4 4  &kp END       &kp PG_DN  &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
             >;
         };
 
@@ -241,9 +241,15 @@
             >;
         };
 
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
+        opt_nav {
+            display-name = "OptNav";
+            bindings = <
+&kp LA(EQUAL)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)    &kp LA(N4)     &kp LA(N5)    &trans                                                               &trans         &kp LA(N6)  &kp LA(N7)  &kp LA(N8)      &kp LA(N9)    &kp LA(N0)    &kp LA(LBKT)
+&kp LA(TAB)    &kp LA(Q)   &kp LA(P)   &kp LA(U)     &kp LA(Y)      &kp LA(SEMI)  &trans                                                               &trans         &kp LA(K)   &kp LA(F)   &kp LA(L)       &kp LA(R)     &kp LA(B)     &kp LA(BSLH)
+&kp LA(ESC)    &kp LA(A)   &kp LA(O)   &kp LA(E)     &kp LA(I)      &kp LA(G)     &trans        &trans  &trans           &trans         &trans         &trans         &kp LA(D)   &kp LA(LEFT) &kp LA(DOWN)    &kp LA(UP)    &kp LA(RIGHT) &trans
+&kp LA(LSHFT)  &kp LA(Z)   &kp LA(X)   &kp LA(C)     &kp LA(V)      &kp LA(SQT)                         &trans           &trans                                       &kp LA(C)   &kp LA(M)   &kp LA(W)       &kp LA(V)     &kp LA(DOT)   &kp LA(RSHFT)
+&trans         &kp LA(X)   &kp LA(Z)   &kp LA(LEFT)  &kp LA(RIGHT)                &kp LA(BSPC)  &trans  &kp LA(END)      &kp LA(PG_DN)  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(UP)  &kp LA(DOWN)    &kp LA(RBKT)  &kp LA(BSLH)  &trans
+            >;
         };
 
         extra4 {

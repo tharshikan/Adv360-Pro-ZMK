@@ -11,6 +11,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - [Layer 3: Mod Layer](#layer-3-mod-layer)
 - [Layer 4: Nav Layer](#layer-4-nav-layer)
 - [Layer 5: Cursor Layer](#layer-5-cursor-layer)
+- [Layer 6: OptNav Layer](#layer-6-optnav-layer)
 - [Special Behaviors](#special-behaviors)
 
 ---
@@ -25,6 +26,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
 | 4 | nav | Nav | Navigation Arrows & Copy/Paste shortcuts | **Hold either Command (Thumb)** |
 | 5 | cursor | Cursor | VIM arrows, text selection, find operations | **Hold bottom-right corner key** |
+| 6 | opt_nav | OptNav | **Option** + Arrows/Nav Keys (Word Navigation) | **Hold Right Thumb ']'** |
 
 ---
 
@@ -363,6 +365,38 @@ The **Page Down** key on the right thumb has been upgraded to a **Tap Dance** ke
 - **Right Thumb (Inner)**: Tap for **Enter**, Hold for **Nav Layer** (Command).
 - **Left Thumb (Outer)**: Tap for **Backspace**, Hold for **Shift**.
 - **Right Thumb (Outer)**: Tap for **Space**, Hold for **Shift**.
+
+---
+
+---
+
+## Layer 6: OptNav Layer
+
+**Display Name:** OptNav
+**Purpose:** Word Navigation (Option + Arrows) and Word Deletion (Option + Backspace)
+**Access:** **Hold** Right Thumb `]` Key
+
+```
+┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
+│ OPT+1  │OPT1│OPT2│OPT3│OPT4│OPT5│        │                                       │        │OPT6│OPT7│OPT8│OPT9│OPT0│ OPT+[ │
+├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
+│ OPT+Tab│OPTQ│OPTP│OPTU│OPTY│OPT;│        │                                       │        │OPTK│OPTF│OPTL│OPTR│OPTB│ OPT+\ │
+├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
+│ OPT+Esc│OPTA│OPTO│OPTE│OPTI│OPTG│        │                                       │        │OPTD│OPT←│OPT↓│OPT↑│OPT→│       │
+├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
+│ OPT+Sft│OPTZ│OPTX│OPTC│OPTV│OPT'         │                                       │           OPTC│OPTM│OPTW│OPTV│OPT.│ OPT+Sft│
+└─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
+  │      │OPTX│OPTZ│OPT←│OPT→                                                                         │OPT↑│OPT↓│OPT]│OPT\│      │
+  └──────┴────┴────┴────┘                                                                             └────┴────┴────┴───────┘
+                                                       ┌───────┐
+                                                       │OPT+BSP│
+                                                       └───────┘
+```
+
+### Key Features:
+- **Same Layout as Nav Layer**, but with **Option (Alt)** modifier instead of Command.
+- **Option + Arrows**: Move cursor by word (Left/Right) or paragraph (Up/Down).
+- **Option + Backspace**: Delete entire word (to the left).
 
 ---
 *Generated from ZMK firmware configuration for Kinesis Adv360 Pro*
