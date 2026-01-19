@@ -12,29 +12,31 @@ Move the cursor without leaving the home row. Note that these are shifted one ke
 *   **Up (`↑`):** Ring Finger
 *   **Right (`→`):** Pinky Finger
 
-## 2. The "Selection" Engine
-This layer turns your thumbs into text selection tools. You can "pinch" text to select it.
+## 2. The "Expansion" Engine (Thumbs)
+Your thumbs now control **bidirectional selection extension**. Think of them as "stretching" the highlight in any direction.
 
-| Action | Key (Thumb) | Effect |
-| :--- | :--- | :--- |
-| **Select Word** | Left Outer Thumb | Selects current word. |
-| **Select Line** | Left Inner Thumb | Selects entire line. |
-| **Extend Word** | Right Inner Thumb | Grows selection by one word (Forward). |
-| **Extend Line** | Right Outer Thumb | Grows selection by one line (Down). |
+| Hand | Key (Thumb) | Action | Effect |
+| :--- | :--- | :--- | :--- |
+| **Left** | Large (Outer) | **Extend Prev Word** | Grows Left (Backward) |
+| **Left** | Small (Inner) | **Extend Prev Line** | Grows Up (Backward) |
+| **Right** | Large (Outer) | **Extend Next Word** | Grows Right (Forward) |
+| **Right** | Small (Inner) | **Extend Next Line** | Grows Down (Forward) |
 
-## 3. Structural Editing
+## 3. Structural Editing (Left Hand Focused)
+For smarter "Block Selection" (grabbing an entire object at once), use your Left Fingers.
 
-### Left Hand Generation
-*   **Select Paragraph:** Row 2 (Middle). **New!** Selects the entire paragraph block.
-*   **Select Next (`Cmd+D`):** Bottom Row (Index). Selects the next instance of the current word.
+### The "Destruction & Selection" Cluster (Left Row 2)
+*   **Delete Word (`Opt+Bsp`):** Row 2 (Index).
+*   **Select Paragraph:** Row 2 (Middle).
 
-### Right Hand Navigation
-*   **Extend Prev Word:** Inner Column Row 3. **New!** Extends selection left (backwards).
-*   **Extend Prev Line:** Inner Column Row 2. **New!** Extends selection up.
-*   **Delete Word:** Row 2 (Index).
+### Bottom Row Actions
+*   **Select Next (`Cmd+D`):** Index Finger.
+*   **Select Word:** Middle Finger.
+*   **Select All:** Ring Finger.
+*   **Downloads:** Pinky.
 
 ### Formatting
-*   **Comment Code (`Cmd+/`):** Inner Column Bottom.
+*   **Comment Code (`Cmd+/`):** Inner Column (Right Side).
 
 ## 4. The "Editing Stack" (Left Hand)
 Your left index finger controls a vertical stack of editing commands.
@@ -44,11 +46,14 @@ Your left index finger controls a vertical stack of editing commands.
 
 ## Cheatsheet Summary
 
-**Right Hand (Movement & Destruction):**
-*   `H/T/N/S`: Arrows
-*   `Inner Col`: Extend Back/Up, Comment
+**Thumbs (Expansion):**
+*   **Left:** Expand Backwards/Up.
+*   **Right:** Expand Forwards/Down.
 
 **Left Hand (Action Powerhouse):**
-*   `Y/I/K`: Cut/Copy/Paste
 *   `Del Word`: Row 2 (Index)
 *   `Sel Para`: Row 2 (Middle)
+*   `Select Next`: Bottom Row (Index)
+
+**Right Hand (Movement):**
+*   `Arrows`: H/T/N/S

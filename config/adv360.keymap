@@ -323,7 +323,7 @@
 &Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para &Mac_Del_Word &kp BSPC        &Mac_Cut    &kp LC(UP)                                                     &Mac_Extend_Line_Up &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
 &Mac_URL_Bar       &kp LGUI         &kp LALT      &kp LCTRL     &kp LSHFT       &Mac_Copy   &kp LC(TAB)   &kp TAB       &trans      &trans   &trans        &Mac_Extend_Word_Left &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
 &Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word  &Mac_Find       &Mac_Paste                              &Mac_Prev_Tab      &Mac_Comment                            &Mac_Paste     &kp HOME   &kp PG_UP       &kp PG_DN       &kp END         &Mac_Downloads
-&Mac_Find_Replace  &Mac_Find_Prev   &extend_line  &extend_word  &Mac_Find_Next              &select_word  &select_line  &tog 5      &kp ESC  &extend_line  &extend_word                 &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
+&Mac_Find_Replace  &Mac_Find_Prev   &extend_line  &extend_word  &Mac_Find_Next              &Mac_Extend_Word_Left  &Mac_Extend_Line_Up  &tog 5      &kp ESC  &Mac_Extend_Line_Down  &Mac_Extend_Word_Right                 &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
             >;
         };
 
