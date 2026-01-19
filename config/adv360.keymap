@@ -256,7 +256,7 @@
             display-name = "Base";
             bindings = <
 &kp EQUAL  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                              &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
-&kp TAB    &hml_pinky LCTRL Q &hml_ring LALT P &hml_middle LGUI U &hml_index LSHFT Y &kp SEMI  &none                                                                              &none                  &kp K   &hmr_index RSHFT F &hmr_middle RGUI L &hmr_ring RALT R &hmr_pinky RCTRL B &kp BSLH
+&kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                              &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
 &kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL    &kp LALT      &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
 &kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                      &kp HOME      &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
 &mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT BSPC  &ht_nav 4 4  &kp ESCAPE    &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
