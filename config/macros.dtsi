@@ -377,3 +377,24 @@
     bindings = <&kp LC(LS(TAB))>;
     display-name = "Mac Previous Tab";
   };
+
+  Mac_Del_Word: Mac_Del_Word {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LA(BSPC)>;
+    display-name = "Mac Delete Word";
+  };
+
+  Mac_Sel_Para: Mac_Sel_Para {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LA(LS(DOWN))>;
+    display-name = "Mac Select Paragraph";
+  };
+
+  Mac_Comment: Mac_Comment {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(FSLH)>;
+    display-name = "Mac Comment Code";
+  };

@@ -22,16 +22,21 @@ This layer turns your thumbs into text selection tools. You can "pinch" text to 
 | **Extend Word** | Right Inner Thumb | Grows selection by one word. |
 | **Extend Line** | Right Outer Thumb | Grows selection by one line. |
 
-## 3. The "Refactor" Cluster (Left Hand)
-*   **Select Next (`Cmd+D`):** Bottom Row (Index). **New!** Selects the next occurrence of the current word.
+## 3. Structural Editing (New!)
+We have optimized the layout for "selecting blocks" and "destroying blocks".
+
+### Selection Cluster (Left Hand Bottom)
+*   **Select Paragraph:** Bottom Left Corner. **New!** Selects the entire paragraph block.
+*   **Select Next (`Cmd+D`):** Bottom Row (Index). Selects the next instance of the current word.
 *   **Select Word:** Bottom Row (Left).
 *   **Select All:** Bottom Row (Outer).
 
-### Powerful Refactoring Workflow
-1.  Navigate to a variable using Arrow Keys (Right Hand).
-2.  Tap **Select Word** (Left Thumb) to highlight it.
-3.  Tap **Select Next** (Left Index) multiple times to grab all instances.
-4.  Type to rename them all at once.
+### Destruction Cluster (Right Hand Bottom)
+*   **Delete Word (`Opt+Bsp`):** Bottom Row (Inner Inder). **New!** Deletes the word to the left of cursor.
+*   **Home/End/PgUp/PgDn:** Remainder of the bottom row.
+
+### Formatting
+*   **Comment Code (`Cmd+/`):** Inner Column (Right). **New!** Toggles comments on the current line or selection.
 
 ## 4. The "Editing Stack" (Left Hand)
 Your left index finger controls a vertical stack of editing commands.
@@ -42,23 +47,17 @@ Your left index finger controls a vertical stack of editing commands.
 ## 5. Tab & App Navigation (Left Inner)
 Navigate tabs and apps with your left index/inner fingers.
 *   **Next Tab:** Row 3 (`Ctrl+Tab`)
-*   **Prev Tab:** Row 4 (`Ctrl+Shift+Tab`) **New!**
+*   **Prev Tab:** Row 4 (`Ctrl+Shift+Tab`)
 *   **Mission Control:** Row 2 (`Ctrl+Up`)
-
-## 6. Search & Navigate
-The bottom row is dedicated to finding things.
-*   **Find (`Cmd+F`):** Index Finger.
-*   **Find Next (`Cmd+G`):** Inner Index.
-*   **Find Prev (`Cmd+Shift+G`):** Pinky.
-*   **Search Bar (`Spotlight`):** Top Left Corner.
 
 ## Cheatsheet Summary
 
-**Right Hand (Movement):**
-*   `H/T/N/S`: Left/Down/Up/Right
-*   `Home/End/PgUp/PgDn`: Bottom Row
+**Right Hand (Movement & Destruction):**
+*   `H/T/N/S`: Arrows
+*   `Del Word`: Bottom Row (Start)
+*   `Comment`: Inner Column
 
-**Left Hand (Action):**
+**Left Hand (Selection & Action):**
 *   `Y/I/K`: Cut/Copy/Paste
 *   `Select Next`: Bottom Row (Middle)
-*   `Prev/Next Tab`: Inner Column
+*   `Select Paragraph`: Bottom Corner
