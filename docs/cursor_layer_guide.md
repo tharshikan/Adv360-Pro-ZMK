@@ -12,9 +12,6 @@ Move the cursor without leaving the home row. Note that these are shifted one ke
 *   **Up (`↑`):** Ring Finger
 *   **Right (`→`):** Pinky Finger
 
-**Why use this?**
-You can hold `Shift` (Left Thumb) or `Option` (Left Ring) with your left hand while navigating with your right hand. This makes selecting text or jumping words incredibly fast.
-
 ## 2. The "Selection" Engine
 This layer turns your thumbs into text selection tools. You can "pinch" text to select it.
 
@@ -25,46 +22,35 @@ This layer turns your thumbs into text selection tools. You can "pinch" text to 
 | **Extend Word** | Right Inner Thumb | Grows selection by one word. |
 | **Extend Line** | Right Outer Thumb | Grows selection by one line. |
 
-### Powerful Workflows
-1.  **Select & Replace:** Tap `Select Word` -> Type new word.
-2.  **Highlighting:** Tap `Select Word`, then tap `Extend Word` multiple times to grab a phrase.
-3.  **Refactoring:** Tap `Select Variable`, then use `Cmd+D` (if mapped) or `Find Next`.
+## 3. The "Refactor" Cluster (Left Hand)
+*   **Select Next (`Cmd+D`):** Bottom Row (Index). **New!** Selects the next occurrence of the current word.
+*   **Select Word:** Bottom Row (Left).
+*   **Select All:** Bottom Row (Outer).
 
-## 3. The "Editing Stack" (Left Hand)
+### Powerful Refactoring Workflow
+1.  Navigate to a variable using Arrow Keys (Right Hand).
+2.  Tap **Select Word** (Left Thumb) to highlight it.
+3.  Tap **Select Next** (Left Index) multiple times to grab all instances.
+4.  Type to rename them all at once.
+
+## 4. The "Editing Stack" (Left Hand)
 Your left index finger controls a vertical stack of editing commands.
 *   **Cut:** Top Row (`Y` pos)
 *   **Copy:** Home Row (`I` pos)
 *   **Paste:** Bottom Row (`K` pos)
 
-**One-Handed Editing:**
-Since these are all on the left side, you can keep your right hand on the mouse/trackpad while you Cut/Copy/Paste/Undo/Redo with just your left hand.
+## 5. Tab & App Navigation (Left Inner)
+Navigate tabs and apps with your left index/inner fingers.
+*   **Next Tab:** Row 3 (`Ctrl+Tab`)
+*   **Prev Tab:** Row 4 (`Ctrl+Shift+Tab`) **New!**
+*   **Mission Control:** Row 2 (`Ctrl+Up`)
 
-## 4. Search & Navigate
+## 6. Search & Navigate
 The bottom row is dedicated to finding things.
 *   **Find (`Cmd+F`):** Index Finger.
 *   **Find Next (`Cmd+G`):** Inner Index.
 *   **Find Prev (`Cmd+Shift+G`):** Pinky.
 *   **Search Bar (`Spotlight`):** Top Left Corner.
-
-## 5. Advanced Workflows
-
-### The "Refactor" Flow
-1.  Navigate to a variable using Arrow Keys (Right Hand).
-2.  Tap **Select Word** (Left Thumb).
-3.  Tap **Find Next** (Leaf Index) to jump to the next occurrence.
-4.  Type to replace.
-
-### The "Code Review" Flow
-1.  Lock the layer (Double-tap Right Thumb).
-2.  Use **Up/Down** (Right Hand) to scroll through code.
-3.  Use **Select Line** (Left Thumb) to highlight bad code.
-4.  Use **Google/Search** (Top Left) to check documentation.
-
-### The "Mouse-Free" Web Browsing
-1.  **Cmd+L** (URL Bar) is on the Top Left row.
-2.  **Cmd+F** (Find) is on the Bottom row.
-3.  **Scroll** with Up/Down arrows.
-4.  **Downloads** folder is on the bottom left corner.
 
 ## Cheatsheet Summary
 
@@ -74,8 +60,5 @@ The bottom row is dedicated to finding things.
 
 **Left Hand (Action):**
 *   `Y/I/K`: Cut/Copy/Paste
-*   `U/E`: Undo/Redo
-*   `Thumb`: Select Word/Line
-
-**Thumbs (The "Pinch"):**
-*   Select (Left Thumbs) -> Extend (Right Thumbs)
+*   `Select Next`: Bottom Row (Middle)
+*   `Prev/Next Tab`: Inner Column

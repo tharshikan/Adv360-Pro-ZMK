@@ -363,3 +363,17 @@
     bindings = <&kp LC(LG(SPACE))>;
     display-name = "Mac Emoji Picker";
   };
+
+  Mac_Select_Next: Mac_Select_Next {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LG(D)>;
+    display-name = "Mac Select Next";
+  };
+
+  Mac_Prev_Tab: Mac_Prev_Tab {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LC(LS(TAB))>;
+    display-name = "Mac Previous Tab";
+  };
