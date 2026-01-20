@@ -66,7 +66,7 @@ These mappings are aligned with your physical key locations on the **Right Modul
 ### Right Hand (Home Row)
 | Key | App | Physical Position |
 | :--- | :--- | :--- |
-| **D** | Slack | Home Row - Inner Index |
+| **D** | Slack (`Hyper + D`) | Home Row - Inner Index |
 | **H** | Chrome | Home Row - Index |
 | **T** | WebStorm | Home Row - Middle |
 | **N** | Antigravity | Home Row - Ring |

@@ -424,8 +424,8 @@
     #binding-cells = <0>;
     wait-ms = <10>;
     tap-ms = <10>;
-    bindings = <&kp LG(LA(LC(LS(S))))>;
-    display-name = "Launch Slack (Hyper+S)";
+    bindings = <&kp LG(LA(LC(LS(D))))>;
+    display-name = "Launch Slack (Hyper+D)";
   };
 
   macro_launch_antigravity: macro_launch_antigravity {
