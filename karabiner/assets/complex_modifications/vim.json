@@ -1,0 +1,154 @@
+{
+  "title": "tharshi Vim Mode (double-tap hh) + cn delete word",
+  "parameters": {
+    "basic.to_if_alone_timeout_milliseconds": 250
+  },
+  "rules": [
+    {
+      "description": "[VimMode] ESC disables vim_mode (and clears pending)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "escape", "modifiers": { "optional": ["any"] } },
+          "to": [
+            { "set_variable": { "name": "vim_mode", "value": 0 } },
+            { "set_variable": { "name": "pending_h", "value": 0 } },
+            { "set_variable": { "name": "pending_c", "value": 0 } }
+          ]
+        }
+      ]
+    },
+
+
+
+
+    {
+      "description": "[VimMode] hh toggle — first h (arm)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+          "conditions": [
+            { "type": "variable_if", "name": "pending_h", "value": 0 }
+          ],
+          "to": [
+            { "set_variable": { "name": "pending_h", "value": 1 } }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              { "set_variable": { "name": "pending_h", "value": 0 } },
+              { "key_code": "h" }
+            ],
+            "to_if_canceled": [
+              { "set_variable": { "name": "pending_h", "value": 0 } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "description": "[VimMode] hh toggle — second h (turn ON)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+          "conditions": [
+            { "type": "variable_if", "name": "pending_h", "value": 1 },
+            { "type": "variable_if", "name": "vim_mode", "value": 0 }
+          ],
+          "to": [
+            { "set_variable": { "name": "pending_h", "value": 0 } },
+            { "set_variable": { "name": "vim_mode", "value": 1 } }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[VimMode] hh toggle — second h (turn OFF)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+          "conditions": [
+            { "type": "variable_if", "name": "pending_h", "value": 1 },
+            { "type": "variable_if", "name": "vim_mode", "value": 1 }
+          ],
+          "to": [
+            { "set_variable": { "name": "pending_h", "value": 0 } },
+            { "set_variable": { "name": "vim_mode", "value": 0 } }
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "description": "[VimMode] n/d/t/h => word/paragraph navigation",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "n", "modifiers": { "optional": ["any"] } },
+          "to": [ { "key_code": "right_arrow", "modifiers": ["option"] } ],
+          "conditions": [ { "type": "variable_if", "name": "vim_mode", "value": 1 } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "d", "modifiers": { "optional": ["any"] } },
+          "to": [ { "key_code": "left_arrow", "modifiers": ["option"] } ],
+          "conditions": [ { "type": "variable_if", "name": "vim_mode", "value": 1 } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "t", "modifiers": { "optional": ["any"] } },
+          "to": [ { "key_code": "up_arrow", "modifiers": ["option"] } ],
+          "conditions": [ { "type": "variable_if", "name": "vim_mode", "value": 1 } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+          "to": [ { "key_code": "down_arrow", "modifiers": ["option"] } ],
+          "conditions": [ { "type": "variable_if", "name": "vim_mode", "value": 1 } ]
+        }
+      ]
+    },
+
+
+    {
+      "description": "[VimMode] cn => delete previous word (Option+Delete)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "c", "modifiers": { "optional": ["any"] } },
+          "conditions": [
+            { "type": "variable_if", "name": "vim_mode", "value": 1 },
+            { "type": "variable_if", "name": "pending_c", "value": 0 }
+          ],
+          "to": [
+            { "set_variable": { "name": "pending_c", "value": 1 } }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              { "set_variable": { "name": "pending_c", "value": 0 } },
+              { "key_code": "c" }
+            ],
+            "to_if_canceled": [
+              { "set_variable": { "name": "pending_c", "value": 0 } }
+            ]
+          }
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "n", "modifiers": { "optional": ["any"] } },
+          "conditions": [
+            { "type": "variable_if", "name": "vim_mode", "value": 1 },
+            { "type": "variable_if", "name": "pending_c", "value": 1 }
+          ],
+          "to": [
+            { "set_variable": { "name": "pending_c", "value": 0 } },
+            { "key_code": "delete_or_backspace", "modifiers": ["option"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
