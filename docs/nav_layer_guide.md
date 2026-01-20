@@ -39,7 +39,8 @@ Use the Nav layer to speed through web browsing.
 | **Reopen Closed Tab** | `Shift` + `T` |
 | **Refresh Page** | `R` (Top Row) |
 | **Find on Page** | `F` (Bottom Right) |
-| **Focus URL Bar** | `L` (Top Right) |
+| **Focus URL Bar** | `L` (Home Row - Inner Index) |
+| **DevTools** | `Cmd` + `Shift` + `I` (Bottom Row - Inner Index) |
 | **Back / Forward** | `[` / `]` (Top Corners) |
 
 ## 4. Window Management
