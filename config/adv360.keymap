@@ -277,8 +277,8 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp LC(RIGHT)      &kp N1        &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                       &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
-&kp LC(LEFT)       &kp Q         &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
+&kp LC(RIGHT)            &kp N1        &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                       &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
+&kp LC(LEFT)             &kp Q         &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
 &kp LC(RS(RIGHT_ARROW))  &kp A         &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
 &kp LSHFT                &kp X         &kp J   &kp COMMA   &kp EQUAL  &kp SQT                             &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
 &mo 2                    &kp NUMBER_1  &kp Z   &lt 7 LEFT  &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
@@ -354,11 +354,11 @@
         launcher {
             display-name = "Launcher";
             bindings = <
-&trans  &trans             &trans                &trans                &trans                &trans             &trans                                      &trans  &trans  &trans                &trans                &trans                &trans                &trans
-&trans  &kp LG(LA(ESC))    &kp LG(LA(LC(LS(P)))) &kp LC(UP)            &kp LG(LA(LC(LS(Y)))) &trans             &trans                                      &trans  &trans  &kp LG(LA(LC(LS(F)))) &kp LG(LA(LC(LS(L)))) &kp LG(LA(LC(LS(R)))) &kp LG(LA(LC(LS(B)))) &trans
-&trans  &kp LG(LA(LC(LS(A)))) &kp LG(LA(LC(LS(O)))) &kp LC(LEFT)          &kp LC(RIGHT)         &kp LG(LA(LC(LS(G)))) &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D)))) &kp LG(LA(LC(LS(H)))) &kp LG(LA(LC(LS(T)))) &kp LG(LA(LC(LS(N)))) &kp LG(LA(LC(LS(S)))) &trans
-&trans  &kp LG(LS(Q))      &kp LG(LA(LC(LS(J)))) &trans                &trans                &trans                                 &trans      &trans                  &trans  &trans                &kp LG(M)             &trans                &trans                &trans
-&trans  &trans             &trans                &trans                &trans                                        &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(SPACE)         &trans                &trans                &trans                &trans
+&trans  &trans                 &trans                 &trans        &trans                 &trans                 &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
+&trans  &kp LG(LA(ESC))        &kp LG(LA(LC(LS(P))))  &kp LC(UP)    &kp LG(LA(LC(LS(Y))))  &trans                 &trans                                      &trans  &kp LS(LA(LC(LG(K))))  &kp LC(LEFT)           &kp LC(UP)             &kp LC(RIGHT)          &kp LG(LA(LC(LS(B))))  &trans
+&trans  &kp LG(LA(LC(LS(A))))  &kp LG(LA(LC(LS(O))))  &kp LC(LEFT)  &kp LC(RIGHT)          &kp LG(LA(LC(LS(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
+&trans  &kp LG(LS(Q))          &kp LG(LA(LC(LS(J))))  &trans        &trans                 &trans                                 &trans      &trans                  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(M))))  &kp LG(LC(LA(LS(W))))  &kp LA(LG(LS(LC(N))))  &kp PERIOD             &trans
+&trans  &trans                 &trans                 &trans        &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
             >;
         };
     };
