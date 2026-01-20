@@ -148,6 +148,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <175>;
             flavor = "balanced";
+            retro-tap;
             bindings = <&kp>, <&kp>;
         };
 
@@ -160,6 +161,7 @@
             tapping-term-ms = <175>;
             quick-tap-ms = <175>;
             flavor = "balanced";
+            retro-tap;
             bindings = <&kp>, <&kp>;
         };
 
@@ -230,6 +232,7 @@
             tapping-term-ms = <175>;
             quick-tap-ms = <175>;
             flavor = "balanced";
+            retro-tap;
             bindings = <&mo>, <&kp>;
         };
 
