@@ -22,7 +22,7 @@ If you hesitate and hold a thumb key longer than its timeout but **don't** press
 
 | Key (Position) | Function | Behavior | Configuration | Why? |
 | :--- | :--- | :--- | :--- | :--- |
-| **Inner (Large)** | **Backspace** / Shift | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **220ms** | **220ms** gives a wide window for "lazy/heavy" thumb presses to still count as Backspace reliably. |
+| **Inner (Large)** | **Backspace** / Shift | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• `idle: 125ms`<br>• Term: **220ms** | **220ms** window for sloppy presses<br>**Idle Check** ensures rapid typos trigger Backspace, not Shift. |
 | **Middle** | **Delete** / Layer 4 | `hold-tap` | • `balanced`<br>• Term: **200ms** | Kept `balanced` as Delete is a secondary action; prevents accidental Layer 4 activation during editing. |
 | **Outer** | **Escape** | `kp` | • Standard | Simple key press, no behavior logic needed. |
 
