@@ -6,12 +6,28 @@ The **App Launcher Layer** allows you to open your most frequently used applicat
 *   **Key:** `Left Arrow` (Left Hand, Bottom Row, Inner Index/Middle area)
 *   **Action:** **Hold** to activate Layer 7. **Tap** for standard Left Arrow.
 
-## Mechanism
-This layer uses **ZMK Macros** to:
-1.  Trigger Spotlight (`Cmd + Space`).
-2.  Wait briefly (`50ms`).
-3.  Type the Application Name.
-4.  Press `Enter`.
+## Mechanism: "Invisible" Hyper Key
+Instead of typing the application name, this layer sends a unique **Hyper Key** combo for instant launching. 
+
+**Trigger:** `Cmd + Opt + Ctrl + Shift` + `[Key]`
+
+## Setup Guide (Required on Mac)
+For this to work, you must map these shortcuts on your Mac **once**.
+
+### Method 1: macOS Shortcuts App (Native)
+1.  Open **Spotlight** (`Cmd+Space`) and type "Shortcuts".
+2.  Open the **Shortcuts** app.
+3.  Click **+** (New Shortcut).
+4.  Search for action: **"Open App"**. Drag it in.
+5.  Click "App" and select **Google Chrome** (or target app).
+6.  Click the **(i) Info Icon** in the sidebar.
+7.  Click **"Add Keyboard Shortcut"**.
+8.  On your ZMK keyboard: Hold **Left Arrow** + Press **H**.
+    *   *Mac should detect:* `Cmd + Opt + Ctrl + Shift + H`.
+9.  Repeat for other apps.
+
+### Method 2: Raycast / Alfred (Alternative)
+If you use these tools, go to "Extensions" or "Hotkeys" and map the same combination.
 
 ## Key Mappings
 
