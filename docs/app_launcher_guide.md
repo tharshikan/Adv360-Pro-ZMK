@@ -70,7 +70,7 @@ These mappings are aligned with your physical key locations on the **Right Modul
 | **H** | Chrome | `Hyper + H` | Home Row - Index |
 | **T** | WebStorm | `Hyper + T` | Home Row - Middle |
 | **N** | Antigravity | `Hyper + N` | Home Row - Ring |
-| **S** | Show Desktop | `F11` | Home Row - Pinky |
+| **S** | Show Desktop | `Hyper + S` | Home Row - Pinky |
 
 ### Right Hand (Top Row)
 | Key | App | Trigger | Physical Position |
