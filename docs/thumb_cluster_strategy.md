@@ -30,7 +30,7 @@ If you hesitate and hold a thumb key longer than its timeout but **don't** press
 
 | Key (Position) | Function | Behavior | Configuration | Why? |
 | :--- | :--- | :--- | :--- | :--- |
-| **Inner (Large)** | **Enter** / Layer 4 | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **175ms** | Fast **175ms** for rapid Enter usage. `tap-preferred` ensures Enter fires even during fast rolls/confirmations. |
+| **Inner (Large)** | **Enter** / Layer 4 | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **175ms**<br>• `quick-tap: 0` | Fast **175ms** for rapid Enter usage. `tap-preferred` + `QT=0` ensures Enter fires instantly like Space. |
 | **Middle** | **Space** / Shift | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **225ms**<br>• `quick-tap: 0` | **The Speed King.** <br>• **225ms:** Extremely forgiving for Space.<br>• **QT=0:** Disables double-tap logic for instant firing.<br>• **Tap-Pref:** Never misses a space during fast typing. |
 | **Outer** | **Sym Toggle** | `tap-dance` | • Term: **175ms** | Standard reliable toggle for standard symbol layer access. |
 

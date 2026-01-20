@@ -231,7 +231,7 @@
             label = "LAYER_TAP_NAV_ENTER";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
