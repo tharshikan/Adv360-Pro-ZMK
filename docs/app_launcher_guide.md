@@ -34,19 +34,19 @@ If you use these tools, go to "Extensions" or "Hotkeys" and map the same combina
 ### Left Module (New Additions)
 These mappings fill the available keys on the Left Hand, using the mnemonic letters from your Base Layer.
 
-| Key | App | Physical Position |
-| :--- | :--- | :--- |
-| **P** | Postman | Top Row - Ring |
-| **Y** | Spotify | Top Row - Index |
-| **A** | Activity Monitor | Home Row - Pinky |
-| **O** | Discord | Home Row - Ring |
-| **G** | ChatGPT | Home Row - Inner Index |
-| **J** | JetBrains Toolbox | Bottom Row - Ring |
+| Key | App | Trigger | Physical Position |
+| :--- | :--- | :--- | :--- |
+| **P** | Postman | `Hyper + P` | Top Row - Ring |
+| **Y** | Spotify | `Hyper + Y` | Top Row - Index |
+| **A** | Activity Monitor | `Hyper + A` | Home Row - Pinky |
+| **O** | Discord | `Hyper + O` | Home Row - Ring |
+| **G** | ChatGPT | `Hyper + G` | Home Row - Inner Index |
+| **J** | JetBrains Toolbox | `Hyper + J` | Bottom Row - Ring |
 
 ### System Shortcuts (Left Module)
 Common OS operations are mapped to intuitive positions on the Left Hand.
 
-| Key | Action | Application | Position |
+| Key | Action | Shortcut | Position |
 | :--- | :--- | :--- | :--- |
 | **E** | Left Desktop | `Ctrl + Left` | Home Row - Middle |
 | **I** | Right Desktop | `Ctrl + Right` | Home Row - Index |
@@ -64,21 +64,21 @@ Common OS operations are mapped to intuitive positions on the Left Hand.
 These mappings are aligned with your physical key locations on the **Right Module**.
 
 ### Right Hand (Home Row)
-| Key | App | Physical Position |
-| :--- | :--- | :--- |
-| **D** | Slack (`Hyper + D`) | Home Row - Inner Index |
-| **H** | Chrome | Home Row - Index |
-| **T** | WebStorm | Home Row - Middle |
-| **N** | Antigravity | Home Row - Ring |
-| **S** | Show Desktop | Home Row - Pinky |
+| Key | App | Trigger | Physical Position |
+| :--- | :--- | :--- | :--- |
+| **D** | Slack | `Hyper + D` | Home Row - Inner Index |
+| **H** | Chrome | `Hyper + H` | Home Row - Index |
+| **T** | WebStorm | `Hyper + T` | Home Row - Middle |
+| **N** | Antigravity | `Hyper + N` | Home Row - Ring |
+| **S** | Show Desktop | `F11` | Home Row - Pinky |
 
 ### Right Hand (Top Row)
-| Key | App | Physical Position |
-| :--- | :--- | :--- |
-| **F** | Terminal | Top Row - Ring |
-| **L** | Zoom | Top Row - Middle |
-| **R** | Finder | Top Row - Index |
-| **B** | IntelliJ | Top Row - Inner Index |
+| Key | App | Trigger | Physical Position |
+| :--- | :--- | :--- | :--- |
+| **F** | Terminal | `Hyper + F` | Top Row - Ring |
+| **L** | Zoom | `Hyper + L` | Top Row - Middle |
+| **R** | Finder | `Hyper + R` | Top Row - Index |
+| **B** | IntelliJ | `Hyper + B` | Top Row - Inner Index |
 
 ## Visual Layout (Right Module)
 
