@@ -66,11 +66,11 @@ These mappings are aligned with your physical key locations on the **Right Modul
 ### Right Hand (Home Row)
 | Key | App | Trigger | Physical Position |
 | :--- | :--- | :--- | :--- |
-| **D** | Slack | `Hyper + D` | Home Row - Inner Index |
-| **H** | Chrome | `Hyper + H` | Home Row - Index |
-| **T** | WebStorm | `Hyper + T` | Home Row - Middle |
-| **N** | Antigravity | `Hyper + N` | Home Row - Ring |
-| **S** | Show Desktop | `Hyper + S` | Home Row - Pinky |
+| **D** | Slack | `Hyper + D` | Home Row - Index |
+| **H** | Chrome | `Hyper + H` | Home Row - Middle |
+| **T** | WebStorm | `Hyper + T` | Home Row - Ring |
+| **N** | Antigravity | `Hyper + N` | Home Row - Pinky |
+| **S** | Show Desktop | `Hyper + S` | Home Row - Pinky (Outer) |
 
 ### Right Hand (Top Row)
 | Key | App | Trigger | Physical Position |
@@ -84,7 +84,7 @@ These mappings are aligned with your physical key locations on the **Right Modul
 
 ```text
        [F]Term  [L]Zoom  [R]Findr [B]IntellJ
-[D]Slk [H]Chrm  [T]WebStm [N]Anti  [S]Dsk
+       [D]Slk   [H]Chrm  [T]WebStm [N]Anti  [S]Dsk
 ```
 
 ## Note on "Antigravity"
