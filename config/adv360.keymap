@@ -352,9 +352,9 @@
             display-name = "Launcher";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                               &trans  &trans  &trans                 &trans               &trans                 &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                               &trans  &trans  &macro_launch_terminal &macro_launch_zoom   &macro_launch_finder   &macro_launch_intellij &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans      &trans  &trans    &trans           &trans  &kp F11 &macro_launch_chrome   &macro_launch_webstorm &macro_launch_antigravity &macro_launch_slack  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans      &trans                                     &trans  &trans                 &trans               &trans                 &trans                 &trans
+&trans  &trans  &macro_launch_postman &trans  &macro_launch_spotify &trans  &trans                                                               &trans  &trans  &macro_launch_terminal &macro_launch_zoom   &macro_launch_finder   &macro_launch_intellij &trans
+&trans  &macro_launch_activity_monitor &macro_launch_discord &trans  &trans  &macro_launch_chatgpt &trans        &trans  &trans      &trans  &trans    &trans           &trans  &kp F11 &macro_launch_chrome   &macro_launch_webstorm &macro_launch_antigravity &macro_launch_slack  &trans
+&trans  &trans  &macro_launch_jetbrains_toolbox &trans  &trans  &trans                        &trans      &trans                                     &trans  &trans                 &trans               &trans                 &trans                 &trans
 &trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans      &trans  &trans    &trans                   &trans  &trans                 &trans               &trans                 &trans                 &trans
             >;
         };

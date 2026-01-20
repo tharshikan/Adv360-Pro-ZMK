@@ -13,7 +13,21 @@ This layer uses **ZMK Macros** to:
 3.  Type the Application Name.
 4.  Press `Enter`.
 
-## Key Mappings (Right Module Focused)
+## Key Mappings
+
+### Left Module (New Additions)
+These mappings fill the available keys on the Left Hand, using the mnemonic letters from your Base Layer.
+
+| Key | App | Physical Position |
+| :--- | :--- | :--- |
+| **P** | Postman | Top Row - Ring |
+| **Y** | Spotify | Top Row - Index |
+| **A** | Activity Monitor | Home Row - Pinky |
+| **O** | Discord | Home Row - Ring |
+| **G** | ChatGPT | Home Row - Inner Index |
+| **J** | JetBrains Toolbox | Bottom Row - Ring |
+
+### Right Module (Primary)
 
 These mappings are aligned with your physical key locations on the **Right Module**.
 

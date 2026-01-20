@@ -518,3 +518,57 @@
     bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp I>, <&kp N>, <&kp T>, <&kp E>, <&kp L>, <&kp L>, <&kp I>, <&kp J>, <&kp SPACE>, <&kp I>, <&kp D>, <&kp E>, <&kp A>, <&macro_wait_time 100>, <&kp ENTER>;
     display-name = "Launch IntelliJ";
   };
+
+  macro_launch_activity_monitor: macro_launch_activity_monitor {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp A>, <&kp C>, <&kp T>, <&kp I>, <&kp V>, <&kp I>, <&kp T>, <&kp Y>, <&kp SPACE>, <&kp M>, <&kp O>, <&kp N>, <&kp I>, <&kp T>, <&kp O>, <&kp R>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Activity Monitor";
+  };
+
+  macro_launch_chatgpt: macro_launch_chatgpt {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp C>, <&kp H>, <&kp A>, <&kp T>, <&kp G>, <&kp P>, <&kp T>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch ChatGPT";
+  };
+
+  macro_launch_postman: macro_launch_postman {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp P>, <&kp O>, <&kp S>, <&kp T>, <&kp M>, <&kp A>, <&kp N>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Postman";
+  };
+
+  macro_launch_jetbrains_toolbox: macro_launch_jetbrains_toolbox {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp J>, <&kp E>, <&kp T>, <&kp B>, <&kp R>, <&kp A>, <&kp I>, <&kp N>, <&kp S>, <&kp SPACE>, <&kp T>, <&kp O>, <&kp O>, <&kp L>, <&kp B>, <&kp O>, <&kp X>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch JetBrains Toolbox";
+  };
+
+  macro_launch_discord: macro_launch_discord {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp D>, <&kp I>, <&kp S>, <&kp C>, <&kp O>, <&kp R>, <&kp D>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Discord";
+  };
+
+  macro_launch_spotify: macro_launch_spotify {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp S>, <&kp P>, <&kp O>, <&kp T>, <&kp I>, <&kp F>, <&kp Y>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Spotify";
+  };
