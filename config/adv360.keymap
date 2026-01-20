@@ -144,11 +144,11 @@
         bs_shift: backspace_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_SHIFT";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "balanced";
-            bindings = <&kp>, <&smart_bspc>;
+            bindings = <&kp>, <&kp>;
         };
 
         /* Right thumb space that becomes Shift when held */
@@ -168,12 +168,12 @@
         /* Smart Toggle for Sym Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
         /* Select Word: Normal=right, Shift=left */
 
-        /* Smart Backspace: Normal=BSPC, Shift=DelWord (Option+BSPC) */
+        /* Smart Backspace: Normal=BSPC/Shift (Hold-Tap), Shift=DelWord (Option+BSPC) */
         smart_bspc: smart_backspace {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+            bindings = <&bs_shift LSHFT BSPC>, <&kp LA(BSPC)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -277,7 +277,7 @@
 &kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                                &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
 &kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
 &kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                      &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
-&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &bs_shift LSHFT  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
+&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
             >;
         };
 
@@ -288,7 +288,7 @@
 &kp TAB    &kp RBKT   &kp RBRC  &kp MINUS  &kp RPAR      &kp FSLH   &none                                                                &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp LBKT   &kp LBRC  &kp UNDER  &kp LPAR      &kp BSLH   &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp EXCL   &kp DLLR  &kp PRCNT  &kp CARET     &kp TILDE                                   &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp STAR  &kp PIPE   &kp QUESTION             &bs_shift LSHFT  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&mo 2      &kp GRAVE  &kp STAR  &kp PIPE   &kp QUESTION             &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
