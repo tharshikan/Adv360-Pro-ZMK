@@ -167,13 +167,14 @@
         /* Hold-Tap for Sym Layer: Hold=Momentary(1), Tap=Sticky(1) */
         /* Smart Toggle for Sym Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
         /* Select Word: Normal=right, Shift=left */
-
         /* Smart Backspace: Normal=BSPC/Shift (Hold-Tap), Shift=DelWord (Option+BSPC) */
+
         smart_bspc: smart_backspace {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_BACKSPACE";
             #binding-cells = <0>;
             bindings = <&bs_shift LSHFT BSPC>, <&kp LA(BSPC)>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -273,10 +274,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                                &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
-&kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                                &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
-&kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none                 &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
-&kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                                      &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
+&kp EQUAL  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                       &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
+&kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
+&kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none        &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
+&kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                             &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
 &mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
             >;
         };
@@ -284,10 +285,10 @@
         sym_numpad {
             display-name = "Sym+Num";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3     &kp N4        &kp N5     &trans                                                               &mo 3                  &kp CARET  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp RBKT   &kp RBRC  &kp MINUS  &kp RPAR      &kp FSLH   &none                                                                &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp LBKT   &kp LBRC  &kp UNDER  &kp LPAR      &kp BSLH   &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp EXCL   &kp DLLR  &kp PRCNT  &kp CARET     &kp TILDE                                   &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&kp EQUAL  &kp N1     &kp N2    &kp N3     &kp N4        &kp N5     &trans                                                      &mo 3                  &kp CARET  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp RBKT   &kp RBRC  &kp MINUS  &kp RPAR      &kp FSLH   &none                                                       &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp LBKT   &kp LBRC  &kp UNDER  &kp LPAR      &kp BSLH   &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp EXCL   &kp DLLR  &kp PRCNT  &kp CARET     &kp TILDE                          &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
 &mo 2      &kp GRAVE  &kp STAR  &kp PIPE   &kp QUESTION             &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
@@ -317,22 +318,22 @@
         nav {
             display-name = "Nav";
             bindings = <
-&kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)   &trans                                                               &trans         &kp LG(N6)  &kp LG(N7)      &kp LG(N8)      &kp LG(N9)     &kp LG(N0)  &kp LG(LBKT)
-&kp LG(TAB)    &kp LG(Q)   &kp LG(P)      &kp K_UNDO    &kp LG(Y)      &kp K_REDO   &trans                                                               &trans         &kp LG(K)   &kp LG(PERIOD)  &kp LG(L)       &kp LG(R)      &kp LG(B)   &kp LG(BSLH)
-&kp LG(ESC)    &kp LG(A)   &kp LG(O)      &kp LG(E)     &kp LG(I)      &kp LG(G)    &trans        &trans  &trans           &trans         &trans         &trans         &kp LG(D)   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT   &trans
-&kp LG(LSHFT)  &kp LG(Z)   &kp LG(COMMA)  &kp LG(C)     &kp LG(V)      &kp LG(SQT)                        &trans           &trans                                       &kp LG(C)   &kp LG(M)       &kp LG(W)       &kp LG(V)      &kp LG(F)   &kp LG(RSHFT)
-&trans         &kp LG(X)   &kp LG(Z)      &kp LG(LEFT)  &kp LG(RIGHT)               &kp LG(BSPC)  &trans  &kp LG(END)      &kp LG(PG_DN)  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(UP)      &kp LG(DOWN)    &kp LG(LS(G))  &kp LG(G)   &trans
+&kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LG(N6)  &kp LG(N7)      &kp LG(N8)      &kp LG(N9)     &kp LG(N0)  &kp LG(LBKT)
+&kp LG(TAB)    &kp LG(Q)   &kp LG(P)      &kp K_UNDO    &kp LG(Y)      &kp K_REDO     &trans                                                               &trans         &kp LG(K)   &kp LG(PERIOD)  &kp LG(T)       &kp LG(R)      &kp LG(B)   &kp LG(BSLH)
+&kp LG(ESC)    &kp LG(A)   &kp LG(O)      &kp LG(E)     &kp LG(I)      &kp LG(G)      &trans        &trans  &trans           &trans         &trans         &trans         &kp LG(L)   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT   &trans
+&kp LG(LSHFT)  &kp LG(Z)   &kp LG(COMMA)  &kp LG(C)     &kp LG(V)      &kp LG(LS(I))                        &trans           &trans                                       &kp LG(C)   &kp LG(M)       &kp LG(W)       &kp LG(V)      &kp LG(F)   &kp LG(RSHFT)
+&trans         &kp LG(X)   &kp LG(Z)      &kp LG(LEFT)  &kp LG(RIGHT)                 &kp LG(BSPC)  &trans  &kp LG(END)      &kp LG(PG_DN)  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(UP)      &kp LG(DOWN)    &kp LG(LS(G))  &kp LG(G)   &trans
             >;
         };
 
         cursor {
             display-name = "Cursor";
             bindings = <
-&kp ESC            &kp ENTER        &kp SPACE     &kp TAB       &kp BSPC        &kp INS     &kp LG(TAB)                                                    &kp LG(LA(TAB))  &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
-&Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para &Mac_Del_Word &kp BSPC        &Mac_Cut    &kp LC(UP)                                                     &Mac_Extend_Line_Up &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
-&Mac_URL_Bar       &kp LGUI         &kp LALT      &kp LCTRL     &kp LSHFT       &Mac_Copy   &kp LC(TAB)   &kp TAB       &trans      &trans   &trans        &Mac_Extend_Word_Left &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
-&Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word  &Mac_Find       &Mac_Paste                              &Mac_Prev_Tab      &Mac_Comment                            &Mac_Paste     &kp HOME   &kp PG_UP       &kp PG_DN       &kp END         &Mac_Downloads
-&Mac_Find_Replace  &Mac_Find_Prev   &extend_line  &extend_word  &Mac_Find_Next              &Mac_Extend_Word_Left  &Mac_Extend_Line_Up  &tog 5      &kp ESC  &Mac_Extend_Line_Down  &Mac_Extend_Word_Right                 &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
+&kp ESC            &kp ENTER        &kp SPACE         &kp TAB        &kp BSPC        &kp INS     &kp LG(TAB)                                                                                         &kp LG(LA(TAB))         &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
+&Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para     &Mac_Del_Word  &kp BSPC        &Mac_Cut    &kp LC(UP)                                                                                          &Mac_Extend_Line_Up     &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
+&Mac_URL_Bar       &kp LGUI         &kp LALT          &kp LCTRL      &kp LSHFT       &Mac_Copy   &kp LC(TAB)            &kp TAB              &trans             &trans        &trans                 &Mac_Extend_Word_Left   &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
+&Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word   &Mac_Find       &Mac_Paste                                              &Mac_Prev_Tab      &Mac_Comment                                                 &Mac_Paste  &kp HOME   &kp PG_UP       &kp PG_DN       &kp END         &Mac_Downloads
+&Mac_Find_Replace  &Mac_Find_Prev   &extend_line      &extend_word   &Mac_Find_Next              &Mac_Extend_Word_Left  &Mac_Extend_Line_Up  &tog 5             &kp ESC       &Mac_Extend_Line_Down  &Mac_Extend_Word_Right              &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
             >;
         };
 
