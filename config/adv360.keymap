@@ -351,11 +351,11 @@
         launcher {
             display-name = "Launcher";
             bindings = <
-&trans  &trans                          &trans                 &trans                           &trans                 &trans                 &trans                                      &trans  &trans  &trans                  &trans                &trans                  &trans                     &trans
-&trans  &kp LG(LA(ESC))                 &macro_launch_postman  &kp LC(UP)                       &macro_launch_spotify  &trans                 &trans                                      &trans  &trans  &macro_launch_terminal  &macro_launch_zoom    &macro_launch_finder    &macro_launch_intellij     &trans
-&trans  &macro_launch_activity_monitor  &macro_launch_discord  &kp LC(LEFT)                     &kp LC(RIGHT)          &macro_launch_chatgpt  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &macro_launch_slack                 &macro_launch_chrome  &macro_launch_webstorm  &macro_launch_antigravity  &kp F11
-&trans  &kp LG(LS(Q))  &macro_launch_jetbrains_toolbox  &trans  &trans  &trans                        &trans      &trans                                     &trans  &trans                  &kp LG(M)             &trans                  &trans                     &trans
-&trans  &trans                          &trans                 &trans                           &trans                                        &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(SPACE)           &trans                &trans                  &trans                     &trans
+&trans  &trans             &trans                &trans                &trans                &trans             &trans                                      &trans  &trans  &trans                &trans                &trans                &trans                &trans
+&trans  &kp LG(LA(ESC))    &kp LG(LA(LC(LS(P)))) &kp LC(UP)            &kp LG(LA(LC(LS(Y)))) &trans             &trans                                      &trans  &trans  &kp LG(LA(LC(LS(F)))) &kp LG(LA(LC(LS(L)))) &kp LG(LA(LC(LS(R)))) &kp LG(LA(LC(LS(B)))) &trans
+&trans  &kp LG(LA(LC(LS(A)))) &kp LG(LA(LC(LS(O)))) &kp LC(LEFT)          &kp LC(RIGHT)         &kp LG(LA(LC(LS(G)))) &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LG(LA(LC(LS(D)))) &kp LG(LA(LC(LS(H)))) &kp LG(LA(LC(LS(T)))) &kp LG(LA(LC(LS(N)))) &kp F11
+&trans  &kp LG(LS(Q))      &kp LG(LA(LC(LS(J)))) &trans                &trans                &trans                                 &trans      &trans                  &trans  &trans                &kp LG(M)             &trans                &trans                &trans
+&trans  &trans             &trans                &trans                &trans                                        &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(SPACE)         &trans                &trans                &trans                &trans
             >;
         };
     };
