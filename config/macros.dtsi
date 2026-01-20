@@ -398,3 +398,114 @@
     bindings = <&kp LG(FSLH)>;
     display-name = "Mac Comment Code";
   };
+
+  // App Launchers (Spotlight -> Type Name -> Enter)
+  // Shared wait-ms/tap-ms for reliability
+  
+  macro_launch_chrome: macro_launch_chrome {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp G>, <&kp O>, <&kp O>, <&kp G>, <&kp L>, <&kp E>, <&kp SPACE>, <&kp C>, <&kp H>, <&kp R>, <&kp O>, <&kp M>, <&kp E>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Chrome";
+  };
+
+  macro_launch_webstorm: macro_launch_webstorm {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp W>, <&kp E>, <&kp B>, <&kp S>, <&kp T>, <&kp O>, <&kp R>, <&kp M>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch WebStorm";
+  };
+  
+  macro_launch_slack: macro_launch_slack {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp S>, <&kp L>, <&kp A>, <&kp C>, <&kp K>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Slack";
+  };
+
+  macro_launch_antigravity: macro_launch_antigravity {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp A>, <&kp N>, <&kp T>, <&kp I>, <&kp G>, <&kp R>, <&kp A>, <&kp V>, <&kp I>, <&kp T>, <&kp Y>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Antigravity";
+  };
+
+  macro_launch_agent_manager: macro_launch_agent_manager {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp A>, <&kp G>, <&kp E>, <&kp N>, <&kp T>, <&kp SPACE>, <&kp M>, <&kp A>, <&kp N>, <&kp A>, <&kp G>, <&kp E>, <&kp R>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Agent Manager";
+  };
+
+  macro_launch_notes: macro_launch_notes {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp N>, <&kp O>, <&kp T>, <&kp E>, <&kp S>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Notes";
+  };
+  
+  macro_launch_settings: macro_launch_settings {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp S>, <&kp Y>, <&kp S>, <&kp T>, <&kp E>, <&kp M>, <&kp SPACE>, <&kp S>, <&kp E>, <&kp T>, <&kp T>, <&kp I>, <&kp N>, <&kp G>, <&kp S>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch System Settings";
+  };
+
+  macro_launch_sourcetree: macro_launch_sourcetree {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp S>, <&kp O>, <&kp U>, <&kp R>, <&kp C>, <&kp E>, <&kp T>, <&kp R>, <&kp E>, <&kp E>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch SourceTree";
+  };
+  
+  macro_launch_zoom: macro_launch_zoom {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp Z>, <&kp O>, <&kp O>, <&kp M>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Zoom";
+  };
+
+  macro_launch_finder: macro_launch_finder {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp F>, <&kp I>, <&kp N>, <&kp D>, <&kp E>, <&kp R>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Finder";
+  };
+
+  macro_launch_ghostty: macro_launch_ghostty {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp G>, <&kp H>, <&kp O>, <&kp S>, <&kp T>, <&kp T>, <&kp Y>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Ghostty";
+  };
+  
+  macro_launch_terminal: macro_launch_terminal {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp T>, <&kp E>, <&kp R>, <&kp M>, <&kp I>, <&kp N>, <&kp A>, <&kp L>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch Terminal";
+  };

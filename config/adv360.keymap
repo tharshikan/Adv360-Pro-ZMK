@@ -278,7 +278,7 @@
 &kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
 &kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none        &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
 &kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                             &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
-&mo 2      &kp NUMBER_1  &kp Z   &kp LEFT   &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
+&mo 2      &kp NUMBER_1  &kp Z   &lt 7 LEFT &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
             >;
         };
 
@@ -348,9 +348,15 @@
             >;
         };
 
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
+        launcher {
+            display-name = "Launcher";
+            bindings = <
+&trans  &trans                  &trans                 &trans                 &trans                  &trans                  &trans                                                       &trans  &trans               &trans                      &trans                     &trans                 &trans                 &trans
+&trans  &trans                  &macro_launch_webstorm &trans                 &trans                  &macro_launch_terminal  &trans                                                       &trans  &macro_launch_notes  &macro_launch_agent_manager &macro_launch_sourcetree   &trans                 &trans                 &trans
+&trans  &macro_launch_antigravity &macro_launch_slack    &kp F11                &macro_launch_finder    &macro_launch_ghostty   &trans  &trans  &trans       &trans   &trans   &trans  &trans  &trans               &trans                      &macro_launch_settings     &trans                 &trans
+&trans  &macro_launch_zoom      &trans                 &trans                 &trans                  &macro_launch_chrome    &trans  &trans                                           &trans  &trans               &trans                      &trans                 &trans                 &trans
+&trans  &trans                  &trans                 &trans                 &trans                  &trans                  &trans  &trans       &trans   &trans   &trans   &trans  &trans  &trans               &trans                      &trans                     &trans                 &trans
+            >;
         };
     };
 };
