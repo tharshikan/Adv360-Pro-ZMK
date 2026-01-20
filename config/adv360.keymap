@@ -274,11 +274,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5    &sl 1                                                                       &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
-&kp TAB    &kp Q         &kp P   &kp U      &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
-&kp ESC    &kp A         &kp O   &kp E      &kp I      &kp G     &none        &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
-&kp LSHFT  &kp X         &kp J   &kp COMMA  &kp EQUAL  &kp SQT                             &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
-&mo 2      &kp NUMBER_1  &kp Z   &lt 7 LEFT &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
+&kp LC(LEFT_ARROW)       &kp N1        &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                       &mo 3                  &kp N6  &kp N7   &kp N8      &kp N9      &kp N0   &kp LBKT
+&kp LC(LEFT_ARROW)       &kp Q         &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                       &none                  &kp K   &kp F    &kp L       &kp R       &kp B    &kp BSLH
+&kp LC(RS(RIGHT_ARROW))  &kp A         &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL    &kp LALT        &kp LGUI   &kp RCTRL              &none                  &kp D   &kp H    &kp T       &kp N       &kp S    &sl 1
+&kp LSHFT                &kp X         &kp J   &kp COMMA   &kp EQUAL  &kp SQT                             &kp HOME        &kp PG_UP                                                &kp C   &kp M    &kp W       &kp V       &kp DOT  &kp RSHFT
+&mo 2                    &kp NUMBER_1  &kp Z   &lt 7 LEFT  &kp RIGHT            &smart_bspc  &ht_nav 4 4  &kp ESCAPE      &kp TAB    &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &td_sym  &td_cursor  &lt 6 RBKT  &mo 0    &mo 2
             >;
         };
 
@@ -351,11 +351,11 @@
         launcher {
             display-name = "Launcher";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                               &trans  &trans  &trans                 &trans               &trans                 &trans                 &trans
-&trans  &kp LG(LA(ESC))         &macro_launch_postman &kp LC(UP)                      &macro_launch_spotify &trans  &trans                                                               &trans  &trans  &macro_launch_terminal &macro_launch_zoom   &macro_launch_finder   &macro_launch_intellij &trans
-&trans  &macro_launch_activity_monitor &macro_launch_discord &kp LC(LEFT)                    &kp LC(RIGHT)         &macro_launch_chatgpt &trans        &trans  &trans      &trans  &trans    &trans           &trans  &kp F11 &macro_launch_chrome   &macro_launch_webstorm &macro_launch_antigravity &macro_launch_slack  &trans
-&trans  &kp LG(LS(Q))           &macro_launch_jetbrains_toolbox &trans  &trans  &trans                        &trans      &trans                                     &trans  &kp LG(M)              &trans               &trans                 &trans                 &trans
-&trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans      &trans  &trans    &kp LG(SPACE)            &trans  &trans                 &trans               &trans                 &trans                 &trans
+&trans  &trans                          &trans                 &trans                           &trans                 &trans                 &trans                                      &trans  &trans  &trans                  &trans                &trans                  &trans                     &trans
+&trans  &kp LG(LA(ESC))                 &macro_launch_postman  &kp LC(UP)                       &macro_launch_spotify  &trans                 &trans                                      &trans  &trans  &macro_launch_terminal  &macro_launch_zoom    &macro_launch_finder    &macro_launch_intellij     &trans
+&trans  &macro_launch_activity_monitor  &macro_launch_discord  &kp LC(LEFT)                     &kp LC(RIGHT)          &macro_launch_chatgpt  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F11                 &macro_launch_chrome  &macro_launch_webstorm  &macro_launch_antigravity  &macro_launch_slack
+&trans  &trans                          &kp LG(LS(Q))          &macro_launch_jetbrains_toolbox  &trans                 &trans                                 &trans      &trans                  &trans  &trans                  &kp LG(M)             &trans                  &trans                     &trans
+&trans  &trans                          &trans                 &trans                           &trans                                        &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(SPACE)           &trans                &trans                  &trans                     &trans
             >;
         };
     };
