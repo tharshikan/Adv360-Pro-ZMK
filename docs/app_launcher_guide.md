@@ -27,6 +27,22 @@ These mappings fill the available keys on the Left Hand, using the mnemonic lett
 | **G** | ChatGPT | Home Row - Inner Index |
 | **J** | JetBrains Toolbox | Bottom Row - Ring |
 
+### System Shortcuts (Left Module)
+Common OS operations are mapped to intuitive positions on the Left Hand.
+
+| Key | Action | Application | Position |
+| :--- | :--- | :--- | :--- |
+| **E** | Left Desktop | `Ctrl + Left` | Home Row - Middle |
+| **I** | Right Desktop | `Ctrl + Right` | Home Row - Index |
+| **Q** | Force Quit | `Cmd + Opt + Esc` | Top Row - Pinky |
+| **U** | Mission Control | `Ctrl + Up` | Top Row - Index |
+| **X** | Log Off | `Cmd + Shift + Q` | Bottom Row - Pinky |
+
+### Thumb Cluster
+| Key | Action | Position |
+| :--- | :--- | :--- |
+| **Space** | Spotlight (`Cmd + Space`) | Right Thumb (Large Key) |
+
 ### Right Module (Primary)
 
 These mappings are aligned with your physical key locations on the **Right Module**.
