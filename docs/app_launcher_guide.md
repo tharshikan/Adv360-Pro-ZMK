@@ -13,38 +13,33 @@ This layer uses **ZMK Macros** to:
 3.  Type the Application Name.
 4.  Press `Enter`.
 
-## Key Mappings
+## Key Mappings (Right Module Focused)
 
-### Left Hand (Primary)
-| Key | App | Mnemonic |
+These mappings are aligned with your physical key locations on the **Right Module**.
+
+### Right Hand (Home Row)
+| Key | App | Physical Position |
 | :--- | :--- | :--- |
-| **B** | Chrome | **B**rowser |
-| **W** | WebStorm | **W**ebStorm |
-| **S** | Slack | **S**lack |
-| **A** | Antigravity | **A**ntigravity |
-| **M** | Agent Manager | **M**anager |
-| **N** | Notes | **N**otes |
-| **D** | Show Desktop | **D**esktop (`F11`) |
-| **O** | SourceTree | s**O**urce |
-| **Z** | Zoom | **Z**oom |
-| **F** | Finder | **F**inder |
-| **G** | Ghostty | **G**hostty |
-| **T** | Terminal | **T**erminal |
+| **D** | Show Desktop | Home Row - Inner Index |
+| **H** | Chrome | Home Row - Index |
+| **T** | WebStorm | Home Row - Middle |
+| **N** | Antigravity | Home Row - Ring |
+| **S** | Slack | Home Row - Pinky |
 
-### Right Hand (Secondary)
-| Key | App | Mnemonic |
+### Right Hand (Top Row)
+| Key | App | Physical Position |
 | :--- | :--- | :--- |
-| **Y** | System Settings | s**Y**stem |
+| **F** | Terminal | Top Row - Ring |
+| **L** | Zoom | Top Row - Middle |
+| **R** | Finder | Top Row - Index |
+| **B** | IntelliJ | Top Row - Inner Index |
 
-## Visual Layout
+## Visual Layout (Right Module)
 
 ```text
-(Hold Left Arrow)
-
-Top Row:    (Standard)    [W]ebstm (Standard)      (Standard)      [T]erminal   
-Home Row:   [A]ntigrav    [S]lack  [D]esktop       [F]inder        [G]hostty 
-Bottom Row: [Z]oom        (Standard) (Standard)    (Standard)      [B]rowser 
-
-Right Hand:
-[N]otes  [M]anagr  [O]srcTree  [Y]SysSet
+       [F]Term  [L]Zoom  [R]Findr [B]IntellJ
+[D]Dsk [H]Chrm  [T]WebStm [N]Anti  [S]Slack
 ```
+
+## Note on "Antigravity"
+Pressing **N** will type "Antigravity" into Spotlight. Ensure this matches your intended app (Google Agent Manager).

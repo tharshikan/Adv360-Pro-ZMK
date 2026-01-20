@@ -509,3 +509,12 @@
     bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp T>, <&kp E>, <&kp R>, <&kp M>, <&kp I>, <&kp N>, <&kp A>, <&kp L>, <&macro_wait_time 100>, <&kp ENTER>;
     display-name = "Launch Terminal";
   };
+
+  macro_launch_intellij: macro_launch_intellij {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <50>;
+    tap-ms = <50>;
+    bindings = <&kp LG(SPACE)>, <&macro_wait_time 100>, <&kp I>, <&kp N>, <&kp T>, <&kp E>, <&kp L>, <&kp L>, <&kp I>, <&kp J>, <&kp SPACE>, <&kp I>, <&kp D>, <&kp E>, <&kp A>, <&macro_wait_time 100>, <&kp ENTER>;
+    display-name = "Launch IntelliJ";
+  };
