@@ -32,7 +32,7 @@ This document provides a visual reference for all layers currently configured in
 | Left Hand | | | | | | | | Right Hand | | | | | | |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | `Cmd+=` | `Cmd+1` | `Cmd+2` | `Cmd+3` | `Cmd+4` | `Cmd+5` | `Trans` | | `Trans` | `Cmd+6` | `Cmd+7` | `Cmd+8` | `Cmd+9` | `Cmd+0` | `Cmd+[` |
-| `Cmd+Tab` | `Cmd+Q` | `Cmd+P` | `Undo` | `Cmd+Y` | `Redo` | `Trans` | | `Trans` | `Cmd+K` | `Cmd+.` | `Cmd+T` | `Cmd+R` | `Cmd+B` | `Cmd+\` |
+| `Cmd+Tab` | `Cmd+Q` | `Cmd+P` | `Undo` | `Cmd+Y` | `Redo` | `Trans` | | `Trans` | `Cmd+K` | `Cmd+L` | `Cmd+T` | `Cmd+R` | `Cmd+B` | `Cmd+\` |
 | `Cmd+Esc` | `Cmd+A` | `Cmd+O` | `Cmd+E` | `Cmd+I` | `Cmd+G` | `Trans` | `Trans` | `Trans` | `Cmd+L` | `Left` | `Down` | `Up` | `Right` | `Trans` |
 | `Cmd+Shift` | `Cmd+Z` | `Cmd+,` | `Cmd+C` | `Cmd+V` | `Cmd+Shift+I` | | `Trans` | | `Cmd+C` | `Cmd+M` | `Cmd+W` | `Cmd+V` | `Cmd+F` | `Cmd+Shift` |
 | `Trans` | `Cmd+X` | `Cmd+Z` | `Cmd+Left` | `Cmd+Right` | | `Cmd+Bspc` | `Trans` | `Cmd+End` | `Cmd+PgDn` | `Cmd+Enter` | `Cmd+Space` | | `Cmd+Up` | `Cmd+Down` | `Cmd+Shift+G` | `Cmd+G` | `Trans` |

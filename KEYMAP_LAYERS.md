@@ -132,7 +132,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
 │ CMD+1  │CMD1│CMD2│CMD3│CMD4│CMD5│        │                                       │        │CMD6│CMD7│CMD8│CMD9│CMD0│ CMD+[ │
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
-│ CMD+Tab│CMDQ│CMDP│CMDU│CMDY│CMD;│        │                                       │        │CMDK│CMD.│CMDL│CMDR│CMDB│ CMD+\ │
+│ CMD+Tab│CMDQ│CMDP│CMDU│CMDY│CMD;│        │                                       │        │CMDK│CMDL│CMDT│CMDR│CMDB│ CMD+\ │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
 │ CMD+Esc│CMDA│CMDO│CMDE│CMDI│CMDG│        │                                       │        │CMDD│ ←  │ ↓  │ ↑  │ →  │       │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
