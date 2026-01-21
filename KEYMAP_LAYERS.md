@@ -37,7 +37,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **`td_sym` (Smart Toggle)**: Replaces Page Down on the right thumb.
   - **Tap**: Acts as `sl 1` (Sticky Layer).
   - **Double Tap**: Toggles Layer 1 ON/OFF.
-- **`nav` (Hold)**: Hold either Command/Enter thumb key to access arrows and shortcuts.
+- **`sl 4` (Nav)**: **Left Thumb (Middle)**. Tap for Sticky (One-Shot), Hold for Momentary.
+- **`lt_nav_enter` (Right Thumb)**: Tap for Enter, Hold for Nav Layer.
+- **`lt 7` (Launcher)**: **Hold Left Arrow** to activate App Launcher.
 
 ---
 
@@ -59,45 +61,41 @@ This document provides a comprehensive visual reference for all keyboard layers 
   │MO(2) │ X  │ Z  │ ←  │ →                                                                          │ ↑  │ ↓  │ ]  │MO(5)│MO(2) │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
 
-            Left Thumb Cluster                                                   Right Thumb Cluster
+             Left Thumb Cluster                                                   Right Thumb Cluster
             ┌──────────────┐                                                     ┌──────────────┐
-            │   LCTRL      │                                                     │   RCTRL      │
+            │   SMART_BSPC │                                                     │   RCTRL      │
+            │ (Hold Shift) │                                                     │              │
             ├──────────────┤                                                     ├──────────────┤
-            │   LALT       │                                                     │              │
+            │   SL 4 (Nav) │                                                     │   TD_SYM     │
             ├──────────────┤                                                     ├──────────────┤
-            │   NAV (Hold) │                                                     │              │
+            │   ESCAPE     │                                                     │   TD_CURSOR  │
             ├──────┬───────┤                                                     ├──────┬───────┤
-            │ HOME │ PG_UP │                                                     │ END  │ TD(1)^│
+            │ HOME │ PG_UP │                                                     │ END  │KP_DOT│
             ├──────┼───────┤                                                     ├──────┬───────┤
-            │ BSPC │SmrtNav│                                                     │ NAV  │ SPACE │
-            │      │ (Hold)│                                                     │(Hold)│       │
+            │ BSPC │ SL 4  │                                                     │ NAV/ │ SPACE │
+            │      │       │                                                     │ ENTER│       │
             └──────┴───────┘                                                     └──────┴───────┘
-                                                                               ^ Smart Toggle: Tap=Stick, Dbl=Tog
-                                                                               + Smart Nav (Left): Hold=Mom, Tap=Stick, Dbl=Lock
+
 ```
 
 ### Key Features:
-- **Navigation Layer (NAV):**
-  - **Left Thumb (SmrtNav):** Smart Toggle. **Hold** for momentary, **Tap** for Sticky. (Zero-latency).
-  - **Right Thumb:** Hold to access arrows and shortcuts.
-- **Cursor Layer:** Accessible via **CurTog** (Down Arrow). (Corner hold removed).
+### Key Features:
+- **Snappy & Safe Thumb Cluster:**
+  - **Space/Enter**: Instant fire (`quick-tap=0`) for typing speed.
+  - **Backspace**: Requires `prior-idle` of 125ms to activate Shift (prevents accidental Shift during typos).
+  - **Nav/Delete Keys**: High-performance optimization.
+- **Improved Nav Layer Access:** 
+  - **Left Thumb:** Dedicated Sticky/Momentary Toggle (`sl 4`). 
+  - **Right Thumb:** Hold Enter for momentary access.
+- **Cursor Layer:** Accessible via **CurTog** (Down or Right Thumb).
 - **Smart Sym Toggle (SymTog)**:
-  - **Location**: Replaces the **Up Arrow** key (Right Hand).
+  - **Location**: Right Thumb Inner Top.
   - **Tap**: Sticky Symbol Layer.
-  - **Hold**: Momentary Symbol Layer.
   - **Double Tap**: Lock Symbol Layer.
-
-- **Smart Cursor Toggle (CurTog)**:
-  - **Location**: Replaces the **Down Arrow** key (Right Hand).
-  - **Tap**: Sticky Cursor Layer.
-  - **Hold**: Momentary Cursor Layer.
-  - **Double Tap**: Lock Cursor Layer.
-  - **Double Tap:** Toggles Sym layer ON until you double-tap again.
 - **Dvorak-inspired Layout:** A-O-E-I (left home) and D-H-T-N-S (right home).
 - **Dual-role Thumbs:**
   - **Left Outer:** Backspace (Tap) / Shift (Hold)
   - **Right Outer:** Space (Tap) / Shift (Hold)
-- **Note:** Backslash (\\) is still accessible via Symbol Layer (Layer 1), as the bottom-right corner key now activates the Cursor layer.
 
 ---
 
@@ -128,7 +126,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 **Display Name:** Nav
 **Purpose:** Navigation Arrows, Shortcuts (Copy/Paste), and Command Modifiers
-**Access:** **Hold** Right Command OR **Hold/Tap/DoubleTap** Left Command (Smart Toggle)
+**Access:** **Left Thumb** (Sticky/Hold `sl 4`) OR **Right Thumb** (Hold Enter)
 
 ```
 ┌────────┬────┬────┬────┬────┬────┬────────┐                                       ┌────────┬────┬────┬────┬────┬────┬───────┐
@@ -397,6 +395,23 @@ The **Page Down** key on the right thumb has been upgraded to a **Tap Dance** ke
 - **Same Layout as Nav Layer**, but with **Option (Alt)** modifier instead of Command.
 - **Option + Arrows**: Move cursor by word (Left/Right) or paragraph (Up/Down).
 - **Option + Backspace**: Delete entire word (to the left).
+
+---
+## Performance Tuning
+This configuration is optimized for high-speed typing with minimal latency ("Snappy Mode").
+
+### 1. Eager Debouncing
+- **Latency**: 0ms Press / 5ms Release
+- **Effect**: Alphanumeric keys fire the instant the switch actuates.
+
+### 2. Thumb Cluster Response
+- **Space & Enter**:
+    - **Quick Tap**: 0ms (Instant fire on tap)
+    - **Debounce**: Optimized for fast repeats
+- **Backspace**:
+    - **Safety**: 125ms idle timeout prevents accidental Shift activation.
+- **Nav Layer**:
+    - **Activation**: Zero-latency Sticky Layer (`sl 4`) on left thumb.
 
 ---
 *Generated from ZMK firmware configuration for Kinesis Adv360 Pro*
