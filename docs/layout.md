@@ -9,7 +9,7 @@ This document provides a visual reference for all layers currently configured in
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
 | `Ctrl+Shift+Right` | `A` | `O` | `E` | `I` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H` | `T` | `N` | `S` | `Sym` |
 | `Shift` | `X` | `J` | `,` | `.` | `'` | | `Home` `PgUp` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
-| `Fn` | `1` | `Z` | `Launch` | `Right` | | `Bspc` | `Nav` | `Esc` | `Tab` | `Enter` | `Space` | | `Sym` | `Cursor` | `]` | `Base` | `Fn` |
+| `Fn` | `1` | `Z` | `Launch` | `Right` | | `Bspc` | `Nav` | `Esc` | `Tab` | `Enter` | `Space` | | `]` | `Cursor` | `Sym` | `Base` | `Fn` |
 
 > **Thumb Cluster Note:**
 > *   **Left:** Backspace (Hold Shift), Nav Layer (Sticky), Escape.
