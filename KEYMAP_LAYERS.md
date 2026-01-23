@@ -58,7 +58,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
-  │MO(2) │SymTog│ Z  │ ←  │ →                                                                          │ ↑  │ ↓  │? (Opt)│CurTog│SymTog│
+  │MO(2) │CurTog│ Z  │ BSLH │ ESC                                                                   │? (Opt)│CurTog│SymTog│SymTog│MO(2) │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
 
              Left Thumb Cluster                                                   Right Thumb Cluster
@@ -68,9 +68,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
             ├──────────────┤                                                     ├──────────────┤
             │   SL 4 (Nav) │                                                     │   TD_SYM     │
             ├──────────────┤                                                     ├──────────────┤
-            │   ESCAPE     │                                                     │   TD_CURSOR  │
+            │    TD_SYM    │                                                     │   TD_SYM     │
             ├──────┬───────┤                                                     ├──────┬───────┤
-            │ HOME │ PG_UP │                                                     │ END  │KP_DOT│
+            │ ESC  │  TAB  │                                                     │ END  │KP_DOT│
             ├──────┼───────┤                                                     ├──────┬───────┤
             │ BSPC │ SL 4  │                                                     │ NAV/ │ SPACE │
             │      │       │                                                     │ ENTER│       │
@@ -79,7 +79,6 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ```
 
 ### Key Features:
-### Key Features:
 - **Snappy & Safe Thumb Cluster:**
   - **Space/Enter**: Instant fire (`quick-tap=0`) for typing speed.
   - **Backspace**: Requires `prior-idle` of 125ms to activate Shift (prevents accidental Shift during typos).
@@ -87,11 +86,10 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Improved Nav Layer Access:** 
   - **Left Thumb:** Dedicated Sticky/Momentary Toggle (`sl 4`). 
   - **Right Thumb:** Hold Enter for momentary access.
-- **Cursor Layer:** Accessible via **CurTog** (Down or Right Thumb).
-- **Smart Sym Toggle (SymTog)**:
-  - **Location**: Right Thumb Inner Top.
-  - **Tap**: Sticky Symbol Layer.
-  - **Double Tap**: Lock Symbol Layer.
+- **Layer Toggles:** 
+  - **CurTog**: Left Bottom Row (Index 1) & Right Bottom Row (Index 2).
+  - **SymTog**: Left Thumb, Right Thumb, Right Bottom Row (x2).
+- **Launcher:** Activated by **Hold BSLH** (Backslash) on Left Bottom Row.
 - **Dvorak-inspired Layout:** A-O-E-I (left home) and D-H-T-N-S (right home).
 - **Dual-role Thumbs:**
   - **Left Outer:** Backspace (Tap) / Shift (Hold)

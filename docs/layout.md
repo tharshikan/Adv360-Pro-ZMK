@@ -8,12 +8,13 @@ This document provides a visual reference for all layers currently configured in
 | `Ctrl+Right` | `1` | `2` | `3` | `4` | `5` | `Sym` | | `Mod` | `6` | `7` | `8` | `9`0` | `0` | `[` |
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
 | `Ctrl+Shift+Right` | `A` | `O` | `E` | `I` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H` | `T` | `N` | `S` | `Sym` |
-| `Shift` | `X` | `J` | `,` | `.` | `'` | | `Home` `PgUp` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
-| `Fn` | `Sym` | `Z` | `Launch` | `Right` | | `Bspc` | `Nav` | `Esc` | `Tab` | `Enter` | `Space` | | `?` | `Cursor` | `Sym` | `Base` | `Fn` |
+| `Shift` | `X` | `J` | `,` | `.` | `'` | | `Esc` | `Tab` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
+| `Fn` | `CurTog` | `Z` | `Lnch/\` | `Esc` | | `Bspc` | `Nav` | `Sym` | `Sym` | `Enter` | `Space` | | `?` | `Cursor` | `Sym` | `Sym` | `Fn` |
 
 > **Thumb Cluster Note:**
-> *   **Left:** Backspace (Hold Shift), Nav Layer (Sticky), Escape.
+> *   **Left:** Backspace (Hold Shift), Nav Layer (Sticky), Symbol Toggle.
 > *   **Right:** Enter (Hold Nav), Space (Hold Shift), Symbol Toggle.
+> *   **Inner Keys (Row 4):** Escape, Tab.
 
 ---
 
