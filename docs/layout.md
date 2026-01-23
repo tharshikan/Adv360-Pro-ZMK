@@ -24,7 +24,7 @@ This document provides a visual reference for all layers currently configured in
 | `Tab` | `]` | `}` | `-` | `)` | `/` | `None` | | `None` | `@` | `7` | `8` | `9`0` | `-` | `\` |
 | `Esc` | `[` | `{` | `_` | `(` | `\` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `#` | `4` | `5` | `6` | `+` | `'` |
 | `Shift` | `!` | `$` | `%` | `^` | `~` | | `Home` `PgUp` | | `:` | `1` | `2` | `3` | `Enter` | `Shift` |
-| `Fn` | `` ` `` | `*` | `\|` | `?` | | `Bspc` | `Del` | `End` | `Enter` | `Enter` | `0` | | `Trans` | `Down` | `.` | `]` | `Fn` |
+| `Fn` | `` ` `` | `*` | `\|` | `?` | | `Bspc` | `Del` | `End` | `Enter` | `Enter` | `0` | | `Trans` | `Trans` | `Trans` | `Trans` | `Fn` |
 
 ---
 
