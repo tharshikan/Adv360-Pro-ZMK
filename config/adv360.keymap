@@ -259,6 +259,30 @@
             tapping-term-ms = <175>;
             bindings = <&sl 5>, <&tog 5>;
         };
+
+        fat_arrow: fat_arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FAT_ARROW_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&macro_fat_arrow>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        add_assign: add_assign_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ADD_ASSIGN_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&macro_add_assign>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        not_equal: not_equal_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NOT_EQUAL_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&macro_not_equal>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -271,7 +295,7 @@
 &kp LC(LEFT)             &kp Q       &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                          &none                  &kp K   &kp F      &kp L     &kp R      &kp B      &kp BSLH
 &kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H      &kp T     &kp N      &kp S      &sl 1
 &kp LSHFT                &kp X       &kp J   &kp COMMA   &kp EQUAL  &kp SQT                           &kp ESCAPE        &kp TAB                                                     &kp C   &kp M      &kp W     &kp V      &kp DOT    &kp RSHFT
-&mo 2                    &td_cursor  &kp Z   &lt 7 BSLH  &kp ESC              &smart_bspc  &sl 4      &td_sym           &td_sym       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp MINUS  &kp PLUS  &kp SLASH  &kp COLON  &mo 2
+&mo 2                    &td_cursor  &kp Z   &lt 7 BSLH  &kp ESC              &smart_bspc  &sl 4      &td_sym           &td_sym       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &not_equal  &fat_arrow  &add_assign  &kp SLASH  &mo 2
             >;
         };
 
