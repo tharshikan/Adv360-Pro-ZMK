@@ -18,14 +18,14 @@ This document provides a visual reference for all layers currently configured in
 
 ---
 
-## Layer 1: Sym+Num
+## Layer 1: Symbols (Logic & Structure)
 | Left Hand | | | | | | | | Right Hand | | | | | | |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| `=` | `1` | `2` | `3` | `4` | `5` | `Trans` | | `Mod` | `^` | `Num` | `=` | `/` | `*` | `-` |
-| `Tab` | `]` | `}` | `-` | `)` | `/` | `None` | | `None` | `@` | `7` | `8` | `9`0` | `-` | `\` |
-| `Esc` | `[` | `{` | `_` | `(` | `\` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `#` | `4` | `5` | `6` | `+` | `'` |
-| `Shift` | `!` | `$` | `%` | `^` | `~` | | `Home` `PgUp` | | `:` | `1` | `2` | `3` | `Enter` | `Shift` |
-| `Fn` | `` ` `` | `*` | `\|` | `?` | | `Bspc` | `Del` | `End` | `Enter` | `Enter` | `0` | | `Trans` | `Trans` | `Trans` | `Trans` | `Fn` |
+| `=` | `1` | `2` | `3` | `4` | `5` | `Trans` | | `Mod` | `6` | `7` | `8` | `9`| `0` | `-` |
+| `Tab` | `!` | `@` | `#` | `$` | `%` | `None` | | `None` | `\` | `<` | `>` | `[` | `]` | `\` |
+| `Esc` | `*` | `+` | `=` | `-` | `^` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `"` | `(` | `)` | `{` | `}` | `'` |
+| `Shift` | `~` | `&` | `\|` | `\` | `` ` `` | | `Home` `PgUp` | | `#` | `.` | `?` | `:` | `;` | `Shift` |
+| `Fn` | `Trans` | `Trans` | `Trans` | `Trans` | | `Bspc` | `Del` | `End` | `Enter` | `Enter` | `0` | | `Trans` | `Trans` | `Trans` | `Trans` | `Fn` |
 
 ---
 
