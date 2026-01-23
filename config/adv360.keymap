@@ -267,22 +267,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp LC(RIGHT)            &kp N1   &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7          &kp N8      &kp N9   &kp N0   &kp LBKT
-&kp LC(LEFT)             &kp Q    &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                          &none                  &kp K   &kp F           &kp L       &kp R    &kp B    &kp BSLH
-&kp LC(RS(RIGHT_ARROW))  &kp A    &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H           &kp T       &kp N    &kp S    &sl 1
-&kp LSHFT                &kp X    &kp J   &kp COMMA   &kp EQUAL  &kp SQT                           &kp HOME          &kp TAB                                                     &kp C   &kp M           &kp W       &kp V    &kp DOT  &kp RSHFT
-&mo 2                    &td_sym  &kp Z   &lt 7 BSLH  &kp FSLH             &smart_bspc  &sl 4      &kp ESCAPE        &td_sym       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &lt 6 QUESTION  &td_cursor  &td_sym  &td_sym  &mo 2
+&kp LC(RIGHT)            &kp N1      &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7          &kp N8      &kp N9   &kp N0   &kp LBKT
+&kp LC(LEFT)             &kp Q       &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                          &none                  &kp K   &kp F           &kp L       &kp R    &kp B    &kp BSLH
+&kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H           &kp T       &kp N    &kp S    &sl 1
+&kp LSHFT                &kp X       &kp J   &kp COMMA   &kp EQUAL  &kp SQT                           &kp ESCAPE        &kp TAB                                                     &kp C   &kp M           &kp W       &kp V    &kp DOT  &kp RSHFT
+&mo 2                    &td_cursor  &kp Z   &lt 7 BSLH  &kp ESC              &smart_bspc  &sl 4      &td_sym           &td_sym       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &lt 6 QUESTION  &td_cursor  &td_sym  &td_sym  &mo 2
             >;
         };
 
         sym_numpad {
             display-name = "Sym+Num";
             bindings = <
-&kp EQUAL  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH       &kp DOLLAR  &kp PERCENT        &trans                                                      &mo 3                  &kp CARET  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp RBKT         &kp RBRC          &kp MINUS      &kp RPAR    &kp TILDE          &none                                                       &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp EQUAL        &kp LBRC          &kp UNDER      &kp LPAR    &kp PIPE           &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp EXCL         &kp GREATER_THAN  &kp LESS_THAN  &kp PLUS    &kp DOUBLE_QUOTES                          &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &trans           &trans            &trans         &trans                         &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &trans        &trans         &trans           &mo 2
+&kp EQUAL  &kp EXCLAMATION   &kp AT_SIGN       &kp HASH       &kp DOLLAR  &kp PERCENT        &trans                                                      &mo 3                  &kp CARET  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp RBKT          &kp RBRC          &kp MINUS      &kp RPAR    &kp TILDE          &none                                                       &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp EQUAL         &kp LBRC          &kp UNDER      &kp LPAR    &kp PIPE           &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp LEFT_BRACKET  &kp GREATER_THAN  &kp LESS_THAN  &kp PLUS    &kp DOUBLE_QUOTES                          &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &trans            &trans            &trans         &trans                         &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &trans        &trans         &trans           &mo 2
             >;
         };
 
@@ -349,6 +349,17 @@
 &trans  &kp LG(LA(LC(LS(A))))  &kp LG(LA(LC(LS(O))))  &kp LC(LEFT)  &kp LC(RIGHT)          &kp LG(LA(LC(LS(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
 &trans  &kp LG(LS(Q))          &kp LG(LA(LC(LS(J))))  &trans        &trans                 &trans                                 &trans      &trans                  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(M))))  &kp LG(LC(LA(LS(W))))  &kp LA(LG(LS(LC(N))))  &kp PERIOD             &trans
 &trans  &trans                 &trans                 &trans        &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
+            >;
+        };
+
+        layer_8 {
+            display-name = "Sym+Num";
+            bindings = <
+&kp EQUAL  &kp EXCLAMATION   &kp AT_SIGN       &kp HASH       &kp DOLLAR  &kp PERCENT        &trans                                                      &mo 3                  &kp CARET  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp RBKT          &kp RBRC          &kp MINUS      &kp RPAR    &kp TILDE          &none                                                       &none                  &kp AT     &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp EQUAL         &kp LBRC          &kp UNDER      &kp LPAR    &kp PIPE           &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp HASH   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp LEFT_BRACKET  &kp GREATER_THAN  &kp LESS_THAN  &kp PLUS    &kp DOUBLE_QUOTES                          &kp HOME      &kp PG_UP                                    &kp COLON  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &trans            &trans            &trans         &trans                         &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans      &trans        &trans         &trans           &mo 2
             >;
         };
     };
