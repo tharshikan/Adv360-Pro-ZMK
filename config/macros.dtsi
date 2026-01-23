@@ -419,3 +419,10 @@
     bindings = <&kp EXCL &kp EQUAL>;
     display-name = "Not Equal";
   };
+
+  macro_thin_arrow: macro_thin_arrow {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp MINUS &kp GT>;
+    display-name = "Thin Arrow";
+  };

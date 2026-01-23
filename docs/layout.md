@@ -9,9 +9,9 @@ This document provides a visual reference for all layers currently configured in
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
 | `Ctrl+Shift+Right` | `A` | `O` | `E` | `I` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H` | `T` | `N` | `S` | `Sym` |
 | `Shift` | `X` | `J` | `,` | `.` | `'` | | `Esc` | `Tab` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
-| `Fn` | `CurTog` | `Z` | `Lnch/\` | `Esc` | | `Bspc` | `Nav` | `Sym` | `Sym` | `Enter` | `Space` | | `:` | `-` | `+` | `/` | `Fn` |
+| `Fn` | `CurTog` | `Z` | `Lnch/\` | `Esc` | | `Bspc` | `Nav` | `Sym` | `Sym` | `Enter` | `Space` | | `_` | `-` | `+` | `/` | `Fn` |
 > **JS/React Optimization:**
-> *   **`:` (Inner):** Shift -> `!=` (Not Equal)
+> *   **`_` (Inner):** Shift -> `->` (Thin Arrow)
 > *   **`-` (Middle):** Shift -> `=>` (Fat Arrow)
 > *   **`+` (Ring):** Shift -> `+=` (Add Assign)
 > *   **`/` (Pinky):** Shift -> `?` (Question)
