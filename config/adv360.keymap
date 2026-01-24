@@ -314,11 +314,11 @@
         sym_numpad {
             display-name = "Sym+Num";
             bindings = <
-&kp EQUAL  &kp N1     &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                      &mo 3                  &kp N6     &kp N7    &kp N8     &kp EQUAL  &kp N0    &kp MINUS
-&kp TAB    &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT  &none                                                       &none                  &kp EQUAL  &kp LT    &kp GT     &kp LBKT   &kp RBKT  &kp BSLH
-&kp ESC    &kp STAR   &kp PLUS       &kp EQUAL         &kp MINUS  &kp CARET  &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp DQT    &kp LPAR  &kp RPAR   &kp LBRC   &kp RBRC  &kp SQT
-&kp LSHFT  &kp TILDE  &kp AMPS       &kp PIPE          &kp BSLH   &kp GRAVE                          &kp HOME      &kp PG_UP                                    &kp HASH   &kp DOT   &kp QMARK  &kp COLON  &kp SEMI  &kp RSHFT
-&mo 2      &trans     &trans         &trans            &trans                &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans    &trans     &trans     &trans    &mo 2
+&kp EQUAL  &kp N1     &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                 &mo 3   &kp N6     &kp N7    &kp N8     &kp EQUAL  &kp N0    &kp MINUS
+&kp TAB    &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT  &none                                                  &none   &kp EQUAL  &kp LT    &kp GT     &kp LBKT   &kp RBKT  &kp BSLH
+&kp ESC    &kp STAR   &kp PLUS       &kp EQUAL         &kp MINUS  &kp CARET  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp DQT    &kp LPAR  &kp RPAR   &kp LBRC   &kp RBRC  &kp SQT
+&kp LSHFT  &kp TILDE  &kp AMPS       &kp PIPE          &kp BSLH   &kp GRAVE                     &kp HOME      &kp PG_UP                     &kp HASH   &kp DOT   &kp QMARK  &kp COLON  &kp SEMI  &kp RSHFT
+&mo 2      &trans     &trans         &trans            &trans                &trans  &trans     &kp END       &trans     &trans     &trans             &trans    &trans     &trans     &trans    &mo 2
             >;
         };
 
