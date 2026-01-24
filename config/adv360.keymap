@@ -247,7 +247,7 @@
             label = "TAP_DANCE_SYM";
             #binding-cells = <0>;
             tapping-term-ms = <175>;
-            bindings = <&sl 0>, <&tog 0>;
+            bindings = <&sl 1>, <&tog 1>;
         };
 
         /* Smart Toggle for Cursor Layer: Tap=Sticky, DoubleTap=Lock(tog) */
