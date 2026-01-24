@@ -402,27 +402,27 @@
   macro_fat_arrow: macro_fat_arrow {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp EQUAL &kp GT>;
+    bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&kp EQUAL &kp GT>;
     display-name = "Fat Arrow";
   };
 
   macro_add_assign: macro_add_assign {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp PLUS &kp EQUAL>;
+    bindings = <&kp PLUS>, <&macro_release &kp LSHFT &kp RSHFT>, <&kp EQUAL>;
     display-name = "Add Assign";
   };
 
   macro_not_equal: macro_not_equal {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp EXCL &kp EQUAL>;
+    bindings = <&kp EXCL>, <&macro_release &kp LSHFT &kp RSHFT>, <&kp EQUAL>;
     display-name = "Not Equal";
   };
 
   macro_thin_arrow: macro_thin_arrow {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp MINUS &kp GT>;
+    bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&kp MINUS &kp GT>;
     display-name = "Thin Arrow";
   };
