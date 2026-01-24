@@ -21,7 +21,7 @@ This document provides a visual reference for all layers currently configured in
 ## Layer 1: Symbols (Logic & Structure)
 | Left Hand | | | | | | | | Right Hand | | | | | | |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| `=` | `1` | `<` | `>` | `4` | `5` | `Trans` | | `Mod` | `6` | `7` | `8` | `=`| `0` | `-` |
+| `=` | `1` | `<` | `>` | `4` | `5` | `Trans` | | `Mod` | `6` | `7` | `8` | `9 / [`| `0 / ]` | `-` |
 | `Tab` | `!` | `@` | `#` | `$` | `%` | `None` | | `None` | `\` | `<` | `>` | `[` | `]` | `\` |
 | `Esc` | `*` | `+` | `=` | `-` | `^` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `"` | `(` | `)` | `{` | `}` | `'` |
 | `Shift` | `~` | `&` | `\|` | `\` | `` ` `` | | `Home` `PgUp` | | `#` | `.` | `?` | `:` | `;` | `Shift` |
