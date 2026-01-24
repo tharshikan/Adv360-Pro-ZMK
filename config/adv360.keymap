@@ -314,7 +314,7 @@
         sym_numpad {
             display-name = "Sym+Num";
             bindings = <
-&kp EQUAL  &kp N1     &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                 &mo 3   &kp N6            &kp EXCLAMATION  &kp PLUS   &kp RIGHT_BRACKET      &kp N0             &kp MINUS
+&kp EQUAL  &kp N1     &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                 &mo 3   &kp STAR          &kp EXCLAMATION  &kp PLUS   &kp RIGHT_BRACKET      &kp N0             &kp MINUS
 &kp TAB    &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT  &none                                                  &none   &kp GREATER_THAN  &kp RIGHT_BRACE  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET   &kp BSLH
 &kp ESC    &kp STAR   &kp PLUS       &kp EQUAL         &kp MINUS  &kp CARET  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp LESS_THAN     &kp LPAR         &kp EQUAL  &kp LBRC               &kp SINGLE_QUOTE   &kp SEMICOLON
 &kp LSHFT  &kp TILDE  &kp AMPS       &kp PIPE          &kp BSLH   &kp GRAVE                     &kp HOME      &kp PG_UP                     &kp UNDERSCORE    &kp DOT          &kp QMARK  &kp COLON              &kp DOUBLE_QUOTES  &kp RSHFT
