@@ -303,11 +303,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp LC(RIGHT)            &kp N1      &kp N2  &kp N3      &kp N4        &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7     &kp N8            &kp N9         &kp N0     &kp LBKT
-&kp LC(LEFT)             &kp Q       &kp P   &kp U       &kp Y         &kp SEMI  &none                                                                          &none                  &kp K   &kp F      &kp L             &kp R          &kp B      &kp BSLH
-&kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E       &kp I         &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H      &kp T             &kp N          &kp S      &sl 1
-&kp LSHFT                &td_sym     &kp J   &kp COMMA   &kp EQUAL     &kp X                             &kp ESCAPE        &kp TAB                                                     &kp C   &kp M      &kp W             &kp V          &kp DOT    &kp RSHFT
-&mo 2                    &td_cursor  &kp Z   &lt 7 BSLH  &kp QUESTION            &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp UNDER  &kp SINGLE_QUOTE  &kp BACKSLASH  &kp SLASH  &mo 2
+&kp LC(RIGHT)            &kp N1      &kp N2  &kp N3       &kp N4        &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7     &kp N8            &kp N9         &kp N0     &kp LBKT
+&kp LC(LEFT)             &kp Q       &kp P   &kp U        &kp Y         &kp SEMI  &none                                                                          &none                  &kp K   &kp F      &kp L             &kp R          &kp B      &kp BSLH
+&kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E        &kp I         &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H      &kp T             &kp N          &kp S      &sl 1
+&kp LSHFT                &td_sym     &kp J   &kp COMMA    &kp EQUAL     &kp X                             &kp ESCAPE        &kp TAB                                                     &kp C   &kp M      &kp W             &kp V          &kp DOT    &kp RSHFT
+&mo 2                    &td_cursor  &kp Z   &lt 7 CARET  &kp QUESTION            &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp UNDER  &kp SINGLE_QUOTE  &kp BACKSLASH  &kp SLASH  &mo 2
             >;
         };
 
