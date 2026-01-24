@@ -265,6 +265,7 @@
             label = "FAT_ARROW_MORPH";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&macro_fat_arrow>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -273,6 +274,7 @@
             label = "ADD_ASSIGN_MORPH";
             #binding-cells = <0>;
             bindings = <&kp PLUS>, <&macro_add_assign>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -281,6 +283,7 @@
             label = "NOT_EQUAL_MORPH";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&macro_not_equal>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -289,6 +292,7 @@
             label = "UNDERSCORE_ARROW_MORPH";
             #binding-cells = <0>;
             bindings = <&kp UNDER>, <&macro_thin_arrow>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -299,10 +303,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp LC(RIGHT)            &kp N1      &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7     &kp N8    &kp N9     &kp N0     &kp LBKT
-&kp LC(LEFT)             &kp Q       &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                          &none                  &kp K   &kp F      &kp L     &kp R      &kp B      &kp BSLH
-&kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H      &kp T     &kp N      &kp S      &sl 1
-&kp LSHFT                &kp X       &kp J   &kp COMMA   &kp EQUAL  &kp SQT                           &kp ESCAPE        &kp TAB                                                     &kp C   &kp M      &kp W     &kp V      &kp DOT    &kp RSHFT
+&kp LC(RIGHT)            &kp N1      &kp N2  &kp N3      &kp N4     &kp N5    &sl 1                                                                          &mo 3                  &kp N6  &kp N7             &kp N8      &kp N9       &kp N0     &kp LBKT
+&kp LC(LEFT)             &kp Q       &kp P   &kp U       &kp Y      &kp SEMI  &none                                                                          &none                  &kp K   &kp F              &kp L       &kp R        &kp B      &kp BSLH
+&kp LC(RS(RIGHT_ARROW))  &kp A       &kp O   &kp E       &kp I      &kp G     &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H              &kp T       &kp N        &kp S      &sl 1
+&kp LSHFT                &kp X       &kp J   &kp COMMA   &kp EQUAL  &kp SQT                           &kp ESCAPE        &kp TAB                                                     &kp C   &kp M              &kp W       &kp V        &kp DOT    &kp RSHFT
 &mo 2                    &td_cursor  &kp Z   &lt 7 BSLH  &kp ESC              &smart_bspc  &sl 4      &td_sym           &td_sym       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &underscore_arrow  &fat_arrow  &add_assign  &kp SLASH  &mo 2
             >;
         };
@@ -310,11 +314,11 @@
         sym_numpad {
             display-name = "Sym+Num";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3     &kp N4      &kp N5             &trans                                                      &mo 3                  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
-&kp TAB    &kp EXCL   &kp AT    &kp HASH   &kp DLLR    &kp PRCNT          &none                                                       &none                  &kp BSLH   &kp LT     &kp GT     &kp LBKT   &kp RBKT   &kp BSLH
-&kp ESC    &kp STAR   &kp PLUS  &kp EQUAL  &kp MINUS   &kp CARET          &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp DQT    &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC   &kp SQT
-&kp LSHFT  &kp TILDE  &kp AMPS  &kp PIPE   &kp BSLH    &kp GRAVE                                  &kp HOME      &kp PG_UP                                    &kp HASH   &kp DOT    &kp QMARK  &kp COLON  &kp SEMI   &kp RSHFT
-&mo 2      &trans     &trans    &trans     &trans                         &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0             &trans     &trans     &trans     &trans     &mo 2
+&kp EQUAL  &kp N1     &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                      &mo 3                  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &kp MINUS
+&kp TAB    &kp EXCL   &kp AT         &kp HASH          &kp DLLR   &kp PRCNT  &none                                                       &none                  &kp BSLH  &kp LT    &kp GT     &kp LBKT   &kp RBKT  &kp BSLH
+&kp ESC    &kp STAR   &kp PLUS       &kp EQUAL         &kp MINUS  &kp CARET  &none        &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp DQT   &kp LPAR  &kp RPAR   &kp LBRC   &kp RBRC  &kp SQT
+&kp LSHFT  &kp TILDE  &kp AMPS       &kp PIPE          &kp BSLH   &kp GRAVE                          &kp HOME      &kp PG_UP                                    &kp HASH  &kp DOT   &kp QMARK  &kp COLON  &kp SEMI  &kp RSHFT
+&mo 2      &trans     &trans         &trans            &trans                &smart_bspc  &kp DEL    &kp END       &trans     &kp ENTER  &sp_shift RSHFT KP_N0            &trans    &trans     &trans     &trans    &mo 2
             >;
         };
 
