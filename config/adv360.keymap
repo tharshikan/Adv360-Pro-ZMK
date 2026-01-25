@@ -237,6 +237,18 @@
             bindings = <&mo>, <&kp>;
         };
 
+        lt_launcher: layer_tap_launcher {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_LAUNCHER";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+        };
+
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, Hold=Momentary */
         /* Replaced Tap-Dance with Hold-Tap for instant speed (Option A) */
         /* Hold-Tap for Cursor Layer: Hold=Momentary(5), Tap=Sticky(5) */
@@ -341,7 +353,7 @@
 &kp LC(LEFT)             &kp Q      &kp P   &kp U            &kp Y             &kp SEMI          &none                                                                          &none                  &kp K   &kp F                 &kp L                  &kp R       &kp B           &kp BSLH
 &kp LC(RS(RIGHT_ARROW))  &kp A      &kp O   &kp E            &kp I             &kp G             &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H                 &kp T                  &kp N       &kp S           &td_sym
 &td_cursor               &kp X      &kp J   &kp COMMA        &kp EQUAL         &kp SINGLE_QUOTE                          &kp ESCAPE        &kp TAB                                                     &kp C   &kp M                 &kp W                  &kp V       &kp DOT         &kp RSHFT
-&td_cursor               &kp SLASH  &kp Z   &lt 7 LESS_THAN  &kp GREATER_THAN                    &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS   &lcurly_sq      &rcurly_sq
+&td_cursor               &kp SLASH  &kp Z   &lt_launcher 7 LESS_THAN  &kp GREATER_THAN                    &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS   &lcurly_sq      &rcurly_sq
             >;
         };
 
