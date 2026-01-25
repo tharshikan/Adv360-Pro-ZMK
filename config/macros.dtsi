@@ -438,8 +438,8 @@
   macro_lbracket: macro_lbracket {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <50>;
+    tap-ms = <50>;
     bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&kp LBKT>;
     display-name = "Left Bracket";
   };
@@ -447,8 +447,8 @@
   macro_rbracket: macro_rbracket {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <50>;
+    tap-ms = <50>;
     bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&kp RBKT>;
     display-name = "Right Bracket";
   };

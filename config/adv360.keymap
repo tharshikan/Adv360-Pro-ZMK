@@ -308,21 +308,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        nine_lbrc: nine_lbracket {
+        morph_9: morph_9_lbracket {
             compatible = "zmk,behavior-mod-morph";
-            label = "NINE_LBRACKET";
+            label = "MORPH_9_LBRACKET";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&macro_lbracket>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        zero_rbrc: zero_rbracket {
+        morph_0: morph_0_rbracket {
             compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_RBRACKET";
+            label = "MORPH_0_RBRACKET";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&macro_rbracket>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -349,7 +347,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp LC(RIGHT)            &kp N1     &kp N2  &kp N3           &kp N4            &kp N5            &sl 0                                                                          &mo 3                  &kp N6  &kp N7                &kp N8                 &nine_lbrc  &zero_rbrc      &kp UNDERSCORE
+&kp LC(RIGHT)            &kp N1     &kp N2  &kp N3           &kp N4            &kp N5            &sl 0                                                                          &mo 3                  &kp N6  &kp N7                &kp N8                 &morph_9    &morph_0        &kp UNDERSCORE
 &kp LC(LEFT)             &kp Q      &kp P   &kp U            &kp Y             &kp SEMI          &none                                                                          &none                  &kp K   &kp F                 &kp L                  &kp R       &kp B           &kp BSLH
 &kp LC(RS(RIGHT_ARROW))  &kp A      &kp O   &kp E            &kp I             &kp G             &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &kp RCTRL              &none                  &kp D   &kp H                 &kp T                  &kp N       &kp S           &td_sym
 &td_cursor               &kp X      &kp J   &kp COMMA        &kp EQUAL         &kp SINGLE_QUOTE                          &kp ESCAPE        &kp TAB                                                     &kp C   &kp M                 &kp W                  &kp V       &kp DOT         &kp RSHFT
