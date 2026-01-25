@@ -300,8 +300,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "NINE_LBRACKET";
             #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp LBKT>;
-
+            bindings = <&kp N9>, <&macro_lbracket>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -309,8 +308,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_RBRACKET";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp RBKT>;
-
+            bindings = <&kp N0>, <&macro_rbracket>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
