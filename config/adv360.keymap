@@ -406,7 +406,7 @@
             >;
         };
 
-        backup_sym {
+        backup_syma {
             display-name = "Backup Sym";
             bindings = <
 &kp EQUAL  &kp N1    &kp LESS_THAN  &kp GREATER_THAN  &kp N4     &kp N5     &trans                                                 &mo 3   &kp STAR          &kp EXCLAMATION  &kp PLUS   &kp RIGHT_BRACKET      &kp N0             &kp MINUS
