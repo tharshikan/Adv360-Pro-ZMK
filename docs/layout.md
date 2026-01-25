@@ -9,7 +9,7 @@ This document provides a visual reference for all layers currently configured in
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
 | `Ctrl+Shift+Right` | `A` | `O` | `E` | `I` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H` | `T` | `N` | `S` | `Sym` |
 | `Shift` | `X` | `J` | `,` | `.` | `'` | | `Esc` | `Tab` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
-| `CurTog` | `/` | `Z` | `^ / L7` | `?` | | `Bspc` | `Nav` | `Sym` | `Sym` | `Enter` | `Space` | | `(` | `)` | `-` | `{` | `}` |
+| `CurTog` | `/` | `Z` | `^ / L7` | `?` | | `Bspc` | `Nav` | `Sym` | `Sym` | `Enter` | `Space` | | `(` | `)` | `-` | `{ / [` | `} / ]` |
 
 > **Thumb Cluster Note:**
 > *   **Left:** Backspace (Hold Shift), Nav Layer (Sticky), Symbol Toggle.

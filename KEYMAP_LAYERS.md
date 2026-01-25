@@ -58,7 +58,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
-  │CurTog│  /   │ Z  │ ^/L7 │  ?                                                                    │  (   │  )   │  -   │  {   │  }   │
+  │CurTog│  /   │ Z  │ ^/L7 │  ?                                                                    │  (   │  )   │  -   │ {/[  │ }/]  │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
 
              Left Thumb Cluster                                                   Right Thumb Cluster
