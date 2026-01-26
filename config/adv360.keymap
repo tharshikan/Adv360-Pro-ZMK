@@ -417,8 +417,8 @@
         opt_nav {
             display-name = "OptNav";
             bindings = <
-&kp LA(EQUAL)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)    &kp LA(N4)     &kp LA(N5)    &trans                                                               &trans         &kp LA(N6)  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &kp LA(N0)     &kp LA(LBKT)
-&kp LA(TAB)    &kp LA(Q)   &kp LA(P)   &kp LA(U)     &kp LA(Y)      &kp LA(SEMI)  &trans                                                               &trans         &kp LA(K)   &kp LA(F)     &kp LA(L)     &kp LA(R)     &kp LA(B)      &kp LA(BSLH)
+&kp LA(EQUAL)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)    &kp LA(N4)     &kp LA(N5)    &trans                                                               &trans         &kp LA(N6)  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &kp LG(N0)     &kp LA(LBKT)
+&kp LA(TAB)    &kp LA(Q)   &kp LA(P)   &kp LA(U)     &kp LA(Y)      &kp LA(SEMI)  &trans                                                               &trans         &kp LA(K)   &kp LA(F)     &kp LA(L)     &kp LG(PLUS)  &kp LG(MINUS)  &kp LA(BSLH)
 &kp LA(ESC)    &kp LA(A)   &kp LA(O)   &kp LA(E)     &kp LA(I)      &kp LA(G)     &trans        &trans  &trans           &trans         &trans         &trans         &kp LA(D)   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)    &kp LA(RIGHT)  &trans
 &kp LA(LSHFT)  &kp LA(Z)   &kp LA(X)   &kp LA(C)     &kp LA(V)      &kp LA(SQT)                         &trans           &trans                                       &kp LA(C)   &kp LA(M)     &kp LA(W)     &kp LA(V)     &kp LA(DOT)    &kp LA(RSHFT)
 &trans         &kp LA(X)   &kp LA(Z)   &kp LA(LEFT)  &kp LA(RIGHT)                &kp LA(BSPC)  &trans  &kp LA(END)      &kp LA(PG_DN)  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(UP)    &kp LA(DOWN)  &kp LA(RBKT)  &kp LA(BSLH)   &trans
