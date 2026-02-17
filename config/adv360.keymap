@@ -431,7 +431,7 @@
 &trans  &trans                 &trans                 &trans        &trans                 &trans                 &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
 &trans  &kp LG(LA(ESC))        &kp LG(LA(LC(LS(P))))  &kp LC(UP)    &kp LG(LA(LC(LS(Y))))  &trans                 &trans                                      &trans  &kp LS(LA(LC(LG(K))))  &kp LC(LEFT)           &kp LC(UP)             &kp LC(RIGHT)          &kp LG(LA(LC(LS(B))))  &trans
 &trans  &kp LG(LA(LC(LS(A))))  &kp LG(LA(LC(LS(O))))  &kp LC(LEFT)  &kp LC(RIGHT)          &kp LG(LA(LC(LS(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
-&trans  &kp LG(LS(Q))          &kp LG(LA(LC(LS(J))))  &trans        &trans                 &trans                                 &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp LA(LG(LS(LC(N))))  &kp PERIOD             &trans
+&trans  &kp LG(LS(Q))          &kp LG(LA(LC(LS(J))))  &trans        &trans                 &trans                                 &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp RG(KP_PLUS)        &kp PERIOD             &trans
 &trans  &trans                 &trans                 &trans        &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
             >;
         };
