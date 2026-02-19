@@ -451,11 +451,11 @@
         backup_syma {
             display-name = "Backup Sym";
             bindings = <
-&kp EQUAL        &kp N1           &kp LESS_THAN  &kp GREATER_THAN  &kp N4             &kp N5         &trans                                                 &mo 3   &kp STAR  &kp EXCLAMATION  &kp PLUS              &kp RIGHT_BRACKET      &kp N0         &kp MINUS
-&kp GRAVE        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &none                                                  &none   &none     &kp CARET        &kp LBRC              &kp RBRC               &kp DOLLAR     &macro_thin_arrow
-&kp EXCLAMATION  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &none     &kp HASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
-&kp LS(GRAVE)    &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                       &kp HOME      &kp PG_UP                     &none     &kp AT_SIGN      &kp COLON             &kp COMMA              &kp DOT        &kp SINGLE_QUOTE
-&mo 2            &trans           &trans         &trans            &trans                            &trans  &trans     &kp END       &trans     &trans     &trans            &trans           &trans                &trans                 &trans         &mo 2
+&kp EQUAL        &kp N1           &kp LESS_THAN  &kp GREATER_THAN  &kp N4             &kp N5         &trans                                                 &mo 3   &kp STAR     &kp EXCLAMATION       &kp PLUS               &kp RIGHT_BRACKET  &kp N0             &kp MINUS
+&kp GRAVE        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &none                                                  &none   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR         &kp PIPE           &macro_thin_arrow
+&kp EXCLAMATION  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES
+&kp LS(GRAVE)    &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                       &kp HOME      &kp PG_UP                     &kp AT_SIGN  &kp COLON             &kp COMMA              &kp SQT            &kp DOT            &kp SINGLE_QUOTE
+&mo 2            &trans           &trans         &trans            &trans                            &trans  &trans     &kp END       &trans     &trans     &trans               &trans                &trans                 &trans             &trans             &mo 2
             >;
         };
 
