@@ -54,7 +54,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │ A  │ O  │ E  │ I  │ G  │        │                                       │        │ D  │ H  │ T  │ N  │ S  │ SL(1) │
+│  ESC   │ A  │O/L8│ E  │ I  │ G  │        │                                       │        │ D  │H/L8│ T  │ N  │ S  │ SL(1) │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -86,6 +86,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Improved Nav Layer Access:** 
   - **Left Thumb:** Dedicated Sticky/Momentary Toggle (`sl 4`). 
   - **Right Thumb:** Hold Enter for momentary access.
+- **Layer 8 Access:** Hold `O` or `H` on the home row for Backup Sym layer.
 - **Layer Toggles:** 
   - **CurTog**: Left Bottom Row (Index 1) & Right Bottom Row (Index 2).
   - **SymTog**: Left Thumb, Right Thumb, Right Bottom Row (x2).
