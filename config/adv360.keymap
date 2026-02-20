@@ -425,7 +425,7 @@
 &trans  &trans      &kp SLASH     &kp ASTERISK  &trans        &trans     &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
 &trans  &kp COMMA   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans                                      &trans  &kp LS(LA(LC(LG(K))))  &kp LC(LEFT)           &kp LC(UP)             &kp LC(RIGHT)          &kp LG(LA(LC(LS(B))))  &trans
 &trans  &kp N0      &kp N1        &kp N2        &kp N3        &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
-&trans  &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp MINUS                  &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp RG(KP_PLUS)        &kp PERIOD             &trans
+&trans  &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp MINUS                  &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp D                  &kp PERIOD             &trans
 &trans  &trans      &trans        &trans        &trans                   &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
             >;
         };
