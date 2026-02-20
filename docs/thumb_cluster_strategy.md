@@ -58,7 +58,7 @@ To complement the thumb cluster, the home row incorporates specialized modifiers
 | Parameter | Value | Purpose |
 | :--- | :--- | :--- |
 | **Flavor** | `balanced` / `tap-preferred` | `balanced` on standard HRMs resolves holds/taps based on whether the key was pressed within overlapping times. `tap-preferred` is used for Shift (`E`) and Layer 8 (`I`, `H`) to prioritize typing the character if rolled quickly. |
-| **Require Prior Idle** | `125ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for 125ms prior. Eliminates almost all accidental mods during fast typing rolls. |
+| **Require Prior Idle** | `160ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for 160ms prior. Eliminates almost all accidental mods during fast typing rolls. |
 | **Quick Tap** | `175ms` | Allows rapid double-tapping to repeat a key (e.g., typing "ee" or "ll" quickly) without accidentally triggering the modifier. |
 | **Hold-Trigger-On-Release** | Enabled | Used with Positional Holds. Allows releasing the modifier key *after* you release the triggered key without accidentally outputting the modifier's base key character. |
 | **Retro Tap** | Enabled | Specifically for the `E`, `I` and `H` modifiers; holding the key past the tapping term but *not* pressing another key will still output the base key upon release. |
