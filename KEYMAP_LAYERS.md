@@ -20,13 +20,13 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 | Layer # | Name | Display Name | Purpose | Access Method |
 |---------|------|--------------|---------|---------------|
-| 0 | default_layer | Base | Custom Dvorak-inspired layout | Default active layer |
-| 1 | sym | Backup Sym | Backup symbols/brackets on left, numpad on right | **Sticky Layer** (Tap SL) or **Smart Toggle** (Double-Tap PG_DN) |
-| 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
-| 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
-| 4 | nav | Nav | Navigation Arrows & Copy/Paste shortcuts | **Hold either Command (Thumb)** |
+| 0 | base | Base | Custom Dvorak-inspired layout | Default active layer |
+| 1 | sym_backup | Backup Sym | Backup symbols/brackets on left, numpad on right | **Sticky Layer** (Tap SL) or **Smart Toggle** (Double-Tap PG_DN) |
+| 2 | function | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
+| 3 | system | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
+| 4 | navigation | Nav | Navigation Arrows & Copy/Paste shortcuts | **Hold either Command (Thumb)** |
 | 5 | cursor | Cursor | VIM arrows, text selection, find operations | **Hold bottom-right corner key** |
-| 6 | opt_nav | OptNav | **Option** + Arrows/Nav Keys (Word Navigation) | **Hold Right Thumb ']'** |
+| 6 | nav_opt | OptNav | **Option** + Arrows/Nav Keys (Word Navigation) | **Hold Right Thumb ']'** |
 
 ---
 
@@ -231,9 +231,6 @@ The new Cursor Layer is a complete command center for text editing and navigatio
 - **Thumbs (Right)**:
     - **Big Keys**: `Esc`, `Extend Line`, `Extend Word`.
 
-
-### Key Features:
-
 #### 1. VIM-Style Arrow Keys (Right Home Row)
 The right home row becomes arrow keys, keeping your hands in optimal typing position (Dvorak Positions):
 - **D position** (Index Inner): **Home** Key
@@ -362,8 +359,6 @@ The **Page Down** key on the right thumb has been upgraded to a **Tap Dance** ke
 - **Right Thumb (Inner)**: Tap for **Enter**, Hold for **Nav Layer** (Command).
 - **Left Thumb (Outer)**: Tap for **Backspace**, Hold for **Shift**.
 - **Right Thumb (Outer)**: Tap for **Space**, Hold for **Shift**.
-
----
 
 ---
 
