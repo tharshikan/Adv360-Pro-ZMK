@@ -1,6 +1,6 @@
-# Thumb Cluster Strategy: "Snappy & Safe"
+# Thumb Cluster & Home Row Strategy: "Snappy & Safe"
 
-This document outlines the specific ZMK configuration strategy used for the Thumb Clusters. The goal is to maximize **typing speed and responsiveness** ("Snappiness") for primary actions (Space, Backspace, Enter) while preventing accidental layer activations or missed keys.
+This document outlines the specific ZMK configuration strategy used for the Thumb Clusters and Home Row Modifiers. The goal is to maximize **typing speed and responsiveness** ("Snappiness") for primary actions (Space, Backspace, Enter) and standard typing while preventing accidental layer/modifier activations or missed keys.
 
 ## Core Philosophy
 
@@ -46,3 +46,31 @@ If you hesitate and hold a thumb key longer than its timeout but **don't** press
 2.  **Layer Access (Shift/Nav):**
     *   Requires a **deliberate** pause/hold.
     *   You cannot simply "flick" the layer on; you must press-and-hold for a split second (approx 0.2s) to engage the modifier.
+
+---
+
+## Home Row Modifiers (HRMs) Configuration
+
+To complement the thumb cluster, the home row incorporates specialized modifiers (Layer 8 Backup Symbol, Shift, and positional modifiers) configured for **accuracy and speed** without accidental triggers.
+
+### Settings Breakdown
+
+| Parameter | Value | Purpose |
+| :--- | :--- | :--- |
+| **Flavor** | `balanced` / `tap-preferred` | `balanced` on standard HRMs resolves holds/taps based on whether the key was pressed within overlapping times. `tap-preferred` is used for Shift (`E`) and Layer 8 (`I`, `H`) to prioritize typing the character if rolled quickly. |
+| **Require Prior Idle** | `125ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for 125ms prior. Eliminates almost all accidental mods during fast typing rolls. |
+| **Quick Tap** | `175ms` | Allows rapid double-tapping to repeat a key (e.g., typing "ee" or "ll" quickly) without accidentally triggering the modifier. |
+| **Hold-Trigger-On-Release** | Enabled | Used with Positional Holds. Allows releasing the modifier key *after* you release the triggered key without accidentally outputting the modifier's base key character. |
+| **Retro Tap** | Enabled | Specifically for the `E`, `I` and `H` modifiers; holding the key past the tapping term but *not* pressing another key will still output the base key upon release. |
+
+### Positional Holds & Staggered Tapping Terms
+
+Standard home row modifiers are constrained by **Positional Holds**. Left-hand modifiers only trigger if a key on the *right side* of the keyboard is pressed, and vice versa.
+
+Furthermore, tapping terms are staggered based on finger strength and dexterity to prevent accidental activation by weaker, slower fingers:
+
+*   **Pinky:** `280ms` (Slowest, most forgiving)
+*   **Ring:** `240ms`
+*   **Middle:** `210ms`
+*   **Index:** `180ms` (Fastest, most deliberate)
+*   **Layer 8 & Shift (H, I, E):** `225ms` with `tap-preferred` and `retro-tap` for high-accuracy standard typing retention, independent of positional holds.
