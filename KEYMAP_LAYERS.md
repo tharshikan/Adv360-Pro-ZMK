@@ -21,7 +21,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 | Layer # | Name | Display Name | Purpose | Access Method |
 |---------|------|--------------|---------|---------------|
 | 0 | default_layer | Base | Custom Dvorak-inspired layout | Default active layer |
-| 1 | sym_numpad | Sym+Num | Symbols/brackets on left, numpad on right | **Sticky Layer** (Tap SL) or **Smart Toggle** (Double-Tap PG_DN) |
+| 1 | sym | Backup Sym | Backup symbols/brackets on left, numpad on right | **Sticky Layer** (Tap SL) or **Smart Toggle** (Double-Tap PG_DN) |
 | 2 | fn | Fn | Function keys (F1-F12) | Hold MO(2) keys (bottom-left/right corners) |
 | 3 | mod | Mod | System controls, Bluetooth, RGB, Backlight | Hold MO(3) key (top-right) |
 | 4 | nav | Nav | Navigation Arrows & Copy/Paste shortcuts | **Hold either Command (Thumb)** |
@@ -33,8 +33,8 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ## Layer Access
 
 ### Layer Switching Keys
-- **`sl 1`**: Sticky Layer 1 (Symbols+Numpad) - activates for next keypress only.
-- **`td_sym` (Smart Toggle)**: Replaces Page Down on the right thumb.
+- **`sl 1`**: Sticky Layer 1 (Backup Sym) - activates for next keypress only.
+- **`td_backup_sym` (Smart Toggle)**: Replaces Page Down on the right thumb.
   - **Tap**: Acts as `sl 1` (Sticky Layer).
   - **Double Tap**: Toggles Layer 1 ON/OFF.
 - **`sl 4` (Nav)**: **Left Thumb (Middle)**. Tap for Sticky (One-Shot), Hold for Momentary.
@@ -54,7 +54,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │A/Cm│ O  │E/Sft│I/L8│ G  │        │                                       │        │ D  │H/L8│ T/Sft│ N/L8│S/Cm │ SL(1) │
+│  ESC   │A/Cm│ O  │E/Sft│I/Sym│ G  │        │                                       │        │ D  │H/Sym│ T/Sft│N/Num│S/Cm │ SL(1) │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -66,9 +66,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
             │   SMART_BSPC │                                                     │   RCTRL      │
             │ (Hold Shift) │                                                     │              │
             ├──────────────┤                                                     ├──────────────┤
-            │   SL 4 (Nav) │                                                     │   TD_SYM     │
+            │   SL 4 (Nav) │                                                     │   TD_BKSYM   │
             ├──────────────┤                                                     ├──────────────┤
-            │    TD_SYM    │                                                     │   TD_SYM     │
+            │  TD_BKSYM    │                                                     │   TD_BKSYM   │
             ├──────┬───────┤                                                     ├──────┬───────┤
             │ ESC  │  TAB  │                                                     │ END  │KP_DOT│
             ├──────┼───────┤                                                     ├──────┬───────┤
@@ -86,7 +86,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Improved Nav Layer Access:** 
   - **Left Thumb:** Dedicated Sticky/Momentary Toggle (`sl 4`). 
   - **Right Thumb:** Hold Enter for momentary access.
-- **Layer 8 Access:** Hold `I` or `H` on the home row for Backup Sym layer.
+- **Symbol Layer Access:** Hold `I` or `H` on the home row for Symbol layer.
 - **Layer Toggles:** 
   - **CurTog**: Left Bottom Row (Index 1) & Right Bottom Row (Index 2).
   - **SymTog**: Left Thumb, Right Thumb, Right Bottom Row (x2).
@@ -98,10 +98,10 @@ This document provides a comprehensive visual reference for all keyboard layers 
 
 ---
 
-## Layer 1: Symbols + Numpad Layer
+## Layer 1: Backup Sym Layer
 
-**Display Name:** Sym+Num
-**Purpose:** Programming symbols and brackets on left, numpad on right
+**Display Name:** Backup Sym
+**Purpose:** Backup programming symbols and brackets on left, numpad on right
 
 *Same layout as standard, accessed via Smart Toggle.*
 
@@ -355,7 +355,7 @@ Word and paragraph jumping with Command/Option modifiers:
 ### Smart Layer Toggle (`td_sym`)
 The **Page Down** key on the right thumb has been upgraded to a **Tap Dance** key:
 - **Tap**: Acts as a **Sticky Layer** (`sl 1`). Press it once, then press your symbol/number key. The layer deactivates immediately after.
-- **Double Tap**: Acts as a **Layer Toggle** (`tog 1`). Locks the Symbols layer ON. Double-tap again to turn it OFF.
+- **Double Tap**: Acts as a **Layer Toggle** (`tog 1`). Locks the Backup Sym layer ON. Double-tap again to turn it OFF.
 
 ### Thumb Modifiers
 - **Left Thumb (Inner)**: Hold for **Nav Layer** (Command).

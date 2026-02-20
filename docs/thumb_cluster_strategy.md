@@ -32,7 +32,7 @@ If you hesitate and hold a thumb key longer than its timeout but **don't** press
 | :--- | :--- | :--- | :--- | :--- |
 | **Inner (Large)** | **Enter** / Layer 4 | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **175ms**<br>• `quick-tap: 0` | Fast **175ms** for rapid Enter usage. `tap-preferred` + `QT=0` ensures Enter fires instantly like Space. |
 | **Middle** | **Space** / Shift | `hold-tap` | • `tap-preferred`<br>• `retro-tap`<br>• Term: **225ms**<br>• `quick-tap: 0` | **The Speed King.** <br>• **225ms:** Extremely forgiving for Space.<br>• **QT=0:** Disables double-tap logic for instant firing.<br>• **Tap-Pref:** Never misses a space during fast typing. |
-| **Outer** | **Sym Toggle** | `tap-dance` | • Term: **175ms** | Standard reliable toggle for standard symbol layer access. |
+| **Outer** | **Backup Sym Toggle** | `tap-dance` | • Term: **175ms** | Standard reliable toggle for standard symbol layer access. |
 
 ---
 
@@ -51,13 +51,13 @@ If you hesitate and hold a thumb key longer than its timeout but **don't** press
 
 ## Home Row Modifiers (HRMs) Configuration
 
-To complement the thumb cluster, the home row incorporates specialized modifiers (Layer 8 Backup Symbol, Shift, and positional modifiers) configured for **accuracy and speed** without accidental triggers.
+To complement the thumb cluster, the home row incorporates specialized modifiers (Symbol Layer, Shift, and positional modifiers) configured for **accuracy and speed** without accidental triggers.
 
 ### Settings Breakdown
 
 | Parameter | Value | Purpose |
 | :--- | :--- | :--- |
-| **Flavor** | `balanced` / `tap-preferred` | `balanced` on standard HRMs resolves holds/taps based on whether the key was pressed within overlapping times. `tap-preferred` is used for Shift (`E`) and Layer 8 (`I`, `H`) to prioritize typing the character if rolled quickly. |
+| **Flavor** | `balanced` / `tap-preferred` | `balanced` on standard HRMs resolves holds/taps based on whether the key was pressed within overlapping times. `tap-preferred` is used for Shift (`E`) and Symbol Layer (`I`, `H`) to prioritize typing the character if rolled quickly. |
 | **Require Prior Idle** | `160ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for 160ms prior. Eliminates almost all accidental mods during fast typing rolls. |
 | **Quick Tap** | `175ms` | Allows rapid double-tapping to repeat a key (e.g., typing "ee" or "ll" quickly) without accidentally triggering the modifier. |
 | **Hold-Trigger-On-Release** | Enabled | Used with Positional Holds. Allows releasing the modifier key *after* you release the triggered key without accidentally outputting the modifier's base key character. |
@@ -65,7 +65,7 @@ To complement the thumb cluster, the home row incorporates specialized modifiers
 
 ### Bilateral Combinations (Cross-Hand Required)
 
-To completely eliminate same-hand misfires during fast typing "rolls", **all** standard home row modifiers (Shift, Layer 8, Command, Option, Control) strictly use **Bilateral Combinations**.
+To completely eliminate same-hand misfires during fast typing "rolls", **all** standard home row modifiers (Shift, Symbol Layer, Command, Option, Control) strictly use **Bilateral Combinations**.
 
 This means a left-hand modifier will **only** activate if the next key pressed is on the right hand (and vice versa). This is achieved via ZMK's `hold-trigger-key-positions` arrays. 
 
@@ -78,4 +78,4 @@ Tapping terms are staggered based on finger strength and dexterity, and some spe
 *   **Ring:** `240ms`
 *   **Middle:** `210ms`
 *   **Index:** `180ms` (Fastest, most deliberate)
-*   **Layer 8 & Shift (H, I, T, E):** `225ms` with `tap-preferred` and `retro-tap` for high-accuracy standard typing retention, independent of positional holds.
+*   **Symbol Layer & Shift (H, I, T, E):** `225ms` with `tap-preferred` and `retro-tap` for high-accuracy standard typing retention, independent of positional holds.
