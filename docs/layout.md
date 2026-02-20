@@ -9,7 +9,7 @@ This document provides a visual reference for all layers currently configured in
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
 | `Ctrl+Right` | `1` | `2` | `3` | `4` | `5` | `Sym` | | `Mod` | `6` | `7` | `8` | `9`0` | `0` | `[` |
 | `Ctrl+Left` | `Q` | `P` | `U` | `Y` | `;` | `None` | | `None` | `K` | `F` | `L` | `R` | `B` | `\` |
-| `Ctrl+Shift+Right` | `A (Cmd)` | `O` | `E (Sft)` | `I (Sym)` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H (Sym)` | `T (Sft)` | `N (Num)` | `S (Cmd)` | `Sym` |
+| `Ctrl+Shift+Right` | `A (Cmd)` | `O (Sym)` | `E (Sft)` | `I (Sym)` | `G` | `None` | `Ctrl` `Alt` `Cmd` `Ctrl` | `None` | `D` | `H (Sym)` | `T (Sft)` | `N (Num)` | `S (Cmd)` | `Sym` |
 | `Shift` | `X` | `J` | `,` | `.` | `'` | | `Esc` | `Tab` | | `C` | `M` | `W` | `V` | `.` | `Shift` |
 | `CurTog` | `/` | `Z` | `^ / L7` | `?` | | `Bspc` | `Nav` | `BkSym` | `BkSym` | `Enter` | `Space` | | `(` | `)` | `-` | `{ / [` | `} / ]` |
 

@@ -54,7 +54,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┼────────┤                                       ├────────┼────┼────┼────┼────┼────┼───────┤
 │  TAB   │ Q  │ P  │ U  │ Y  │ ;  │        │                                       │        │ K  │ F  │ L  │ R  │ B  │   \   │
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
-│  ESC   │A/Cm│ O  │E/Sft│I/Sym│ G  │        │                                       │        │ D  │H/Sym│ T/Sft│N/Num│S/Cm │ SL(1) │
+│  ESC   │A/Cm│O/Sm│E/Sft│I/Sym│ G  │        │                                       │        │ D  │H/Sym│ T/Sft│N/Num│S/Cm │ SL(1) │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
 │ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
@@ -86,7 +86,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Improved Nav Layer Access:** 
   - **Left Thumb:** Dedicated Sticky/Momentary Toggle (`sl 4`). 
   - **Right Thumb:** Hold Enter for momentary access.
-- **Symbol Layer Access:** Hold `I` or `H` on the home row for Symbol layer.
+- **Symbol Layer Access:** Hold `O`, `I`, or `H` on the home row for Symbol layer.
 - **Layer Toggles:** 
   - **CurTog**: Left Bottom Row (Index 1) & Right Bottom Row (Index 2).
   - **SymTog**: Left Thumb, Right Thumb, Right Bottom Row (x2).
