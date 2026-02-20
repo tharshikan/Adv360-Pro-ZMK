@@ -422,11 +422,11 @@
 
         num_layer {
             bindings = <
-&trans  &trans      &kp SLASH     &kp ASTERISK  &trans        &trans     &trans                                      &trans  &kp LA(N6)        &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &kp LA(NUMBER_0)  &kp LA(LBKT)
-&trans  &kp COMMA   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans                                      &trans  &kp LG(MINUS)     &kp LG(PLUS)  &kp LA(L)     &kp LA(R)     &kp LA(B)         &kp LA(BSLH)
-&trans  &kp N0      &kp N1        &kp N2        &kp N3        &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(NUMBER_0)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)    &kp LA(RIGHT)     &trans
-&trans  &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp MINUS                  &trans      &trans                  &kp LA(C)         &kp LA(M)     &kp LA(W)     &kp LA(V)     &kp LA(DOT)       &kp LA(RSHFT)
-&trans  &trans      &trans        &trans        &trans                   &trans  &trans  &trans      &trans  &trans  &trans                    &kp LA(UP)    &kp LA(DOWN)  &kp LA(RBKT)  &kp LA(BSLH)      &trans
+&trans  &trans      &kp SLASH     &kp ASTERISK  &trans        &trans     &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
+&trans  &kp COMMA   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans                                      &trans  &kp LS(LA(LC(LG(K))))  &kp LC(LEFT)           &kp LC(UP)             &kp LC(RIGHT)          &kp LG(LA(LC(LS(B))))  &trans
+&trans  &kp N0      &kp N1        &kp N2        &kp N3        &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
+&trans  &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp MINUS                  &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp RG(KP_PLUS)        &kp PERIOD             &trans
+&trans  &trans      &trans        &trans        &trans                   &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
             >;
         };
     };
