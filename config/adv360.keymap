@@ -249,9 +249,9 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hm_l8: homerow_mod_layer_8 {
+        hml_l8: homerow_mod_left_layer_8 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LAYER_8";
+            label = "HOMEROW_MOD_LEFT_LAYER_8";
             #binding-cells = <2>;
             tapping-term-ms = <225>;
             quick-tap-ms = <175>;
@@ -259,11 +259,29 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
+
+            hold-trigger-key-positions = <38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74>;
+            hold-trigger-on-release;
         };
 
-        hm_shift: homerow_mod_shift {
+        hmr_l8: homerow_mod_right_layer_8 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_SHIFT";
+            label = "HOMEROW_MOD_RIGHT_LAYER_8";
+            #binding-cells = <2>;
+            tapping-term-ms = <225>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37>;
+            hold-trigger-on-release;
+        };
+
+        hml_shift: homerow_mod_left_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_LEFT_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <225>;
             quick-tap-ms = <175>;
@@ -271,6 +289,24 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74>;
+            hold-trigger-on-release;
+        };
+
+        hmr_shift: homerow_mod_right_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_RIGHT_SHIFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <225>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37>;
+            hold-trigger-on-release;
         };
 
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, Hold=Momentary */
@@ -377,7 +413,7 @@
             bindings = <
 &kp LC(RIGHT)            &kp N1     &kp N2  &kp N3                    &kp N4            &kp N5            &sl 0                                                                          &mo 3                  &kp N6  &kp N7                &kp N8                   &morph_9    &morph_0    &kp UNDERSCORE
 &kp LC(LEFT)             &kp Q      &kp P   &kp U                     &kp Y             &kp SEMI          &none                                                                          &none                  &kp K   &kp F                 &kp L                    &kp R       &kp B       &kp BSLH
-&kp LC(RS(RIGHT_ARROW))  &kp A      &kp O   &hm_shift LSHFT E         &hm_l8 8 I        &kp G             &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &td_sym                &none                  &kp D   &hm_l8 8 H            &hm_shift RIGHT_SHIFT T  &hm_l8 9 N  &kp S       &td_sym
+&kp LC(RS(RIGHT_ARROW))  &kp A      &kp O   &hml_shift LSHFT E        &hml_l8 8 I       &kp G             &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &td_sym                &none                  &kp D   &hmr_l8 8 H           &hmr_shift RIGHT_SHIFT T &hmr_l8 9 N &kp S       &td_sym
 &td_sym                  &kp X      &kp J   &kp COMMA                 &kp EQUAL         &kp SINGLE_QUOTE                          &kp ESCAPE        &kp TAB                                                     &kp C   &kp M                 &kp W                    &kp V       &kp DOT     &kp RSHFT
 &td_cursor               &kp SLASH  &kp Z   &lt_launcher 7 LESS_THAN  &kp GREATER_THAN                    &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS   &lcurly_sq  &rcurly_sq
             >;
