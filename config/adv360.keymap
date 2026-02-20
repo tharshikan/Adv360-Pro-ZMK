@@ -423,11 +423,11 @@
 
         num_layer {
             bindings = <
-&trans  &trans     &kp MINUS  &kp PLUS    &trans     &trans    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EQUAL  &kp COMMA  &kp PERIOD  &kp MINUS  &kp BSLH  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0     &kp N1     &kp N2      &kp N3     &kp N4    &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N5     &kp N6     &kp N7      &kp N8     &kp N9                    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp MINUS  &kp PLUS    &trans     &trans    &trans                                      &trans         &kp LA(N6)        &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &kp LA(NUMBER_0)  &kp LA(LBKT)
+&trans  &kp EQUAL  &kp COMMA  &kp PERIOD  &kp MINUS  &kp BSLH  &trans                                      &trans         &kp LG(MINUS)     &kp LG(PLUS)  &kp LA(L)     &kp LA(R)     &kp LA(B)         &kp LA(BSLH)
+&trans  &kp N0     &kp N1     &kp N2      &kp N3     &kp N4    &trans  &trans  &trans      &trans  &trans  &trans         &kp LG(NUMBER_0)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)    &kp LA(RIGHT)     &trans
+&trans  &kp N5     &kp N6     &kp N7      &kp N8     &kp N9                    &trans      &trans                         &kp LA(C)         &kp LA(M)     &kp LA(W)     &kp LA(V)     &kp LA(DOT)       &kp LA(RSHFT)
+&trans  &trans     &trans     &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans         &kp LA(UP)        &kp LA(DOWN)  &kp LA(RBKT)  &kp LA(BSLH)  &trans
             >;
         };
     };
