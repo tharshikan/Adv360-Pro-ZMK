@@ -63,14 +63,19 @@ To complement the thumb cluster, the home row incorporates specialized modifiers
 | **Hold-Trigger-On-Release** | Enabled | Used with Positional Holds. Allows releasing the modifier key *after* you release the triggered key without accidentally outputting the modifier's base key character. |
 | **Retro Tap** | Enabled | Specifically for the `E`, `I` and `H` modifiers; holding the key past the tapping term but *not* pressing another key will still output the base key upon release. |
 
-### Positional Holds & Staggered Tapping Terms
+### Bilateral Combinations (Cross-Hand Required)
 
-Standard home row modifiers are constrained by **Positional Holds**. Left-hand modifiers only trigger if a key on the *right side* of the keyboard is pressed, and vice versa.
+To completely eliminate same-hand misfires during fast typing "rolls", **all** standard home row modifiers (Shift, Layer 8, Command, Option, Control) strictly use **Bilateral Combinations**.
 
-Furthermore, tapping terms are staggered based on finger strength and dexterity to prevent accidental activation by weaker, slower fingers:
+This means a left-hand modifier will **only** activate if the next key pressed is on the right hand (and vice versa). This is achieved via ZMK's `hold-trigger-key-positions` arrays. 
 
-*   **Pinky:** `280ms` (Slowest, most forgiving)
+### Staggered Tapping Terms & Specific Modifiers
+
+Tapping terms are staggered based on finger strength and dexterity, and some specific modifiers have custom overrides to prevent accidental activation by weaker, slower fingers:
+
+*   **Pinky (A, S/Command):** `350ms` (Highest timeout. Extremely resistant to accidental triggers on slow outer fingers, but fast tapping remains snappy due to tap-preferred logic).
+*   **Pinky (Standard):** `280ms` (Slowest, most forgiving)
 *   **Ring:** `240ms`
 *   **Middle:** `210ms`
 *   **Index:** `180ms` (Fastest, most deliberate)
-*   **Layer 8 & Shift (H, I, E):** `225ms` with `tap-preferred` and `retro-tap` for high-accuracy standard typing retention, independent of positional holds.
+*   **Layer 8 & Shift (H, I, T, E):** `225ms` with `tap-preferred` and `retro-tap` for high-accuracy standard typing retention, independent of positional holds.
