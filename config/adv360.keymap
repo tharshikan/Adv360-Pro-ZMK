@@ -261,7 +261,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74>;
-            hold-trigger-on-release;
         };
 
         hmr_l8: homerow_mod_right_layer_8 {
@@ -276,7 +275,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37>;
-            hold-trigger-on-release;
         };
 
         hml_shift: homerow_mod_left_shift {
@@ -291,7 +289,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74>;
-            hold-trigger-on-release;
         };
 
         hmr_shift: homerow_mod_right_shift {
@@ -306,7 +303,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37>;
-            hold-trigger-on-release;
         };
 
         hml_cmd: homerow_mod_left_cmd {
@@ -321,7 +317,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74>;
-            hold-trigger-on-release;
         };
 
         hmr_cmd: homerow_mod_right_cmd {
@@ -336,7 +331,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37>;
-            hold-trigger-on-release;
         };
 
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, Hold=Momentary */
