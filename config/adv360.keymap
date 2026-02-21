@@ -10,12 +10,12 @@
                28 29 30 31 32 33 34 \
                46 47 48 49 50 51 \
                66 67 68 69 70
-
 #define KEYS_R 7 8 9 10 11 12 13 \
                21 22 23 24 25 26 27 \
                39 40 41 42 43 44 45 \
                54 55 56 57 58 59 \
                71 72 73 74 75
+
 #include "sunaku_defines.dtsi"
 
 / {
@@ -468,11 +468,11 @@
         base_sunaku {
             display-name = "Sunaku";
             bindings = <
-&kp LC(RIGHT)            &kp N1                  &kp N2              &kp N3                    &kp N4               &kp N5            &sl 0                                                                          &mo 3                  &kp N6  &kp N7                &kp N8                           &morph_9              &morph_0                 &kp UNDERSCORE
-&kp LC(LEFT)             &kp Q                   &kp P               &kp U                     &kp Y                &kp SEMI          &none                                                                          &none                  &kp K   &kp F                 &kp L                            &kp R                 &kp B                    &kp BSLH
+&kp LC(RIGHT)            &kp N1                     &kp N2                 &kp N3                       &kp N4                  &kp N5            &sl 0                                                                          &mo 3                  &kp N6  &kp N7                   &kp N8                              &morph_9                &morph_0                    &kp UNDERSCORE
+&kp LC(LEFT)             &kp Q                      &kp P                  &kp U                        &kp Y                   &kp SEMI          &none                                                                          &none                  &kp K   &kp F                    &kp L                               &kp R                   &kp B                       &kp BSLH
 &kp LC(RS(RIGHT_ARROW))  &sunaku_left_pinky LGUI A  &sunaku_left_ring 9 O  &sunaku_left_middle LSHFT E  &sunaku_left_index 8 I  &kp G             &none        &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &td_backup_sym         &none                  &kp D   &sunaku_right_index 8 H  &sunaku_right_middle RIGHT_SHIFT T  &sunaku_right_ring 9 N  &sunaku_right_pinky RGUI S  &kp TAB
-&td_backup_sym           &kp X                   &kp J               &kp COMMA                 &kp EQUAL            &kp SINGLE_QUOTE                          &kp ESCAPE        &kp TAB                                                     &kp C   &kp M                 &kp W                            &kp V                 &kp DOT                  &kp RSHFT
-&td_cursor               &kp K_UNDO              &kp Z               &lt_launcher 7 K_COPY     &kp K_PASTE                            &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp ESCAPE            &kp QUESTION                     &kp MINUS             &to 0                    &rcurly_sq
+&td_backup_sym           &kp X                      &kp J                  &kp COMMA                    &kp EQUAL               &kp SINGLE_QUOTE                          &kp ESCAPE        &kp TAB                                                     &kp C   &kp M                    &kp W                               &kp V                   &kp DOT                     &kp RSHFT
+&td_cursor               &kp K_UNDO                 &kp Z                  &lt_launcher 7 K_COPY        &kp D                                     &smart_bspc  &sl 4      &kp ESCAPE        &kp TAB       &lt_nav_enter 4 ENTER  &sp_shift RSHFT SPACE          &kp ESCAPE               &kp QUESTION                        &kp MINUS               &to 0                       &rcurly_sq
             >;
         };
     };
