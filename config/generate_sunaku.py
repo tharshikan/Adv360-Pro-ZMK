@@ -65,11 +65,13 @@ def generate_macros():
         out += f"            compatible = \"zmk,behavior-macro-one-param\";\n"
         out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <1>;\n"
         
-        mod_releases = ""
+        mod_releases = []
         for mod_f in fingers:
-             mod_releases += f"&{mod_f['type']} {mod_f['mod']} "
+            mod_releases.append(f"<&macro_release &{mod_f['type']} {mod_f['mod']}>")
         
-        out += f"            bindings = <&macro_release {mod_releases.strip()}>\n"
+        releases_str = "\n                     , ".join(mod_releases)
+        
+        out += f"            bindings = {releases_str}\n"
         out += f"                     , <&macro_tap &kp {f['key']}>\n"
         out += f"                     , <&macro_param_1to1>\n"
         out += f"                     , <&macro_tap &kp MACRO_PLACEHOLDER>;\n"
