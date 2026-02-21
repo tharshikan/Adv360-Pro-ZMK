@@ -16,10 +16,9 @@
                39 40 41 42 43 44 45 \
                54 55 56 57 58 59 \
                71 72 73 74 75
-
-#include "sunaku_hrm.dtsi"
-
 / {
+    #include "sunaku_hrm.dtsi"
+
     behaviors {
         #include "macros.dtsi"
         #include "version.dtsi"

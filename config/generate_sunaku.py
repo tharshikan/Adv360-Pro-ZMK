@@ -45,7 +45,7 @@ fingers = [
 ]
 
 def generate_macros():
-    out = "/ {\\n    macros {\\n"
+    out = "    macros {\\n"
     for f in fingers:
         # Hold Macro
         out += f"        sunaku_{f['name']}_hold: sunaku_{f['name']}_hold {{\\n"
