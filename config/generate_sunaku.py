@@ -48,32 +48,32 @@ def generate_macros():
     out = ""
     for f in fingers:
         # Hold Macro
-        out += f"        sunaku_{f['name']}_hold: sunaku_{f['name']}_hold {{\\n"
-        out += f"            compatible = \\\"zmk,behavior-macro-one-param\\\";\\n"
-        out += f"            wait-ms = <0>;\\n            tap-ms = <0>;\\n            #binding-cells = <1>;\\n"
-        out += f"            bindings = <&macro_param_1to1>\\n"
-        out += f"                     , <&macro_press &{f['type']} MACRO_PLACEHOLDER>\\n"
-        out += f"                     , <&macro_press &mo LAYER_{f['layer_name']}>\\n"
-        out += f"                     , <&macro_pause_for_release>\\n"
-        out += f"                     , <&macro_param_1to1>\\n"
-        out += f"                     , <&macro_release &{f['type']} MACRO_PLACEHOLDER>\\n"
-        out += f"                     , <&macro_release &mo LAYER_{f['layer_name']}>;\\n"
-        out += f"        }};\\n\\n"
+        out += f"        sunaku_{f['name']}_hold: sunaku_{f['name']}_hold {{\n"
+        out += f"            compatible = \"zmk,behavior-macro-one-param\";\n"
+        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <1>;\n"
+        out += f"            bindings = <&macro_param_1to1>\n"
+        out += f"                     , <&macro_press &{f['type']} MACRO_PLACEHOLDER>\n"
+        out += f"                     , <&macro_press &mo LAYER_{f['layer_name']}>\n"
+        out += f"                     , <&macro_pause_for_release>\n"
+        out += f"                     , <&macro_param_1to1>\n"
+        out += f"                     , <&macro_release &{f['type']} MACRO_PLACEHOLDER>\n"
+        out += f"                     , <&macro_release &mo LAYER_{f['layer_name']}>;\n"
+        out += f"        }};\n\n"
         
         # Tap Macro (used for cancellation on same-hand press)
-        out += f"        sunaku_{f['name']}_tap: sunaku_{f['name']}_tap {{\\n"
-        out += f"            compatible = \\\"zmk,behavior-macro-one-param\\\";\\n"
-        out += f"            wait-ms = <0>;\\n            tap-ms = <0>;\\n            #binding-cells = <1>;\\n"
+        out += f"        sunaku_{f['name']}_tap: sunaku_{f['name']}_tap {{\n"
+        out += f"            compatible = \"zmk,behavior-macro-one-param\";\n"
+        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <1>;\n"
         
         mod_releases = ""
         for mod_f in fingers:
              mod_releases += f"&{mod_f['type']} {mod_f['mod']} "
         
-        out += f"            bindings = <&macro_release {mod_releases.strip()}>\\n"
-        out += f"                     , <&macro_tap &kp {f['key']}>\\n"
-        out += f"                     , <&macro_param_1to1>\\n"
-        out += f"                     , <&macro_tap &kp MACRO_PLACEHOLDER>;\\n"
-        out += f"        }};\\n\\n"
+        out += f"            bindings = <&macro_release {mod_releases.strip()}>\n"
+        out += f"                     , <&macro_tap &kp {f['key']}>\n"
+        out += f"                     , <&macro_param_1to1>\n"
+        out += f"                     , <&macro_tap &kp MACRO_PLACEHOLDER>;\n"
+        out += f"        }};\n\n"
     return out
 
 
@@ -82,27 +82,27 @@ def generate_behaviors():
     for f in fingers:
         opposite_keys = "KEYS_R" if f['side'] == "left" else "KEYS_L"
         
-        out += f"        sunaku_{f['name']}: sunaku_{f['name']} {{\\n"
-        out += f"            compatible = \\\"zmk,behavior-hold-tap\\\";\\n"
-        out += f"            label = \\\"SUNAKU_{f['name'].upper()}\\\";\\n"
-        out += f"            flavor = \\\"tap-preferred\\\";\\n"
-        out += f"            hold-trigger-key-positions = <{opposite_keys}>;\\n"
-        out += f"            hold-trigger-on-release;\\n"
-        out += f"            tapping-term-ms = <{f['tapping_term']}>;\\n"
-        out += f"            quick-tap-ms = <0>;\\n"
-        out += f"            require-prior-idle-ms = <180>;\\n"
-        out += f"            #binding-cells = <2>;\\n"
-        out += f"            retro-tap;\\n"
-        out += f"            bindings = <&sunaku_{f['name']}_hold>, <&kp>;\\n"
-        out += f"        }};\\n\\n"
+        out += f"        sunaku_{f['name']}: sunaku_{f['name']} {{\n"
+        out += f"            compatible = \"zmk,behavior-hold-tap\";\n"
+        out += f"            label = \"SUNAKU_{f['name'].upper()}\";\n"
+        out += f"            flavor = \"tap-preferred\";\n"
+        out += f"            hold-trigger-key-positions = <{opposite_keys}>;\n"
+        out += f"            hold-trigger-on-release;\n"
+        out += f"            tapping-term-ms = <{f['tapping_term']}>;\n"
+        out += f"            quick-tap-ms = <0>;\n"
+        out += f"            require-prior-idle-ms = <180>;\n"
+        out += f"            #binding-cells = <2>;\n"
+        out += f"            retro-tap;\n"
+        out += f"            bindings = <&sunaku_{f['name']}_hold>, <&kp>;\n"
+        out += f"        }};\n\n"
     return out
 
 
 def generate_layers():
     out = ""
     for f in fingers:
-        out += f"        sunaku_layer_{f['name']} {{\\n"
-        out += f"            display-name = \\\"Unroll {f['key']}\\\";\\n"
+        out += f"        sunaku_layer_{f['name']} {{\n"
+        out += f"            display-name = \"Unroll {f['key']}\";\n"
         
         bindings = ["&trans"] * 76
         
@@ -141,13 +141,13 @@ def generate_layers():
             if idx in keymap_mapping:
                 bindings[idx] = f"&sunaku_{f['name']}_tap {keymap_mapping[idx]}"
         
-        out += "            bindings = <\\n"
-        out += "                " + " ".join(bindings[0:7]) + "     " + " ".join(bindings[7:14]) + "\\n"
-        out += "                " + " ".join(bindings[14:21]) + "     " + " ".join(bindings[21:28]) + "\\n"
-        out += "                " + " ".join(bindings[28:35]) + " " + " ".join(bindings[35:39]) + " " + " ".join(bindings[39:46]) + "\\n"
-        out += "                " + " ".join(bindings[46:52]) + " " + " ".join(bindings[52:54]) + " " + " ".join(bindings[54:60]) + "\\n"
-        out += "                " + " ".join(bindings[60:65]) + " " + " ".join(bindings[65:71]) + " " + " ".join(bindings[71:76]) + "\\n"
-        out += "            >;\\n        };\\n\\n"
+        out += "            bindings = <\n"
+        out += "                " + " ".join(bindings[0:7]) + "     " + " ".join(bindings[7:14]) + "\n"
+        out += "                " + " ".join(bindings[14:21]) + "     " + " ".join(bindings[21:28]) + "\n"
+        out += "                " + " ".join(bindings[28:35]) + " " + " ".join(bindings[35:39]) + " " + " ".join(bindings[39:46]) + "\n"
+        out += "                " + " ".join(bindings[46:52]) + " " + " ".join(bindings[52:54]) + " " + " ".join(bindings[54:60]) + "\n"
+        out += "                " + " ".join(bindings[60:65]) + " " + " ".join(bindings[65:71]) + " " + " ".join(bindings[71:76]) + "\n"
+        out += "            >;\n        };\n\n"
     return out
 
 if __name__ == "__main__":
@@ -155,15 +155,15 @@ if __name__ == "__main__":
         f.write(header)
         
     with open("config/sunaku_macros.dtsi", "w") as f:
-        f.write("// Generated by generate_sunaku.py\\n")
+        f.write("// Generated by generate_sunaku.py\n")
         f.write(generate_macros())
         
     with open("config/sunaku_behaviors.dtsi", "w") as f:
-        f.write("// Generated by generate_sunaku.py\\n")
+        f.write("// Generated by generate_sunaku.py\n")
         f.write(generate_behaviors())
         
     with open("config/sunaku_layers.dtsi", "w") as f:
-        f.write("// Generated by generate_sunaku.py\\n")
+        f.write("// Generated by generate_sunaku.py\n")
         f.write(generate_layers())
 
     print("Generated split config/sunaku_*.dtsi files successfully!")
