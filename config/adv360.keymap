@@ -16,10 +16,15 @@
                39 40 41 42 43 44 45 \
                54 55 56 57 58 59 \
                71 72 73 74 75
+#include "sunaku_defines.dtsi"
+
 / {
-    #include "sunaku_hrm.dtsi"
+    macros {
+        #include "sunaku_macros.dtsi"
+    };
 
     behaviors {
+        #include "sunaku_behaviors.dtsi"
         #include "macros.dtsi"
         #include "version.dtsi"
 
@@ -348,6 +353,8 @@
 
     keymap {
         compatible = "zmk,keymap";
+
+        #include "sunaku_layers.dtsi"
 
         base {
             display-name = "Base";
