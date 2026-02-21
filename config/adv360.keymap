@@ -427,7 +427,7 @@
         sym {
             display-name = "Symbols";
             bindings = <
-&kp EQUAL        &kp N1           &kp NUMBER_1   &kp NUMBER_0      &kp N4             &kp N5         &trans                                                 &mo 3   &kp STAR     &kp EXCLAMATION       &kp PLUS               &kp RIGHT_BRACKET  &kp N0             &kp MINUS
+&kp EQUAL        &kp N1           &kp NUMBER_0   &kp NUMBER_1      &kp N4             &kp N5         &trans                                                 &mo 3   &kp STAR     &kp EXCLAMATION       &kp PLUS               &kp RIGHT_BRACKET  &kp N0             &kp MINUS
 &kp GRAVE        &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &none                                                  &none   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR         &kp PIPE           &macro_thin_arrow
 &kp EXCLAMATION  &kp EXCLAMATION  &kp ASTERISK   &kp UNDERSCORE    &kp EQUAL          &kp AMPERSAND  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES
 &kp LS(GRAVE)    &kp SLASH        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                       &kp HOME      &kp PG_UP                     &kp AT_SIGN  &kp COLON             &kp COMMA              &kp SQT            &kp DOT            &kp SINGLE_QUOTE
