@@ -37,8 +37,8 @@ def generate_macros():
     for f in fingers:
         # Hold Macro
         out += f"        sunaku_{f['name']}_hold: sunaku_{f['name']}_hold {{\n"
-        out += f"            compatible = \"zmk,behavior-macro-one-param\";\n"
-        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <1>;\n"
+        out += f"            compatible = \"zmk,behavior-macro\";\n"
+        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <0>;\n"
         out += f"            bindings = <&macro_press &{f['type']} {f['mod']}>\n"
         out += f"                     , <&macro_press &mo LAYER_{f['layer_name']}>\n"
         out += f"                     , <&macro_pause_for_release>\n"
@@ -48,8 +48,8 @@ def generate_macros():
         
         # Tap Macro (used for cancellation on same-hand press)
         out += f"        sunaku_{f['name']}_tap: sunaku_{f['name']}_tap {{\n"
-        out += f"            compatible = \"zmk,behavior-macro-one-param\";\n"
-        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <1>;\n"
+        out += f"            compatible = \"zmk,behavior-macro\";\n"
+        out += f"            wait-ms = <0>;\n            tap-ms = <0>;\n            #binding-cells = <0>;\n"
         
         mod_releases = []
         for mod_f in fingers:
@@ -58,9 +58,7 @@ def generate_macros():
         releases_str = "\n                     , ".join(mod_releases)
         
         out += f"            bindings = {releases_str}\n"
-        out += f"                     , <&macro_tap &kp {f['key']}>\n"
-        out += f"                     , <&macro_param_1to1>\n"
-        out += f"                     , <&macro_tap &kp MACRO_PLACEHOLDER>;\n"
+        out += f"                     , <&macro_tap &kp {f['key']}>;\n"
         out += f"        }};\n\n"
     return out
 
