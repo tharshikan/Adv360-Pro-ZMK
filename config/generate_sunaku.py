@@ -26,10 +26,10 @@ fingers = [
     {"name": "left_ring", "layer_name": "LeftRing", "key": "O", "mod": "9", "type": "mo", "side": "left", "tapping_term": 270},
     {"name": "left_middle", "layer_name": "LeftMiddle", "key": "E", "mod": "LSHFT", "type": "kp", "side": "left", "tapping_term": 270},
     {"name": "left_index", "layer_name": "LeftIndex", "key": "I", "mod": "8", "type": "mo", "side": "left", "tapping_term": 260},
-    {"name": "right_index", "layer_name": "RightIndex", "key": "H", "mod": "8", "type": "mo", "side": "right", "tapping_term": 260},
-    {"name": "right_middle", "layer_name": "RightMiddle", "key": "T", "mod": "RSHFT", "type": "kp", "side": "right", "tapping_term": 270},
-    {"name": "right_ring", "layer_name": "RightRing", "key": "N", "mod": "9", "type": "mo", "side": "right", "tapping_term": 270},
-    {"name": "right_pinky", "layer_name": "RightPinky", "key": "S", "mod": "RGUI", "type": "kp", "side": "right", "tapping_term": 350},
+    {"name": "right_index", "layer_name": "RightIndex", "key": "H", "mod": "8", "type": "mo", "side": "right", "tapping_term": 234},
+    {"name": "right_middle", "layer_name": "RightMiddle", "key": "T", "mod": "RSHFT", "type": "kp", "side": "right", "tapping_term": 243},
+    {"name": "right_ring", "layer_name": "RightRing", "key": "N", "mod": "9", "type": "mo", "side": "right", "tapping_term": 243},
+    {"name": "right_pinky", "layer_name": "RightPinky", "key": "S", "mod": "RGUI", "type": "kp", "side": "right", "tapping_term": 315},
 ]
 
 def generate_macros():
