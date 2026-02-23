@@ -160,7 +160,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R>;
-            hold-trigger-on-release;
         };
 
         hrm_left_ring: homerow_mod_left_ring_sym {
@@ -175,7 +174,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R>;
-            hold-trigger-on-release;
         };
 
         hrm_right_index: homerow_mod_right_sym {
@@ -190,7 +188,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L>;
-            hold-trigger-on-release;
         };
 
         hrm_right_ring: homerow_mod_right_ring_sym {
@@ -205,7 +202,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L>;
-            hold-trigger-on-release;
         };
 
         hrm_left_middle: homerow_mod_left_shift {
