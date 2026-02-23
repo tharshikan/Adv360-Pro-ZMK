@@ -452,3 +452,21 @@
     bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&kp RBKT>;
     display-name = "Right Bracket";
   };
+
+  macro_yank_line: macro_yank_line {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(C)>;
+    display-name = "Yank Line";
+  };
+
+  macro_delete_line: macro_delete_line {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp BSPC>;
+    display-name = "Delete Line";
+  };
