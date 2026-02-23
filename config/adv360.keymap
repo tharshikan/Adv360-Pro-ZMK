@@ -652,7 +652,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R 46 47 48 49 50 51>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -1071,7 +1071,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans            &trans              &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &macro_yank_line  &macro_delete_line  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp DOWN  &kp UP  &kp LA(RIGHT)  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans                  &trans      &trans                  &trans  &trans  &trans  &kt LSHFT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &kt LSHFT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
             >;
         };
