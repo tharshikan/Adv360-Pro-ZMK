@@ -216,7 +216,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R>;
-            hold-trigger-on-release;
         };
 
         hrm_right_middle: homerow_mod_right_shift {
@@ -231,7 +230,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L>;
-            hold-trigger-on-release;
         };
 
         hrm_left_pinky: homerow_mod_left_cmd {
@@ -246,7 +244,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R>;
-            hold-trigger-on-release;
         };
 
         hrm_right_pinky: homerow_mod_right_cmd {
@@ -261,7 +258,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L>;
-            hold-trigger-on-release;
         };
 
         /* Smart Toggle for Nav Layer (Layer 4): Tap=Sticky, Hold=Momentary */
