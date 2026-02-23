@@ -480,11 +480,11 @@
         text_navigation {
             display-name = "Text Nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans        &trans            &trans              &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans        &macro_yank_line  &macro_delete_line  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp DOWN          &kp UP              &kp LA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans        &trans            &kt LSHFT           &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans            &trans              &trans         &trans
+&trans  &trans        &trans        &trans        &trans          &trans          &trans                                      &trans  &trans         &trans             &trans            &trans            &trans              &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LG(LS(Z))   &trans                                      &trans  &kp LG(UP)     &kp LG(LA(UP))     &kp LS(LA(DOWN))  &macro_yank_line  &macro_delete_line  &trans
+&trans  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT       &kp LG(BSPC)    &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LEFT)   &kp LA(LEFT)       &kp DOWN          &kp UP            &kp LA(RIGHT)       &kp LG(RIGHT)
+&trans  &kp LA(BSPC)  &kp BSPC      &kp DEL       &kp LA(DEL)     &kp LC(K)                       &trans      &trans                  &kp LG(DOWN)   &kp LG(LA(DOWN))   &kp LA(DOWN)      &kp LA(UP)        &trans              &trans
+&trans  &trans        &trans        &trans        &trans                          &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans            &trans            &trans              &trans
             >;
         };
 
