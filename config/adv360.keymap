@@ -518,16 +518,16 @@
 
         /* Left thumb backspace that becomes Shift when held */
 
-        bs_shift: backspace_shift {
+        bs_nav: backspace_nav {
             compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_SHIFT";
+            label = "BACKSPACE_NAV";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <160>;
             flavor = "tap-preferred";
             retro-tap;
-            bindings = <&kp>, <&kp>;
+            bindings = <&mo>, <&kp>;
         };
 
         /* Right thumb space that becomes Shift when held */
@@ -553,7 +553,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&bs_shift LSHFT BSPC>, <&kp LA(BSPC)>;
+            bindings = <&bs_nav 18 BSPC>, <&kp LA(BSPC)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
