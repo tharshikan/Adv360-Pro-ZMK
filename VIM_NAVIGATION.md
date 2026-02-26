@@ -12,11 +12,11 @@ The visual representations below demonstrate the operations assigned to the phys
 
 ### Left Hand (Global & Editing)
 
-| Row | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Top** | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
-| **Home**| Undo | Paste | Copy | Redo | Duplicate Line |
-| **Bot** | Find / Search | Find Previous | Find Next | Format Document| Select All |
+| Row | Outer Col (`Tab/Esc/Shift`) | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
+| **Home**| Move to End of Line | Undo | Paste | Copy | Redo | Duplicate Line |
+| **Bot** | **[CUT LINE END]** | Find / Search | Find Previous | Find Next | Format Document| Select All |
 
 > **Note:** The left hand replaces standard modifier keys with highly-efficient macro sequences. For example, instead of pressing `Cmd + C` to copy, simply holding the navigation layer toggle and tapping the Left Middle finger (`Paste`) accomplishes the full sequence instantly.
 
