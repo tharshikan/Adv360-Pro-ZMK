@@ -481,6 +481,16 @@
     display-name = "Cut Line";
   };
 
+  macro_cut_line_end: macro_cut_line_end {
+    compatible = "zmk,behavior-macro";
+    label = "macro_cut_line_end";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LS(LG(RIGHT))>, <&kp LG(X)>;
+    display-name = "Cut to End of Line";
+  };
+
   macro_cut_word_left: macro_cut_word_left {
     compatible = "zmk,behavior-macro";
     label = "macro_cut_word_left";
