@@ -500,4 +500,3 @@
     bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>;
     display-name = "Cut Word Right";
   };
-};
