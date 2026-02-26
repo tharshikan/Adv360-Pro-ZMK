@@ -470,3 +470,31 @@
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp BSPC>;
     display-name = "Delete Line";
   };
+
+  macro_cut_line: macro_cut_line {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>;
+    display-name = "Cut Line";
+  };
+
+  macro_cut_word_left: macro_cut_word_left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>;
+    display-name = "Cut Word Left";
+  };
+
+  macro_cut_word_right: macro_cut_word_right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>;
+    display-name = "Cut Word Right";
+  };
+};

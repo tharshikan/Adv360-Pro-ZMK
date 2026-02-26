@@ -495,11 +495,11 @@
         text_navigation {
             display-name = "Text Nav";
             bindings = <
-&trans  &trans        &trans     &trans     &trans       &trans         &trans                                      &trans  &trans        &trans            &trans            &trans            &trans              &trans
-&trans  &kp LG(Z)     &kp LG(X)  &kp LG(C)  &kp LG(V)    &kp LG(LS(Z))  &trans                                      &trans  &kp LG(UP)    &kp LG(LA(UP))    &kp LS(LA(DOWN))  &macro_yank_line  &macro_delete_line  &trans
-&trans  &kp LGUI      &kp LALT   &kp LCTRL  &kp LSHFT    &kp LG(BSPC)   &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LEFT)  &kp LA(LEFT)      &kp DOWN          &kp UP            &kp LA(RIGHT)       &kp LG(RIGHT)
-&trans  &kp LA(BSPC)  &kp BSPC   &kp DEL    &kp LA(DEL)  &kp LC(K)                      &trans      &trans                  &kp LG(DOWN)  &kp LG(LA(DOWN))  &kp LA(DOWN)      &kp LA(UP)        &trans              &trans
-&trans  &trans        &trans     &trans     &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans            &trans            &trans            &trans              &trans
+&trans  &trans        &trans          &trans        &trans          &trans            &trans                                      &trans  &trans                &trans                &trans            &trans            &trans                 &trans
+&trans  &kp LG(SPACE) &kp LC(LS(TAB)) &kp LC(TAB)   &kp LG(W)       &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))      &kp LA(LS(LEFT))      &kp LS(DOWN)      &kp LS(UP)        &kp LA(LS(RIGHT))      &trans
+&trans  &kp LG(Z)     &kp LG(V)       &kp LG(C)     &kp LG(LS(Z))   &kp LS(LA(DOWN))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LEFT)          &kp LA(LEFT)          &kp DOWN          &kp UP            &kp LA(RIGHT)          &trans
+&trans  &kp LG(F)     &kp LG(LS(G))   &kp LG(G)     &kp LS(LA(F))   &kp LG(A)                         &trans      &trans                  &macro_cut_line       &macro_cut_word_left  &kp LG(LA(DOWN))  &kp LG(LA(UP))    &macro_cut_word_right  &trans
+&trans  &trans        &trans          &trans        &trans                            &trans  &trans  &trans      &trans  &trans  &trans                        &trans                &trans            &trans            &trans                 &trans
             >;
         };
 
