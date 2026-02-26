@@ -473,6 +473,7 @@
 
   macro_cut_line: macro_cut_line {
     compatible = "zmk,behavior-macro";
+    label = "macro_cut_line";
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
@@ -482,6 +483,7 @@
 
   macro_cut_word_left: macro_cut_word_left {
     compatible = "zmk,behavior-macro";
+    label = "macro_cut_word_left";
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
@@ -491,6 +493,7 @@
 
   macro_cut_word_right: macro_cut_word_right {
     compatible = "zmk,behavior-macro";
+    label = "macro_cut_word_right";
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
