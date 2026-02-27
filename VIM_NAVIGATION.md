@@ -26,7 +26,7 @@ The visual representations below demonstrate the operations assigned to the phys
 
 | Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) | Outer Pinky (`]/\|/'`) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Top** | Select to Start | **[LEFT ARROW]** | **[VISUAL MODE]** | *(Blank)* | **[RIGHT ARROW]** | Select to End |
+| **Top** | Select to Start | **[LEFT ARROW]** | **[VISUAL MODE]** | Duplicate Line | **[RIGHT ARROW]** | Select to End |
 | **Home**| Move to Start | Move Word Left | Move Line Down | Move Line Up | Move Word Right | Move to End |
 | **Bot** | **[CUT LINE]** | **[CUT WRD LFT]** | Add Cursor Below| Add Cursor Above| **[CUT WRD RGT]** | **[CUT LINE END]** |
 

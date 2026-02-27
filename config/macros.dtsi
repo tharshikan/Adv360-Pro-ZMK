@@ -523,6 +523,17 @@
         , <&kp LA(LS(RIGHT))>
         ;
     display-name = "Mac Select Word";
+  };
+
+  mac_dup_line: mac_dup_line {
+    compatible = "zmk,behavior-macro";
+    label = "mac_dup_line";
+    #binding-cells = <0>;
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(C)>, <&kp RIGHT>, <&kp ENTER>, <&kp LG(V)>;
+    display-name = "Smart Duplicate Line";
+  };
 
   macro_vis_enter: macro_vis_enter {
     compatible = "zmk,behavior-macro";
