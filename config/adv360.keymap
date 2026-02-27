@@ -502,6 +502,17 @@
 &trans               &trans         &trans           &trans       &trans                           &trans  &trans  &trans      &trans  &trans  &trans                    &trans                &trans            &trans          &trans                 &trans
             >;
         };
+        visual_navigation {
+            display-name = "Visual Nav";
+            bindings = <
+&trans               &trans         &trans           &trans       &trans         &trans            &trans                                      &trans  &trans            &trans                &trans            &trans          &trans                 &trans
+&kp LS(LG(RIGHT))    &kp LG(SPACE)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(W)      &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))  &kp LA(LS(LEFT))      &kp LS(DOWN)      &kp LS(UP)      &kp LA(LS(RIGHT))      &trans
+&kp LG(LS(RIGHT))    &kp LG(Z)      &macro_vis_copy  &macro_vis_copy &kp LG(LS(Z)) &kp LS(LA(DOWN))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LS(LEFT))  &kp LA(LS(LEFT))      &kp LS(DOWN)      &kp LS(UP)      &kp LA(LS(RIGHT))      &trans
+&macro_vis_cut_line_end &kp LG(F)   &kp LG(LS(G))    &kp LG(G)    &kp LS(LA(F))  &tog 9                            &trans      &trans                  &macro_vis_cut_line &macro_vis_cut_word_left &kp LG(LA(DOWN)) &kp LG(LA(UP)) &macro_vis_cut_word_right &trans
+&trans               &trans         &trans           &trans       &trans                           &trans  &trans  &tog 9     &trans  &trans  &trans                    &trans                &trans            &trans          &trans                 &trans
+            >;
+        };
+
 
         nav_left_single_hand {
             display-name = "Nav";

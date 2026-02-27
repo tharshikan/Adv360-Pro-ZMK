@@ -530,7 +530,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&mac_sel_word>, <&tog 8>;
+    bindings = <&mac_sel_word>, <&tog 9>;
     display-name = "Visual Mode Enter";
   };
 
@@ -540,7 +540,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>, <&tog 8>;
+    bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>, <&tog 9>;
     display-name = "Visual Cut Word Left & Exit";
   };
 
@@ -550,7 +550,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>, <&tog 8>;
+    bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>, <&tog 9>;
     display-name = "Visual Cut Word Right & Exit";
   };
 
@@ -560,7 +560,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 8>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 9>;
     display-name = "Visual Cut Line & Exit";
   };
 
@@ -570,7 +570,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 8>;
+    bindings = <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 9>;
     display-name = "Visual Cut Line End & Exit";
   };
 
@@ -580,7 +580,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LG(C)>, <&tog 8>;
+    bindings = <&kp LG(C)>, <&tog 9>;
     display-name = "Visual Copy & Exit";
   };
 
@@ -590,7 +590,7 @@
     #binding-cells = <0>;
     wait-ms = <20>;
     tap-ms = <20>;
-    bindings = <&kp LG(X)>, <&tog 8>;
+    bindings = <&kp LG(X)>, <&tog 9>;
     display-name = "Visual Cut & Exit";
   };
 };
