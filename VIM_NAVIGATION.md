@@ -12,7 +12,7 @@ The visual representations below demonstrate the operations assigned to the phys
 
 ### Left Hand (Global & Editing)
 
-| Row | Outer Col (`Tab/Esc/Shift`) | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
+| Row | Outer Pinky (`Tab/Esc/Shift`) | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
 | **Home**| Move to End of Line | Undo | Paste | Copy | Redo | Duplicate Line |
@@ -24,11 +24,11 @@ The visual representations below demonstrate the operations assigned to the phys
 
 ### Right Hand (Vim-Navigation & Selection)
 
-| Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Top** | Select to Start | **[LEFT ARROW]** | **[VISUAL MODE]** | *(Blank)* | **[RIGHT ARROW]** |
-| **Home**| Move to Start | Move Word Left | Move Line Down | Move Line Up | Move Word Right |
-| **Bot** | **[CUT LINE]** | **[CUT WRD LFT]** | Add Cursor Below| Add Cursor Above| **[CUT WRD RGT]** |
+| Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) | Outer Pinky (`]/\|/'`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Top** | Select to Start | **[LEFT ARROW]** | **[VISUAL MODE]** | *(Blank)* | **[RIGHT ARROW]** | *(Blank)* |
+| **Home**| Move to Start | Move Word Left | Move Line Down | Move Line Up | Move Word Right | *(Blank)* |
+| **Bot** | **[CUT LINE]** | **[CUT WRD LFT]** | Add Cursor Below| Add Cursor Above| **[CUT WRD RGT]** | *(Blank)* |
 
 > **Note:** The Right Hand layout is built symmetrically:
 > * **Home Row:** Instant cursor jumps using `Option` and `Cmd` arrows behind the scenes.
