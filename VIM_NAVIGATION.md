@@ -43,3 +43,12 @@ The custom firmware macros added to `macros.dtsi` completely bypass macOS limita
 * **Cut Entire Line:** `Cmd + Left Arrow` -> `Shift + Cmd + Right Arrow` -> `Cmd + X`
 
 With this complete decoupling, your right hand can freely delete sentences and move the cursor, while the left hand drops the preserved text gracefully into its new home.
+
+## The Stateful Visual Mode (`v`)
+True Vim-style highlighting is achieved via a dedicated hidden layer (`Layer 8`).
+
+Because macOS natively discards highlights when bare arrow keys are struck, the firmware intercepts your directional inputs and translates them continuously using macros.
+
+1. **Enter Visual Mode:** Press `Visual Mode Enter` (mapped to `A` on the `text_navigation` left hand). The keyboard instantly perfectly highlights the word under your cursor (via `mac_sel_word` redundancy) and locks you into the Visual Layer.
+2. **Move:** All right-hand movement keys now act as `Shift` variants automatically. Pressing `Up Arrow` sends `Shift + Up Arrow`, extending your selection indefinitely. 
+3. **Execute:** The moment you strike any cut key (`C`, `X`, or the Vim-cut engine keys) or press `Esc`, the keyboard executes the cut and instantly returns you to the normal `text_navigation` layer.
