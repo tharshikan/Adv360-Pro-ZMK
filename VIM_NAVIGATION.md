@@ -26,7 +26,7 @@ The visual representations below demonstrate the operations assigned to the phys
 
 | Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Top** | Select to Start | Select Word Left | Select Line Down | Select Line Up | Select Word Right |
+| **Top** | Select to Start | **[LEFT ARROW]** | **[VISUAL MODE]** | *(Blank)* | **[RIGHT ARROW]** |
 | **Home**| Move to Start | Move Word Left | Move Line Down | Move Line Up | Move Word Right |
 | **Bot** | **[CUT LINE]** | **[CUT WRD LFT]** | Add Cursor Below| Add Cursor Above| **[CUT WRD RGT]** |
 
@@ -49,6 +49,6 @@ True Vim-style highlighting is achieved via a dedicated hidden layer (`Layer 8`)
 
 Because macOS natively discards highlights when bare arrow keys are struck, the firmware intercepts your directional inputs and translates them continuously using macros.
 
-1. **Enter Visual Mode:** Press `Visual Mode Enter` (mapped to `A` on the `text_navigation` left hand). The keyboard instantly perfectly highlights the word under your cursor (via `mac_sel_word` redundancy) and locks you into the Visual Layer.
+1. **Enter Visual Mode:** Press `Visual Mode Enter` (mapped to `L` on the `text_navigation` right hand). The keyboard instantly perfectly highlights the word under your cursor (via `mac_sel_word` redundancy) and locks you into the Visual Layer.
 2. **Move:** All right-hand movement keys now act as `Shift` variants automatically. Pressing `Up Arrow` sends `Shift + Up Arrow`, extending your selection indefinitely. 
 3. **Execute:** The moment you strike any cut key (`C`, `X`, or the Vim-cut engine keys) or press `Esc`, the keyboard executes the cut and instantly returns you to the normal `text_navigation` layer.
