@@ -456,8 +456,8 @@
   macro_yank_line: macro_yank_line {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(C)>;
     display-name = "Yank Line";
   };
@@ -465,8 +465,8 @@
   macro_delete_line: macro_delete_line {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp BSPC>;
     display-name = "Delete Line";
   };
@@ -475,8 +475,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_cut_line";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>;
     display-name = "Cut Line";
   };
@@ -485,8 +485,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_cut_line_end";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LS(LG(RIGHT))>, <&kp LG(X)>;
     display-name = "Cut to End of Line";
   };
@@ -495,8 +495,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_cut_word_left";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>;
     display-name = "Cut Word Left";
   };
@@ -505,8 +505,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_cut_word_right";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>;
     display-name = "Cut Word Right";
   };
@@ -529,8 +529,8 @@
     compatible = "zmk,behavior-macro";
     label = "mac_dup_line";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(C)>, <&kp RIGHT>, <&kp ENTER>, <&kp LG(V)>;
     display-name = "Smart Duplicate Line";
   };
@@ -539,8 +539,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_enter";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&mac_sel_word>, <&tog 11>;
     display-name = "Visual Mode Enter";
   };
@@ -549,8 +549,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_cut_word_left";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut Word Left & Exit";
   };
@@ -559,8 +559,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_cut_word_right";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LA(LS(RIGHT))>, <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut Word Right & Exit";
   };
@@ -569,8 +569,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_cut_line";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut Line & Exit";
   };
@@ -579,8 +579,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_cut_line_end";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut Line End & Exit";
   };
@@ -589,8 +589,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_copy";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(C)>, <&tog 11>;
     display-name = "Visual Copy & Exit";
   };
@@ -599,8 +599,8 @@
     compatible = "zmk,behavior-macro";
     label = "macro_vis_cut";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings = <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut & Exit";
   };
