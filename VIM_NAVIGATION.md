@@ -44,6 +44,31 @@ The custom firmware macros added to `macros.dtsi` completely bypass macOS limita
 
 With this complete decoupling, your right hand can freely delete sentences and move the cursor, while the left hand drops the preserved text gracefully into its new home.
 
+---
+
+## Visual Mode Layer (`visual_navigation`)
+When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the current word and locks into this temporary layer. All movement keys are shifted, allowing you to instantly expand your selection endlessly without holding down any modifier keys. 
+
+### Left Hand (Visual Window & Copying)
+
+| Row | Outer Pinky (`Tab/Esc/Shift`) | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
+| **Home**| Move to End of Line | Undo | **[VISUAL COPY & EXIT]** | **[VISUAL COPY & EXIT]** | Redo | Duplicate Line |
+| **Bot** | **[VISUAL CUT END OF LINE & EXIT]** | Find / Search | Find Previous | Find Next | Format Document| Select All |
+
+> **Note:** Tap the Copy key to instantly capture your highlighted selection to the clipboard and snap out of Visual Mode.
+
+### Right Hand (Visual Extending & Cutting)
+
+| Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) | Outer Pinky (`]/\|/'`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Top** | Select to Start | **[EXPAND WORD LEFT]** | **[TOGGLE EXIT VISUAL]**| Duplicate Line | **[EXPAND WORD RIGHT]** | Select to End |
+| **Home**| Move to Start | **[EXPAND LEFT]** | **[EXPAND DOWN]** | **[EXPAND UP]** | **[EXPAND RIGHT]** | Move to End |
+| **Bot** | **[VISUAL CUT LINE & EXIT]** | **[VISUAL CUT WORD LEFT & EXIT]** | Add Cursor Below| Add Cursor Above| **[VISUAL CUT WORD RIGHT & EXIT]** | **[VISUAL CUT LINE END & EXIT]** |
+
+> **Note:** Tapping any **CUT** or **COPY** command will perform the action and automatically return you to the standard navigation layer. If you decide to cancel the manipulation, tap the main [TOGGLE EXIT VISUAL] mapped to the `L` position (or the `Esc` key on either thumb cluster) to drop the cursor and exit manually.
+
 ## The Stateful Visual Mode (`v`)
 True Vim-style highlighting is achieved via a dedicated hidden layer (`Layer 8`).
 
