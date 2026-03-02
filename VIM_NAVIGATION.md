@@ -65,7 +65,7 @@ When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the c
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Top** | Select to Start | **[EXPAND LEFT]** | **[TOGGLE EXIT VISUAL]**| Duplicate Line | **[EXPAND RIGHT]** | Select to End |
 | **Home**| Move to Start | **[EXPAND WORD LEFT]** | **[EXPAND DOWN]** | **[EXPAND UP]** | **[EXPAND WORD RIGHT]** | Move to End |
-| **Bot** | **[WRAP PARENS]** | **[VISUAL CUT]** | **[VISUAL COPY]**| **[WRAP QUOTES]**| **[WRAP BRACKETS]** | **[WRAP BRACES]** |
+| **Bot** | **[WRAP PARENS]** | **[WRAP QUOTES]** | **[VISUAL CUT]**| **[VISUAL COPY]**| **[WRAP BRACKETS]** | **[WRAP BRACES]** |
 
 > **Note:** Tapping any **CUT** or **COPY** command will perform the action and automatically return you to the standard navigation layer. If you decide to cancel the manipulation, tap the main [TOGGLE EXIT VISUAL] mapped to the `L` position (or the `Esc` key on either thumb cluster) to drop the cursor and exit manually.
 
