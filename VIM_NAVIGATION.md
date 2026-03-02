@@ -63,8 +63,8 @@ When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the c
 
 | Row | Inner Index (`Y/H/N`) | Index (`U/J/M`) | Middle (`I/K/,`) | Ring (`O/L/.`) | Pinky (`P/;/slash`) | Outer Pinky (`]/\|/'`) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Top** | Select to Start | **[EXPAND WORD LEFT]** | **[TOGGLE EXIT VISUAL]**| Duplicate Line | **[EXPAND WORD RIGHT]** | Select to End |
-| **Home**| Move to Start | **[EXPAND LEFT]** | **[EXPAND DOWN]** | **[EXPAND UP]** | **[EXPAND RIGHT]** | Move to End |
+| **Top** | Select to Start | **[EXPAND LEFT]** | **[TOGGLE EXIT VISUAL]**| Duplicate Line | **[EXPAND RIGHT]** | Select to End |
+| **Home**| Move to Start | **[EXPAND WORD LEFT]** | **[EXPAND DOWN]** | **[EXPAND UP]** | **[EXPAND WORD RIGHT]** | Move to End |
 | **Bot** | **[VISUAL CUT LINE & EXIT]** | **[VISUAL CUT WORD LEFT & EXIT]** | Add Cursor Below| Add Cursor Above| **[VISUAL CUT WORD RIGHT & EXIT]** | **[VISUAL CUT LINE END & EXIT]** |
 
 > **Note:** Tapping any **CUT** or **COPY** command will perform the action and automatically return you to the standard navigation layer. If you decide to cancel the manipulation, tap the main [TOGGLE EXIT VISUAL] mapped to the `L` position (or the `Esc` key on either thumb cluster) to drop the cursor and exit manually.
