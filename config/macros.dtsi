@@ -585,6 +585,46 @@
     display-name = "Visual Cut Line End & Exit";
   };
 
+  macro_vis_wrap_parens: macro_vis_wrap_parens {
+    compatible = "zmk,behavior-macro";
+    label = "macro_vis_wrap_parens";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(X)>, <&kp LS(N9)>, <&kp LG(V)>, <&kp LS(N0)>, <&tog 11>;
+    display-name = "Visual Wrap Parens ()";
+  };
+
+  macro_vis_wrap_brackets: macro_vis_wrap_brackets {
+    compatible = "zmk,behavior-macro";
+    label = "macro_vis_wrap_brackets";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(X)>, <&kp LBKT>, <&kp LG(V)>, <&kp RBKT>, <&tog 11>;
+    display-name = "Visual Wrap Brackets []";
+  };
+
+  macro_vis_wrap_braces: macro_vis_wrap_braces {
+    compatible = "zmk,behavior-macro";
+    label = "macro_vis_wrap_braces";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(X)>, <&kp LS(LBKT)>, <&kp LG(V)>, <&kp LS(RBKT)>, <&tog 11>;
+    display-name = "Visual Wrap Braces {}";
+  };
+
+  macro_vis_wrap_dquotes: macro_vis_wrap_dquotes {
+    compatible = "zmk,behavior-macro";
+    label = "macro_vis_wrap_dquotes";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(X)>, <&kp LS(SQT)>, <&kp LG(V)>, <&kp LS(SQT)>, <&tog 11>;
+    display-name = "Visual Wrap Quotes DQT";
+  };
+
   macro_vis_copy: macro_vis_copy {
     compatible = "zmk,behavior-macro";
     label = "macro_vis_copy";
