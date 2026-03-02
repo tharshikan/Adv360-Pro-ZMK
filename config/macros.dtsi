@@ -491,6 +491,16 @@
     display-name = "Cut to End of Line";
   };
 
+  macro_cut_word: macro_cut_word {
+    compatible = "zmk,behavior-macro";
+    label = "macro_cut_word";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&mac_sel_word>, <&kp LG(X)>;
+    display-name = "Cut Word";
+  };
+
   macro_cut_word_left: macro_cut_word_left {
     compatible = "zmk,behavior-macro";
     label = "macro_cut_word_left";
