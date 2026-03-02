@@ -54,7 +54,7 @@ When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the c
 | Row | Outer Pinky (`Tab/Esc/Shift`) | Pinky (`Q/A/Z`) | Ring (`W/S/X`) | Middle (`E/D/C`) | Index (`R/F/V`) | Inner Index (`T/G/B`) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
-| **Home**| Move to End of Line | Undo | **[VISUAL COPY & EXIT]** | **[VISUAL COPY & EXIT]** | Redo | Duplicate Line |
+| **Home**| Move to End of Line | Undo | **[VISUAL CUT & EXIT]** | **[VISUAL COPY & EXIT]** | Redo | Duplicate Line |
 | **Bot** | **[VISUAL CUT END OF LINE & EXIT]** | Find / Search | Find Previous | Find Next | Format Document| Select All |
 
 > **Note:** Tap the Copy key to instantly capture your highlighted selection to the clipboard and snap out of Visual Mode.
