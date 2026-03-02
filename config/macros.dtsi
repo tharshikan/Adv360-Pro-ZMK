@@ -595,6 +595,26 @@
     display-name = "Visual Cut Line End & Exit";
   };
 
+  macro_insert_line_below: macro_insert_line_below {
+    compatible = "zmk,behavior-macro";
+    label = "macro_insert_line_below";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(RIGHT)>, <&kp ENTER>;
+    display-name = "Insert Line Below";
+  };
+
+  macro_insert_line_above: macro_insert_line_above {
+    compatible = "zmk,behavior-macro";
+    label = "macro_insert_line_above";
+    #binding-cells = <0>;
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&kp LG(LEFT)>, <&kp ENTER>, <&kp UP>;
+    display-name = "Insert Line Above";
+  };
+
   macro_vis_wrap_parens: macro_vis_wrap_parens {
     compatible = "zmk,behavior-macro";
     label = "macro_vis_wrap_parens";

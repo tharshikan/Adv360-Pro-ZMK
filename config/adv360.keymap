@@ -498,7 +498,7 @@
 &trans               &trans         &trans           &trans       &trans         &trans            &trans                                      &trans  &trans            &trans                &trans            &trans          &trans                 &trans
 &kp LS(LG(RIGHT))    &kp LG(SPACE)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(W)      &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))  &kp LEFT              &macro_vis_enter  &kp LG(Z)   &kp RIGHT              &kp LS(LG(RIGHT))
 &kp LG(RIGHT)        &kp LG(Z)      &kp LG(V)        &kp LG(C)    &kp LG(LS(Z))  &kp LS(LA(DOWN))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LEFT)      &kp LA(LEFT)          &kp DOWN          &kp UP          &kp LA(RIGHT)          &kp LG(RIGHT)
-&macro_cut_line_end  &kp LG(F)      &kp LG(LS(G))    &kp LG(G)    &kp LS(LA(F))  &kp LG(A)                         &trans      &trans                  &macro_cut_line   &macro_cut_word  &kp LG(LA(DOWN))  &kp LG(LA(UP))  &kp LG(LS(Z))  &macro_cut_line_end
+&macro_cut_line_end  &kp LG(F)      &kp LG(LS(G))    &kp LG(G)    &kp LS(LA(F))  &kp LG(A)                         &trans      &trans                  &macro_cut_line   &macro_cut_word  &macro_insert_line_below  &macro_insert_line_above  &kp LG(LS(Z))  &macro_cut_line_end
 &trans               &trans         &trans           &trans       &trans                           &trans  &trans  &trans      &trans  &trans  &trans                    &trans                &trans            &trans          &trans                 &trans
             >;
         };
