@@ -467,7 +467,7 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp BSPC>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(DOWN)>, <&kp BSPC>;
     display-name = "Delete Line";
   };
 
@@ -477,7 +477,7 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(DOWN)>, <&kp LG(X)>;
     display-name = "Cut Line";
   };
 
@@ -581,7 +581,7 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LG(LEFT)>, <&kp LS(LG(RIGHT))>, <&kp LG(X)>, <&tog 11>;
+    bindings = <&kp LG(LEFT)>, <&kp LS(DOWN)>, <&kp LG(X)>, <&tog 11>;
     display-name = "Visual Cut Line & Exit";
   };
 
