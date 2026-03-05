@@ -16,7 +16,7 @@ The visual representations below demonstrate the operations assigned to the phys
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
 | **Home**| Move to End of Line | Undo | Paste | Copy | Redo | Duplicate Line |
-| **Bot** | **[CUT LINE END]** | Find / Search | Find Previous | Find Next | Format Document| Select All |
+| **Bot** | Select Paragraph Above | Select Word Left | Select Line Above | Select Line Below | Select Word Right| Select Paragraph Below |
 
 > **Note:** The left hand replaces standard modifier keys with highly-efficient macro sequences. For example, instead of pressing `Cmd + C` to copy, simply holding the navigation layer toggle and tapping the Left Middle finger (`Paste`) accomplishes the full sequence instantly.
 
@@ -55,7 +55,7 @@ When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the c
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Top** | Select to End of Line | Spotlight | Previous Tab | Next Tab | Close Tab | Reopen Tab |
 | **Home**| Move to End of Line | Undo | **[VISUAL CUT & EXIT]** | **[VISUAL COPY & EXIT]** | Redo | Duplicate Line |
-| **Bot** | **[VISUAL CUT END OF LINE & EXIT]** | Find / Search | Find Previous | Find Next | Format Document| Select All |
+| **Bot** | Select Paragraph Above | Select Word Left | Select Line Above | Select Line Below | Select Word Right| Select Paragraph Below |
 
 > **Note:** Tap the Copy key to instantly capture your highlighted selection to the clipboard and snap out of Visual Mode.
 
