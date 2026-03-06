@@ -104,7 +104,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_BACKSPACE_2";
             #binding-cells = <0>;
-            bindings = <&bs_nav 12 BSPC>, <&kp LA(BSPC)>;
+            bindings = <&bs_nav 4 BSPC>, <&kp LA(BSPC)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
