@@ -523,9 +523,9 @@
         command_num_lay {
             bindings = <
 &trans  &trans                &trans                &trans      &trans      &trans      &trans                                      &trans  &trans      &trans      &trans      &trans      &trans      &trans
-&trans  &kp F1                &kp F2                &kp F3      &kp F4      &kp F5      &trans                                      &trans  &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
+&trans  &kp F1                &kp F2                &kp F3      &kp F4      &kp F5      &trans                                      &trans  &kp F6      &kp F7      &kp F8      &kp F9      &kp F20     &kp F11
 &trans  &kp LG(N1)            &kp LG(N2)            &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &kp LG(LS(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans      &trans      &trans                      &trans      &trans                  &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &kp LG(LS(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans      &trans      &trans                      &trans      &trans                  &kp F21     &kp F10     &kp F11     &kp F12     &trans      &trans
 &trans  &trans                &trans                &trans      &trans                  &trans  &trans  &trans      &trans  &trans  &trans              &trans      &trans      &trans      &trans      &trans
             >;
         };
