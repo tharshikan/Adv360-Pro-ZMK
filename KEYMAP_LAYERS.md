@@ -56,7 +56,7 @@ This document provides a comprehensive visual reference for all keyboard layers 
 ├────────┼────┼────┼────┼────┼────┤        │                                       │        ├────┼────┼────┼────┼────┼───────┤
 │  ESC   │A/Cm│O/Sm│E/Sft│I/Sym│ G  │        │                                       │        │ D  │H/Sym│ T/Sft│N/Num│S/Cm │ SL(1) │
 ├────────┼────┼────┼────┼────┼────┴────────┤                                       ├────────┴────┼────┼────┼────┼────┼───────┤
-│ SHIFT  │ X  │ J  │ ,  │ =  │  '          │                                       │           C │ M  │ V  │ W  │ .  │ SHIFT │
+│ SHIFT  │ X/L7 │ J/LC │  ,  │  =  │  '          │                                       │           C │  M  │ W  │ V/LC │ ./LA │ SHIFT │
 └─┬──────┼────┼────┼────┼────┴─────────────┘                                       └─────────────┴────┼────┼────┼────┼───────┴┐
   │CurTog│  /   │ Z  │ ^/L7 │  ?                                                                    │  (   │  )   │  -   │ {/[  │ }/]  │
   └──────┴────┴────┴────┘                                                                            └────┴────┴────┴───────┘
@@ -95,6 +95,9 @@ This document provides a comprehensive visual reference for all keyboard layers 
 - **Dual-role Thumbs:**
   - **Left Outer:** Backspace (Tap) / Shift (Hold)
   - **Right Outer:** Space (Tap) / Shift (Hold)
+- **Bottom Row Modifiers:**
+  - `J` and `V` (Ring fingers) act as tap/hold for the `CmdMap / CmdNum` Layer (Layer 13) when held.
+  - `X` and `.` (Pinky fingers) act as tap/hold for the `Launcher` (Layer 7) and `Num` (Layer 10).
 
 ---
 
