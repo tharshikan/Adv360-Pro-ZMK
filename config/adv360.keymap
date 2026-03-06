@@ -447,7 +447,7 @@
         base {
             display-name = "Base";
             bindings = <
-&to 10          &kp N1                      &kp N2                     &kp N3                    &kp N4               &kp N5            &sl 0                                                                           &mo 0            &kp N6  &kp N7                &kp N8                           &morph_9                    &morph_0                       &kp UNDERSCORE
+&to 10          &kp N1                      &kp N2                     &kp N3                    &kp N4               &kp N5            &sl 0                                                                           &mo 9            &kp N6  &kp N7                &kp N8                           &morph_9                    &morph_0                       &kp UNDERSCORE
 &kp QUESTION    &kp Q                       &kp P                      &kp U                     &kp Y                &kp SEMI          &none                                                                           &none            &kp K   &kp F                 &kp L                            &kp R                       &kp B                          &kp BSLH
 &kp ESCAPE      &hrm_left_pinky LGUI A      &hrm_left_ring 5 O         &hrm_left_middle LSHFT E  &hrm_left_index 1 I  &kp G             &none         &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI  &td_backup_sym         &none            &kp D   &hrm_right_index 1 H  &hrm_right_middle RIGHT_SHIFT T  &hrm_right_ring 2 N         &hrm_right_pinky RGUI S        &kp TAB
 &td_backup_sym  &hrm_left_pinky_bottom 9 X  &hrm_left_ring_bottom 7 J  &kp COMMA                 &kp EQUAL            &kp SINGLE_QUOTE                           &kp ESCAPE        &kp TAB                                               &kp C   &kp M                 &kp W                            &hrm_right_ring_bottom 7 V  &hrm_right_pinky_bottom 5 DOT  &kp RSHFT
@@ -476,7 +476,7 @@
             >;
         };
 
-        command_arrow_navigation {
+        cmd_arw_nav_right_hand {
             display-name = "Nav";
             bindings = <
 &kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LG(N6)  &kp LG(N7)      &kp LG(N8)    &kp LG(N9)     &kp LG(N0)  &kp LG(LBKT)
@@ -487,7 +487,7 @@
             >;
         };
 
-        nav_left_single_hand {
+        cmd_arw_nav_left_hand {
             display-name = "Nav";
             bindings = <
 &kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LG(N6)      &kp LG(N7)      &mac_sel_word  &kp LG(N9)       &kp LG(N0)  &kp LG(LBKT)
