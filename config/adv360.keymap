@@ -480,7 +480,7 @@
             display-name = "Nav";
             bindings = <
 &kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LG(N6)  &kp LG(N7)      &kp LG(N8)    &kp LG(N9)     &kp LG(N0)  &kp LG(LBKT)
-&kp LG(TAB)    &kp LG(Q)   &kp LG(P)      &kp LG(U)     &kp LG(Y)      &kp LG(P)      &trans                                                               &trans         &kp LG(E)   &kp LG(L)       &kp LG(T)     &kp LG(R)      &kp LG(B)   &kp LG(BSLH)
+&kp LG(TAB)    &kp LG(Q)   &kp LG(P)      &kp LG(U)     &kp LG(Y)      &kp LG(P)      &trans                                                               &trans         &kp LG(E)   &kp LG(F)       &kp LG(L)     &kp LG(R)      &kp LG(B)   &kp LG(BSLH)
 &kp LG(ESC)    &kp LG(A)   &kp LG(O)      &kp LG(K)     &kp LG(I)      &kp LG(DOT)    &trans        &trans  &trans           &trans         &trans         &trans         &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp UP_ARROW   &kp LG(S)   &trans
 &kp LG(LSHFT)  &kp LG(Z)   &kp LG(COMMA)  &kp LG(C)     &kp LG(V)      &kp LG(LA(I))                        &trans           &trans                                       &kp LG(N)   &kp LG(M)       &kp LG(W)     &kp LG(LS(N))  &kp LG(F)   &kp LG(RSHFT)
 &trans         &kp LG(X)   &kp LG(Z)      &kp LG(LEFT)  &kp LG(RIGHT)                 &kp LG(BSPC)  &trans  &kp LG(END)      &kp LG(PG_DN)  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(UP)      &kp LG(DOWN)  &kp LG(LS(G))  &kp LG(G)   &trans
@@ -565,11 +565,11 @@
 
         command_num_lay2 {
             bindings = <
-&trans  &trans      &trans      &trans      &trans      &trans  &trans                                      &trans  &trans                &trans   &trans   &trans   &trans  &trans
-&trans  &trans      &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &trans  &trans
-&trans  &kp LG(N0)  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &trans  &trans
-&trans  &trans      &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans                  &trans      &trans                  &trans                &kp F7   &kp F8   &kp F9   &trans  &trans
-&trans  &trans      &trans      &trans      &trans              &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans  &trans
+&trans  &trans      &trans      &trans      &trans      &trans  &trans                                      &trans  &trans                &trans   &trans   &trans   &trans   &trans
+&trans  &kp F19     &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp F24  &trans
+&trans  &kp LG(N0)  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp F23  &trans
+&trans  &kp F18     &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans                  &trans      &trans                  &trans                &kp F7   &kp F8   &kp F9   &kp F20  &trans
+&trans  &trans      &trans      &trans      &trans              &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans   &trans
             >;
         };
     };
