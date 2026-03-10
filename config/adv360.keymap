@@ -565,11 +565,11 @@
 
         command_num_lay2 {
             bindings = <
-&trans  &trans      &trans      &trans      &trans      &trans   &trans                                      &trans  &trans                &trans   &trans   &trans   &trans   &trans
-&trans  &kp F19     &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp F14  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp F24  &trans
-&trans  &kp LG(N0)  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp F15  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp F23  &trans
-&trans  &kp F18     &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp F17               &kp F7   &kp F8   &kp F9   &kp F20  &trans
-&trans  &trans      &trans      &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans   &trans
+&trans  &trans               &trans      &trans      &trans      &trans   &trans                                      &trans  &trans                &trans   &trans   &trans   &trans             &trans
+&trans  &kp RS(RA(RC(F3)))   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp F14  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp RS(RA(RC(O)))  &trans
+&trans  &kp LG(N0)           &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp F15  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp RS(RA(RC(C)))  &trans
+&trans  &kp RS(RA(RC(F23)))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp RS(RA(RC(K)))     &kp F7   &kp F8   &kp F9   &kp RS(RA(RC(D)))  &trans
+&trans  &trans               &trans      &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans             &trans
             >;
         };
     };
