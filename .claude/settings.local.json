@@ -5,7 +5,10 @@
       "Bash(git commit -m \"$(cat <<''EOF''\nadd custom dvorak layout with advanced features\n\n- Implement custom Dvorak-inspired layout optimized for ergonomic typing\n- Add bilateral home row modifiers (defined but disabled by default)\n  - Left hand: A(Shift), O(Ctrl), E(Alt), I(GUI)\n  - Right hand: H(GUI), T(Alt), N(Ctrl), S(Shift)\n  - Uses positional hold-taps to prevent accidental activation\n- Replace Layer 1 toggle with sticky layer activation\n  - Dual access: top-left corner and right home row (after S)\n  - Activates for single keypress then auto-returns to base\n  - Left side: programming symbols and brackets\n  - Right side: full numpad layout\n- Add Enter/Command dual-function thumb key\n  - Tap for Enter, hold for Command/GUI\n  - Left thumb also has dedicated Command key\n- Create comprehensive visual documentation\n  - ASCII keyboard diagrams for all layers\n  - Home row mods visual reference with examples\n  - Sticky layer usage guide with coding examples\n  - Complete macro and behavior reference\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(make all:*)",
       "Bash(docker run:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
     ]
   }
 }

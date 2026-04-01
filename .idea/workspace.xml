@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="integrating sunaku cursor layer">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="143" />
+    <option name="cachedIndexableFilesCount" value="149" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -77,6 +78,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RecapSpentCounter">
@@ -97,7 +101,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -126,6 +130,16 @@
       <workItem from="1770752506995" duration="1405000" />
       <workItem from="1771255577544" duration="7855000" />
       <workItem from="1771537698958" duration="18000" />
+      <workItem from="1771537725402" duration="32085000" />
+      <workItem from="1773876862720" duration="17000" />
+      <workItem from="1773876885367" duration="5857000" />
+      <workItem from="1773940673748" duration="575000" />
+      <workItem from="1774030012594" duration="2021000" />
+      <workItem from="1774280642690" duration="237000" />
+      <workItem from="1774289337890" duration="2818000" />
+      <workItem from="1774400991255" duration="2051000" />
+      <workItem from="1774460568188" duration="609000" />
+      <workItem from="1774475215614" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
@@ -236,5 +250,13 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
