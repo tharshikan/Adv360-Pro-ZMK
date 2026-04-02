@@ -273,8 +273,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_RING_BOTTOM_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             retro-tap;
@@ -343,8 +343,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             retro-tap;
@@ -371,7 +371,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <243>;
             quick-tap-ms = <180>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
