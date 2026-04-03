@@ -527,7 +527,7 @@
             display-name = "Nav";
             bindings = <
 &kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LG(N6)      &kp LG(N7)      &mac_sel_word  &kp LG(N9)       &kp LG(N0)  &kp LG(LBKT)
-&kp LG(TAB)    &kp LG(Q)   &kp LG(LS(Z))  &kp LG(U)     &kp LG(Y)      &kp LG(P)      &trans                                                               &trans         &kp LG(E)       &kp LG(F)       &kp LG(L)      &kp LG(R)        &kp LG(B)   &kp LG(BSLH)
+&kp LG(TAB)    &kp LG(Q)   &kp LG(LS(Z))  &kp LG(U)     &kp LG(Y)      &kp LG(P)      &trans                                                               &trans         &kp LG(E)       &kp LG(DOT)     &kp LG(L)      &kp LG(R)        &kp LG(B)   &kp LG(BSLH)
 &kp LG(ESC)    &kp LG(A)   &kp LG(Z)      &kp LG(C)     &kp LG(V)      &kp LG(DOT)    &trans        &trans  &trans           &trans         &trans         &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp LG(S)   &trans
 &kp LG(LSHFT)  &kp LG(Z)   &kp LG(COMMA)  &kp LG(C)     &kp LG(V)      &kp LG(LA(I))                        &trans           &trans                                       &kp LG(N)       &kp LG(M)       &kp LG(W)      &kp LG(LS(N))    &kp LG(F)   &kp LG(RSHFT)
 &trans         &kp LG(X)   &kp LG(Z)      &kp LG(LEFT)  &kp LG(RIGHT)                 &kp LG(BSPC)  &trans  &kp LG(END)      &kp LG(PG_DN)  &kp LG(ENTER)  &kp LG(SPACE)                  &kp LG(UP)      &kp LG(DOWN)   &kp LG(LS(G))    &kp LG(G)   &trans
