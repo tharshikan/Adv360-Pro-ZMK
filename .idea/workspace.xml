@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6244faf-fa90-4f6b-9c73-8f556a6fb60f" name="Changes" comment="integrating sunaku cursor layer">
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +139,7 @@
       <workItem from="1774400991255" duration="2051000" />
       <workItem from="1774460568188" duration="609000" />
       <workItem from="1774475215614" duration="679000" />
+      <workItem from="1775200398970" duration="5010000" />
     </task>
     <task id="LOCAL-00001" summary="added diagarms">
       <option name="closed" value="true" />
