@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_NAV";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <140>;
             flavor = "tap-preferred";
