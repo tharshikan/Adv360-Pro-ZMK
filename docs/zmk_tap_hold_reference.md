@@ -26,8 +26,8 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 
 | Key | Tap | Hold | Behavior | Tapping Term | Quick Tap | Prior Idle | Flavor | Retro Tap | Trigger Side |
 |:----|:----|:-----|:---------|:-------------|:----------|:-----------|:-------|:----------|:-------------|
-| **X** (pinky) | `X` | Layer 9 | `hrm_left_pinky_bottom` | 350ms | 200ms | 150ms | tap-preferred | Yes | Right hand only |
-| **J** (ring) | `J` | Layer 7 | `hrm_left_ring_bottom` | 270ms | 200ms | 150ms | tap-preferred | Yes | Right hand only |
+| **X** (pinky) | `X` | Layer 2 | `hrm_left_pinky_bottom` | 250ms | 180ms | 150ms | tap-preferred | Yes | Right hand only |
+| **J** (ring) | `J` | Layer 11 | `hrm_left_ring_bottom` | 250ms | 180ms | 150ms | tap-preferred | Yes | Right hand only |
 
 ---
 
@@ -44,8 +44,8 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 
 | Key | Tap | Hold | Behavior | Tapping Term | Quick Tap | Prior Idle | Flavor | Retro Tap | Trigger Side |
 |:----|:----|:-----|:---------|:-------------|:----------|:-----------|:-------|:----------|:-------------|
-| **V** (ring) | `V` | Layer 7 | `hrm_right_ring_bottom` | 243ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
-| **DOT** (pinky) | `.` | Layer 5 | `hrm_right_pinky_bottom` | 280ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
+| **V** (ring) | `V` | Layer 11 | `hrm_right_ring_bottom` | 243ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
+| **DOT** (pinky) | `.` | Layer 5 | `hrm_right_pinky_bottom` | 243ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
 
 ---
 
@@ -66,13 +66,13 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 
 | Position | Tap | Hold | Behavior | Tapping Term | Quick Tap | Prior Idle | Flavor | Retro Tap |
 |:---------|:----|:-----|:---------|:-------------|:----------|:-----------|:-------|:----------|
-| **Left Inner (large)** | `Backspace` | Layer 4 (Nav) | `smart_bspc2` → `bs_nav` | 220ms | 175ms | 160ms | tap-preferred | Yes |
-| **Left Middle** | Layer 4 (Nav) | Layer 4 (hold) | `&sl 4` (sticky-layer) | N/A | N/A | N/A | sticky | N/A |
-| **Left Outer** | `Escape` | — | `&kp ESCAPE` | N/A | N/A | N/A | plain | N/A |
-| **Left Row 4** | `Cmd+C` | Layer 9 (Launcher) | `lt_launcher` | 220ms | 0ms | 180ms | tap-preferred | Yes |
-| **Right Inner (large)** | `Enter` | Layer 3 (Nav) | `lt_nav_enter` | 175ms | 0ms | — | tap-preferred | Yes |
-| **Right Middle** | `Space` | Layer 3 (Nav) | `sp_nav` | 220ms | 0ms | 140ms | tap-preferred | Yes |
-| **Right Outer** | Sym Toggle | — | `tap-dance` | 175ms | N/A | N/A | tap-dance | N/A |
+| **Left Outer (Large)** | `Backspace` | Layer 4 (Nav) | `smart_bspc2` → `bs_nav` | 220ms | 175ms | 160ms | tap-preferred | Yes |
+| **Left Inner (Large)** | `Escape` | `LCTRL` | `mt_ctrl_esc` | 220ms | 0ms | 140ms | tap-preferred | Yes |
+| **Left Small Bottom** | `Escape` | `LALT` (Option) | `mt_opt_esc` | 200ms | 0ms | 140ms | tap-preferred | Yes |
+| **Left Cmd+C** | `Cmd+C` | Layer 9 (Launcher) | `lt_launcher` | 220ms | 0ms | 180ms | tap-preferred | Yes |
+| **Right Inner (Large)** | `Enter` | `RCTRL` | `mt_ctrl_enter` | 175ms | 0ms | — | tap-preferred | Yes |
+| **Right Outer (Large)** | `Space` | Layer 3 (Nav) | `sp_nav` | 190ms | 0ms | 140ms | tap-preferred | Yes |
+| **Right Small Bottom** | `Tab` | `LALT` (Option) | `mt_opt_tab` | 200ms | 0ms | 140ms | tap-preferred | Yes |
 
 ### Thumb Key Notes
 
@@ -103,16 +103,17 @@ These are defined in the keymap but may be used on non-base layers or as alterna
 | 2 | O | Ring | Left | `O` | Layer 5 | 270ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
 | 3 | E | Middle | Left | `E` | `LSHIFT` | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
 | 4 | I | Index | Left | `I` | Layer 1 | 260ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
-| 5 | X | Pinky | Left | `X` | Layer 9 | 350ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
-| 6 | J | Ring | Left | `J` | Layer 7 | 270ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
+| 5 | X | Pinky | Left | `X` | Layer 2 | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
+| 6 | J | Ring | Left | `J` | Layer 11 | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
 | 7 | H | Index | Right | `H` | Layer 1 | 234ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 8 | T | Middle | Right | `T` | `RSHIFT` | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 9 | N | Ring | Right | `N` | Layer 2 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 10 | S | Pinky | Right | `S` | `RGUI` | 280ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
-| 11 | V | Ring | Right | `V` | Layer 7 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
-| 12 | DOT | Pinky | Right | `.` | Layer 5 | 280ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
+| 11 | V | Ring | Right | `V` | Layer 11 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
+| 12 | DOT | Pinky | Right | `.` | Layer 5 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 13 | BSPC | Thumb | Left | `Backspace` | Layer 4 | 220ms | 175ms | 160ms | tap-pref | Yes | No |
-| 14 | Nav | Thumb | Left | Sticky L4 | Layer 4 | — | — | — | sticky | — | No |
-| 15 | Cmd+C | Thumb | Left | `Cmd+C` | Layer 9 | 220ms | 0ms | 180ms | tap-pref | Yes | No |
-| 16 | Enter | Thumb | Right | `Enter` | Layer 3 | 175ms | 0ms | — | tap-pref | Yes | No |
-| 17 | Space | Thumb | Right | `Space` | Layer 3 | 220ms | 0ms | 140ms | tap-pref | Yes | No |
+| 14 | ESC | Thumb | Left | `Escape` | `LCTRL` | 220ms | 0ms | 140ms | tap-pref | Yes | No |
+| 15 | ESC2 | Thumb | Left | `Escape` | `LALT` | 200ms | 0ms | 140ms | tap-pref | Yes | No |
+| 16 | Enter | Thumb | Right | `Enter` | `RCTRL` | 175ms | 0ms | — | tap-pref | Yes | No |
+| 17 | Space | Thumb | Right | `Space` | Layer 3 | 190ms | 0ms | 140ms | tap-pref | Yes | No |
+| 18 | TAB | Thumb | Right | `Tab` | `LALT` | 200ms | 0ms | 140ms | tap-pref | Yes | No |
