@@ -74,8 +74,8 @@ This means a left-hand modifier will **only** activate if the next key pressed i
 Tapping terms are staggered based on finger strength and dexterity:
 
 *   **Pinky (A, X):** `350ms`/`250ms` (Highest timeout on home row to resist accidental triggers).
-*   **Pinky Right (S, DOT):** `280ms`/`243ms`
+*   **Pinky Right (S, DOT):** `250ms`/`243ms`
 *   **Ring Left (O, J):** `270ms`/`250ms`
 *   **Ring Right (N, V):** `243ms`
-*   **Middle (E, T):** `250ms`/`243ms`
+*   **Middle (E, T):** `260ms`/`243ms`
 *   **Index (I, H):** `260ms`/`234ms` (Fastest, most deliberate)

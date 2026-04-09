@@ -19,7 +19,7 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 |:----|:----|:-----|:---------|:-------------|:----------|:-----------|:-------|:----------|:-------------|
 | **A** (pinky) | `A` | `LGUI` (Cmd) | `hrm_left_pinky` | 350ms | 200ms | 150ms | tap-preferred | Yes | Right hand only |
 | **O** (ring) | `O` | Layer 5 | `hrm_left_ring` | 270ms | 200ms | 150ms | tap-preferred | Yes | Right hand only |
-| **E** (middle) | `E` | `LSHIFT` | `hrm_left_middle` | 250ms | 180ms | 150ms | tap-preferred | Yes | Right hand only |
+| **E** (middle) | `E` | `LSHIFT` | `hrm_left_middle` | 260ms | 180ms | 150ms | tap-preferred | Yes | Right hand only |
 | **I** (index) | `I` | Layer 1 (Sym) | `hrm_left_index` | 260ms | 200ms | 150ms | tap-preferred | Yes | Right hand only |
 
 ### Left Hand — Bottom Row
@@ -38,7 +38,7 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 | **H** (index) | `H` | Layer 1 (Sym) | `hrm_right_index` | 234ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
 | **T** (middle) | `T` | `RSHIFT` | `hrm_right_middle` | 243ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
 | **N** (ring) | `N` | Layer 2 | `hrm_right_ring` | 243ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
-| **S** (pinky) | `S` | `RGUI` (Cmd) | `hrm_right_pinky` | 280ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
+| **S** (pinky) | `S` | `RGUI` (Cmd) | `hrm_right_pinky` | 250ms | 180ms | 150ms | tap-preferred | Yes | Left hand only |
 
 ### Right Hand — Bottom Row
 
@@ -53,9 +53,9 @@ Complete reference for all tap-hold behaviors on the Adv360-Pro, including home 
 
 | Finger | Left Tapping Term | Right Tapping Term | Quick Tap | Prior Idle |
 |:-------|:------------------|:-------------------|:----------|:-----------|
-| Pinky | 350ms | 280ms | 180–200ms | 150ms |
+| Pinky | 350ms | 250ms | 180–200ms | 150ms |
 | Ring | 270ms | 243ms | 180–200ms | 150ms |
-| Middle | 250ms | 243ms | 180ms | 150ms |
+| Middle | 260ms | 243ms | 180ms | 150ms |
 | Index | 260ms | 234ms | 180–200ms | 150ms |
 
 > Left pinky has the highest tapping term (350ms) because it doubles as the GUI/Cmd key, which is easy to misfire on the weakest finger.
@@ -101,14 +101,14 @@ These are defined in the keymap but may be used on non-base layers or as alterna
 |:--|:----|:-------|:-----|:-----------|:------------|:-------------|:----------|:-----------|:-------|:----------|:----------|
 | 1 | A | Pinky | Left | `A` | `LGUI` | 350ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
 | 2 | O | Ring | Left | `O` | Layer 5 | 270ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
-| 3 | E | Middle | Left | `E` | `LSHIFT` | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
+| 3 | E | Middle | Left | `E` | `LSHIFT` | 260ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
 | 4 | I | Index | Left | `I` | Layer 1 | 260ms | 200ms | 150ms | tap-pref | Yes | Yes (R) |
 | 5 | X | Pinky | Left | `X` | Layer 2 | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
 | 6 | J | Ring | Left | `J` | Layer 11 | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (R) |
 | 7 | H | Index | Right | `H` | Layer 1 | 234ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 8 | T | Middle | Right | `T` | `RSHIFT` | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 9 | N | Ring | Right | `N` | Layer 2 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
-| 10 | S | Pinky | Right | `S` | `RGUI` | 280ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
+| 10 | S | Pinky | Right | `S` | `RGUI` | 250ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 11 | V | Ring | Right | `V` | Layer 11 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 12 | DOT | Pinky | Right | `.` | Layer 5 | 243ms | 180ms | 150ms | tap-pref | Yes | Yes (L) |
 | 13 | BSPC | Thumb | Left | `Backspace` | Layer 4 | 220ms | 175ms | 160ms | tap-pref | Yes | No |
