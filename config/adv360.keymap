@@ -247,9 +247,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_SYM";
             #binding-cells = <2>;
-            tapping-term-ms = <234>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <180>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <140>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -262,9 +262,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_RING_SYM";
             #binding-cells = <2>;
-            tapping-term-ms = <243>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <180>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <140>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -322,9 +322,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <243>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <180>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <140>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;

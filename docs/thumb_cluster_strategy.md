@@ -58,7 +58,7 @@ To complement the thumb cluster, the home row incorporates specialized modifiers
 | Parameter | Value | Purpose |
 | :--- | :--- | :--- |
 | **Flavor** | `tap-preferred` | `tap-preferred` is used globally to prioritize typing the character if rolled quickly. |
-| **Require Prior Idle** | `150ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for 150ms prior. |
+| **Require Prior Idle** | `140ms-150ms` | Extremely strict safety measure. A modifier will *only* activate if you haven't typed *any* other key for ~150ms prior. |
 | **Quick Tap** | `180ms-200ms` | Allows rapid double-tapping to repeat a key without accidentally triggering the modifier. |
 | **Hold-Trigger-On-Release** | Enabled | Critical component of "Timeless" HRMs. Evaluates mod-tap resolution on key *release* instead of press, fixing same-hand chording. |
 | **Retro Tap** | Enabled | Holding the key past the tapping term but *not* pressing another key will still output the base key upon release. |
@@ -76,6 +76,6 @@ Tapping terms are staggered based on finger strength and dexterity:
 *   **Pinky (A, X):** `350ms`/`250ms` (Highest timeout on home row to resist accidental triggers).
 *   **Pinky Right (S, DOT):** `250ms`/`243ms`
 *   **Ring Left (O, J):** `270ms`/`250ms`
-*   **Ring Right (N, V):** `243ms`
-*   **Middle (E, T):** `260ms`/`243ms`
-*   **Index (I, H):** `260ms`/`234ms` (Fastest, most deliberate)
+*   **Ring Right (N, V):** `230ms`/`243ms`
+*   **Middle (E, T):** `260ms`/`230ms`
+*   **Index (I, H):** `260ms`/`220ms` (Fastest, most deliberate)
