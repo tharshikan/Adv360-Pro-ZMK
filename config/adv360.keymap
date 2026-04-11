@@ -476,7 +476,7 @@
         };
 
 
-        tp_sp_nav: space_nav {
+        tp_sp_nav: tp_space_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "TP_SPACE_NAV";
             #binding-cells = <2>;
@@ -490,7 +490,7 @@
 
 
 
-        hrm_left_index: homerow_mod_left_sym {
+        hrm_left_index: tp_homerow_mod_left_sym {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_SYM";
             #binding-cells = <2>;
@@ -505,7 +505,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_left_ring: homerow_mod_left_ring_sym {
+        hrm_left_ring: tp_homerow_mod_left_ring_sym {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_RING_SYM";
             #binding-cells = <2>;
@@ -520,7 +520,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_index: homerow_mod_right_sym {
+        hrm_right_index: tp_homerow_mod_right_sym {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_SYM";
             #binding-cells = <2>;
@@ -535,7 +535,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_ring: homerow_mod_right_ring_sym {
+        hrm_right_ring: tp_homerow_mod_right_ring_sym {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_RING_SYM";
             #binding-cells = <2>;
@@ -550,7 +550,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_left_ring_bottom: homerow_mod_left_ring_bottom_layer {
+        hrm_left_ring_bottom: tp_homerow_mod_left_ring_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_RING_BOTTOM_LAYER";
             #binding-cells = <2>;
@@ -565,7 +565,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_ring_bottom: homerow_mod_right_ring_bottom_layer {
+        hrm_right_ring_bottom: tp_homerow_mod_right_ring_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_RING_BOTTOM_LAYER";
             #binding-cells = <2>;
@@ -580,7 +580,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_left_middle: homerow_mod_left_shift {
+        hrm_left_middle: tp_homerow_mod_left_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_SHIFT";
             #binding-cells = <2>;
@@ -595,7 +595,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_middle: homerow_mod_right_shift {
+        hrm_right_middle: tp_homerow_mod_right_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_SHIFT";
             #binding-cells = <2>;
@@ -610,7 +610,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_left_pinky: homerow_mod_left_cmd {
+        hrm_left_pinky: tp_homerow_mod_left_cmd {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_CMD";
             #binding-cells = <2>;
@@ -625,7 +625,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_left_pinky_bottom: homerow_mod_left_pinky_bottom_layer {
+        hrm_left_pinky_bottom: tp_homerow_mod_left_pinky_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
@@ -640,7 +640,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_pinky: homerow_mod_right_cmd {
+        hrm_right_pinky: tp_homerow_mod_right_cmd {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_CMD";
             #binding-cells = <2>;
@@ -655,7 +655,7 @@
             hold-trigger-on-release;
         };
 
-        hrm_right_pinky_bottom: homerow_mod_right_pinky_bottom_layer {
+        hrm_right_pinky_bottom: tp_homerow_mod_right_pinky_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_RIGHT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
