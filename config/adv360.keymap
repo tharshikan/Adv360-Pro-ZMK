@@ -492,7 +492,7 @@
 
         hrm_left_index: tp_homerow_mod_left_sym {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_SYM";
+            label = "TP_HOMEROW_MOD_LEFT_SYM";
             #binding-cells = <2>;
             tapping-term-ms = <260>;
             quick-tap-ms = <200>;
@@ -507,7 +507,7 @@
 
         hrm_left_ring: tp_homerow_mod_left_ring_sym {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_RING_SYM";
+            label = "TP_HOMEROW_MOD_LEFT_RING_SYM";
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <200>;
@@ -522,7 +522,7 @@
 
         hrm_right_index: tp_homerow_mod_right_sym {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_SYM";
+            label = "TP_HOMEROW_MOD_RIGHT_SYM";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <180>;
@@ -537,7 +537,7 @@
 
         hrm_right_ring: tp_homerow_mod_right_ring_sym {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_RING_SYM";
+            label = "TP_HOMEROW_MOD_RIGHT_RING_SYM";
             #binding-cells = <2>;
             tapping-term-ms = <230>;
             quick-tap-ms = <180>;
@@ -552,7 +552,7 @@
 
         hrm_left_ring_bottom: tp_homerow_mod_left_ring_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_RING_BOTTOM_LAYER";
+            label = "TP_HOMEROW_MOD_LEFT_RING_BOTTOM_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <180>;
@@ -567,7 +567,7 @@
 
         hrm_right_ring_bottom: tp_homerow_mod_right_ring_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_RING_BOTTOM_LAYER";
+            label = "TP_HOMEROW_MOD_RIGHT_RING_BOTTOM_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <243>;
             quick-tap-ms = <180>;
@@ -582,7 +582,7 @@
 
         hrm_left_middle: tp_homerow_mod_left_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_SHIFT";
+            label = "TP_HOMEROW_MOD_LEFT_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <260>;
             quick-tap-ms = <180>;
@@ -597,7 +597,7 @@
 
         hrm_right_middle: tp_homerow_mod_right_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_SHIFT";
+            label = "TP_HOMEROW_MOD_RIGHT_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <230>;
             quick-tap-ms = <180>;
@@ -612,7 +612,7 @@
 
         hrm_left_pinky: tp_homerow_mod_left_cmd {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_CMD";
+            label = "TP_HOMEROW_MOD_LEFT_CMD";
             #binding-cells = <2>;
             tapping-term-ms = <350>;
             quick-tap-ms = <200>;
@@ -627,7 +627,7 @@
 
         hrm_left_pinky_bottom: tp_homerow_mod_left_pinky_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_LEFT_PINKY_BOTTOM_LAYER";
+            label = "TP_HOMEROW_MOD_LEFT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <180>;
@@ -642,7 +642,7 @@
 
         hrm_right_pinky: tp_homerow_mod_right_cmd {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_CMD";
+            label = "TP_HOMEROW_MOD_RIGHT_CMD";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <180>;
@@ -657,7 +657,7 @@
 
         hrm_right_pinky_bottom: tp_homerow_mod_right_pinky_bottom_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MOD_RIGHT_PINKY_BOTTOM_LAYER";
+            label = "TP_HOMEROW_MOD_RIGHT_PINKY_BOTTOM_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <243>;
             quick-tap-ms = <180>;
