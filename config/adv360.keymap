@@ -228,9 +228,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_RING_SYM";
             #binding-cells = <2>;
-            tapping-term-ms = <345>;
+            tapping-term-ms = <380>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <220>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
