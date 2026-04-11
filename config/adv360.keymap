@@ -29,6 +29,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -39,11 +40,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <160>;
-            flavor = "tap-preferred";
-            retro-tap;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -53,11 +53,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <140>;
-            flavor = "tap-preferred";
-            retro-tap;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -65,11 +64,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_NAV";
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <140>;
-            flavor = "tap-preferred";
-            retro-tap;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
 
@@ -83,11 +81,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_NAV";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <160>;
-            flavor = "tap-preferred";
-            retro-tap;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
 
