@@ -497,7 +497,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -512,7 +512,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -527,7 +527,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
 
@@ -542,7 +542,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
 
@@ -557,7 +557,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -572,7 +572,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
 
@@ -587,7 +587,8 @@
             retro-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
+            hold-trigger-on-release;
         };
 
         hrm_right_middle: tp_homerow_mod_right_shift {
@@ -601,7 +602,8 @@
             retro-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
+            hold-trigger-on-release;
         };
 
         hrm_left_pinky: tp_homerow_mod_left_cmd {
@@ -615,7 +617,7 @@
             retro-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -630,7 +632,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
 
@@ -645,7 +647,7 @@
             retro-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
 
@@ -660,7 +662,7 @@
             retro-tap;
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
     };
