@@ -117,3 +117,20 @@ These are defined in the keymap but may be used on non-base layers or as alterna
 | 16 | Enter | Thumb | Right | `Enter` | `RCTRL` | 175ms | 0ms | — | tap-pref | Yes | No |
 | 17 | Space | Thumb | Right | `Space` | Layer 3 | 190ms | 0ms | 140ms | tap-pref | Yes | No |
 | 18 | TAB | Thumb | Right | `Tab` | `LALT` | 200ms | 0ms | 140ms | tap-pref | Yes | No |
+
+---
+
+## Technical Edge Cases & Optimizations
+
+### 1. Same-Hand Modifier Overrides (1000ms Tapping Term)
+Bilateral enforcement (`hold-trigger-key-positions`) mathematically disables a modifier if the next key pressed shares the exact same physical hand. However, ZMK dictates that if the `tapping-term-ms` timer completely expires, the key permanently becomes a hold (bypassing positional logic). 
+- Because `urob_left_ring` (O) restricts tap speed, we intentionally set its tapping term to `1000ms`.
+- Quick taps of O and I yield "oi".
+- Deliberately holding O for > 1000ms forces it to bypass bilateral enforcement, unlocking intentional same-hand modified keys (e.g., Redo).
+
+### 2. Thumb Positional Triggers
+By default, the `KEYS_L` and `KEYS_R` trigger arrays on the Adv360 exclude the 12 inner hardware keys and thumb clusters. 
+- **Requirement:** A custom `#define KEYS_THUMBS` macro has been universally injected into all Urob modifier trigger positions so that cross-hand shortcuts involving thumb clusters (like `Cmd + Space` or `Shift + Backspace`) do not instantly cancel.
+
+### 3. Shift Modifiers (Release Toggles)
+Unlike the standard Cmd/Opt/Ctrl modifiers, the four Shift modifiers (`urob_left_middle`, `urob_right_middle`) have `hold-trigger-on-release` explicitly removed. This prevents false lowercase negatives during high-speed capitalization sequencing.
