@@ -308,6 +308,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-on-release;
         };
 
         urob_right_middle: homerow_mod_right_shift {
