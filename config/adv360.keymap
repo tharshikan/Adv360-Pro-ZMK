@@ -695,11 +695,11 @@
         sym {
             display-name = "Symbols";
             bindings = <
-&kp EQUAL        &kp N1     &kp NUMBER_0     &kp NUMBER_1      &kp N4             &kp N5         &trans                                                 &mo 1   &kp STAR     &kp EXCLAMATION       &kp PLUS               &kp RIGHT_BRACKET  &kp N0             &kp MINUS
+&kp EQUAL        &kp N1     &kp NUMBER_0     &kp NUMBER_1      &kp N4             &kp N5         &trans                                                 &mo 0   &kp STAR     &kp EXCLAMATION       &kp PLUS               &kp RIGHT_BRACKET  &kp N0             &kp MINUS
 &kp GRAVE        &kp GRAVE  &kp LESS_THAN    &kp GREATER_THAN  &kp MINUS          &kp PIPE       &none                                                  &none   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR         &kp PIPE           &macro_thin_arrow
 &kp EXCLAMATION  &kp PLUS   &kp ASTERISK     &kp UNDERSCORE    &kp EQUAL          &kp AMPERSAND  &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES
 &kp LS(GRAVE)    &kp SLASH  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT                       &kp HOME      &kp PG_UP                     &kp AT_SIGN  &kp COLON             &kp QUESTION           &kp SQT            &kp DOT            &kp SINGLE_QUOTE
-&mo 1            &trans     &trans           &trans            &trans                            &trans  &trans     &kp END       &trans     &trans     &trans               &trans                &trans                 &trans             &trans             &mo 1
+&mo 0            &trans     &trans           &trans            &trans                            &trans  &trans     &kp END       &trans     &trans     &trans               &trans                &trans                 &trans             &trans             &mo 0
             >;
         };
 
@@ -792,7 +792,7 @@
         cursor {
             display-name = "Cursor";
             bindings = <
-&to 1              &kp ENTER        &kp SPACE         &kp TAB        &kp BSPC        &kp INS     &kp LG(TAB)                                                                                         &kp LG(LA(TAB))         &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
+&to 0              &kp ENTER        &kp SPACE         &kp TAB        &kp BSPC        &kp INS     &kp LG(TAB)                                                                                         &kp LG(LA(TAB))         &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
 &Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para     &Mac_Del_Word  &kp BSPC        &Mac_Cut    &kp LC(UP)                                                                                          &Mac_Extend_Line_Up     &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
 &Mac_URL_Bar       &kp LGUI         &kp LALT          &kp LCTRL      &kp LSHFT       &Mac_Copy   &kp LC(TAB)            &kp TAB              &trans             &trans        &trans                 &Mac_Extend_Word_Left   &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
 &Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word   &Mac_Find       &Mac_Paste                                              &Mac_Prev_Tab      &Mac_Comment                                                 &Mac_Paste  &kp HOME   &select_line    &select_word    &kp END         &Mac_Downloads
