@@ -252,7 +252,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
-            hold-trigger-on-release;
         };
 
         urob_right_ring: homerow_mod_right_ring_sym {
