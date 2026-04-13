@@ -322,6 +322,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+            hold-trigger-on-release;
         };
 
         urob_left_pinky: homerow_mod_left_cmd {
