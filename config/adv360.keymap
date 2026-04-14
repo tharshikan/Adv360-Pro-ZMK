@@ -265,7 +265,6 @@
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
-            hold-trigger-on-release;
         };
 
         urob_left_ring_bottom: homerow_mod_left_ring_bottom_layer {
