@@ -299,7 +299,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <320>;
+            tapping-term-ms = <370>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <230>;
             flavor = "balanced";
