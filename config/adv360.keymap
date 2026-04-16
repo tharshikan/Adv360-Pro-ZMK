@@ -73,6 +73,18 @@
             bindings = <&mo>, <&kp>;
         };
 
+        spac_nav_sunaku: space_nav_sunaku {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_NAV_SUNAKU";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+        };
+
         /* Smart Toggle for Sym Layer: Tap=Sticky, DoubleTap=Toggle */
         /* Hold-Tap for Sym Layer: Hold=Momentary(1), Tap=Sticky(1) */
         /* Smart Toggle for Sym Layer: Tap=Sticky(via ht), DoubleTap=Lock(tog) */
@@ -719,7 +731,7 @@
 &kp QUESTION    &kp Q                        &kp P                        &kp U                      &kp Y                 &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                  &kp L                             &kp R                         &kp B                           &kp BSLH
 &kp ESCAPE      &urob_left_pinky LGUI A      &sunaku_hmr_ring 6 O         &sunaku_hmr_middle LSHFT E &sunaku_hmr_index 2 I &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &urob_right_index 2 H  &urob_right_middle RIGHT_SHIFT T  &urob_right_ring 3 N          &urob_right_pinky RGUI S        &kp TAB
 &kp LEFT_SHIFT  &urob_left_pinky_bottom 3 X  &urob_left_ring_bottom 12 J  &kp COMMA                  &kp EQUAL             &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &urob_right_ring_bottom 12 V  &urob_right_pinky_bottom 6 DOT  &kp RSHFT
-&tog 1          &kp CLCK                     &kp Z                        &kp LEFT_ARROW             &kp RIGHT                               &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav 4 SPACE          &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE                &kp N9                          &kp N0
+&tog 1          &kp CLCK                     &kp Z                        &kp LEFT_ARROW             &kp RIGHT                               &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &spac_nav_sunaku 4 SPACE &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE                &kp N9                          &kp N0
             >;
         };
 
