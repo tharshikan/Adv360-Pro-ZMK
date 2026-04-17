@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_BACKSPACE_2";
             #binding-cells = <0>;
-            bindings = <&bs_nav 5 BSPC>, <&kp LA(BSPC)>;
+            bindings = <&bs_nav 8 BSPC>, <&kp LA(BSPC)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -443,7 +443,7 @@
             label = "TAP_DANCE_BACKUP_SYM";
             #binding-cells = <0>;
             tapping-term-ms = <175>;
-            bindings = <&sl 7>, <&tog 7>;
+            bindings = <&sl 10>, <&tog 10>;
         };
 
         /* Smart Toggle for Cursor Layer: Tap=Sticky, DoubleTap=Lock(tog) */
@@ -453,7 +453,7 @@
             label = "TAP_DANCE_CURSOR";
             #binding-cells = <0>;
             tapping-term-ms = <175>;
-            bindings = <&sl 11>, <&tog 11>;
+            bindings = <&sl 3>, <&tog 3>;
         };
 
         fat_arrow: fat_arrow_morph {
@@ -727,22 +727,54 @@
         base {
             display-name = "Base_urob";
             bindings = <
-&to 11          &kp N1                       &kp N2                       &kp N3                     &kp N4                &kp N5            &sl 1                                                                                                     &mo 10           &kp N6  &kp N7                 &kp N8                            &morph_9                      &morph_0                        &kp UNDERSCORE
-&kp QUESTION    &kp Q                        &kp P                        &kp U                      &kp Y                 &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                  &kp L                             &kp R                         &kp B                           &kp BSLH
-&kp ESCAPE      &urob_left_pinky LGUI A      &sunaku_hmr_ring 6 O         &sunaku_hmr_middle LSHFT E &sunaku_hmr_index 2 I &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &urob_right_index 2 H  &urob_right_middle RIGHT_SHIFT T  &urob_right_ring 3 N          &urob_right_pinky RGUI S        &kp TAB
-&kp LEFT_SHIFT  &urob_left_pinky_bottom 3 X  &urob_left_ring_bottom 12 J  &kp COMMA                  &kp EQUAL             &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &urob_right_ring_bottom 12 V  &urob_right_pinky_bottom 6 DOT  &kp RSHFT
-&tog 1          &kp CLCK                     &kp Z                        &kp LEFT_ARROW             &kp RIGHT                               &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav 4 SPACE          &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE                &kp N9                          &kp N0
+&to 3           &kp N1                       &kp N2                      &kp N3                      &kp N4                 &kp N5            &sl 1                                                                                                     &mo 13           &kp N6  &kp N7                 &kp N8                            &morph_9                     &morph_0                        &kp UNDERSCORE
+&kp QUESTION    &kp Q                        &kp P                       &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                  &kp L                             &kp R                        &kp B                           &kp BSLH
+&kp ESCAPE      &urob_left_pinky LGUI A      &sunaku_hmr_ring 9 O        &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &urob_right_index 5 H  &urob_right_middle RIGHT_SHIFT T  &urob_right_ring 6 N         &urob_right_pinky RGUI S        &kp TAB
+&kp LEFT_SHIFT  &urob_left_pinky_bottom 6 X  &urob_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &urob_right_ring_bottom 4 V  &urob_right_pinky_bottom 9 DOT  &kp RSHFT
+&tog 1          &kp CLCK                     &kp Z                       &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav 7 SPACE          &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE               &kp N9                          &kp N0
             >;
         };
 
         base_tharshi_tap_preffered {
             display-name = "Base_tharshsi_tap_prefered";
             bindings = <
-&to 11          &kp N1                      &kp N2                      &kp N3                    &kp N4               &kp N5            &sl 1                                                                                                     &mo 10              &kp N6  &kp N7                &kp N8                           &morph_9                     &morph_0                       &kp UNDERSCORE
-&kp QUESTION    &kp Q                       &kp P                       &kp U                     &kp Y                &kp SEMI          &none                                                                                                     &none               &kp K   &kp F                 &kp L                            &kp R                        &kp B                          &kp BSLH
-&kp ESCAPE      &hrm_left_pinky LGUI A      &hrm_left_ring 6 O          &hrm_left_middle LSHFT E  &hrm_left_index 2 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none               &kp D   &hrm_right_index 2 H  &hrm_right_middle RIGHT_SHIFT T  &hrm_right_ring 3 N          &hrm_right_pinky RGUI S        &kp TAB
-&kp LEFT_SHIFT  &hrm_left_pinky_bottom 3 X  &hrm_left_ring_bottom 12 J  &kp COMMA                 &kp EQUAL            &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                                  &kp C   &kp M                 &kp W                            &hrm_right_ring_bottom 12 V  &hrm_right_pinky_bottom 6 DOT  &kp RSHFT
-&to 0           &kp CLCK                    &kp Z                       &kp LEFT_ARROW            &kp RIGHT                              &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &tp_sp_nav 4 SPACE          &kp UP_ARROW          &kp DOWN_ARROW                   &kp LEFT_BRACE               &kp NUMBER_0                   &kp NUMBER_1
+&to 3           &kp N1                      &kp N2                     &kp N3                    &kp N4               &kp N5            &sl 1                                                                                                     &mo 13              &kp N6  &kp N7                &kp N8                           &morph_9                    &morph_0                       &kp UNDERSCORE
+&kp QUESTION    &kp Q                       &kp P                      &kp U                     &kp Y                &kp SEMI          &none                                                                                                     &none               &kp K   &kp F                 &kp L                            &kp R                       &kp B                          &kp BSLH
+&kp ESCAPE      &hrm_left_pinky LGUI A      &hrm_left_ring 9 O         &hrm_left_middle LSHFT E  &hrm_left_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none               &kp D   &hrm_right_index 5 H  &hrm_right_middle RIGHT_SHIFT T  &hrm_right_ring 6 N         &hrm_right_pinky RGUI S        &kp TAB
+&kp LEFT_SHIFT  &hrm_left_pinky_bottom 6 X  &hrm_left_ring_bottom 4 J  &kp COMMA                 &kp EQUAL            &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                                  &kp C   &kp M                 &kp W                            &hrm_right_ring_bottom 4 V  &hrm_right_pinky_bottom 9 DOT  &kp RSHFT
+&to 0           &kp CLCK                    &kp Z                      &kp LEFT_ARROW            &kp RIGHT                              &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &tp_sp_nav 7 SPACE          &kp UP_ARROW          &kp DOWN_ARROW                   &kp LEFT_BRACE              &kp NUMBER_0                   &kp NUMBER_1
+            >;
+        };
+
+        sunaku_left_timeless_right {
+            display-name = "Base_urob";
+            bindings = <
+&to 3           &kp N1                       &kp N2                      &kp N3                      &kp N4                 &kp N5            &sl 1                                                                                                     &mo 13           &kp N6  &kp N7                 &kp N8                            &morph_9                     &morph_0                        &kp UNDERSCORE
+&kp QUESTION    &kp Q                        &kp P                       &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                  &kp L                             &kp R                        &kp B                           &kp BSLH
+&kp ESCAPE      &urob_left_pinky LGUI A      &sunaku_hmr_ring 9 O        &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &urob_right_index 5 H  &urob_right_middle RIGHT_SHIFT T  &urob_right_ring 6 N         &urob_right_pinky RGUI S        &kp TAB
+&kp LEFT_SHIFT  &urob_left_pinky_bottom 6 X  &urob_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &urob_right_ring_bottom 4 V  &urob_right_pinky_bottom 9 DOT  &kp RSHFT
+&tog 1          &kp CLCK                     &kp Z                       &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav 7 SPACE          &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE               &kp N9                          &kp N0
+            >;
+        };
+
+        cursor {
+            display-name = "Cursor";
+            bindings = <
+&to 0              &kp ENTER        &kp SPACE         &kp TAB        &kp BSPC        &kp INS     &kp LG(TAB)                                                                                         &kp LG(LA(TAB))         &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
+&Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para     &Mac_Del_Word  &kp BSPC        &Mac_Cut    &kp LC(UP)                                                                                          &Mac_Extend_Line_Up     &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
+&Mac_URL_Bar       &kp LGUI         &kp LALT          &kp LCTRL      &kp LSHFT       &Mac_Copy   &kp LC(TAB)            &kp TAB              &trans             &trans        &trans                 &Mac_Extend_Word_Left   &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
+&Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word   &Mac_Find       &Mac_Paste                                              &Mac_Prev_Tab      &Mac_Comment                                                 &Mac_Paste  &kp HOME   &select_line    &select_word    &kp END         &Mac_Downloads
+&Mac_Find_Replace  &Mac_Find_Prev   &extend_line      &extend_word   &Mac_Find_Next              &Mac_Extend_Word_Left  &Mac_Extend_Line_Up  &tog 3             &kp ESC       &Mac_Extend_Line_Down  &Mac_Extend_Word_Right              &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
+            >;
+        };
+
+        command_num_lay2 {
+            bindings = <
+&trans  &trans               &trans      &trans      &trans      &trans   &trans                                      &trans  &trans                &trans   &trans   &trans   &trans                &trans
+&trans  &kp RS(RA(RC(F3)))   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp F14  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp LG(RS(NUMBER_2))  &trans
+&trans  &kp LG(N0)           &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp F15  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp RS(LG(N0))        &trans
+&trans  &kp RS(RA(RC(F23)))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp RS(LG(NUMBER_4))  &kp F7   &kp F8   &kp F9   &kp RS(LG(NUMBER_3))  &trans
+&trans  &trans               &trans      &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans                &trans
             >;
         };
 
@@ -804,10 +836,10 @@
             display-name = "Visual Nav";
             bindings = <
 &trans             &trans            &trans           &trans           &trans             &trans            &trans                                      &trans  &trans                  &trans                   &trans          &trans           &trans                    &trans
-&kp LS(LG(RIGHT))  &kp LG(SPACE)     &kp LC(LS(TAB))  &kp LC(TAB)      &kp LG(W)          &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))        &kp LA(LS(LEFT))         &tog 5          &kp LG(Z)        &kp LS(RIGHT)             &kp LS(LG(RIGHT))
+&kp LS(LG(RIGHT))  &kp LG(SPACE)     &kp LC(LS(TAB))  &kp LC(TAB)      &kp LG(W)          &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))        &kp LA(LS(LEFT))         &tog 8          &kp LG(Z)        &kp LS(RIGHT)             &kp LS(LG(RIGHT))
 &kp LG(LS(RIGHT))  &kp LG(Z)         &macro_vis_cut   &macro_vis_copy  &kp LG(LS(Z))      &kp LS(LA(DOWN))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LS(LEFT))        &kp LS(LEFT)             &kp LS(DOWN)    &kp LS(UP)       &kp LA(LS(RIGHT))         &kp LG(RIGHT)
 &kp LS(LA(UP))     &kp LS(LA(LEFT))  &kp LS(UP)       &kp LS(DOWN)     &kp LS(LA(RIGHT))  &kp LS(LA(DOWN))                  &trans      &trans                  &macro_vis_wrap_parens  &macro_vis_wrap_dquotes  &macro_vis_cut  &macro_vis_copy  &macro_vis_wrap_brackets  &macro_vis_wrap_braces
-&trans             &trans            &trans           &trans           &trans                               &trans  &trans  &tog 5      &trans  &trans  &trans                          &trans                   &trans          &trans           &trans                    &trans
+&trans             &trans            &trans           &trans           &trans                               &trans  &trans  &tog 8      &trans  &trans  &trans                          &trans                   &trans          &trans           &trans                    &trans
             >;
         };
 
@@ -840,27 +872,6 @@
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        cursor {
-            display-name = "Cursor";
-            bindings = <
-&to 0              &kp ENTER        &kp SPACE         &kp TAB        &kp BSPC        &kp INS     &kp LG(TAB)                                                                                         &kp LG(LA(TAB))         &kp INS     &kp DEL    &kp TAB         &kp SPACE       &kp ENTER       &kp ESC
-&Mac_Search_Bar    &sk LSHFT        &Mac_Sel_Para     &Mac_Del_Word  &kp BSPC        &Mac_Cut    &kp LC(UP)                                                                                          &Mac_Extend_Line_Up     &Mac_Cut    &kp BSPC   &Mac_Undo       &Mac_Redo       &sk LSHFT       &Mac_Search_Bar
-&Mac_URL_Bar       &kp LGUI         &kp LALT          &kp LCTRL      &kp LSHFT       &Mac_Copy   &kp LC(TAB)            &kp TAB              &trans             &trans        &trans                 &Mac_Extend_Word_Left   &Mac_Copy   &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT       &Mac_URL_Bar
-&Mac_Downloads     &Mac_Select_All  &Mac_Select_Next  &select_word   &Mac_Find       &Mac_Paste                                              &Mac_Prev_Tab      &Mac_Comment                                                 &Mac_Paste  &kp HOME   &select_line    &select_word    &kp END         &Mac_Downloads
-&Mac_Find_Replace  &Mac_Find_Prev   &extend_line      &extend_word   &Mac_Find_Next              &Mac_Extend_Word_Left  &Mac_Extend_Line_Up  &tog 11            &kp ESC       &Mac_Extend_Line_Down  &Mac_Extend_Word_Right              &Mac_Find  &trans          &Mac_Find_Next  &Mac_Find_Prev  &Mac_Find_Replace
-            >;
-        };
-
-        command_num_lay2 {
-            bindings = <
-&trans  &trans               &trans      &trans      &trans      &trans   &trans                                      &trans  &trans                &trans   &trans   &trans   &trans                &trans
-&trans  &kp RS(RA(RC(F3)))   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp F14  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp LG(RS(NUMBER_2))  &trans
-&trans  &kp LG(N0)           &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp F15  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp RS(LG(N0))        &trans
-&trans  &kp RS(RA(RC(F23)))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp RS(LG(NUMBER_4))  &kp F7   &kp F8   &kp F9   &kp RS(LG(NUMBER_3))  &trans
-&trans  &trans               &trans      &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans                &trans
             >;
         };
     };
