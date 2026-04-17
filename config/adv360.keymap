@@ -244,8 +244,8 @@
             label = "SUNAKU_HMR_RING";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -258,7 +258,7 @@
             label = "SUNAKU_HMR_MIDDLE";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             retro-tap;
@@ -272,13 +272,130 @@
             label = "SUNAKU_HMR_INDEX";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+        };
+
+        sunaku_left_pinky: sunaku_left_pinky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_LEFT_PINKY";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+        };
+
+        sunaku_left_pinky_bottom: sunaku_left_pinky_bottom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_LEFT_PINKY_BOTTOM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+        };
+
+        sunaku_left_ring_bottom: sunaku_left_ring_bottom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_LEFT_RING_BOTTOM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+        };
+
+        sunaku_right_index: sunaku_right_index {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_INDEX";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+        };
+
+        sunaku_right_middle: sunaku_right_middle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_MIDDLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+        };
+
+        sunaku_right_ring: sunaku_right_ring {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_RING";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+        };
+
+        sunaku_right_pinky: sunaku_right_pinky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_PINKY";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+        };
+
+        sunaku_right_ring_bottom: sunaku_right_ring_bottom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_RING_BOTTOM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
+        };
+
+        sunaku_right_pinky_bottom: sunaku_right_pinky_bottom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SUNAKU_RIGHT_PINKY_BOTTOM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            retro-tap;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
         urob_left_ring: homerow_mod_left_ring_sym {
@@ -747,12 +864,12 @@
         };
 
         sunaku_left_timeless_right {
-            display-name = "Base_urob";
+            display-name = "Base_Sunaku";
             bindings = <
 &to 3           &kp N1                       &kp N2                      &kp N3                      &kp N4                 &kp N5            &sl 1                                                                                                     &mo 13           &kp N6  &kp N7                 &kp N8                            &morph_9                     &morph_0                        &kp UNDERSCORE
 &kp QUESTION    &kp Q                        &kp P                       &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                  &kp L                             &kp R                        &kp B                           &kp BSLH
-&kp ESCAPE      &urob_left_pinky LGUI A      &sunaku_hmr_ring 9 O        &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &urob_right_index 5 H  &urob_right_middle RIGHT_SHIFT T  &urob_right_ring 6 N         &urob_right_pinky RGUI S        &kp TAB
-&kp LEFT_SHIFT  &urob_left_pinky_bottom 6 X  &urob_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &urob_right_ring_bottom 4 V  &urob_right_pinky_bottom 9 DOT  &kp RSHFT
+&kp ESCAPE      &sunaku_left_pinky LGUI A    &sunaku_hmr_ring 9 O        &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &sunaku_right_index 5 H &sunaku_right_middle RIGHT_SHIFT T &sunaku_right_ring 6 N       &sunaku_right_pinky RGUI S      &kp TAB
+&kp LEFT_SHIFT  &sunaku_left_pinky_bottom 6 X &sunaku_left_ring_bottom 4 J &kp COMMA                 &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                  &kp W                             &sunaku_right_ring_bottom 4 V &sunaku_right_pinky_bottom 9 DOT &kp RSHFT
 &tog 1          &kp CLCK                     &kp Z                       &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav 7 SPACE          &kp UP_ARROW           &kp DOWN_ARROW                    &kp LEFT_BRACE               &kp N9                          &kp N0
             >;
         };
