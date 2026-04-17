@@ -271,9 +271,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_HMR_INDEX";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <230>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -341,13 +341,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_MIDDLE";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -355,13 +354,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_RING";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -369,13 +367,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_PINKY";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -383,13 +380,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_RING_BOTTOM";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -397,13 +393,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_PINKY_BOTTOM";
             #binding-cells = <2>;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
