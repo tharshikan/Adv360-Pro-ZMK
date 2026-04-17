@@ -683,3 +683,27 @@
     bindings = <&kp CAPSLOCK>;
     display-name = "Mac Caps Lock";
   };
+
+  macro_print_layer_urob: macro_print_layer_urob {
+    compatible = "zmk,behavior-macro";
+    label = "macro_print_layer_urob";
+    #binding-cells = <0>;
+    bindings = <&kp LS(B)>, <&kp A>, <&kp S>, <&kp E>, <&kp UNDERSCORE>, <&kp U>, <&kp R>, <&kp O>, <&kp B>;
+    display-name = "Print Base_urob";
+  };
+
+  macro_print_layer_tharshi: macro_print_layer_tharshi {
+    compatible = "zmk,behavior-macro";
+    label = "macro_print_layer_tharshi";
+    #binding-cells = <0>;
+    bindings = <&kp LS(B)>, <&kp A>, <&kp S>, <&kp E>, <&kp UNDERSCORE>, <&kp T>, <&kp H>, <&kp A>, <&kp R>, <&kp S>, <&kp H>, <&kp I>;
+    display-name = "Print Base_tharshi";
+  };
+
+  macro_print_layer_sunaku: macro_print_layer_sunaku {
+    compatible = "zmk,behavior-macro";
+    label = "macro_print_layer_sunaku";
+    #binding-cells = <0>;
+    bindings = <&kp LS(B)>, <&kp A>, <&kp S>, <&kp E>, <&kp UNDERSCORE>, <&kp LS(S)>, <&kp U>, <&kp N>, <&kp A>, <&kp K>, <&kp U>;
+    display-name = "Print Base_Sunaku";
+  };
