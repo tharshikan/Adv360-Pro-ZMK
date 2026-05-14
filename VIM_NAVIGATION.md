@@ -70,10 +70,10 @@ When you tap the **[VISUAL MODE]** key, the keyboard automatically selects the c
 > **Note:** Tapping any **CUT** or **COPY** command will perform the action and automatically return you to the standard navigation layer. If you decide to cancel the manipulation, tap the main [TOGGLE EXIT VISUAL] mapped to the `L` position (or the `Esc` key on either thumb cluster) to drop the cursor and exit manually.
 
 ## The Stateful Visual Mode (`v`)
-True Vim-style highlighting is achieved via a dedicated hidden layer (`Layer 8`).
+True Vim-style highlighting is achieved via a dedicated hidden `visual_navigation` layer.
 
 Because macOS natively discards highlights when bare arrow keys are struck, the firmware intercepts your directional inputs and translates them continuously using macros.
 
-1. **Enter Visual Mode:** Press `Visual Mode Enter` (mapped to `L` on the `text_navigation` right hand). The keyboard instantly perfectly highlights the word under your cursor (via `mac_sel_word` redundancy) and locks you into the Visual Layer.
+1. **Enter Visual Mode:** Press `Visual Mode Enter` (mapped to `L` on the `text_navigation` right hand). The keyboard selects the current word via `mac_sel_word` and toggles into the hidden `visual_navigation` layer.
 2. **Move:** All right-hand movement keys now act as `Shift` variants automatically. Pressing `Up Arrow` sends `Shift + Up Arrow`, extending your selection indefinitely. 
-3. **Execute:** The moment you strike any cut key (`C`, `X`, or the Vim-cut engine keys) or press `Esc`, the keyboard executes the cut and instantly returns you to the normal `text_navigation` layer.
+3. **Execute:** The moment you strike any cut key (`C`, `X`, or the Vim-cut engine keys) or press `Esc`, the keyboard executes the action, toggles `visual_navigation` back off, and returns to the normal `text_navigation` layer as long as you are still holding the navigation-layer key.
