@@ -356,6 +356,7 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -369,6 +370,7 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -382,6 +384,7 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -395,6 +398,7 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -408,6 +412,7 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
@@ -863,6 +868,9 @@
         };
     };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -891,11 +899,11 @@
         sunaku_base {
             display-name = "Base_Sunaku";
             bindings = <
-&to 3           &kp N1                         &kp N2                        &kp N3                      &kp N4                 &kp N5            &sl 1                                                                                                     &mo 13           &kp N6  &kp N7                   &kp N8                              &morph_9                       &morph_0                          &kp UNDERSCORE
-&kp QUESTION    &kp Q                          &kp P                         &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none            &kp K   &kp F                    &kp L                               &kp R                          &kp B                             &kp BSLH
-&kp ESCAPE      &sunaku_left_pinky LGUI A      &sunaku_hmr_ring 9 O          &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none            &kp D   &sunaku_right_index 5 H  &sunaku_right_middle RIGHT_SHIFT T  &sunaku_right_ring 6 N         &sunaku_right_pinky RGUI S        &kp TAB
-&kp LEFT_SHIFT  &sunaku_left_pinky_bottom 6 X  &sunaku_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                               &kp C   &kp M                    &kp W                               &sunaku_right_ring_bottom 4 V  &sunaku_right_pinky_bottom 9 DOT  &kp RSHFT
-&to 0           &kp CLCK                       &kp Z                         &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav_sunaku 7 SPACE   &kp UP_ARROW             &kp DOWN_ARROW                      &kp LEFT_BRACE                 &kp N9                            &macro_print_layer_sunaku
+&to 3           &kp N1                         &kp N2                        &kp N3                      &kp N4                 &kp N5            &sl 1                                                                                                     &mo 13                  &kp N6  &kp N7                   &kp N8                              &morph_9                       &morph_0                          &kp UNDERSCORE
+&kp QUESTION    &kp Q                          &kp P                         &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none                   &kp K   &kp F                    &kp L                               &kp R                          &kp B                             &kp BSLH
+&kp ESCAPE      &sunaku_left_pinky LGUI A      &sunaku_hmr_ring 9 O          &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none                   &kp D   &sunaku_right_index 5 H  &sunaku_right_middle RIGHT_SHIFT T  &sunaku_right_ring 6 N         &sunaku_right_pinky RGUI S        &kp TAB
+&kp LEFT_SHIFT  &sunaku_left_pinky_bottom 6 X  &sunaku_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                                      &kp C   &kp M                    &kp W                               &sunaku_right_ring_bottom 4 V  &sunaku_right_pinky_bottom 9 DOT  &kp RSHFT
+&to 0           &kp CLCK                       &kp Z                         &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav_sunaku 7 SPACE          &kp UP_ARROW             &kp DOWN_ARROW                      &kp LEFT_BRACE                 &kp N9                            &macro_print_layer_sunaku
             >;
         };
 
@@ -915,7 +923,7 @@
 &trans  &trans               &trans      &trans      &trans      &trans   &trans                                      &trans  &trans                &trans   &trans   &trans   &trans                &trans
 &trans  &kp RS(RA(RC(F3)))   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp F14  &trans                                      &trans  &kp LS(LG(N5))        &kp F1   &kp F2   &kp F5   &kp LG(RS(NUMBER_2))  &trans
 &trans  &kp LG(N0)           &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp F15  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LG(NUMBER_4))  &kp F10  &kp F11  &kp F12  &kp RS(LG(N0))        &trans
-&trans  &kp RS(RA(RC(F23)))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp RS(LG(NUMBER_4))  &kp F7   &kp F8   &kp F9   &kp RS(LG(NUMBER_3))  &trans
+&trans  &kp RS(RA(RC(F23)))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp F16                  &trans      &trans                  &kp RS(LG(NUMBER_3))  &kp F7   &kp F8   &kp F9   &kp RS(LG(NUMBER_3))  &trans
 &trans  &trans               &trans      &trans      &trans               &trans  &trans  &trans      &trans  &trans  &trans                        &kp F7   &kp F8   &kp F9   &trans                &trans
             >;
         };
@@ -977,11 +985,11 @@
         visual_navigation {
             display-name = "Visual Nav";
             bindings = <
-&trans             &trans            &trans           &trans           &trans             &trans            &trans                                      &trans  &trans                  &trans                   &trans          &trans           &trans                    &trans
-&kp LS(LG(RIGHT))  &kp LG(SPACE)     &kp LC(LS(TAB))  &kp LC(TAB)      &kp LG(W)          &kp LG(LS(T))     &trans                                      &trans  &kp LG(LS(LEFT))        &kp LA(LS(LEFT))         &tog 10         &kp LG(Z)        &kp LS(RIGHT)             &kp LS(LG(RIGHT))
-&kp LG(LS(RIGHT))  &kp LG(Z)         &macro_vis_cut   &macro_vis_copy  &kp LG(LS(Z))      &kp LS(LA(DOWN))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LS(LEFT))        &kp LS(LEFT)             &kp LS(DOWN)    &kp LS(UP)       &kp LA(LS(RIGHT))         &kp LG(RIGHT)
-&kp LS(LA(UP))     &kp LS(LA(LEFT))  &kp LS(UP)       &kp LS(DOWN)     &kp LS(LA(RIGHT))  &kp LS(LA(DOWN))                  &trans      &trans                  &macro_vis_wrap_parens  &macro_vis_wrap_dquotes  &macro_vis_cut  &macro_vis_copy  &macro_vis_wrap_brackets  &macro_vis_wrap_braces
-&trans             &trans            &trans           &trans           &trans                               &trans  &trans  &tog 10     &trans  &trans  &trans                          &trans                   &trans          &trans           &trans                    &trans
+&trans             &trans            &trans           &trans           &trans             &trans            &trans                                       &trans  &trans                  &trans                   &trans          &trans           &trans                    &trans
+&kp LS(LG(RIGHT))  &kp LG(SPACE)     &kp LC(LS(TAB))  &kp LC(TAB)      &kp LG(W)          &kp LG(LS(T))     &trans                                       &trans  &kp LG(LS(LEFT))        &kp LA(LS(LEFT))         &tog 10         &kp LG(Z)        &kp LS(RIGHT)             &kp LS(LG(RIGHT))
+&kp LG(LS(RIGHT))  &kp LG(Z)         &macro_vis_cut   &macro_vis_copy  &kp LG(LS(Z))      &kp LS(LA(DOWN))  &trans  &trans  &trans       &trans  &trans  &trans  &kp LG(LS(LEFT))        &kp LS(LEFT)             &kp LS(DOWN)    &kp LS(UP)       &kp LA(LS(RIGHT))         &kp LG(RIGHT)
+&kp LS(LA(UP))     &kp LS(LA(LEFT))  &kp LS(UP)       &kp LS(DOWN)     &kp LS(LA(RIGHT))  &kp LS(LA(DOWN))                  &trans       &trans                  &macro_vis_wrap_parens  &macro_vis_wrap_dquotes  &macro_vis_cut  &macro_vis_copy  &macro_vis_wrap_brackets  &macro_vis_wrap_braces
+&trans             &trans            &trans           &trans           &trans                               &trans  &trans  &tog 10      &trans  &trans  &trans                          &trans                   &trans          &trans           &trans                    &trans
             >;
         };
 
