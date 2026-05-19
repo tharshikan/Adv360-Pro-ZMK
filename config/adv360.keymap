@@ -378,9 +378,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SUNAKU_RIGHT_PINKY";
             #binding-cells = <2>;
-            tapping-term-ms = <130>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
