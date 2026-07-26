@@ -17,9 +17,9 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | Position | Mod | TT | QT | RPI | Flavor | retro-tap | HTR | HTKP |
 |---|---|---|---|---|---|---|---|---|
 | L pinky | LGUI | 350 | 150 | 150 | tap-preferred | – | ✅ | KEYS_R + THUMBS |
-| L ring | (layer 9) | **500** | 150 | **230** | balanced | – | ✅ | KEYS_R + THUMBS |
+| L ring | (layer 9) | **390** | 150 | **230** | balanced | – | ✅ | KEYS_R + THUMBS |
 | L middle | LSHFT | 370 | 150 | 230 | balanced | – | ✅ | KEYS_R + THUMBS |
-| L index | (layer 5) | 390 | 150 | 150 | balanced | – | ✅ | KEYS_R + THUMBS |
+| L index | (layer 5) | 390 | 150 | 190 | balanced | – | ✅ | KEYS_R + THUMBS |
 | R index | (layer 5) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L + THUMBS |
 | R middle | RSHFT | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L + THUMBS |
 | R ring | (layer 6) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L + THUMBS |
@@ -29,7 +29,7 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | R ring-bottom | (layer 4) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L + THUMBS |
 | R pinky-bottom | (layer 9) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L + THUMBS |
 
-**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 500/230, index 390/150, middle 370/230, pinky 350). Right-hand behaviors use 280/150/70; the remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
+**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 390/230, index 390/190, middle 370/230, pinky 350). Right-hand behaviors use 280/150/70; the remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
 
 ### Base_urob — Thumb cluster (space / enter / backspace / esc)
 
@@ -94,14 +94,14 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | **retro-tap** | ❌ none | ✅ all | ✅ all |
 | **hold-trigger-on-release** | ✅ most (2 missing) | ✅ all | ❌ none |
 | **THUMBS in trigger set** | ✅ all | ❌ never | ✅ always |
-| **Tapping-term range** | 280–500 (slow anchors) | 220–350 (fast) | 200 (R) / 270 (L) |
+| **Tapping-term range** | 280–390 (slow anchors) | 220–350 (fast) | 200 (R) / 270 (L) |
 | **Quick-tap** | 150 uniform | 180–200 | 300 (200 R-pinky) |
 | **Require-prior-idle** | 70–230 | 140–150 | 70 (R) / 230 (L) |
 | **Feel** | Deliberate, hard to misfire; slow left anchors | Fast & responsive, retro-tap safety net | Very fast right hand, generous quick-tap for rolls |
 
 **Key takeaways:**
 
-- **urob** is the most conservative (balanced flavor, no retro-tap, deliberate left-hand anchors up to 500ms) — biased against accidental mod activation but slower to trigger.
+- **urob** is the most conservative (balanced flavor, no retro-tap, deliberate left-hand anchors up to 390ms) — biased against accidental mod activation but slower to trigger.
 - **tharshi** is the fastest and most internally consistent — tap-preferred + retro-tap everywhere, tight sub-350ms terms.
 - **sunaku** trades away `hold-trigger-on-release` for a very high quick-tap (300ms) and an aggressively fast right hand (RPI 70) — optimized for fast typing rolls, leaning on positional triggering alone.
 

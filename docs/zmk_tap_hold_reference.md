@@ -122,11 +122,11 @@ These are defined in the keymap but may be used on non-base layers or as alterna
 
 ## Technical Edge Cases & Optimizations
 
-### 1. Same-Hand Modifier Overrides (500ms Tapping Term)
+### 1. Same-Hand Modifier Overrides (390ms Tapping Term)
 Bilateral enforcement (`hold-trigger-key-positions`) mathematically disables a modifier if the next key pressed shares the exact same physical hand. However, ZMK dictates that if the `tapping-term-ms` timer completely expires, the key permanently becomes a hold (bypassing positional logic). 
-- Because `urob_left_ring` (O) restricts tap speed, we intentionally set its tapping term to `500ms`.
+- Because `urob_left_ring` (O) restricts tap speed, we intentionally set its tapping term to `390ms`.
 - Quick taps of O and I yield "oi".
-- Deliberately holding O for > 500ms forces it to bypass bilateral enforcement, unlocking intentional same-hand modified keys (e.g., Redo).
+- Deliberately holding O for > 390ms forces it to bypass bilateral enforcement, unlocking intentional same-hand modified keys (e.g., Redo).
 
 ### 2. Thumb Positional Triggers
 By default, the `KEYS_L` and `KEYS_R` trigger arrays on the Adv360 exclude the 12 inner hardware keys and thumb clusters. 
