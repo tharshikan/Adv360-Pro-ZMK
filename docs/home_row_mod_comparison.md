@@ -20,8 +20,8 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | L ring | (layer 9) | **390** | 150 | **230** | balanced | – | ✅ | KEYS_R + THUMBS |
 | L middle | LSHFT | 370 | 150 | 230 | balanced | – | ✅ | KEYS_R + THUMBS |
 | L index | (layer 5) | 390 | 150 | 190 | balanced | – | ✅ | KEYS_R + THUMBS |
-| R index | (layer 5) | 280 | 150 | 90 | balanced | – | ❌ | KEYS_L + THUMBS |
-| R middle | RSHFT | 280 | 150 | 90 | balanced | – | ✅ | KEYS_L + THUMBS |
+| R index | (layer 5) | 280 | 150 | 150 | balanced | – | ❌ | KEYS_L + THUMBS |
+| R middle | RSHFT | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L + THUMBS |
 | R ring | (layer 6) | 280 | 150 | 150 | balanced | – | ❌ | KEYS_L + THUMBS |
 | R pinky | RGUI | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L + THUMBS |
 | L pinky-bottom | (layer 6) | 280 | 150 | 150 | balanced | – | ✅ | KEYS_R + THUMBS |
@@ -29,7 +29,7 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | R ring-bottom | (layer 4) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L + THUMBS |
 | R pinky-bottom | (layer 9) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L + THUMBS |
 
-**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 390/230, index 390/190, middle 370/230, pinky 350). On the right home row, index/middle use 280/150/90 and ring/pinky use 280/150/150; the two right bottom-row behaviors remain 280/150/70. The remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
+**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 390/230, index 390/190, middle 370/230, pinky 350). All four right home-row behaviors use 280/150/150; the two right bottom-row behaviors remain 280/150/70. The remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
 
 ### Base_urob — Thumb cluster (space / enter / backspace / esc)
 
