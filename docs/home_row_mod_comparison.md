@@ -19,7 +19,7 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | L pinky | LGUI | 350 | 150 | 150 | tap-preferred | – | ✅ | KEYS_R |
 | L ring | (layer 9) | **500** | 150 | **230** | balanced | – | ✅ | KEYS_R |
 | L middle | LSHFT | 370 | 150 | 230 | balanced | – | ✅ | KEYS_R |
-| L index | (layer 5) | 390 | 150 | 70 | balanced | – | ✅ | KEYS_R + THUMBS |
+| L index | (layer 5) | 390 | 150 | 120 | balanced | – | ✅ | KEYS_R + THUMBS |
 | R index | (layer 5) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L |
 | R middle | RSHFT | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
 | R ring | (layer 6) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L |
@@ -29,7 +29,7 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | R ring-bottom | (layer 4) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
 | R pinky-bottom | (layer 9) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
 
-**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 500/230, index 390/70, middle 370/230, pinky 350). Right-hand behaviors use 280/150/70; the remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
+**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 500/230, index 390/120, middle 370/230, pinky 350). Right-hand behaviors use 280/150/70; the remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
 
 ### Base_urob — Thumb cluster (space / enter / backspace / esc)
 

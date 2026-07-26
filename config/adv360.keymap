@@ -240,7 +240,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <390>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <120>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
