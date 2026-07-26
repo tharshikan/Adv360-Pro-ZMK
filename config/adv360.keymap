@@ -240,7 +240,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <390>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
@@ -436,7 +436,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
@@ -449,7 +449,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
@@ -476,7 +476,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
@@ -504,7 +504,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
@@ -546,7 +546,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
@@ -560,7 +560,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 

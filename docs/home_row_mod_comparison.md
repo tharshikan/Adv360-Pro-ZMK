@@ -19,17 +19,17 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | L pinky | LGUI | 350 | 150 | 150 | tap-preferred | – | ✅ | KEYS_R |
 | L ring | (layer 9) | **500** | 150 | **230** | balanced | – | ✅ | KEYS_R |
 | L middle | LSHFT | 370 | 150 | 230 | balanced | – | ✅ | KEYS_R |
-| L index | (layer 5) | 390 | 150 | 170 | balanced | – | ✅ | KEYS_R + THUMBS |
-| R index | (layer 5) | 280 | 150 | 150 | balanced | – | ❌ | KEYS_L |
-| R middle | RSHFT | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L |
-| R ring | (layer 6) | 280 | 150 | 150 | balanced | – | ❌ | KEYS_L |
-| R pinky | RGUI | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L |
+| L index | (layer 5) | 390 | 150 | 70 | balanced | – | ✅ | KEYS_R + THUMBS |
+| R index | (layer 5) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L |
+| R middle | RSHFT | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
+| R ring | (layer 6) | 280 | 150 | 70 | balanced | – | ❌ | KEYS_L |
+| R pinky | RGUI | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
 | L pinky-bottom | (layer 6) | 280 | 150 | 150 | balanced | – | ✅ | KEYS_R |
 | L ring-bottom | (layer 4) | 280 | 150 | 150 | balanced | – | ✅ | KEYS_R |
-| R ring-bottom | (layer 4) | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L |
-| R pinky-bottom | (layer 9) | 280 | 150 | 150 | balanced | – | ✅ | KEYS_L |
+| R ring-bottom | (layer 4) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
+| R pinky-bottom | (layer 9) | 280 | 150 | 70 | balanced | – | ✅ | KEYS_L |
 
-**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 500/230, index 390/170, middle 370/230, pinky 350). Everything else defaults to 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
+**Notes:** No `retro-tap` anywhere. Left-hand anchors are deliberately slow/deliberate (ring 500/230, index 390/70, middle 370/230, pinky 350). Right-hand behaviors use 280/150/70; the remaining bottom-left behaviors use 280/150/150. ⚠️ **R index and R ring are missing `hold-trigger-on-release`** — likely inconsistencies vs. the rest of the family.
 
 ### Base_urob — Thumb cluster (space / enter / backspace / esc)
 
@@ -96,7 +96,7 @@ All timings in **ms**. Columns: **TT** = tapping-term-ms · **QT** = quick-tap-m
 | **THUMBS in trigger set** | index/anchors only | ❌ never | ✅ always |
 | **Tapping-term range** | 280–500 (slow anchors) | 220–350 (fast) | 200 (R) / 270 (L) |
 | **Quick-tap** | 150 uniform | 180–200 | 300 (200 R-pinky) |
-| **Require-prior-idle** | 150–230 (L anchors) | 140–150 | 70 (R) / 230 (L) |
+| **Require-prior-idle** | 70–230 | 140–150 | 70 (R) / 230 (L) |
 | **Feel** | Deliberate, hard to misfire; slow left anchors | Fast & responsive, retro-tap safety net | Very fast right hand, generous quick-tap for rolls |
 
 **Key takeaways:**
