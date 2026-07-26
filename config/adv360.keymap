@@ -240,11 +240,11 @@
             #binding-cells = <2>;
             tapping-term-ms = <390>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <120>;
+            require-prior-idle-ms = <70>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
+            hold-trigger-key-positions = <41 42>; /* H/T positions: ( and ) on layer 5 */
             hold-trigger-on-release;
         };
 
