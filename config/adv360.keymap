@@ -420,9 +420,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT_RING_SYM";
             #binding-cells = <2>;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <500>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <400>;
+            require-prior-idle-ms = <230>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
