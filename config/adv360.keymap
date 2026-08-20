@@ -1038,11 +1038,11 @@
         text_navigation_2 {
             display-name = "Text Nav 2";
             bindings = <
-&trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &trans                   &trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &trans
-&trans                 &kp LC(LS(TAB))        &kp LC(TAB)            &kp LG(W)              &kp LG(LS(T))          &kp LC(LS(LA(LG(K))))  &trans                   &trans                 &kp LG(F17)            &kp LA(LEFT)           &kp LG(UP)             &kp LG(DOWN)           &kp LA(RIGHT)          &trans
-&trans                 &kp LS(F16)            &kp LS(F17)            &kp F17                &kp F16                &kp LC(LS(LA(LG(D))))  &trans                   &kp LG(Z)              &kp LG(LS(Z))            &kp LSHFT              &kp ESCAPE               &trans                 &kp F14                &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &trans
-&trans                 &kp LC(LS(LA(LG(U))))  &kp LA(F17)            &kp LS(F18)            &kp F18                &kp LA(F18)              &trans                 &trans                   &kp F15                &kp LG(LEFT)           &kp PG_DN              &kp PG_UP              &kp LG(RIGHT)          &trans
-&trans                 &trans                 &trans                 &trans                 &trans                   &kp BSPC               &kp DEL                &trans                 &trans                 &kp F13                &trans                   &trans                 &trans                 &trans                 &trans                 &trans
+&trans             &trans             &trans             &trans             &trans             &trans             &trans               &trans             &trans             &trans             &trans             &trans             &trans             &trans
+&trans             &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(W)          &kp LG(LS(T))      &kp LC(LA(LS(K)))  &trans               &trans             &kp LC(LA(LS(J)))  &kp LA(LEFT)       &kp LG(UP)         &kp LG(DOWN)       &kp LA(RIGHT)      &trans
+&trans             &kp LC(LA(LS(A)))  &kp LC(LA(LS(Y)))  &kp LC(LA(LS(L)))  &kp LC(LA(LS(W)))  &kp LC(LA(LS(D)))  &trans               &kp LG(Z)          &kp LG(LS(Z))        &kp LSHFT          &kp ESCAPE           &trans             &kp LC(LA(LS(E)))  &kp LEFT           &kp DOWN           &kp UP             &kp RIGHT          &trans
+&trans             &kp LC(LA(LS(U)))  &kp LC(LA(LS(X)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))  &kp LC(LA(LS(P)))    &trans             &trans               &kp LC(LA(LS(S)))  &kp LG(LEFT)       &kp PG_DN          &kp PG_UP          &kp LG(RIGHT)      &trans
+&trans             &trans             &trans             &trans             &trans               &kp BSPC           &kp DEL            &trans             &trans             &kp LC(LA(LS(V)))  &trans               &trans             &trans             &trans             &trans             &trans
             >;
         };
 
