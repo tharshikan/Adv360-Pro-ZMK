@@ -1038,5 +1038,17 @@
 &trans                            &trans                            &kp LC(LS(LA(LG(Z))))             &kp LC(LS(LA(LG(LEFT_ARROW))))    &kp LC(LS(LA(LG(RIGHT))))           &trans                            &trans                            &trans                            &trans                            &trans                            &trans                              &kp LC(LS(LA(LG(UP_ARROW))))      &kp LC(LS(LA(LG(DOWN_ARROW))))    &kp LC(LS(LA(LG(LBKT))))          &kp LC(LS(LA(LG(N9))))            &trans
             >;
         };
+
+        text_navigation_2 {
+            display-name = "Text Nav 2";
+            bindings = <
+&trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &trans                   &trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &trans
+&trans                 &kp LC(LS(TAB))        &kp LC(TAB)            &kp LG(W)              &kp LG(LS(T))          &kp LC(LS(LA(LG(K))))  &trans                   &trans                 &kp LG(F17)            &kp LA(LEFT)           &kp LG(UP)             &kp LG(DOWN)           &kp LA(RIGHT)          &trans
+&trans                 &kp LS(F16)            &kp LS(F17)            &kp F17                &kp F16                &kp LC(LS(LA(LG(D))))  &trans                   &kp LG(Z)              &kp LG(LS(Z))            &kp LSHFT              &kp ESCAPE               &trans                 &kp F14                &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &trans
+&trans                 &kp LC(LS(LA(LG(U))))  &kp LA(F17)            &kp LS(F18)            &kp F18                &kp LA(F18)              &trans                 &trans                   &kp F15                &kp LG(LEFT)           &kp PG_DN              &kp PG_UP              &kp LG(RIGHT)          &trans
+&trans                 &trans                 &trans                 &trans                 &trans                   &kp BSPC               &kp DEL                &trans                 &trans                 &kp F13                &trans                   &trans                 &trans                 &trans                 &trans                 &trans
+            >;
+        };
+
     };
 };
