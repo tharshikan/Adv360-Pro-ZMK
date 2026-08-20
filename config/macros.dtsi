@@ -497,8 +497,8 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LA(RIGHT)>, <&kp LA(BSPC)>;
-    display-name = "Cut Word";
+    bindings = <&kp LA(DEL)>;
+    display-name = "Delete Word";
   };
 
   macro_cut_word_left: macro_cut_word_left {
@@ -507,8 +507,8 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LA(LS(LEFT))>, <&kp LG(X)>;
-    display-name = "Cut Word Left";
+    bindings = <&kp LA(BSPC)>;
+    display-name = "Delete Word Left";
   };
 
   macro_cut_word_right: macro_cut_word_right {

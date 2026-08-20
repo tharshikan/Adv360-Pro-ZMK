@@ -18,7 +18,7 @@ browser row and the insert/cut row. Release, and you are just typing again.
  │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
  │d0 →bol │ cut ln │ page ↓ │ page ↑ │ dup ln │      │del line│del word│ del ¶  │del wd ←│del →eol│
- │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │ ⌥→ ⌥⌫  │ ⌥↑⇧⌥↓⌦ │ ⇧⌥←⌘X  │   ⌃K   │
+ │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │   ⌥⌦   │ ⌥↑⇧⌥↓⌦ │   ⌥⌫   │   ⌃K   │
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
