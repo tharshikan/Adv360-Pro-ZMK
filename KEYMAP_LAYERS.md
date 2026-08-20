@@ -1,5 +1,11 @@
 # Kinesis Adv360 Pro - Keymap Layers Documentation
 
+> **⚠️ Partially stale (2026-08-20).** Written before the `hyper` (14) and
+> `text_navigation_2` (15) layers existed; the Sunaku base's O / `.` holds now go to
+> layer 15, not `text_navigation` (9). For those layers see the
+> [README](README.md#text-nav-2--the-vim-layer). Other layers documented here are
+> unaffected.
+
 This document provides a comprehensive visual reference for all keyboard layers configured in this ZMK firmware.
 
 ## Table of Contents

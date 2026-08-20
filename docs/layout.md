@@ -1,5 +1,9 @@
 # Keyboard Layout Visualization
 
+> **⚠️ Partially stale (2026-08-20).** Predates the `hyper` (14) and
+> `text_navigation_2` (15) layers — see the repo
+> [README](../README.md#text-nav-2--the-vim-layer) for those.
+
 This document provides a visual reference for all layers currently configured in `config/adv360.keymap`.
 
 ## Layer 0: Base (Default)

@@ -1,5 +1,11 @@
 # Advanced Vim-Cut Navigation Layer
 
+> **⚠️ Superseded (2026-08-20).** This documents the old macro-based `text_navigation`
+> layer (still layer 9, but no longer reachable from the Sunaku base). The current
+> vim engine is **Text Nav 2** (layer 15, Meh-chord protocol, interpreted by
+> [hammerspoon-tharshi](https://github.com/tharshikan/hammerspoon-tharshi)) — see the
+> [README](README.md#text-nav-2--the-vim-layer) for the live diagrams.
+
 The `text_navigation` layer on your Adv360 has been completely overhauled to emulate Vim's highly efficient text editing paradigm, while preserving modern IDE integrations. 
 
 This layer strictly separates concerns between hands:
