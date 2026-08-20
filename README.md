@@ -3,8 +3,8 @@
 ## Text Nav 2 — the vim layer
 
 Held, not toggled: **hold `O` (left ring)** on the Sunaku base (or `.` on the right
-pinky) and the right hand becomes a **one-handed vim cockpit** — deletes on the top
-row, word/doc motions on home, line/page below — while the left hand just holds the
+pinky) and the right hand becomes a **one-handed vim cockpit** — deletes on the bottom
+row, word/doc motions on home, line/page above — while the left hand just holds the
 layer, keeping only the browser row and the insert/cut row. Release, and you are
 just typing again.
 
@@ -12,19 +12,19 @@ just typing again.
      BROWSER & INSERTS — left hand                     THE COCKPIT — right hand
    pinky    ring   middle   index   inner          inner   index   middle   ring    pinky
  ┌────────┬────────┬────────┬────────┬────────┐      ┌────────┬────────┬────────┬────────┬────────┐
- │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │   dw   │  diw   │   dd   │   yy   │  daw   │
- │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │ meh D  │ meh W  │ meh L  │ meh Y  │ meh A  │
+ │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ line ← │ page ↓ │ page ↑ │ line → │ shrink │
+ │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │ meh S  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
  │        │        │        │        │ J join │      │ word ← │ doc ↑  │ doc ↓  │ word → │ expand │
  │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │d0 →bol │ cut ln │O above │o below │ dup ln │      │ line ← │ page ↓ │ page ↑ │ line → │ shrink │
- │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │ meh S  │
+ │d0 →bol │ cut ln │O above │o below │ dup ln │      │   dw   │  diw   │   dd   │   yy   │  daw   │
+ │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ meh D  │ meh W  │ meh L  │ meh Y  │ meh A  │
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
 
-   hold O with the left ring — the right hand alone deletes (top row, finger-
+   hold O with the left ring — the right hand alone deletes (bottom row, finger-
    mirrored from the old left home) and moves by word / doc / line / page.
 
         LEFT THUMB (edit)                             RIGHT THUMB (mode)
