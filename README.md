@@ -1,5 +1,82 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
+## Text Nav 2 — the vim layer
+
+Held, not toggled: **hold `O` (left ring) or `.` (right pinky, bottom row)** on the
+Sunaku base and the board becomes a two-hand vim grammar — **the left hand speaks
+verbs, the right hand speaks nouns**. Release, and you are just typing again.
+
+```text
+        OPERATORS — left hand                           MOTIONS — right hand
+   pinky    ring   middle   index   inner          inner   index   middle   ring    pinky
+ ┌────────┬────────┬────────┬────────┬────────┐      ┌────────┬────────┬────────┬────────┬────────┐
+ │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ J join │ word ← │ doc ↑  │ doc ↓  │ word → │
+ │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │ meh J  │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │
+ ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
+ │  daw   │   yy   │   dd   │  diw   │   dw   │      │ expand │   ←    │   ↓    │   ↑    │   →    │
+ │ meh A  │ meh Y  │ meh L  │ meh W  │ meh D  │      │ meh E  │        │        │        │        │
+ ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
+ │d0 →bol │ cut ln │O above │o below │ dup ln │      │ shrink │ line ← │ page ↓ │ page ↑ │ line → │
+ │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ meh S  │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │
+ └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
+     A        O        E        I        G               D        H        T        N        S    
+           ↑ printed keycap under each column ↑
+
+        LEFT THUMB (edit)                             RIGHT THUMB (mode)
+    ┌──────────┬──────────┐                      ┌──────────┬──────────────┐
+    │ ⌫ bkspc  │ ⌦ delete │                      │ (space)  │  ✦ VISUAL    │
+    └──────────┴──────────┘                      └──────────┴──────────────┘
+      small: ⌘Z undo · ⌘⇧Z redo                    small: ⇧ shift · Esc
+                                                   (hold ⇧ + any motion = select)
+```
+
+Cells labelled `meh …` send Meh = ⌃⌥⇧ (never ⌘) intents, interpreted by
+[hammerspoon-tharshi](https://github.com/tharshikan/hammerspoon-tharshi); every other
+cell is a native macOS chord the OS understands by itself. Unlabelled positions are
+transparent and fall through to the base layer. The four-modifier Hyper namespace
+belongs to its own layer and never appears here.
+
+### ✦ Visual mode (right thumb)
+
+One tap of ✦ (meh V) and the Mac side flips into a modal where **plain letters
+select** — no layer held, green dot bottom-right while it is on:
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    NORMAL: NORMAL — keys type
+    VISUAL: VISUAL — motions select
+    NORMAL --> VISUAL: meh V (green dot on)
+    VISUAL --> VISUAL: ◇ h j k l w b 0 4 g G
+    VISUAL --> NORMAL: ● d x y c p — act, then exit
+    VISUAL --> NORMAL: Esc / Return / meh V
+```
+
+```text
+   ◇ motion — extends the selection        ● operator — acts on it, then exits
+
+   ┌─────┬─────┬─────┬─────┬─────┐          ┌─────┬─────┬─────┬─────┬─────┐
+   │  Q  │ P ● │  U  │ Y ● │  ;  │          │ K ◇ │  F  │ L ◇ │  R  │ B ◇ │
+   │     │paste│     │yank │     │          │  ↑  │     │  →  │     │word←│
+   ├─────┼─────┼─────┼─────┼─────┤          ├─────┼─────┼─────┼─────┼─────┤
+   │  A  │  O  │  E  │  I  │ G ◇ │          │ D ● │ H ◇ │  T  │  N  │  S  │
+   │     │     │     │     │gg·G │          │ del │  ←  │     │     │     │
+   ├─────┼─────┼─────┼─────┼─────┤          ├─────┼─────┼─────┼─────┼─────┤
+   │ X ● │ J ◇ │  ,  │  =  │  '  │          │ C ● │  M  │ W ◇ │  V  │  .  │
+   │ cut │  ↓  │     │     │     │          │chng │     │word→│     │     │
+   └─────┴─────┴─────┴─────┴─────┘          └─────┴─────┴─────┴─────┴─────┘
+
+   number row:  0 ◇ line start   ·   4 ◇ line end ($)
+   h j k l auto-repeat while held · ⇧G ◇ document end
+   leave with Esc · Return · meh+V — or let any ● operator finish the job
+   unmarked keys simply type — typing over a selection is vim's c by another name
+```
+
+vim's `hjkl` survived the Engrammer layout, just scattered to wherever those
+letters landed — `↑` and `↓` live on opposite hands now. Muscle memory is a
+compiler target like any other.
+
+
 ## Modifying the keymap
 
 [The ZMK documentation](https://zmk.dev/docs) covers both basic and advanced functionality and has a table of OS compatibility for keycodes. Please note that the RGB Underglow, Backlight and Power Management sections are not relevant to the Advantage 360 Pro's custom ZMK fork. For more information see [this note](#note)
