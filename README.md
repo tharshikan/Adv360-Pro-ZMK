@@ -25,6 +25,8 @@ browser row and the insert/cut row. Release, and you are just typing again.
 
    hold O with the left ring — the right hand alone moves (word/doc/line/page)
    and deletes. The delete row is firmware macros: it works with Hammerspoon off.
+   `del ¶` ends in ⌃U — inert in a text field, kills the whole command line in a
+   terminal, where paragraphs do not exist.
 
         LEFT THUMB (edit)                             RIGHT THUMB (mode)
     ┌──────────┬──────────┐                      ┌──────────┬──────────────┐

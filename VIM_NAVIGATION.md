@@ -46,7 +46,6 @@ The custom firmware macros added to `macros.dtsi` completely bypass macOS limita
 
 * **Cut Word Left:** `Option + Backspace` (was `Option + Shift + Left Arrow` -> `Cmd + X`; the
   select-then-cut form had no meaning in a terminal, see the [README](README.md#text-nav-2--the-vim-layer))
-* **Cut Word Right:** `Option + Shift + Right Arrow` -> `Cmd + X`
 * **Cut Entire Line:** `Cmd + Left Arrow` -> `Shift + Cmd + Right Arrow` -> `Cmd + X`
 
 With this complete decoupling, your right hand can freely delete sentences and move the cursor, while the left hand drops the preserved text gracefully into its new home.
