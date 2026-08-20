@@ -1039,9 +1039,9 @@
             display-name = "Text Nav 2";
             bindings = <
 &trans             &trans             &trans             &trans             &trans             &trans             &trans               &trans             &trans             &trans             &trans             &trans             &trans             &trans
-&trans             &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(W)          &kp LG(LS(T))      &kp LC(LA(LS(K)))  &trans               &trans             &kp LC(LA(LS(J)))  &kp LA(LEFT)       &kp LG(UP)         &kp LG(DOWN)       &kp LA(RIGHT)      &trans
-&trans             &kp LC(LA(LS(A)))  &kp LC(LA(LS(Y)))  &kp LC(LA(LS(L)))  &kp LC(LA(LS(W)))  &kp LC(LA(LS(D)))  &trans               &kp LG(Z)          &kp LG(LS(Z))        &kp LSHFT          &kp ESCAPE           &trans             &kp LC(LA(LS(E)))  &kp LEFT           &kp DOWN           &kp UP             &kp RIGHT          &trans
-&trans             &kp LC(LA(LS(U)))  &kp LC(LA(LS(X)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))  &kp LC(LA(LS(P)))    &trans             &trans               &kp LC(LA(LS(S)))  &kp LG(LEFT)       &kp PG_DN          &kp PG_UP          &kp LG(RIGHT)      &trans
+&trans             &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(W)          &kp LG(LS(T))      &kp LC(LA(LS(K)))  &trans               &trans             &kp LA(LEFT)       &kp LG(UP)         &kp LG(DOWN)       &kp LA(RIGHT)      &kp LC(LA(LS(J)))  &trans
+&trans             &kp LC(LA(LS(A)))  &kp LC(LA(LS(Y)))  &kp LC(LA(LS(L)))  &kp LC(LA(LS(W)))  &kp LC(LA(LS(D)))  &trans               &kp LG(Z)          &kp LG(LS(Z))        &kp LSHFT          &kp ESCAPE           &trans             &kp LEFT           &kp DOWN           &kp UP             &kp RIGHT          &kp LC(LA(LS(E)))  &trans
+&trans             &kp LC(LA(LS(U)))  &kp LC(LA(LS(X)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))  &kp LC(LA(LS(P)))    &trans             &trans               &kp LG(LEFT)       &kp PG_DN          &kp PG_UP          &kp LG(RIGHT)      &kp LC(LA(LS(S)))  &trans
 &trans             &trans             &trans             &trans             &trans               &kp BSPC           &kp DEL            &trans             &trans             &kp LC(LA(LS(V)))  &trans               &trans             &trans             &trans             &trans             &trans
             >;
         };

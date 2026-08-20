@@ -10,14 +10,14 @@ verbs, the right hand speaks nouns**. Release, and you are just typing again.
         OPERATORS — left hand                           MOTIONS — right hand
    pinky    ring   middle   index   inner          inner   index   middle   ring    pinky
  ┌────────┬────────┬────────┬────────┬────────┐      ┌────────┬────────┬────────┬────────┬────────┐
- │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ J join │ word ← │ doc ↑  │ doc ↓  │ word → │
- │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │ meh J  │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │
+ │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ word ← │ doc ↑  │ doc ↓  │ word → │ J join │
+ │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh J  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │  daw   │   yy   │   dd   │  diw   │   dw   │      │ expand │   ←    │   ↓    │   ↑    │   →    │
- │ meh A  │ meh Y  │ meh L  │ meh W  │ meh D  │      │ meh E  │        │        │        │        │
+ │  daw   │   yy   │   dd   │  diw   │   dw   │      │   ←    │   ↓    │   ↑    │   →    │ expand │
+ │ meh A  │ meh Y  │ meh L  │ meh W  │ meh D  │      │        │        │        │        │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │d0 →bol │ cut ln │O above │o below │ dup ln │      │ shrink │ line ← │ page ↓ │ page ↑ │ line → │
- │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ meh S  │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │
+ │d0 →bol │ cut ln │O above │o below │ dup ln │      │ line ← │ page ↓ │ page ↑ │ line → │ shrink │
+ │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │ meh S  │
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
