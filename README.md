@@ -2,11 +2,10 @@
 
 ## Text Nav 2 — the vim layer
 
-Held, not toggled: **hold `O` (left ring)** on the Sunaku base (or `.` on the right
-pinky) and the right hand becomes a **one-handed vim cockpit** — deletes on the bottom
-row, word/doc motions on home, line/page above — while the left hand just holds the
-layer, keeping only the browser row and the insert/cut row. Release, and you are
-just typing again.
+Held, not toggled: **hold `O` (left ring)** on the Sunaku base and the right hand
+becomes a **one-handed vim cockpit** — deletes on the bottom row, word/doc motions on
+home, line/page above — while the left hand just holds the layer, keeping only the
+browser row and the insert/cut row. Release, and you are just typing again.
 
 ```text
      BROWSER & INSERTS — left hand                     THE COCKPIT — right hand
