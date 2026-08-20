@@ -9,13 +9,13 @@
                14 15 16 17 18 19 20 \
                28 29 30 31 32 33 34 \
                46 47 48 49 50 51 \
-               66 67 68 69 70
+               60 61 62 63 64
 #define KEYS_R 7 8 9 10 11 12 13 \
                21 22 23 24 25 26 27 \
                39 40 41 42 43 44 45 \
                54 55 56 57 58 59 \
                71 72 73 74 75
-#define KEYS_THUMBS 35 36 37 38 52 53 60 61 62 63 64 65
+#define KEYS_THUMBS 35 36 37 38 52 53 65 66 67 68 69 70
 
 /* Hyper layer is index 14; hyper keycodes are written out as LC(LS(LA(LG(k))))
    rather than a macro, so the Keymap Editor can still parse the bindings. */
@@ -261,8 +261,6 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_R KEYS_THUMBS>;
         };
 
         sunaku_hmr_middle: homerow_mod_left_sym_sunaku_mid {
@@ -415,8 +413,6 @@
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_L KEYS_THUMBS>;
         };
 
         urob_left_ring: homerow_mod_left_ring_sym {
