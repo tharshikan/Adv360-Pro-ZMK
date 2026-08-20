@@ -47,34 +47,35 @@ stateDiagram-v2
     NORMAL: NORMAL — keys type
     VISUAL: VISUAL — motions select
     NORMAL --> VISUAL: meh V (green dot on)
-    VISUAL --> VISUAL: ◇ h j k l w b 0 4 g G
-    VISUAL --> NORMAL: ● d x y c p — act, then exit
-    VISUAL --> NORMAL: Esc / Return / meh V
+    VISUAL --> VISUAL: ◇ h t d n 0 4 g G
+    VISUAL --> NORMAL: ● e j k x y p — act, then exit
+    VISUAL --> NORMAL: s / Esc / Return / meh V
 ```
 
 ```text
-   ◇ motion — extends the selection        ● operator — acts on it, then exits
+   ◇ motion — extends the selection    ● operator — acts, then exits    ○ exit
 
    ┌─────┬─────┬─────┬─────┬─────┐          ┌─────┬─────┬─────┬─────┬─────┐
-   │  Q  │ P ● │  U  │ Y ● │  ;  │          │ K ◇ │  F  │ L ◇ │  R  │ B ◇ │
-   │     │paste│     │yank │     │          │  ↑  │     │  →  │     │word←│
+   │  Q  │ P ● │  U  │ Y ● │  ;  │          │ K ● │  F  │  L  │  R  │  B  │
+   │     │paste│     │yank │     │          │chng │     │     │     │     │
    ├─────┼─────┼─────┼─────┼─────┤          ├─────┼─────┼─────┼─────┼─────┤
-   │  A  │  O  │  E  │  I  │ G ◇ │          │ D ● │ H ◇ │  T  │  N  │  S  │
-   │     │     │     │     │gg·G │          │ del │  ←  │     │     │     │
+   │  A  │  O  │ E ● │  I  │ G ◇ │          │ D ◇ │ H ◇ │ T ◇ │ N ◇ │ S ○ │
+   │     │     │ del │     │gg·G │          │word←│  ↓  │  ↑  │word→│exit │
    ├─────┼─────┼─────┼─────┼─────┤          ├─────┼─────┼─────┼─────┼─────┤
-   │ X ● │ J ◇ │  ,  │  =  │  '  │          │ C ● │  M  │ W ◇ │  V  │  .  │
-   │ cut │  ↓  │     │     │     │          │chng │     │word→│     │     │
+   │ X ● │ J ● │  ,  │  =  │  '  │          │  C  │  M  │  W  │  V  │  .  │
+   │ cut │ del │     │     │     │          │     │     │     │     │     │
    └─────┴─────┴─────┴─────┴─────┘          └─────┴─────┴─────┴─────┴─────┘
 
    number row:  0 ◇ line start   ·   4 ◇ line end ($)
-   h j k l auto-repeat while held · ⇧G ◇ document end
-   leave with Esc · Return · meh+V — or let any ● operator finish the job
+   h t d n auto-repeat while held · g ◇ doc start · ⇧G ◇ doc end
+   leave with s · Esc · Return · meh+V — or let any ● operator finish the job
    unmarked keys simply type — typing over a selection is vim's c by another name
 ```
 
-vim's `hjkl` survived the Engrammer layout, just scattered to wherever those
-letters landed — `↑` and `↓` live on opposite hands now. Muscle memory is a
-compiler target like any other.
+The motion cluster `d h t n` sits on the right home row — the same keys
+`~/.ideavimrc` binds (`h→j`, `t→k`, `d→b`, `n→w`), so visual mode, the IDE,
+and the firmware all speak one dialect. Muscle memory is a compiler target
+like any other.
 
 
 ## Modifying the keymap
