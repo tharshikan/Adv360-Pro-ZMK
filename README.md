@@ -18,14 +18,14 @@ just typing again.
  │        │        │        │        │ J join │      │ word ← │ doc ↑  │ doc ↓  │ word → │ expand │
  │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │d0 →bol │ cut ln │O above │o below │ dup ln │      │   dw   │  diw   │   dd   │   yy   │  daw   │
- │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ meh D  │ meh W  │ meh L  │ meh Y  │ meh A  │
+ │d0 →bol │ cut ln │O above │o below │ dup ln │      │del line│del word│ del ¶  │del wd ←│del →eol│
+ │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ ⌃A⌃K⌦  │ ⌥→ ⌥⌫  │ ⌥↑⇧⌥↓⌦ │ ⇧⌥←⌘X  │   ⌃K   │
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
 
-   hold O with the left ring — the right hand alone deletes (bottom row, finger-
-   mirrored from the old left home) and moves by word / doc / line / page.
+   hold O with the left ring — the right hand alone moves (word/doc/line/page)
+   and deletes. The delete row is firmware macros: it works with Hammerspoon off.
 
         LEFT THUMB (edit)                             RIGHT THUMB (mode)
     ┌──────────┬──────────┐                      ┌──────────┬──────────────┐
