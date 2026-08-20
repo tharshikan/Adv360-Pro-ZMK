@@ -12,14 +12,14 @@ just typing again.
      BROWSER & INSERTS — left hand                     THE COCKPIT — right hand
    pinky    ring   middle   index   inner          inner   index   middle   ring    pinky
  ┌────────┬────────┬────────┬────────┬────────┐      ┌────────┬────────┬────────┬────────┬────────┐
- │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ line ← │ page ↓ │ page ↑ │ line → │ shrink │
- │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌘←   │  PgDn  │  PgUp  │   ⌘→   │ meh S  │
+ │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ line ← │O above │o below │ line → │ shrink │
+ │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌘←   │ meh I  │ meh O  │   ⌘→   │ meh S  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
  │        │        │        │        │ J join │      │ word ← │ doc ↑  │ doc ↓  │ word → │ expand │
  │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │d0 →bol │ cut ln │O above │o below │ dup ln │      │del line│del word│ del ¶  │del wd ←│del →eol│
- │ meh U  │ meh X  │ meh I  │ meh O  │ meh P  │      │ ⌃A⌃K⌦  │ ⌥→ ⌥⌫  │ ⌥↑⇧⌥↓⌦ │ ⇧⌥←⌘X  │   ⌃K   │
+ │d0 →bol │ cut ln │ page ↓ │ page ↑ │ dup ln │      │del line│del word│ del ¶  │del wd ←│del →eol│
+ │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │ ⌥→ ⌥⌫  │ ⌥↑⇧⌥↓⌦ │ ⇧⌥←⌘X  │   ⌃K   │
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
