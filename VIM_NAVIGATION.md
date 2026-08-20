@@ -44,8 +44,6 @@ The visual representations below demonstrate the operations assigned to the phys
 ## Vim-Cut Engine Specifics
 The custom firmware macros added to `macros.dtsi` completely bypass macOS limitations by performing multi-step operations on a single keypress:
 
-* **Cut Word Left:** `Option + Backspace` (was `Option + Shift + Left Arrow` -> `Cmd + X`; the
-  select-then-cut form had no meaning in a terminal, see the [README](README.md#text-nav-2--the-vim-layer))
 * **Cut Entire Line:** `Cmd + Left Arrow` -> `Shift + Cmd + Right Arrow` -> `Cmd + X`
 
 With this complete decoupling, your right hand can freely delete sentences and move the cursor, while the left hand drops the preserved text gracefully into its new home.

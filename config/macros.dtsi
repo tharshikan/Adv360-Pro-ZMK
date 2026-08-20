@@ -501,16 +501,6 @@
     display-name = "Delete Word";
   };
 
-  macro_cut_word_left: macro_cut_word_left {
-    compatible = "zmk,behavior-macro";
-    label = "macro_cut_word_left";
-    #binding-cells = <0>;
-    wait-ms = <5>;
-    tap-ms = <5>;
-    bindings = <&kp LA(BSPC)>;
-    display-name = "Delete Word Left";
-  };
-
   macro_cut_paragraph: macro_cut_paragraph {
     compatible = "zmk,behavior-macro";
     label = "macro_cut_paragraph";

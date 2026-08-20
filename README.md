@@ -17,8 +17,8 @@ browser row and the insert/cut row. Release, and you are just typing again.
  │        │        │        │        │ J join │      │ word ← │ doc ↑  │ doc ↓  │ word → │ expand │
  │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │d0 →bol │ cut ln │ page ↓ │ page ↑ │ dup ln │      │del line│del word│ del ¶  │del wd ←│del →eol│
- │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │   ⌥⌦   │ ⌥↑⇧⌥↓⌦ │   ⌥⌫   │   ⌃K   │
+ │d0 →bol │ cut ln │ page ↓ │ page ↑ │ dup ln │      │del line│del word│ del ¶  │ vis tog│ dup ln │
+ │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │   ⌥⌦   │ ⌥↑⇧⌥↓⌦ │ tog 10 │ ⌘C ↵ ⌘V│
  └────────┴────────┴────────┴────────┴────────┘      └────────┴────────┴────────┴────────┴────────┘
      A        O        E        I        G               D        H        T        N        S    
            ↑ printed keycap under each column ↑
@@ -26,7 +26,9 @@ browser row and the insert/cut row. Release, and you are just typing again.
    hold O with the left ring — the right hand alone moves (word/doc/line/page)
    and deletes. The delete row is firmware macros: it works with Hammerspoon off.
    `del ¶` ends in ⌃U — inert in a text field, kills the whole command line in a
-   terminal, where paragraphs do not exist.
+   terminal, where paragraphs do not exist. The ring toggles the firmware visual
+   layer (10), the Hammerspoon-free counterpart of the thumb's ✦ VISUAL; the pinky
+   duplicates the line by select-copy-paste, so it wants an editor, not a shell.
 
         LEFT THUMB (edit)                             RIGHT THUMB (mode)
     ┌──────────┬──────────┐                      ┌──────────┬──────────────┐
