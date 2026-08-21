@@ -497,8 +497,8 @@
     #binding-cells = <0>;
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&kp LA(DEL)>;
-    display-name = "Delete Word";
+    bindings = <&kp LA(RIGHT)>, <&kp LA(BSPC)>;
+    display-name = "Cut Word";
   };
 
   macro_cut_paragraph: macro_cut_paragraph {
