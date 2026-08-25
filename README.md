@@ -11,11 +11,11 @@ browser row and the insert/cut row. Release, and you are just typing again.
      BROWSER & INSERTS — left hand                     THE COCKPIT — right hand
    pinky    ring   middle   index   inner          inner   index   middle   ring    pinky
  ┌────────┬────────┬────────┬────────┬────────┐      ┌────────┬────────┬────────┬────────┬────────┐
- │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ line ← │O above │o below │ line → │ shrink │
- │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌘←   │ meh I  │ meh O  │   ⌘→   │ meh S  │
+ │ tab ←  │ tab →  │ close  │ reopen │ D →eol │      │ line ← │o below │O above │ line → │ shrink │
+ │ ⌃⇧Tab  │  ⌃Tab  │   ⌘W   │  ⌘⇧T   │ meh K  │      │   ⌘←   │ meh O  │ meh I  │   ⌘→   │ meh S  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
- │        │        │        │        │ J join │      │ word ← │ doc ↑  │ doc ↓  │ word → │ expand │
- │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↑   │   ⌘↓   │   ⌥→   │ meh E  │
+ │        │        │        │        │ J join │      │ word ← │ doc ↓  │ doc ↑  │ word → │ expand │
+ │        │        │        │        │ meh J  │      │   ⌥←   │   ⌘↓   │   ⌘↑   │   ⌥→   │ meh E  │
  ├────────┼────────┼────────┼────────┼────────┤      ├────────┼────────┼────────┼────────┼────────┤
  │d0 →bol │ cut ln │ page ↓ │ page ↑ │ dup ln │      │del line│del word│ del ¶  │ vis tog│ dup ln │
  │ meh U  │ meh X  │  PgDn  │  PgUp  │ meh P  │      │ ⌃A⌃K⌦  │ ⌥→ ⌥⌫  │ ⌥↑⇧⌥↓⌦ │ tog 10 │ ⌘C ↵ ⌘V│
