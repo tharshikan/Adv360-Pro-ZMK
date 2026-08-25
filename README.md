@@ -1,5 +1,9 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
+> 📖 The whole ecosystem — hyper layer, app-scoped remaps, Text Nav 2 — is drawn in
+> [docs/adv360-hyper-layer.html](docs/adv360-hyper-layer.html) (source; the rendered
+> wiki lives as a private Claude artifact).
+
 ## Text Nav 2 — the vim layer
 
 Held, not toggled: **hold `O` (left ring)** on the Sunaku base and the right hand

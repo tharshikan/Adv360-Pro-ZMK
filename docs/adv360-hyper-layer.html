@@ -1,0 +1,576 @@
+<title>Adv360 Hyper Layer</title>
+<!-- Source of the "Adv360 Hyper Layer" wiki page, published as a Claude
+     artifact (rendered view): https://claude.ai/code/artifact/21e02d44-6f6b-47ac-be75-36d47f605b90
+     Kept in sync in both repos: Adv360-Pro-ZMK and hammerspoon-tharshi
+     (docs/adv360-hyper-layer.html). GitHub shows this file as source;
+     the artifact link is the rendered page. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,450;0,600;1,450&display=swap">
+<style>
+  :root {
+    --ground: #FFFCF0;      /* flexoki paper */
+    --raised: #F2F0E5;      /* base-50 */
+    --raised-2: #E6E4D9;    /* base-100 */
+    --line: #DAD8CE;        /* base-150 */
+    --line-soft: #E6E4D9;
+    --ink: #100F0F;         /* base-black */
+    --ink-2: #403E3C;       /* base-800 */
+    --muted: #6F6E69;       /* base-600 */
+    --faint: #878580;       /* base-500 */
+    --accent: #5E409D;      /* purple-600 — the hyper hue */
+    --accent-soft: rgba(94, 64, 157, 0.10);
+    --app: #205EA6;         /* blue-600 */
+    --app-soft: rgba(32, 94, 166, 0.08);
+    --win: #66800B;         /* green-600 */
+    --win-soft: rgba(102, 128, 11, 0.10);
+    --sys: #BC5215;         /* orange-600 */
+    --sys-soft: rgba(188, 82, 21, 0.08);
+    --mode: #A02F6F;        /* magenta-600 */
+    --mode-soft: rgba(160, 47, 111, 0.08);
+    --meh: #24837B;         /* cyan-600 — the meh hue */
+    --meh-soft: rgba(36, 131, 123, 0.10);
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #100F0F;
+      --raised: #1C1B1A;
+      --raised-2: #282726;
+      --line: #343331;
+      --line-soft: #282726;
+      --ink: #CECDC3;
+      --ink-2: #B7B5AC;
+      --muted: #878580;
+      --faint: #6F6E69;
+      --accent: #8B7EC8;
+      --accent-soft: rgba(139, 126, 200, 0.14);
+      --app: #4385BE;
+      --app-soft: rgba(67, 133, 190, 0.12);
+      --win: #879A39;
+      --win-soft: rgba(135, 154, 57, 0.13);
+      --sys: #DA702C;
+      --sys-soft: rgba(218, 112, 44, 0.11);
+      --mode: #CE5D97;
+      --mode-soft: rgba(206, 93, 151, 0.12);
+      --meh: #3AA99F;
+      --meh-soft: rgba(58, 169, 159, 0.13);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #100F0F;
+    --raised: #1C1B1A;
+    --raised-2: #282726;
+    --line: #343331;
+    --line-soft: #282726;
+    --ink: #CECDC3;
+    --ink-2: #B7B5AC;
+    --muted: #878580;
+    --faint: #6F6E69;
+    --accent: #8B7EC8;
+    --accent-soft: rgba(139, 126, 200, 0.14);
+    --app: #4385BE;
+    --app-soft: rgba(67, 133, 190, 0.12);
+    --win: #879A39;
+    --win-soft: rgba(135, 154, 57, 0.13);
+    --sys: #DA702C;
+    --sys-soft: rgba(218, 112, 44, 0.11);
+    --mode: #CE5D97;
+    --mode-soft: rgba(206, 93, 151, 0.12);
+    --meh: #3AA99F;
+    --meh-soft: rgba(58, 169, 159, 0.13);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16.5px;
+    font-weight: 450;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 20px 88px;
+  }
+  .col { max-width: 740px; margin: 0 auto; }
+  .wide { max-width: 1100px; margin: 0 auto; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible, .key:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header { padding: 64px 0 12px; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  }
+  .eyebrow b { color: var(--accent); font-weight: 600; }
+  h1 {
+    font-family: var(--mono); font-weight: 700; letter-spacing: -0.02em;
+    font-size: clamp(34px, 6vw, 52px); line-height: 1.05;
+    margin: 10px 0 18px; text-wrap: balance;
+  }
+  .standfirst { font-size: 19px; line-height: 1.55; color: var(--ink-2); max-width: 620px; margin: 0 0 8px; }
+  .standfirst .chord { white-space: nowrap; }
+
+  h2 {
+    font-family: var(--mono); font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
+    margin: 72px 0 14px; padding-top: 26px; border-top: 1px solid var(--line);
+    text-wrap: balance;
+  }
+  h3 { font-family: var(--mono); font-size: 15px; font-weight: 600; margin: 30px 0 8px; }
+  p { margin: 0 0 16px; max-width: 660px; }
+  .aside { color: var(--muted); font-size: 14.5px; }
+
+  code, kbd {
+    font-family: var(--mono); font-size: 0.86em;
+    background: var(--raised); border: 1px solid var(--line);
+    border-radius: 4px; padding: 1px 5px; white-space: nowrap;
+  }
+  .chord { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.04em; }
+
+  /* ---- pipeline strip ---- */
+  .pipeline {
+    display: flex; align-items: stretch; gap: 0;
+    margin: 40px 0 10px; overflow-x: auto; padding-bottom: 6px;
+  }
+  .pipe-node {
+    flex: 1 1 0; min-width: 190px;
+    background: var(--raised); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px;
+  }
+  .pipe-node.hot { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); }
+  .pipe-node .k { font-family: var(--mono); font-size: 13px; font-weight: 600; display: block; margin-bottom: 5px; }
+  .pipe-node .k a { border-bottom-width: 1px; }
+  .pipe-node .d { font-size: 13.5px; color: var(--muted); line-height: 1.5; display: block; }
+  .pipe-arrow {
+    flex: 0 0 auto; align-self: center; padding: 0 10px;
+    font-family: var(--mono); font-size: 12px; color: var(--accent);
+    white-space: nowrap; text-align: center; line-height: 1.4;
+  }
+
+  /* ---- keyboard ---- */
+  .board-scroll { overflow-x: auto; margin: 34px 0 8px; padding: 4px 2px 10px; }
+  .board { display: flex; gap: 44px; justify-content: center; min-width: 940px; }
+  .half { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; flex: 1 1 0; max-width: 500px; }
+  .half-label {
+    grid-column: 1 / -1; font-family: var(--mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--faint); padding: 0 2px 2px;
+  }
+  .half-label.r { text-align: right; }
+  .key {
+    background: var(--raised); border: 1px solid var(--line); border-bottom-width: 3px;
+    border-radius: 7px; min-height: 66px; padding: 8px 6px 6px;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 3px;
+    text-align: center;
+  }
+  .key .cap { font-family: var(--mono); font-size: 17px; font-weight: 700; line-height: 1; }
+  .key .act { font-family: var(--mono); font-size: 10.5px; line-height: 1.25; color: var(--ink-2); overflow-wrap: anywhere; }
+  .key.app  { background: var(--app-soft); }  .key.app .cap  { color: var(--app); }
+  .key.win  { background: var(--win-soft); }  .key.win .cap  { color: var(--win); }
+  .key.sys  { background: var(--sys-soft); }  .key.sys .cap  { color: var(--sys); }
+  .key.mode { background: var(--mode-soft); } .key.mode .cap { color: var(--mode); }
+  .key.pass { border-bottom-width: 1px; background: transparent; }
+  .key.pass .cap { color: var(--faint); font-weight: 500; }
+  .key.pass .act { color: var(--faint); }
+  .key.entry { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent); }
+  .key.meh { background: var(--meh-soft); }   .key.meh .cap { color: var(--meh); }
+  .textnav .key .cap { font-size: 12.5px; }
+  .textnav .key .act { font-size: 10px; }
+
+  .bottomrow { display: flex; gap: 44px; justify-content: center; min-width: 940px; margin-top: 14px; }
+  .bottomrow .cluster { display: flex; gap: 7px; flex: 1 1 0; max-width: 500px; }
+  .bottomrow .cluster.r { justify-content: flex-end; }
+  .bottomrow .key { min-width: 92px; min-height: 58px; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: center;
+    font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin: 18px 0 4px;
+  }
+  .legend .sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 7px; vertical-align: baseline; }
+  .fn { text-align: center; }
+
+  /* ---- tables ---- */
+  .tables { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 36px; margin-top: 8px; }
+  @media (max-width: 760px) { .tables { grid-template-columns: 1fr; } }
+  .tgroup h3 { margin-top: 22px; display: flex; align-items: baseline; gap: 9px; }
+  .tgroup h3 .sw { width: 9px; height: 9px; border-radius: 2px; flex: 0 0 auto; align-self: center; }
+  .tscroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+  th { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); text-align: left; padding: 4px 14px 6px 0; }
+  td { border-top: 1px solid var(--line-soft); padding: 6.5px 14px 6.5px 0; vertical-align: top; }
+  td.c { font-family: var(--mono); font-size: 13px; white-space: nowrap; width: 1%; }
+  td .note { color: var(--muted); font-size: 13px; }
+
+  /* ---- namespace cards ---- */
+  .namespaces { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 26px 0 10px; }
+  @media (max-width: 700px) { .namespaces { grid-template-columns: 1fr; } }
+  .ns { border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; background: var(--raised); }
+  .ns.hyper { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+  .ns .glyphs { font-family: var(--mono); font-size: 26px; font-weight: 700; letter-spacing: 0.06em; }
+  .ns.hyper .glyphs { color: var(--accent); }
+  .ns.meh .glyphs { color: var(--meh); }
+  .ns .who { font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 2px 0 10px; }
+  .ns p { font-size: 14.5px; margin: 0; color: var(--ink-2); }
+  .rule {
+    font-family: var(--mono); font-size: 15px; color: var(--ink);
+    border-left: 3px solid var(--accent); padding: 4px 0 4px 18px; margin: 22px 0;
+  }
+
+  ul { padding-left: 22px; margin: 0 0 16px; max-width: 660px; }
+  li { margin-bottom: 9px; }
+  li::marker { color: var(--faint); }
+
+  footer { margin-top: 84px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 14px; color: var(--muted); }
+  footer .col { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+</style>
+
+<header class="col">
+  <div class="eyebrow">Adv360-Pro-ZMK wiki · <b>layer 14</b></div>
+  <h1>Adv360 Hyper Layer</h1>
+  <p class="standfirst">Hold <code>A</code> or <code>S</code> and every key on the board fires all four
+  modifiers at once — <span class="chord">⌃⌥⇧⌘</span> — a namespace no macOS app ships bindings for.
+  The firmware in this repo emits the chords; <a href="https://github.com/tharshikan/hammerspoon-tharshi">hammerspoon-tharshi</a>
+  answers them. This page is the map of that contract.</p>
+</header>
+
+<section class="col">
+  <h2>Two repos, one contract</h2>
+  <p>The hyper key doesn't exist on any Mac keyboard, which is the point: the whole
+  <span class="chord">⌃⌥⇧⌘</span> space is empty, so it can be claimed end-to-end without
+  colliding with anything an app already means. Each side owns half the contract and can
+  change independently — remap a slot without touching firmware, move the layer key
+  without touching Lua.</p>
+  <div class="pipeline">
+    <div class="pipe-node hot">
+      <span class="k"><a href="https://github.com/tharshikan/Adv360-Pro-ZMK">Adv360-Pro-ZMK</a></span>
+      <span class="d">layer 14 in <code>adv360.keymap</code>. Hold A or S → every key sends ⌃⌥⇧⌘ + its legend.</span>
+    </div>
+    <div class="pipe-arrow">⌃⌥⇧⌘ A<br>→</div>
+    <div class="pipe-node">
+      <span class="k">macOS</span>
+      <span class="d">sees a four-modifier chord nothing claims — it falls straight through to the hotkey layer.</span>
+    </div>
+    <div class="pipe-arrow">hotkey<br>→</div>
+    <div class="pipe-node hot">
+      <span class="k"><a href="https://github.com/tharshikan/hammerspoon-tharshi">hammerspoon-tharshi</a></span>
+      <span class="d"><code>init.lua</code> binds each chord: app slots, window ops, system toggles. Ghostty comes to front.</span>
+    </div>
+  </div>
+  <p class="aside">The same pairing runs the text-editing side of the ecosystem — the Text Nav 2 layer
+  sends Meh (<span class="chord">⌃⌥⇧</span>) intents that the same <code>init.lua</code> interprets — but that
+  namespace is deliberately separate, and drawn at the end of this page.</p>
+</section>
+
+<section class="wide">
+  <h2 class="col" style="max-width:740px">The board, held down</h2>
+  <p class="col">What each key does while the layer is held. Engrammer legends, finger blocks only —
+  outer columns are transparent. Dimmed keys aren't dead: they emit their raw
+  <span class="chord">⌃⌥⇧⌘</span> chord, which passes through to the frontmost app — free
+  real estate for future bindings.</p>
+
+  <div class="board-scroll">
+    <div class="board">
+      <div class="half">
+        <div class="half-label">left · pinky → inner</div>
+        <div class="key mode"><span class="cap">1</span><span class="act">“work” layout</span></div>
+        <div class="key mode"><span class="cap">2</span><span class="act">“cp” layout</span></div>
+        <div class="key pass"><span class="cap">3</span><span class="act"></span></div>
+        <div class="key pass"><span class="cap">4</span><span class="act"></span></div>
+        <div class="key pass"><span class="cap">5</span><span class="act"></span></div>
+
+        <div class="key win"><span class="cap">Q</span><span class="act">solo: max + sweep</span></div>
+        <div class="key sys"><span class="cap">P</span><span class="act">zoom out</span></div>
+        <div class="key sys"><span class="cap">U</span><span class="act">zoom reset</span></div>
+        <div class="key sys"><span class="cap">Y</span><span class="act">zoom in</span></div>
+        <div class="key app"><span class="cap">;</span><span class="act">reassign slot</span></div>
+
+        <div class="key app entry"><span class="cap">A</span><span class="act">Ghostty ⇣</span></div>
+        <div class="key app"><span class="cap">O</span><span class="act">Chrome ⛶</span></div>
+        <div class="key app"><span class="cap">E</span><span class="act">CLion ⛶</span></div>
+        <div class="key app"><span class="cap">I</span><span class="act">Claude ⛶</span></div>
+        <div class="key app"><span class="cap">G</span><span class="act">Finder go-menu</span></div>
+
+        <div class="key win"><span class="cap">X</span><span class="act">close all here</span></div>
+        <div class="key app"><span class="cap">J</span><span class="act">Antigravity</span></div>
+        <div class="key sys"><span class="cap">,</span><span class="act">app settings ⌘,</span></div>
+        <div class="key sys"><span class="cap">=</span><span class="act">light ⇄ dark</span></div>
+        <div class="key win"><span class="cap">'</span><span class="act">tiny corner</span></div>
+      </div>
+
+      <div class="half">
+        <div class="half-label r">right · inner → pinky</div>
+        <div class="key sys"><span class="cap">6</span><span class="act">cycle audio out</span></div>
+        <div class="key sys"><span class="cap">7</span><span class="act">brightness −</span></div>
+        <div class="key sys"><span class="cap">8</span><span class="act">night shift ⇄</span></div>
+        <div class="key sys"><span class="cap">9</span><span class="act">brightness +</span></div>
+        <div class="key pass"><span class="cap">0</span><span class="act"></span></div>
+
+        <div class="key sys"><span class="cap">K</span><span class="act">quit-apps list</span></div>
+        <div class="key mode"><span class="cap">F</span><span class="act">focus mode</span></div>
+        <div class="key mode"><span class="cap">L</span><span class="act">CP split 65/35</span></div>
+        <div class="key win"><span class="cap">R</span><span class="act">restore swept</span></div>
+        <div class="key sys"><span class="cap">B</span><span class="act">clock card ⇄</span></div>
+
+        <div class="key win"><span class="cap">D</span><span class="act">fullscreen ⛶</span></div>
+        <div class="key app"><span class="cap">H</span><span class="act">Finder ⇣</span></div>
+        <div class="key app"><span class="cap">T</span><span class="act">WebStorm ⛶</span></div>
+        <div class="key app"><span class="cap">N</span><span class="act">Notes</span></div>
+        <div class="key app entry"><span class="cap">S</span><span class="act">Slack</span></div>
+
+        <div class="key win"><span class="cap">C</span><span class="act">center cycle</span></div>
+        <div class="key sys"><span class="cap">M</span><span class="act">mic mute</span></div>
+        <div class="key win"><span class="cap">W</span><span class="act">wipe the desk</span></div>
+        <div class="key sys"><span class="cap">V</span><span class="act">type clipboard</span></div>
+        <div class="key pass"><span class="cap">.</span><span class="act">eaten †</span></div>
+      </div>
+    </div>
+
+    <div class="bottomrow">
+      <div class="cluster">
+        <div class="key sys"><span class="cap">Z</span><span class="act">caffeine ☕</span></div>
+        <div class="key win"><span class="cap">←</span><span class="act">½·⅔·⅓ left</span></div>
+        <div class="key win"><span class="cap">→</span><span class="act">½·⅔·⅓ right</span></div>
+      </div>
+      <div class="cluster r">
+        <div class="key win"><span class="cap">⏎</span><span class="act">maximize ⇄</span></div>
+        <div class="key win"><span class="cap">↑</span><span class="act">top half</span></div>
+        <div class="key win"><span class="cap">↓</span><span class="act">bottom half</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--app)"></span>app slot</span>
+    <span><span class="sw" style="background:var(--win)"></span>window</span>
+    <span><span class="sw" style="background:var(--sys)"></span>system</span>
+    <span><span class="sw" style="background:var(--mode)"></span>mode / layout</span>
+    <span><span class="sw" style="background:var(--faint)"></span>passes through</span>
+    <span><span class="sw" style="box-shadow:inset 0 0 0 2px var(--accent)"></span>layer entry (held on base)</span>
+  </div>
+  <p class="aside fn">† Karabiner intercepts <span class="chord">⌃⌥⇧⌘.</span> before macOS sees it (cause unresolved) — which is
+  why System Settings sits on <code>,</code> and zoom avoids both. Also passing through: <code>[</code> and <code>9</code> on the bottom rows.</p>
+</section>
+
+<section class="col">
+  <h2>Every binding, by family</h2>
+  <div class="tables">
+    <div class="tgroup">
+      <h3><span class="sw" style="background:var(--app)"></span>App slots</h3>
+      <p class="aside">Toggle behavior: if the slot's app is already frontmost, you bounce back to the previous app.
+      The front four live on the left home row; the right row carries the second tier.
+      ⛶-marked seats (O, E, T, I) open in their own macOS fullscreen space; the rest open as
+      plain windows on the desktop you're already on. ⇣-marked seats (A, H) also sweep the
+      desk as they open — every other window on the current desktop minimizes — and toggling
+      back (or hyper+R) restores what was swept. CP mode and the layout snapshots pull a
+      fullscreen window back to windowed before tiling it.</p>
+      <div class="tscroll"><table>
+        <tr><th>hyper +</th><th>action</th></tr>
+        <tr><td class="c">A · O · E · I</td><td>Ghostty · Chrome · CLion · Claude <span class="note">(left home row — the front four)</span></td></tr>
+        <tr><td class="c">H · T · N · S</td><td>Finder · WebStorm · Notes · Slack <span class="note">(right home row — t for TypeScript)</span></td></tr>
+        <tr><td class="c">J</td><td>Antigravity</td></tr>
+        <tr><td class="c">;</td><td>reassign any slot via chooser</td></tr>
+        <tr><td class="c">G</td><td>Finder Go menu from anywhere — Go to Folder (⌘⇧G), Downloads, Projects, AirDrop, Connect to Server, Trash, …</td></tr>
+      </table></div>
+      <p class="aside">Assignments persist machine-locally in <code>hs.settings</code> — the table in
+      <code>init.lua</code> only seeds a fresh machine. Inspect or change from a shell:
+      <code>hs -c 'slotList()'</code>, <code>hs -c 'slotSet("h","Preview")'</code>.</p>
+    </div>
+
+    <div class="tgroup">
+      <h3><span class="sw" style="background:var(--win)"></span>Windows</h3>
+      <div class="tscroll"><table>
+        <tr><th>hyper +</th><th>action</th></tr>
+        <tr><td class="c">← → ↑ ↓</td><td>tile to that half — ← and → cycle ½ → ⅔ → ⅓ on repeat presses</td></tr>
+        <tr><td class="c">⏎</td><td>maximize — a toggle: the second press restores the frame it had before, including after a solo</td></tr>
+        <tr><td class="c">C</td><td>centered cycle — 80% → 62% → 45% on repeat presses</td></tr>
+        <tr><td class="c">'</td><td>tiny corner — 28% parked bottom-right, for a video or reference floating over the work</td></tr>
+        <tr><td class="c">D</td><td>toggle native fullscreen — the window takes its own space, and leaves it on the second press</td></tr>
+        <tr><td class="c">Q</td><td>solo — maximize this window, minimize the rest of the desk <span class="note">(current desktop only)</span></td></tr>
+        <tr><td class="c">W · R</td><td>wipe the desk (minimize all) · restore what was swept</td></tr>
+        <tr><td class="c">X</td><td>close every window on the current desk</td></tr>
+      </table></div>
+
+      <h3><span class="sw" style="background:var(--mode)"></span>Modes &amp; layouts</h3>
+      <div class="tscroll"><table>
+        <tr><th>hyper +</th><th>action</th></tr>
+        <tr><td class="c">F</td><td>focus mode — hide everything but slot apps</td></tr>
+        <tr><td class="c">1 · 2</td><td>whole-desk snapshots: “work” · “cp”</td></tr>
+        <tr><td class="c">L</td><td>CP mode — editor 65% left, browser 35% right</td></tr>
+      </table></div>
+    </div>
+
+    <div class="tgroup">
+      <h3><span class="sw" style="background:var(--sys)"></span>System</h3>
+      <div class="tscroll"><table>
+        <tr><th>hyper +</th><th>action</th></tr>
+        <tr><td class="c">B</td><td>clock card — big time, small date, a purple minute-progress line, floating click-through in the top-right of every space; press again to dismiss</td></tr>
+        <tr><td class="c">M</td><td>mic mute system-wide <span class="note">(menubar 🎙/🔇)</span></td></tr>
+        <tr><td class="c">Y · P · U</td><td>zoom in · out · reset — on the board P·U·Y sit adjacent, reading out · reset · in <span class="note">(⌘= / ⌘− / ⌘0; JetBrains gets ⌥⇧. / ⌥⇧, / ⌥⇧0; repeats while held)</span></td></tr>
+        <tr><td class="c">V</td><td>type clipboard as keystrokes — defeats paste-blocking fields</td></tr>
+        <tr><td class="c">Z</td><td>caffeine — keep the display awake <span class="note">(menubar ☕; z for zzz)</span></td></tr>
+        <tr><td class="c">6</td><td>cycle the audio output device</td></tr>
+        <tr><td class="c">7 · 9</td><td>display brightness down · up — via DisplayServices, so it drives the Studio Display too; 🔆 alert shows the level, repeats while held</td></tr>
+        <tr><td class="c">8</td><td>toggle Night Shift <span class="note">(a 30-line CoreBrightness shim in the repo, built locally)</span></td></tr>
+        <tr><td class="c">=</td><td>toggle system-wide light/dark mode — Ghostty and everything following the OS flip with it</td></tr>
+        <tr><td class="c">K</td><td>app killer — arrows/type to pick a running app, Enter quits it and the list reopens, Esc to finish <span class="note">(app-wide, not desk-scoped)</span></td></tr>
+        <tr><td class="c">,</td><td>presses ⌘, — the frontmost app's own settings <span class="note">(System Settings still opens when Finder or the desktop is front)</span></td></tr>
+      </table></div>
+      <p class="aside">Config reload lives on the other namespace: <span class="chord">meh + R</span>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="col">
+  <h2>App-scoped remaps</h2>
+  <p>Not hyper chords — plain shortcuts that mean something different while one app is
+  frontmost, and nothing unusual anywhere else. An application watcher enables them with
+  focus and disables them on the way out; no event taps, so nothing runs per-keystroke.
+  One rule keeps them safe: remaps are one-way — never onto a chord that is itself
+  remapped, or the synthesized keystroke retriggers the hotkey in a loop.</p>
+  <div class="tscroll"><table>
+    <tr><th>app</th><th>you press</th><th>it fires</th></tr>
+    <tr><td>Finder</td><td class="c">⌘E</td><td>Go to Folder… (⌘⇧G)</td></tr>
+    <tr><td>Finder</td><td class="c">⌘.</td><td>show hidden files (⌘⇧.)</td></tr>
+    <tr><td>Finder</td><td class="c">⌘B</td><td>new folder (⌘⇧N)</td></tr>
+    <tr><td>Finder</td><td class="c">⌘L</td><td>Downloads (⌘⌥L)</td></tr>
+    <tr><td>Chrome</td><td class="c">⌃E</td><td>⌘⇧O</td></tr>
+  </table></div>
+  <p class="aside">Shadowed Finder natives: ⌘E eject, ⌘L make alias. The roster is the
+  <code>appRemaps</code> table in <code>init.lua</code> — one line per remap, one entry per app.</p>
+</section>
+
+<section class="col">
+  <h2>Getting in</h2>
+  <ul>
+    <li><b>Hold <code>A</code> (left pinky) or <code>S</code> (right pinky)</b> on any of the three base
+    layers — urob, tharshi, and sunaku all route their pinky home key to layer 14. Tap still
+    types the letter; the hold-tap flavors and timings differ per base but the destination is the same.</li>
+    <li><b>Two doors on purpose.</b> The layer key can't chord with itself: reaching
+    <span class="chord">hyper+A</span> (Ghostty) means holding <code>S</code>, and
+    <span class="chord">hyper+S</span> (Slack) means holding <code>A</code>. Every other key is
+    reachable from either door.</li>
+    <li><b>One-handed shortcut:</b> the num layer (hold <code>N</code>) plants hyper
+    <code>D H T N S</code> under the right home row and hyper <code>B</code> above it —
+    Finder, WebStorm, Notes, Slack, the fullscreen toggle, and the clock card without the left hand.</li>
+  </ul>
+
+  <h3>Firmware notes</h3>
+  <ul>
+    <li>Hyper is <b>layer index 14</b>. The chords are written out inline as
+    <code>LC(LS(LA(LG(K))))</code> rather than behind a macro so the Keymap Editor can still
+    parse the bindings (see the comment atop <code>adv360.keymap</code>).</li>
+    <li>The layer covers the full board — letters, numbers, punctuation, arrows, and Enter all
+    emit their hyper chord, so the Mac side can bind new chords without any firmware change.</li>
+  </ul>
+</section>
+
+<section class="col">
+  <h2>Hyper is not Meh</h2>
+  <p>The ecosystem splits its two synthetic namespaces by one modifier, and the split is a rule,
+  not a habit:</p>
+  <div class="namespaces">
+    <div class="ns hyper">
+      <div class="glyphs">⌃⌥⇧⌘</div>
+      <div class="who">hyper · this page</div>
+      <p>Talks to the <b>desk</b>: apps, windows, layouts, system toggles. Entered by holding
+      <code>A</code> / <code>S</code>. Every chord is a Hammerspoon hotkey in
+      <code>init.lua</code>'s app/window ecosystem.</p>
+    </div>
+    <div class="ns meh">
+      <div class="glyphs">⌃⌥⇧</div>
+      <div class="who">meh · text nav 2</div>
+      <p>Talks to the <b>text</b>: vim-grade intents (<code>diw</code>, <code>dd</code>, visual mode)
+      sent from the Text Nav 2 layer (hold <code>O</code>) and translated per-app by the same
+      <code>init.lua</code>. Documented in the
+      <a href="https://github.com/tharshikan/hammerspoon-tharshi#text-editing-engine">hammerspoon-tharshi README</a>.</p>
+    </div>
+  </div>
+  <p class="rule">⌘ present → you're talking to the desk.<br>⌘ absent → you're talking to the text.</p>
+  <p class="aside">Meh+arrows are deliberately bound nowhere on the Mac side — <span class="chord">⌃⌥⇧</span>-arrows
+  belong to the JetBrains IDEs and pass through untouched. The hyper layer never appears on Text Nav 2,
+  and no Meh chord appears here.</p>
+</section>
+
+<section class="wide">
+  <h2 class="col" style="max-width:740px">Text Nav 2, drawn</h2>
+  <p class="col">The Meh side's board: hold <code>O</code> (left ring) on the sunaku base and
+  layer 15 comes up — the right hand alone moves and deletes while the left just holds.
+  Teal cells send Meh intents that <a href="https://github.com/tharshikan/hammerspoon-tharshi">hammerspoon-tharshi</a>
+  interprets per-app; plain cells are native macOS chords or firmware macros, so the whole
+  delete row works with Hammerspoon off. Blank keys fall through and simply type.</p>
+
+  <div class="board-scroll">
+    <div class="board textnav">
+      <div class="half">
+        <div class="half-label">browser &amp; inserts — left · caps A O E I G</div>
+        <div class="key"><span class="cap">tab ←</span><span class="act">⌃⇧Tab</span></div>
+        <div class="key"><span class="cap">tab →</span><span class="act">⌃Tab</span></div>
+        <div class="key"><span class="cap">close</span><span class="act">⌘W</span></div>
+        <div class="key"><span class="cap">reopen</span><span class="act">⌘⇧T</span></div>
+        <div class="key meh"><span class="cap">D →eol</span><span class="act">meh K</span></div>
+
+        <div class="key pass"><span class="cap"></span><span class="act"></span></div>
+        <div class="key pass"><span class="cap"></span><span class="act"></span></div>
+        <div class="key pass"><span class="cap"></span><span class="act"></span></div>
+        <div class="key pass"><span class="cap"></span><span class="act"></span></div>
+        <div class="key meh"><span class="cap">J join</span><span class="act">meh J</span></div>
+
+        <div class="key meh"><span class="cap">d0 →bol</span><span class="act">meh U</span></div>
+        <div class="key meh"><span class="cap">cut ln</span><span class="act">meh X</span></div>
+        <div class="key"><span class="cap">page ↓</span><span class="act">PgDn</span></div>
+        <div class="key"><span class="cap">page ↑</span><span class="act">PgUp</span></div>
+        <div class="key meh"><span class="cap">dup ln</span><span class="act">meh P</span></div>
+      </div>
+
+      <div class="half">
+        <div class="half-label r">the cockpit — right · caps D H T N S</div>
+        <div class="key"><span class="cap">line ←</span><span class="act">⌘←</span></div>
+        <div class="key meh"><span class="cap">o below</span><span class="act">meh O</span></div>
+        <div class="key meh"><span class="cap">O above</span><span class="act">meh I</span></div>
+        <div class="key"><span class="cap">line →</span><span class="act">⌘→</span></div>
+        <div class="key meh"><span class="cap">shrink</span><span class="act">meh S</span></div>
+
+        <div class="key"><span class="cap">word ←</span><span class="act">⌥←</span></div>
+        <div class="key"><span class="cap">doc ↓</span><span class="act">⌘↓</span></div>
+        <div class="key"><span class="cap">doc ↑</span><span class="act">⌘↑</span></div>
+        <div class="key"><span class="cap">word →</span><span class="act">⌥→</span></div>
+        <div class="key meh"><span class="cap">expand</span><span class="act">meh E</span></div>
+
+        <div class="key"><span class="cap">del line</span><span class="act">⌃A ⌃K ⌦</span></div>
+        <div class="key"><span class="cap">del word</span><span class="act">⌥→ ⌥⌫</span></div>
+        <div class="key"><span class="cap">del ¶</span><span class="act">⌥↑ ⇧⌥↓ ⌦ ⌃U</span></div>
+        <div class="key"><span class="cap">vis tog</span><span class="act">tog 10</span></div>
+        <div class="key"><span class="cap">dup ln</span><span class="act">⌘C ↵ ⌘V</span></div>
+      </div>
+    </div>
+
+    <div class="bottomrow textnav">
+      <div class="cluster">
+        <div class="key"><span class="cap">⌫</span><span class="act">backspace · small: ⌘Z undo</span></div>
+        <div class="key"><span class="cap">⌦</span><span class="act">delete · small: ⌘⇧Z redo</span></div>
+      </div>
+      <div class="cluster r">
+        <div class="key pass"><span class="cap">␣</span><span class="act">space</span></div>
+        <div class="key meh"><span class="cap">✦ VISUAL</span><span class="act">meh V · small: ⇧ / Esc</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--meh)"></span>meh intent — interpreted by hammerspoon-tharshi</span>
+    <span><span class="sw" style="background:var(--faint)"></span>native chord or firmware macro — works with Hammerspoon off</span>
+  </div>
+  <p class="aside fn">Hold ⇧ (right thumb small key) with any motion to select. ✦ VISUAL flips the Mac-side modal
+  where plain letters select — its full key map lives in the
+  <a href="https://github.com/tharshikan/hammerspoon-tharshi#visual-mode-drawn">hammerspoon-tharshi README</a>.
+  <span class="chord">⌥→ ⌥⌫</span> and friends reach the shell through the bindkey block at the end of the dotfiles zshrc.</p>
+</section>
+
+<footer>
+  <div class="col">
+    <span><a href="https://github.com/tharshikan/Adv360-Pro-ZMK">Adv360-Pro-ZMK</a> — the firmware half</span>
+    <span><a href="https://github.com/tharshikan/hammerspoon-tharshi">hammerspoon-tharshi</a> — the Mac half</span>
+    <span><a href="https://github.com/tharshikan/Adv360-Pro-ZMK#text-nav-2--the-vim-layer">Text Nav 2</a> — the Meh sibling</span>
+  </div>
+</footer>
