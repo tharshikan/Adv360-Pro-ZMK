@@ -257,7 +257,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -269,7 +269,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
@@ -283,7 +283,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -297,7 +297,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
@@ -311,7 +311,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&kp>, <&kp>;
@@ -325,7 +325,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <70>;
             flavor = "tap-preferred";
             retro-tap;
             bindings = <&mo>, <&kp>;
