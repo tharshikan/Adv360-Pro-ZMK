@@ -697,3 +697,11 @@
     bindings = <&kp LS(B)>, <&kp A>, <&kp S>, <&kp E>, <&kp UNDERSCORE>, <&kp LS(S)>, <&kp U>, <&kp N>, <&kp A>, <&kp K>, <&kp U>;
     display-name = "Print Base_Sunaku";
   };
+
+  macro_print_layer_simple: macro_print_layer_simple {
+    compatible = "zmk,behavior-macro";
+    label = "macro_print_layer_simple";
+    #binding-cells = <0>;
+    bindings = <&kp LS(S)>, <&kp I>, <&kp M>, <&kp P>, <&kp L>, <&kp E>;
+    display-name = "Print Simple";
+  };
