@@ -944,9 +944,9 @@
             display-name = "Nav";
             bindings = <
 &kp LG(EQUAL)  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)    &kp LG(N4)     &kp LG(N5)     &trans                                                               &trans         &kp LC(LS(LA(N6)))  &kp LC(LS(LA(N7)))  &kp LC(LS(LA(N8)))  &kp LC(LS(LA(N9)))  &kp LC(LS(LA(N0)))  &kp LC(LS(LA(MINUS)))
-&kp LG(TAB)    &kp LG(Q)   &kp LG(P)      &kp LG(U)     &kp LG(Y)      &kp LG(P)      &trans                                                               &trans         &kp LC(LS(LA(K)))   &kp LC(LS(LA(F)))   &kp LC(LS(LA(L)))   &kp LC(LS(LA(R)))   &kp LC(LS(LA(B)))   &kp LC(LS(LA(BSLH)))
-&kp LG(ESC)    &kp LG(A)   &kp LG(O)      &kp LG(K)     &kp LG(I)      &kp LG(DOT)    &trans        &trans  &trans           &trans         &trans         &trans         &kp LG(D)           &kp LG(H)           &kp LG(T)           &kp LG(N)           &kp LG(S)           &kp LC(LS(LA(TAB)))
-&kp LG(LSHFT)  &kp LG(Z)   &kp LG(COMMA)  &kp LG(C)     &kp LG(V)      &kp LG(LA(I))                        &trans           &trans                                       &kp LC(LS(LA(C)))   &kp LC(LS(LA(M)))   &kp LC(LS(LA(W)))   &kp LC(LS(LA(V)))   &kp LC(LS(LA(DOT)))  &trans
+&kp LG(QUESTION)  &kp LG(Q)  &kp LG(P)     &kp LG(U)     &kp LG(Y)      &kp LG(SEMI)   &trans                                                               &trans         &kp LC(LS(LA(K)))   &kp LC(LS(LA(F)))   &kp LC(LS(LA(L)))   &kp LC(LS(LA(R)))   &kp LC(LS(LA(B)))   &kp LC(LS(LA(BSLH)))
+&kp LG(ESC)    &kp LG(A)   &kp LG(O)      &kp LG(K)     &kp LG(I)      &kp LG(G)      &trans        &trans  &trans           &trans         &trans         &trans         &kp LG(D)           &kp LG(H)           &kp LG(T)           &kp LG(N)           &kp LG(S)           &kp LC(LS(LA(TAB)))
+&kp LG(LSHFT)  &kp LG(X)   &kp LG(J)      &kp LG(COMMA) &kp LG(EQUAL)  &kp LG(SINGLE_QUOTE)                 &trans           &trans                                       &kp LC(LS(LA(C)))   &kp LC(LS(LA(M)))   &kp LC(LS(LA(W)))   &kp LC(LS(LA(V)))   &kp LC(LS(LA(DOT)))  &trans
 &trans         &kp LG(X)   &kp LG(Z)      &kp LG(LEFT)  &kp LG(RIGHT)                 &kp LG(BSPC)  &trans  &kp LG(END)      &kp LG(PG_DN)  &kp LG(ENTER)  &kp LG(SPACE)                      &kp LC(LS(LA(UP_ARROW)))  &kp LC(LS(LA(DOWN_ARROW)))  &kp LC(LS(LA(LBKT)))  &kp LC(LS(LA(N9)))  &trans
             >;
         };
