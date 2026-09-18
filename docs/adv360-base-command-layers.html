@@ -1,0 +1,690 @@
+<title>Sunaku &amp; the Command Layers</title>
+<!-- Companion to docs/adv360-hyper-layer.html — same wiki, same visual system.
+     Covers layer 0 (sunaku_base) and the two thumb-held command layers,
+     layer 7 (cmd_arw_nav_right_hand) and layer 8 (cmd_arw_nav_left_hand).
+     Source of truth is config/adv360.keymap; regenerate when bindings move. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,450;0,600;1,450&display=swap">
+<style>
+  :root {
+    --ground: #FFFCF0;
+    --raised: #F2F0E5;
+    --raised-2: #E6E4D9;
+    --line: #DAD8CE;
+    --line-soft: #E6E4D9;
+    --ink: #100F0F;
+    --ink-2: #403E3C;
+    --muted: #6F6E69;
+    --faint: #878580;
+    --accent: #5E409D;      /* purple-600 — holds a layer */
+    --accent-soft: rgba(94, 64, 157, 0.10);
+    --app: #205EA6;         /* blue-600 — ⌘ chords */
+    --app-soft: rgba(32, 94, 166, 0.09);
+    --win: #66800B;         /* green-600 — motion */
+    --win-soft: rgba(102, 128, 11, 0.11);
+    --sys: #BC5215;         /* orange-600 — holds a modifier */
+    --sys-soft: rgba(188, 82, 21, 0.09);
+    --mode: #A02F6F;        /* magenta-600 — changes the base */
+    --mode-soft: rgba(160, 47, 111, 0.09);
+    --meh: #24837B;         /* cyan-600 — ⌃⌥⇧ chords */
+    --meh-soft: rgba(36, 131, 123, 0.10);
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #100F0F; --raised: #1C1B1A; --raised-2: #282726;
+      --line: #343331; --line-soft: #282726;
+      --ink: #CECDC3; --ink-2: #B7B5AC; --muted: #878580; --faint: #6F6E69;
+      --accent: #8B7EC8; --accent-soft: rgba(139, 126, 200, 0.15);
+      --app: #4385BE;    --app-soft: rgba(67, 133, 190, 0.14);
+      --win: #879A39;    --win-soft: rgba(135, 154, 57, 0.14);
+      --sys: #DA702C;    --sys-soft: rgba(218, 112, 44, 0.13);
+      --mode: #CE5D97;   --mode-soft: rgba(206, 93, 151, 0.13);
+      --meh: #3AA99F;    --meh-soft: rgba(58, 169, 159, 0.14);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #100F0F; --raised: #1C1B1A; --raised-2: #282726;
+    --line: #343331; --line-soft: #282726;
+    --ink: #CECDC3; --ink-2: #B7B5AC; --muted: #878580; --faint: #6F6E69;
+    --accent: #8B7EC8; --accent-soft: rgba(139, 126, 200, 0.15);
+    --app: #4385BE;    --app-soft: rgba(67, 133, 190, 0.14);
+    --win: #879A39;    --win-soft: rgba(135, 154, 57, 0.14);
+    --sys: #DA702C;    --sys-soft: rgba(218, 112, 44, 0.13);
+    --mode: #CE5D97;   --mode-soft: rgba(206, 93, 151, 0.13);
+    --meh: #3AA99F;    --meh-soft: rgba(58, 169, 159, 0.14);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground); color: var(--ink);
+    font-family: var(--sans); font-size: 16.5px; font-weight: 450;
+    line-height: 1.62; margin: 0; padding: 0 20px 88px;
+  }
+  .col  { max-width: 740px;  margin: 0 auto; }
+  .wide { max-width: 1240px; margin: 0 auto; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header { padding: 64px 0 12px; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  }
+  .eyebrow b { color: var(--accent); font-weight: 600; }
+  h1 {
+    font-family: var(--mono); font-weight: 700; letter-spacing: -0.02em;
+    font-size: clamp(32px, 5.6vw, 50px); line-height: 1.05;
+    margin: 10px 0 18px; text-wrap: balance;
+  }
+  .standfirst { font-size: 19px; line-height: 1.55; color: var(--ink-2); max-width: 620px; margin: 0 0 8px; }
+  h2 {
+    font-family: var(--mono); font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
+    margin: 72px 0 14px; padding-top: 26px; border-top: 1px solid var(--line);
+    text-wrap: balance;
+  }
+  h2.tight { margin-top: 54px; }
+  h3 { font-family: var(--mono); font-size: 15px; font-weight: 600; margin: 30px 0 8px; }
+  p { margin: 0 0 16px; max-width: 660px; }
+  .aside { color: var(--muted); font-size: 14.5px; }
+  .fn { text-align: center; }
+
+  code, kbd {
+    font-family: var(--mono); font-size: 0.86em;
+    background: var(--raised); border: 1px solid var(--line);
+    border-radius: 4px; padding: 1px 5px; white-space: nowrap;
+  }
+  .chord { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.04em; white-space: nowrap; }
+
+  /* ---- the two thumbs ---- */
+  .thumbs-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 36px 0 10px; }
+  @media (max-width: 700px) { .thumbs-strip { grid-template-columns: 1fr; } }
+  .tnode { border: 1px solid var(--line); border-radius: 8px; padding: 17px 20px; background: var(--raised); }
+  .tnode.l { border-color: color-mix(in srgb, var(--app) 38%, var(--line)); }
+  .tnode.r { border-color: color-mix(in srgb, var(--meh) 38%, var(--line)); }
+  .tnode .hold { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .tnode .name { font-family: var(--mono); font-size: 18px; font-weight: 700; margin: 5px 0 2px; }
+  .tnode.l .name { color: var(--app); }
+  .tnode.r .name { color: var(--meh); }
+  .tnode .idx { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+  .tnode p { font-size: 14.5px; margin: 9px 0 0; color: var(--ink-2); }
+
+  /* ---- keyboard ---- */
+  .board-scroll { overflow-x: auto; margin: 30px 0 8px; padding: 4px 2px 10px; }
+  .board { display: flex; gap: 38px; justify-content: center; min-width: 1090px; }
+  .half { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; flex: 1 1 0; max-width: 520px; }
+  .half-label {
+    grid-column: 1 / -1; font-family: var(--mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--faint); padding: 0 2px 2px;
+  }
+  .half-label.r { text-align: right; }
+  .slot { }
+  .key {
+    background: var(--raised); border: 1px solid var(--line); border-bottom-width: 3px;
+    border-radius: 7px; min-height: 62px; padding: 7px 4px 5px;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 3px;
+    text-align: center;
+  }
+  .key .cap { font-family: var(--mono); font-size: 15px; font-weight: 700; line-height: 1; }
+  .key .act { font-family: var(--mono); font-size: 10px; line-height: 1.25; color: var(--ink-2); overflow-wrap: anywhere; }
+  .key.app  { background: var(--app-soft);  }  .key.app .cap  { color: var(--app);  }
+  .key.win  { background: var(--win-soft);  }  .key.win .cap  { color: var(--win);  }
+  .key.sys  { background: var(--sys-soft);  }  .key.sys .cap  { color: var(--sys);  }
+  .key.mode { background: var(--mode-soft); }  .key.mode .cap { color: var(--mode); }
+  .key.meh  { background: var(--meh-soft);  }  .key.meh .cap  { color: var(--meh);  }
+  .key.lay  { background: var(--accent-soft); } .key.lay .cap { color: var(--accent); }
+  .key.pass { border-bottom-width: 1px; background: transparent; }
+  .key.pass .cap { color: var(--faint); font-weight: 500; }
+  .key.pass .act { color: var(--faint); }
+  .key.entry { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--accent) 58%, transparent); }
+
+  .thumbrow { display: flex; gap: 38px; justify-content: center; min-width: 1090px; margin-top: 16px; }
+  .cluster { flex: 1 1 0; max-width: 520px; }
+  .cluster .clabel {
+    font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--faint); padding: 0 2px 6px;
+  }
+  .cluster.r .clabel { text-align: right; }
+  .crow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; max-width: 330px; }
+  .crow + .crow { margin-top: 6px; }
+  .cluster.r .crow { margin-left: auto; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: center;
+    font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin: 20px 0 4px;
+  }
+  .legend .sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 7px; vertical-align: baseline; }
+
+  /* ---- tables ---- */
+  .tscroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+  th { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); text-align: left; padding: 4px 14px 6px 0; }
+  td { border-top: 1px solid var(--line-soft); padding: 6.5px 14px 6.5px 0; vertical-align: top; }
+  td.c { font-family: var(--mono); font-size: 13px; white-space: nowrap; width: 1%; }
+  td .note { color: var(--muted); font-size: 13px; }
+
+  .rule {
+    font-family: var(--mono); font-size: 15px; color: var(--ink);
+    border-left: 3px solid var(--accent); padding: 4px 0 4px 18px; margin: 24px 0;
+  }
+  ul { padding-left: 22px; margin: 0 0 16px; max-width: 660px; }
+  li { margin-bottom: 9px; }
+  li::marker { color: var(--faint); }
+
+  footer { margin-top: 84px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 14px; color: var(--muted); }
+  footer .col { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+</style>
+
+<header class="col">
+  <div class="eyebrow">Adv360-Pro-ZMK wiki · <b>layers 0 · 7 · 8</b></div>
+  <h1>Sunaku &amp; the Command Layers</h1>
+  <p class="standfirst">The board at rest, and the two maps your thumbs reach for without leaving home.
+  Hold the right thumb's space bar and every key becomes a chord. Hold the left thumb's
+  backspace instead and you get a different one. This page draws all three.</p>
+</header>
+
+<section class="col">
+  <h2 class="tight">One base, two thumbs</h2>
+  <p>Layer 0 is where typing happens — the sunaku alphabet with mods on the home row.
+  Neither command layer has a key of its own: each is held by a thumb key that still types
+  its own legend on a tap. That is the whole trick. Space and backspace keep working, and
+  holding either one swaps the board under your fingers for as long as you keep it down.</p>
+
+  <div class="thumbs-strip">
+    <div class="tnode l">
+      <span class="hold">hold left thumb ⌫</span>
+      <div class="name">command left</div>
+      <div class="idx"><code>cmd_arw_nav_left_hand</code> · layer 8</div>
+      <p>Edit verbs under the left home row, raw arrow keys under the right. The layer you
+      hold while rewriting a line.</p>
+    </div>
+    <div class="tnode r">
+      <span class="hold">hold right thumb ␣</span>
+      <div class="name">command right</div>
+      <div class="idx"><code>cmd_arw_nav_right_hand</code> · layer 7</div>
+      <p>⌘ chords across the left hand, Meh chords across the right. The layer you hold
+      while driving an app.</p>
+    </div>
+  </div>
+  <p class="aside">The node names read backwards at first glance: <code>…_right_hand</code> is the one the
+  <em>right</em> thumb holds, not the one that remaps the right hand. Both carry the
+  display name <code>Nav</code>, so the on-board layer readout cannot tell them apart.</p>
+</section>
+
+<section class="wide">
+  <h2 class="col" style="max-width:740px">Layer 0 — Base_Sunaku</h2>
+  <p class="col">The default layer since the sunaku base took over as layer 0. Caps are what
+  the key types; the line underneath is what it does when you hold it. Dimmed keys are
+  physically there but bound to <code>&amp;none</code>; empty cells are positions the Adv360 does not have.</p>
+
+  <div class="board-scroll">
+    <div class="board">
+      <div class="half">
+        <div class="half-label">left half · outer → inner</div>
+        <div class="key mode"><span class="cap">→3</span><span class="act">go Cursor</span></div>
+        <div class="key"><span class="cap">1</span><span class="act"></span></div>
+        <div class="key"><span class="cap">(</span><span class="act"></span></div>
+        <div class="key"><span class="cap">_</span><span class="act"></span></div>
+        <div class="key"><span class="cap">"</span><span class="act"></span></div>
+        <div class="key"><span class="cap">5</span><span class="act"></span></div>
+        <div class="key mode"><span class="cap">◇2</span><span class="act">sticky Tharshi</span></div>
+
+        <div class="key"><span class="cap">?</span><span class="act"></span></div>
+        <div class="key"><span class="cap">Q</span><span class="act"></span></div>
+        <div class="key"><span class="cap">P</span><span class="act"></span></div>
+        <div class="key"><span class="cap">U</span><span class="act"></span></div>
+        <div class="key"><span class="cap">Y</span><span class="act"></span></div>
+        <div class="key"><span class="cap">;</span><span class="act"></span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">unbound</span></div>
+
+        <div class="key"><span class="cap">esc</span><span class="act"></span></div>
+        <div class="key lay"><span class="cap">A</span><span class="act">Hyper 12</span></div>
+        <div class="key lay"><span class="cap">O</span><span class="act">TextNav 13</span></div>
+        <div class="key sys"><span class="cap">E</span><span class="act">⇧</span></div>
+        <div class="key lay"><span class="cap">I</span><span class="act">Symbols 5</span></div>
+        <div class="key"><span class="cap">G</span><span class="act"></span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">unbound</span></div>
+
+        <div class="key"><span class="cap">⇧</span><span class="act"></span></div>
+        <div class="key sys"><span class="cap">X</span><span class="act">⌘⇧</span></div>
+        <div class="key lay"><span class="cap">J</span><span class="act">Fn/Media 4</span></div>
+        <div class="key"><span class="cap">,</span><span class="act"></span></div>
+        <div class="key"><span class="cap">=</span><span class="act"></span></div>
+        <div class="key"><span class="cap">'</span><span class="act"></span></div>
+        <div class="slot"></div>
+
+        <div class="key mode"><span class="cap">→1</span><span class="act">go Urob</span></div>
+        <div class="key"><span class="cap">caps</span><span class="act"></span></div>
+        <div class="key"><span class="cap">Z</span><span class="act"></span></div>
+        <div class="key"><span class="cap">←</span><span class="act"></span></div>
+        <div class="key"><span class="cap">→</span><span class="act"></span></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+
+      <div class="half">
+        <div class="half-label r">right half · inner → outer</div>
+        <div class="key lay"><span class="cap">sys</span><span class="act">System 11</span></div>
+        <div class="key"><span class="cap">6</span><span class="act"></span></div>
+        <div class="key"><span class="cap">0</span><span class="act"></span></div>
+        <div class="key"><span class="cap">1</span><span class="act"></span></div>
+        <div class="key"><span class="cap">;</span><span class="act">⇧ → :</span></div>
+        <div class="key"><span class="cap">0</span><span class="act">⇧ → ]</span></div>
+        <div class="key"><span class="cap">-</span><span class="act">⇧ → _</span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">unbound</span></div>
+        <div class="key"><span class="cap">K</span><span class="act"></span></div>
+        <div class="key"><span class="cap">F</span><span class="act"></span></div>
+        <div class="key"><span class="cap">L</span><span class="act"></span></div>
+        <div class="key"><span class="cap">R</span><span class="act"></span></div>
+        <div class="key"><span class="cap">B</span><span class="act"></span></div>
+        <div class="key"><span class="cap">\</span><span class="act"></span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">unbound</span></div>
+        <div class="key"><span class="cap">D</span><span class="act"></span></div>
+        <div class="key lay"><span class="cap">H</span><span class="act">Symbols 5</span></div>
+        <div class="key sys"><span class="cap">T</span><span class="act">⇧</span></div>
+        <div class="key lay"><span class="cap">N</span><span class="act">Numpad 6</span></div>
+        <div class="key lay"><span class="cap">S</span><span class="act">Hyper 12</span></div>
+        <div class="key"><span class="cap">⇥</span><span class="act"></span></div>
+
+        <div class="slot"></div>
+        <div class="key"><span class="cap">C</span><span class="act"></span></div>
+        <div class="key"><span class="cap">M</span><span class="act"></span></div>
+        <div class="key"><span class="cap">W</span><span class="act"></span></div>
+        <div class="key lay"><span class="cap">V</span><span class="act">Fn/Media 4</span></div>
+        <div class="key sys"><span class="cap">.</span><span class="act">⌘⇧</span></div>
+        <div class="key"><span class="cap">⇧</span><span class="act"></span></div>
+
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="key"><span class="cap">↑</span><span class="act"></span></div>
+        <div class="key"><span class="cap">↓</span><span class="act"></span></div>
+        <div class="key"><span class="cap">{</span><span class="act"></span></div>
+        <div class="key"><span class="cap">9</span><span class="act"></span></div>
+        <div class="key mode"><span class="cap">say</span><span class="act">types the layer name</span></div>
+      </div>
+    </div>
+
+    <div class="thumbrow">
+      <div class="cluster">
+        <div class="clabel">left thumb</div>
+        <div class="crow">
+          <div class="key sys"><span class="cap">⌃</span><span class="act"></span></div>
+          <div class="key sys"><span class="cap">⌥</span><span class="act"></span></div>
+          <div class="key sys"><span class="cap">⇧</span><span class="act"></span></div>
+        </div>
+        <div class="crow">
+          <div class="key lay entry"><span class="cap">⌫</span><span class="act">hold → cmd left 8<br>⇧ → ⌥⌫ word</span></div>
+          <div class="key sys"><span class="cap">esc</span><span class="act">hold → ⌃</span></div>
+          <div class="key sys"><span class="cap">⌥</span><span class="act"></span></div>
+        </div>
+      </div>
+      <div class="cluster r">
+        <div class="clabel">right thumb</div>
+        <div class="crow">
+          <div class="key sys"><span class="cap">⌘</span><span class="act"></span></div>
+          <div class="key lay"><span class="cap">vis</span><span class="act">tap sticky, 2× lock<br>Visual Nav 10</span></div>
+          <div class="key"><span class="cap">caps</span><span class="act"></span></div>
+        </div>
+        <div class="crow">
+          <div class="key sys"><span class="cap">⌥</span><span class="act"></span></div>
+          <div class="key sys"><span class="cap">⏎</span><span class="act">hold → ⌃</span></div>
+          <div class="key lay entry"><span class="cap">␣</span><span class="act">hold → cmd right 7</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--accent)"></span>hold reaches a layer</span>
+    <span><span class="sw" style="background:var(--sys)"></span>hold is a modifier</span>
+    <span><span class="sw" style="background:var(--mode)"></span>changes the base</span>
+    <span><span class="sw" style="background:var(--faint)"></span>unbound</span>
+    <span><span class="sw" style="box-shadow:inset 0 0 0 2px var(--accent)"></span>command-layer entry</span>
+  </div>
+</section>
+
+<section class="col">
+  <h2>What the home row costs you</h2>
+  <p>Every mod on the home row is a <code>tap-preferred</code> hold-tap with <code>retro-tap</code>, so a key that
+  times out still emits its letter rather than swallowing it. Two guards keep rolls from
+  turning into chords: a positional one, and an idle one.</p>
+
+  <div class="rule">a hold only counts if the next key is on the other hand or a thumb</div>
+
+  <p>That is <code>hold-trigger-key-positions</code>, set to the opposite half plus the thumb cluster on
+  every sunaku mod. Rolling <span class="chord">A → O</span> inside the left hand can never produce a
+  layer; reaching <span class="chord">A → H</span> across the board always can. On top of it,
+  <code>require-prior-idle-ms</code> refuses to start a hold that follows too close behind the previous
+  keystroke — mid-word, the mods are simply switched off.</p>
+
+  <div class="tscroll"><table>
+    <tr><th></th><th>left hand</th><th>right hand</th></tr>
+    <tr><td class="c">tapping term</td><td>270 ms</td><td>200 ms</td></tr>
+    <tr><td class="c">quick tap</td><td>300 ms</td><td>300 ms <span class="note">(200 on S)</span></td></tr>
+    <tr><td class="c">prior idle</td><td>70 ms</td><td>70 ms</td></tr>
+    <tr><td class="c">guard</td><td>right half + thumbs</td><td>left half + thumbs</td></tr>
+  </table></div>
+  <p class="aside">The right hand is tuned 70 ms faster than the left throughout, and the same numbers
+  carry down to the bottom-row holds on X, J, V and the period key.</p>
+
+  <h3>Every hold on layer 0</h3>
+  <div class="tscroll"><table>
+    <tr><th>hold</th><th>reaches</th></tr>
+    <tr><td class="c">A · S</td><td>Hyper, layer 12 <span class="note">— the ⌃⌥⇧⌘ namespace, drawn on its own page</span></td></tr>
+    <tr><td class="c">O</td><td>TextNav, layer 13 <span class="note">— the vim layer</span></td></tr>
+    <tr><td class="c">I · H</td><td>Symbols, layer 5</td></tr>
+    <tr><td class="c">N</td><td>Numpad, layer 6</td></tr>
+    <tr><td class="c">J · V</td><td>Fn / Media, layer 4</td></tr>
+    <tr><td class="c">E · T</td><td>Shift <span class="note">— left and right respectively</span></td></tr>
+    <tr><td class="c">X · .</td><td><span class="chord">⌘⇧</span> <span class="note">— both send Cmd and Shift together, not Cmd alone</span></td></tr>
+    <tr><td class="c">⌫ · ␣</td><td>the two command layers</td></tr>
+  </table></div>
+</section>
+
+<section class="wide">
+  <h2 class="col" style="max-width:740px">Layer 7 — command right</h2>
+  <p class="col">Held by the right thumb on space. The left hand turns into plain <span class="chord">⌘</span>
+  chords in their familiar places; the right hand turns into <span class="chord">⌃⌥⇧</span> — Meh — which
+  no macOS app claims, so Hammerspoon can answer it. The right home row is the exception
+  and stays on <span class="chord">⌘</span>. Caps show the base legend, the line underneath shows the chord sent.</p>
+
+  <div class="board-scroll">
+    <div class="board">
+      <div class="half">
+        <div class="half-label">left half · ⌘ everywhere</div>
+        <div class="key app"><span class="cap">→3</span><span class="act">⌘=</span></div>
+        <div class="key app"><span class="cap">1</span><span class="act">⌘1</span></div>
+        <div class="key app"><span class="cap">(</span><span class="act">⌘2</span></div>
+        <div class="key app"><span class="cap">_</span><span class="act">⌘3</span></div>
+        <div class="key app"><span class="cap">"</span><span class="act">⌘4</span></div>
+        <div class="key app"><span class="cap">5</span><span class="act">⌘5</span></div>
+        <div class="key pass"><span class="cap">◇2</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">?</span><span class="act">⌘?</span></div>
+        <div class="key app"><span class="cap">Q</span><span class="act">⌘Q</span></div>
+        <div class="key app"><span class="cap">P</span><span class="act">⌘P</span></div>
+        <div class="key app"><span class="cap">U</span><span class="act">⌘U</span></div>
+        <div class="key app"><span class="cap">Y</span><span class="act">⌘Y</span></div>
+        <div class="key app"><span class="cap">;</span><span class="act">⌘;</span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">esc</span><span class="act">⌘esc</span></div>
+        <div class="key app"><span class="cap">A</span><span class="act">⌘A</span></div>
+        <div class="key app"><span class="cap">O</span><span class="act">⌘O</span></div>
+        <div class="key app"><span class="cap">E</span><span class="act">⌘K †</span></div>
+        <div class="key app"><span class="cap">I</span><span class="act">⌘I</span></div>
+        <div class="key app"><span class="cap">G</span><span class="act">⌘G</span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">⇧</span><span class="act">⌘⇧</span></div>
+        <div class="key app"><span class="cap">X</span><span class="act">⌘X</span></div>
+        <div class="key app"><span class="cap">J</span><span class="act">⌘J</span></div>
+        <div class="key app"><span class="cap">,</span><span class="act">⌘,</span></div>
+        <div class="key app"><span class="cap">=</span><span class="act">⌘=</span></div>
+        <div class="key app"><span class="cap">'</span><span class="act">⌘'</span></div>
+        <div class="slot"></div>
+
+        <div class="key pass"><span class="cap">→1</span><span class="act">trans</span></div>
+        <div class="key app"><span class="cap">caps</span><span class="act">⌘X</span></div>
+        <div class="key app"><span class="cap">Z</span><span class="act">⌘Z</span></div>
+        <div class="key win"><span class="cap">←</span><span class="act">⌘←</span></div>
+        <div class="key win"><span class="cap">→</span><span class="act">⌘→</span></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+
+      <div class="half">
+        <div class="half-label r">right half · Meh, except the home row</div>
+        <div class="key pass"><span class="cap">sys</span><span class="act">trans</span></div>
+        <div class="key meh"><span class="cap">6</span><span class="act">⌃⌥⇧6</span></div>
+        <div class="key meh"><span class="cap">0</span><span class="act">⌃⌥⇧7</span></div>
+        <div class="key meh"><span class="cap">1</span><span class="act">⌃⌥⇧8</span></div>
+        <div class="key meh"><span class="cap">;</span><span class="act">⌃⌥⇧9</span></div>
+        <div class="key meh"><span class="cap">0</span><span class="act">⌃⌥⇧0</span></div>
+        <div class="key meh"><span class="cap">-</span><span class="act">⌃⌥⇧-</span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+        <div class="key meh"><span class="cap">K</span><span class="act">⌃⌥⇧K</span></div>
+        <div class="key meh"><span class="cap">F</span><span class="act">⌃⌥⇧F</span></div>
+        <div class="key meh"><span class="cap">L</span><span class="act">⌃⌥⇧L</span></div>
+        <div class="key meh"><span class="cap">R</span><span class="act">⌃⌥⇧R</span></div>
+        <div class="key meh"><span class="cap">B</span><span class="act">⌃⌥⇧B</span></div>
+        <div class="key meh"><span class="cap">\</span><span class="act">⌃⌥⇧\</span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+        <div class="key app"><span class="cap">D</span><span class="act">⌘D</span></div>
+        <div class="key app"><span class="cap">H</span><span class="act">⌘H</span></div>
+        <div class="key app"><span class="cap">T</span><span class="act">⌘T</span></div>
+        <div class="key app"><span class="cap">N</span><span class="act">⌘N</span></div>
+        <div class="key app"><span class="cap">S</span><span class="act">⌘S</span></div>
+        <div class="key meh"><span class="cap">⇥</span><span class="act">⌃⌥⇧⇥</span></div>
+
+        <div class="slot"></div>
+        <div class="key meh"><span class="cap">C</span><span class="act">⌃⌥⇧C</span></div>
+        <div class="key meh"><span class="cap">M</span><span class="act">⌃⌥⇧M</span></div>
+        <div class="key meh"><span class="cap">W</span><span class="act">⌃⌥⇧W</span></div>
+        <div class="key meh"><span class="cap">V</span><span class="act">⌃⌥⇧V</span></div>
+        <div class="key meh"><span class="cap">.</span><span class="act">⌃⌥⇧.</span></div>
+        <div class="key pass"><span class="cap">⇧</span><span class="act">trans</span></div>
+
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="key meh"><span class="cap">↑</span><span class="act">⌃⌥⇧↑</span></div>
+        <div class="key meh"><span class="cap">↓</span><span class="act">⌃⌥⇧↓</span></div>
+        <div class="key meh"><span class="cap">{</span><span class="act">⌃⌥⇧[</span></div>
+        <div class="key meh"><span class="cap">9</span><span class="act">⌃⌥⇧9</span></div>
+        <div class="key pass"><span class="cap">say</span><span class="act">trans</span></div>
+      </div>
+    </div>
+
+    <div class="thumbrow">
+      <div class="cluster">
+        <div class="clabel">left thumb</div>
+        <div class="crow">
+          <div class="key pass"><span class="cap">⌃</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">⌥</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">⇧</span><span class="act">trans</span></div>
+        </div>
+        <div class="crow">
+          <div class="key app"><span class="cap">⌫</span><span class="act">⌘⌫</span></div>
+          <div class="key pass"><span class="cap">esc</span><span class="act">trans</span></div>
+          <div class="key app"><span class="cap">⌥</span><span class="act">⌘end</span></div>
+        </div>
+      </div>
+      <div class="cluster r">
+        <div class="clabel">right thumb · space is held</div>
+        <div class="crow">
+          <div class="key pass"><span class="cap">⌘</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">vis</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">caps</span><span class="act">trans</span></div>
+        </div>
+        <div class="crow">
+          <div class="key app"><span class="cap">⌥</span><span class="act">⌘pgdn</span></div>
+          <div class="key app"><span class="cap">⏎</span><span class="act">⌘⏎</span></div>
+          <div class="key app entry"><span class="cap">␣</span><span class="act">⌘␣ on itself</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--app)"></span>⌘ chord</span>
+    <span><span class="sw" style="background:var(--meh)"></span>Meh chord ⌃⌥⇧</span>
+    <span><span class="sw" style="background:var(--win)"></span>line motion</span>
+    <span><span class="sw" style="background:var(--faint)"></span>transparent — falls through to base</span>
+  </div>
+  <p class="aside fn">† The E seat is the one break in the pattern: it sends <span class="chord">⌘K</span>, not ⌘E.</p>
+</section>
+
+<section class="wide">
+  <h2 class="col" style="max-width:740px">Layer 8 — command left</h2>
+  <p class="col">Held by the left thumb on backspace, and a different kind of layer: no Meh at
+  all. The left hand collects the edit verbs — select all, undo, copy, paste — under the
+  strongest fingers, and the right home row drops to bare arrow keys, so the hand that
+  normally types <span class="chord">D H T N</span> steers instead.</p>
+
+  <div class="board-scroll">
+    <div class="board">
+      <div class="half">
+        <div class="half-label">left half · the edit verbs</div>
+        <div class="key app"><span class="cap">→3</span><span class="act">⌘=</span></div>
+        <div class="key app"><span class="cap">1</span><span class="act">⌘1</span></div>
+        <div class="key app"><span class="cap">(</span><span class="act">⌘2</span></div>
+        <div class="key app"><span class="cap">_</span><span class="act">⌘3</span></div>
+        <div class="key app"><span class="cap">"</span><span class="act">⌘4</span></div>
+        <div class="key app"><span class="cap">5</span><span class="act">⌘5</span></div>
+        <div class="key pass"><span class="cap">◇2</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">?</span><span class="act">⌘⇥</span></div>
+        <div class="key app"><span class="cap">Q</span><span class="act">⌘Q</span></div>
+        <div class="key app"><span class="cap">P</span><span class="act">⌘⇧Z</span></div>
+        <div class="key app"><span class="cap">U</span><span class="act">⌘U</span></div>
+        <div class="key app"><span class="cap">Y</span><span class="act">⌘Y</span></div>
+        <div class="key app"><span class="cap">;</span><span class="act">⌘P</span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">esc</span><span class="act">⌘esc</span></div>
+        <div class="key app"><span class="cap">A</span><span class="act">⌘A</span></div>
+        <div class="key app"><span class="cap">O</span><span class="act">⌘Z</span></div>
+        <div class="key app"><span class="cap">E</span><span class="act">⌘C</span></div>
+        <div class="key app"><span class="cap">I</span><span class="act">⌘V</span></div>
+        <div class="key app"><span class="cap">G</span><span class="act">⌘.</span></div>
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+
+        <div class="key app"><span class="cap">⇧</span><span class="act">⌘⇧</span></div>
+        <div class="key app"><span class="cap">X</span><span class="act">⌘Z</span></div>
+        <div class="key app"><span class="cap">J</span><span class="act">⌘,</span></div>
+        <div class="key app"><span class="cap">,</span><span class="act">⌘C</span></div>
+        <div class="key app"><span class="cap">=</span><span class="act">⌘V</span></div>
+        <div class="key app"><span class="cap">'</span><span class="act">⌘⌥I</span></div>
+        <div class="slot"></div>
+
+        <div class="key pass"><span class="cap">→1</span><span class="act">trans</span></div>
+        <div class="key app"><span class="cap">caps</span><span class="act">⌘X</span></div>
+        <div class="key app"><span class="cap">Z</span><span class="act">⌘Z</span></div>
+        <div class="key win"><span class="cap">←</span><span class="act">⌘←</span></div>
+        <div class="key win"><span class="cap">→</span><span class="act">⌘→</span></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+
+      <div class="half">
+        <div class="half-label r">right half · arrows on the home row</div>
+        <div class="key pass"><span class="cap">sys</span><span class="act">trans</span></div>
+        <div class="key app"><span class="cap">6</span><span class="act">⌘6</span></div>
+        <div class="key app"><span class="cap">0</span><span class="act">⌘7</span></div>
+        <div class="key sys"><span class="cap">1</span><span class="act">select word</span></div>
+        <div class="key app"><span class="cap">;</span><span class="act">⌘9</span></div>
+        <div class="key app"><span class="cap">0</span><span class="act">⌘0</span></div>
+        <div class="key app"><span class="cap">-</span><span class="act">⌘[</span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+        <div class="key app"><span class="cap">K</span><span class="act">⌘E</span></div>
+        <div class="key app"><span class="cap">F</span><span class="act">⌘.</span></div>
+        <div class="key app"><span class="cap">L</span><span class="act">⌘L</span></div>
+        <div class="key app"><span class="cap">R</span><span class="act">⌘R</span></div>
+        <div class="key app"><span class="cap">B</span><span class="act">⌘B</span></div>
+        <div class="key app"><span class="cap">\</span><span class="act">⌘\</span></div>
+
+        <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
+        <div class="key win"><span class="cap">D</span><span class="act">←</span></div>
+        <div class="key win"><span class="cap">H</span><span class="act">↓</span></div>
+        <div class="key win"><span class="cap">T</span><span class="act">↑</span></div>
+        <div class="key win"><span class="cap">N</span><span class="act">→</span></div>
+        <div class="key app"><span class="cap">S</span><span class="act">⌘S</span></div>
+        <div class="key pass"><span class="cap">⇥</span><span class="act">trans</span></div>
+
+        <div class="slot"></div>
+        <div class="key app"><span class="cap">C</span><span class="act">⌘N</span></div>
+        <div class="key app"><span class="cap">M</span><span class="act">⌘M</span></div>
+        <div class="key app"><span class="cap">W</span><span class="act">⌘W</span></div>
+        <div class="key app"><span class="cap">V</span><span class="act">⌘⇧N</span></div>
+        <div class="key app"><span class="cap">.</span><span class="act">⌘F</span></div>
+        <div class="key app"><span class="cap">⇧</span><span class="act">⌘⇧</span></div>
+
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="key win"><span class="cap">↑</span><span class="act">⌘↑</span></div>
+        <div class="key win"><span class="cap">↓</span><span class="act">⌘↓</span></div>
+        <div class="key app"><span class="cap">{</span><span class="act">⌘⇧G</span></div>
+        <div class="key app"><span class="cap">9</span><span class="act">⌘G</span></div>
+        <div class="key pass"><span class="cap">say</span><span class="act">trans</span></div>
+      </div>
+    </div>
+
+    <div class="thumbrow">
+      <div class="cluster">
+        <div class="clabel">left thumb · backspace is held</div>
+        <div class="crow">
+          <div class="key pass"><span class="cap">⌃</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">⌥</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">⇧</span><span class="act">trans</span></div>
+        </div>
+        <div class="crow">
+          <div class="key app entry"><span class="cap">⌫</span><span class="act">⌘⌫ on itself</span></div>
+          <div class="key pass"><span class="cap">esc</span><span class="act">trans</span></div>
+          <div class="key app"><span class="cap">⌥</span><span class="act">⌘end</span></div>
+        </div>
+      </div>
+      <div class="cluster r">
+        <div class="clabel">right thumb</div>
+        <div class="crow">
+          <div class="key pass"><span class="cap">⌘</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">vis</span><span class="act">trans</span></div>
+          <div class="key pass"><span class="cap">caps</span><span class="act">trans</span></div>
+        </div>
+        <div class="crow">
+          <div class="key app"><span class="cap">⌥</span><span class="act">⌘pgdn</span></div>
+          <div class="key app"><span class="cap">⏎</span><span class="act">⌘⏎</span></div>
+          <div class="key app"><span class="cap">␣</span><span class="act">⌘␣</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--app)"></span>⌘ chord</span>
+    <span><span class="sw" style="background:var(--win)"></span>raw arrow / line motion</span>
+    <span><span class="sw" style="background:var(--sys)"></span>macro</span>
+    <span><span class="sw" style="background:var(--faint)"></span>transparent — falls through to base</span>
+  </div>
+  <p class="aside fn">The right-hand 1 seat — the old 8 key — runs <code>mac_sel_word</code>: left, then ⌥left, then ⌥⇧right — three taps
+  5 ms apart that land the caret at a word start and select through it.</p>
+</section>
+
+<section class="col">
+  <h2>Where these sit in the stack</h2>
+  <p>Layer numbers are positional in <code>adv360.keymap</code> — the order the nodes appear is the order
+  ZMK indexes them — so removing a layer renumbers everything below it. Two layers came out
+  recently, which moved Hyper from 14 to 12 and TextNav from 15 to 13.</p>
+  <div class="tscroll"><table>
+    <tr><th>#</th><th>node</th><th></th></tr>
+    <tr><td class="c">0</td><td class="c">sunaku_base</td><td>the default base <span class="note">— drawn above</span></td></tr>
+    <tr><td class="c">1 · 2</td><td class="c">urob_base · tharshi_base</td><td>the other two bases</td></tr>
+    <tr><td class="c">3 · 4</td><td class="c">cursor · fn_media</td><td></td></tr>
+    <tr><td class="c">5 · 6</td><td class="c">sym · num</td><td>symbols, numpad</td></tr>
+    <tr><td class="c">7</td><td class="c">cmd_arw_nav_right_hand</td><td>command right <span class="note">— hold space</span></td></tr>
+    <tr><td class="c">8</td><td class="c">cmd_arw_nav_left_hand</td><td>command left <span class="note">— hold backspace</span></td></tr>
+    <tr><td class="c">9 · 10</td><td class="c">text_nav_urob · visual_navigation</td><td></td></tr>
+    <tr><td class="c">11</td><td class="c">system</td><td>reset, USB ⇄ BLE output</td></tr>
+    <tr><td class="c">12</td><td class="c">hyper</td><td>the ⌃⌥⇧⌘ namespace</td></tr>
+    <tr><td class="c">13</td><td class="c">text_nav</td><td>the vim layer</td></tr>
+    <tr><td class="c">14</td><td class="c">simple</td><td>a base with no hold-taps at all</td></tr>
+  </table></div>
+  <p class="aside">From layer 0 you can reach three of the bases directly: the outer top-left key goes to
+  Cursor, the outer bottom-left key goes to Urob, and the inner top-left key sticks Tharshi for
+  one keypress.</p>
+</section>
+
+<footer class="wide">
+  <div class="col">
+    <span>Drawn from <code>config/adv360.keymap</code></span>
+    <span>Companion page: the Hyper layer</span>
+    <span>Adv360-Pro-ZMK</span>
+  </div>
+</footer>
