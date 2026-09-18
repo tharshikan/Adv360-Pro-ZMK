@@ -289,7 +289,7 @@
         <div class="key app"><span class="cap">O</span><span class="act">Chrome ⛶</span></div>
         <div class="key app"><span class="cap">E</span><span class="act">CLion ⛶</span></div>
         <div class="key app"><span class="cap">I</span><span class="act">Claude ⛶</span></div>
-        <div class="key app"><span class="cap">G</span><span class="act">Finder go-menu</span></div>
+        <div class="key app"><span class="cap">G</span><span class="act">finder go card</span></div>
 
         <div class="key win"><span class="cap">X</span><span class="act">close all here</span></div>
         <div class="key app"><span class="cap">J</span><span class="act">Antigravity</span></div>
@@ -300,13 +300,13 @@
 
       <div class="half">
         <div class="half-label r">right · inner → pinky</div>
-        <div class="key sys"><span class="cap">6</span><span class="act">audio picker</span></div>
+        <div class="key sys"><span class="cap">6</span><span class="act">audio card</span></div>
         <div class="key sys"><span class="cap">7</span><span class="act">brightness −</span></div>
         <div class="key sys"><span class="cap">8</span><span class="act">night shift ⇄</span></div>
         <div class="key sys"><span class="cap">9</span><span class="act">brightness +</span></div>
         <div class="key sys"><span class="cap">0</span><span class="act">bluetooth card</span></div>
 
-        <div class="key sys"><span class="cap">K</span><span class="act">quit-apps list</span></div>
+        <div class="key sys"><span class="cap">K</span><span class="act">quit apps card</span></div>
         <div class="key mode"><span class="cap">F</span><span class="act">focus mode</span></div>
         <div class="key mode"><span class="cap">L</span><span class="act">CP split 65/35</span></div>
         <div class="key win"><span class="cap">R</span><span class="act">restore swept</span></div>
@@ -372,7 +372,7 @@
         <tr><td class="c">H · T · N · S</td><td>Finder · WebStorm · Notes · Slack <span class="note">(right home row — t for TypeScript)</span></td></tr>
         <tr><td class="c">J</td><td>Antigravity</td></tr>
         <tr><td class="c">;</td><td>reassign any slot via chooser</td></tr>
-        <tr><td class="c">G</td><td>Finder Go menu from anywhere — Go to Folder (⌘⇧G), Downloads, Projects, AirDrop, Connect to Server, Trash, …</td></tr>
+        <tr><td class="c">G</td><td>Finder go card from anywhere — Go to Folder (⌘⇧G), Downloads, Projects, AirDrop, Connect to Server, Trash, …</td></tr>
       </table></div>
       <p class="aside">Assignments persist machine-locally in <code>hs.settings</code> — the table in
       <code>init.lua</code> only seeds a fresh machine. Inspect or change from a shell:
@@ -412,16 +412,21 @@
         <tr><td class="c">V</td><td>type clipboard as keystrokes — defeats paste-blocking fields</td></tr>
         <tr><td class="c">Z</td><td>caffeine — keep the display awake <span class="note">(menubar ☕; z for zzz)</span></td></tr>
         <tr><td class="c">0</td><td>Bluetooth card — the radio and every paired device on a floating flexoki panel, the handoff note's palette: ↑↓ move, ⏎ flips the row it lands on, esc puts it away; hover and click work too, and it never takes key focus. Dropping a connected keyboard, mouse or trackpad — or the radio under one — wants a literal “y”, which ⏎ cannot reach: the Adv360 rides on Bluetooth <span class="note">(through HSBluetooth, a small helper app built locally: Hammerspoon.app itself isn't allowed near Bluetooth)</span></td></tr>
-        <tr><td class="c">6</td><td>audio output picker — arrows/type, Enter switches; current output marked, Teams/Zoom virtual devices filtered, and paired-but-disconnected Bluetooth headphones &amp; speakers connect &amp; switch on selection</td></tr>
+        <tr><td class="c">6</td><td>audio out card — every real output with the current one marked, Teams/Zoom virtual devices filtered; paired-but-disconnected Bluetooth headphones &amp; speakers connect through the helper first, then the switch lands</td></tr>
         <tr><td class="c">7 · 9</td><td>display brightness down · up — via DisplayServices, so it drives the Studio Display too; 🔆 alert shows the level, repeats while held</td></tr>
         <tr><td class="c">8</td><td>toggle Night Shift <span class="note">(a 30-line CoreBrightness shim in the repo, built locally)</span></td></tr>
         <tr><td class="c">=</td><td>toggle system-wide light/dark mode — Ghostty and everything following the OS flip with it</td></tr>
         <tr><td class="c">3</td><td>hide/show the menu bar — hidden, it peeks back when the pointer touches the top edge</td></tr>
         <tr><td class="c">4</td><td>daily handoff note — today's note in nvim in a fresh Ghostty window, cursor on the first bullet under “Did”; a new day is built from the last note that actually exists, so weekends resolve to the last day worked <span class="note">(placeholder chord; notes live outside the repo, see handoff.lua)</span></td></tr>
         <tr><td class="c">5</td><td>morning card — Start here · Waiting on · Owe as a floating flexoki panel, no editor and no window; same chord, esc or a click dismisses it <span class="note">(placeholder chord)</span></td></tr>
-        <tr><td class="c">K</td><td>app killer — arrows/type to pick a running app, Enter quits it and the list reopens, Esc to finish <span class="note">(app-wide, not desk-scoped)</span></td></tr>
+        <tr><td class="c">K</td><td>quit apps card — every Dock app with its own icon and window count; ⏎ quits the one under the cursor and the list refreshes in place so you can keep culling, esc when done <span class="note">(app-wide, not desk-scoped; a graceful quit, so unsaved work still gets its prompt)</span></td></tr>
         <tr><td class="c">,</td><td>presses ⌘, — the frontmost app's own settings <span class="note">(System Settings still opens when Finder or the desktop is front)</span></td></tr>
       </table></div>
+      <p class="aside"><b>0 · 6 · K · G draw the same card</b> — a floating flexoki panel in the clock card's palette:
+      ↑↓ move, typing filters, ⏎ acts on the row it lands on, esc clears the filter and then puts it away. It is a canvas,
+      not a chooser, so it never takes key focus; its modal owns those keys only while it is up, and a card left open
+      closes itself after 90s. Rows carry their state in colour — green live, blue ready, muted asleep, amber mid-flight —
+      and anything that could cut off the keyboard under your hands asks a question only a literal “y” answers.</p>
       <p class="aside">Config reload lives on the other namespace: <span class="chord">meh + R</span>.</p>
     </div>
   </div>
