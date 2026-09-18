@@ -276,8 +276,8 @@
         <div class="key mode"><span class="cap">1</span><span class="act">“work” layout</span></div>
         <div class="key mode"><span class="cap">2</span><span class="act">“cp” layout</span></div>
         <div class="key sys"><span class="cap">3</span><span class="act">menu bar ⇄</span></div>
-        <div class="key pass"><span class="cap">4</span><span class="act"></span></div>
-        <div class="key sys"><span class="cap">5</span><span class="act">bluetooth picker</span></div>
+        <div class="key app"><span class="cap">4</span><span class="act">handoff note</span></div>
+        <div class="key sys"><span class="cap">5</span><span class="act">morning card</span></div>
 
         <div class="key win"><span class="cap">Q</span><span class="act">solo: max + sweep</span></div>
         <div class="key sys"><span class="cap">P</span><span class="act">zoom out</span></div>
@@ -304,7 +304,7 @@
         <div class="key sys"><span class="cap">7</span><span class="act">brightness −</span></div>
         <div class="key sys"><span class="cap">8</span><span class="act">night shift ⇄</span></div>
         <div class="key sys"><span class="cap">9</span><span class="act">brightness +</span></div>
-        <div class="key pass"><span class="cap">0</span><span class="act"></span></div>
+        <div class="key sys"><span class="cap">0</span><span class="act">bluetooth picker</span></div>
 
         <div class="key sys"><span class="cap">K</span><span class="act">quit-apps list</span></div>
         <div class="key mode"><span class="cap">F</span><span class="act">focus mode</span></div>
@@ -348,8 +348,10 @@
     <span><span class="sw" style="background:var(--faint)"></span>passes through</span>
     <span><span class="sw" style="box-shadow:inset 0 0 0 2px var(--accent)"></span>layer entry (held on base)</span>
   </div>
-  <p class="aside fn">† Karabiner intercepts <span class="chord">⌃⌥⇧⌘.</span> before macOS sees it (cause unresolved) — which is
-  why System Settings sits on <code>,</code> and zoom avoids both. Also passing through: <code>[</code> and <code>9</code> on the bottom rows.</p>
+  <p class="aside fn">† Karabiner's active profile runs a Dvorak key-code remap over every keyboard, hyper chords included, so a
+  punctuation key can land on someone else's chord: <code>.</code> arrives as <span class="chord">⌃⌥⇧⌘V</span>, <code>-</code> as
+  <span class="chord">⌃⌥⇧⌘[</span>, <code>]</code> as <span class="chord">⌃⌥⇧⌘Z</span>. The digits map to themselves, which is why the
+  number row is the free real estate. Also passing through: <code>[</code> and <code>9</code> on the bottom rows.</p>
 </section>
 
 <section class="col">
@@ -409,12 +411,14 @@
         <tr><td class="c">Y · P · U</td><td>zoom in · out · reset — on the board P·U·Y sit adjacent, reading out · reset · in <span class="note">(⌘= / ⌘− / ⌘0; JetBrains gets ⌥⇧. / ⌥⇧, / ⌥⇧0; repeats while held)</span></td></tr>
         <tr><td class="c">V</td><td>type clipboard as keystrokes — defeats paste-blocking fields</td></tr>
         <tr><td class="c">Z</td><td>caffeine — keep the display awake <span class="note">(menubar ☕; z for zzz)</span></td></tr>
-        <tr><td class="c">5</td><td>Bluetooth picker — the radio and every paired device, connected ones first; Enter connects, disconnects, or flips the radio. A connected keyboard, mouse or trackpad (or the radio under one) wants “yes” typed first — the Adv360 rides on Bluetooth <span class="note">(through HSBluetooth, a small helper app built locally: Hammerspoon.app itself isn't allowed near Bluetooth)</span></td></tr>
+        <tr><td class="c">0</td><td>Bluetooth picker — the radio and every paired device, connected ones first; Enter connects, disconnects, or flips the radio. A connected keyboard, mouse or trackpad (or the radio under one) wants “yes” typed first — the Adv360 rides on Bluetooth <span class="note">(through HSBluetooth, a small helper app built locally: Hammerspoon.app itself isn't allowed near Bluetooth)</span></td></tr>
         <tr><td class="c">6</td><td>audio output picker — arrows/type, Enter switches; current output marked, Teams/Zoom virtual devices filtered, and paired-but-disconnected Bluetooth headphones &amp; speakers connect &amp; switch on selection</td></tr>
         <tr><td class="c">7 · 9</td><td>display brightness down · up — via DisplayServices, so it drives the Studio Display too; 🔆 alert shows the level, repeats while held</td></tr>
         <tr><td class="c">8</td><td>toggle Night Shift <span class="note">(a 30-line CoreBrightness shim in the repo, built locally)</span></td></tr>
         <tr><td class="c">=</td><td>toggle system-wide light/dark mode — Ghostty and everything following the OS flip with it</td></tr>
         <tr><td class="c">3</td><td>hide/show the menu bar — hidden, it peeks back when the pointer touches the top edge</td></tr>
+        <tr><td class="c">4</td><td>daily handoff note — today's note in nvim in a fresh Ghostty window, cursor on the first bullet under “Did”; a new day is built from the last note that actually exists, so weekends resolve to the last day worked <span class="note">(placeholder chord; notes live outside the repo, see handoff.lua)</span></td></tr>
+        <tr><td class="c">5</td><td>morning card — Start here · Waiting on · Owe as a floating flexoki panel, no editor and no window; same chord, esc or a click dismisses it <span class="note">(placeholder chord)</span></td></tr>
         <tr><td class="c">K</td><td>app killer — arrows/type to pick a running app, Enter quits it and the list reopens, Esc to finish <span class="note">(app-wide, not desk-scoped)</span></td></tr>
         <tr><td class="c">,</td><td>presses ⌘, — the frontmost app's own settings <span class="note">(System Settings still opens when Finder or the desktop is front)</span></td></tr>
       </table></div>
