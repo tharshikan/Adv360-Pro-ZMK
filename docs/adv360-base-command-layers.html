@@ -270,9 +270,9 @@
         <div class="key lay"><span class="cap">sys</span><span class="act">System 11</span></div>
         <div class="key"><span class="cap">6</span><span class="act"></span></div>
         <div class="key"><span class="cap">0</span><span class="act"></span></div>
-        <div class="key"><span class="cap">1</span><span class="act"></span></div>
+        <div class="key"><span class="cap">)</span><span class="act"></span></div>
         <div class="key"><span class="cap">;</span><span class="act">⇧ → :</span></div>
-        <div class="key"><span class="cap">0</span><span class="act">⇧ → ]</span></div>
+        <div class="key"><span class="cap">1</span><span class="act"></span></div>
         <div class="key"><span class="cap">-</span><span class="act">⇧ → _</span></div>
 
         <div class="key pass"><span class="cap">·</span><span class="act">unbound</span></div>
@@ -364,12 +364,12 @@
 
   <div class="tscroll"><table>
     <tr><th></th><th>left hand</th><th>right hand</th></tr>
-    <tr><td class="c">tapping term</td><td>270 ms</td><td>200 ms</td></tr>
+    <tr><td class="c">tapping term</td><td>270 ms <span class="note">(230 on I)</span></td><td>200 ms</td></tr>
     <tr><td class="c">quick tap</td><td>300 ms</td><td>300 ms <span class="note">(200 on S)</span></td></tr>
     <tr><td class="c">prior idle</td><td>70 ms</td><td>70 ms</td></tr>
     <tr><td class="c">guard</td><td>right half + thumbs</td><td>left half + thumbs</td></tr>
   </table></div>
-  <p class="aside">The right hand is tuned 70 ms faster than the left throughout, and the same numbers
+  <p class="aside">The right hand is tuned 70 ms faster than the left throughout — I is the one exception, trimmed to 230 ms because it holds the symbols typed most — and the same numbers
   carry down to the bottom-row holds on X, J, V and the period key.</p>
 
   <h3>Every hold on layer 0</h3>
@@ -443,9 +443,9 @@
         <div class="key pass"><span class="cap">sys</span><span class="act">trans</span></div>
         <div class="key meh"><span class="cap">6</span><span class="act">⌃⌥⇧6</span></div>
         <div class="key meh"><span class="cap">0</span><span class="act">⌃⌥⇧7</span></div>
-        <div class="key meh"><span class="cap">1</span><span class="act">⌃⌥⇧8</span></div>
+        <div class="key meh"><span class="cap">)</span><span class="act">⌃⌥⇧8</span></div>
         <div class="key meh"><span class="cap">;</span><span class="act">⌃⌥⇧9</span></div>
-        <div class="key meh"><span class="cap">0</span><span class="act">⌃⌥⇧0</span></div>
+        <div class="key meh"><span class="cap">1</span><span class="act">⌃⌥⇧0</span></div>
         <div class="key meh"><span class="cap">-</span><span class="act">⌃⌥⇧-</span></div>
 
         <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
@@ -578,9 +578,9 @@
         <div class="key pass"><span class="cap">sys</span><span class="act">trans</span></div>
         <div class="key app"><span class="cap">6</span><span class="act">⌘6</span></div>
         <div class="key app"><span class="cap">0</span><span class="act">⌘7</span></div>
-        <div class="key sys"><span class="cap">1</span><span class="act">select word</span></div>
+        <div class="key sys"><span class="cap">)</span><span class="act">select word</span></div>
         <div class="key app"><span class="cap">;</span><span class="act">⌘9</span></div>
-        <div class="key app"><span class="cap">0</span><span class="act">⌘0</span></div>
+        <div class="key app"><span class="cap">1</span><span class="act">⌘0</span></div>
         <div class="key app"><span class="cap">-</span><span class="act">⌘[</span></div>
 
         <div class="key pass"><span class="cap">·</span><span class="act">trans</span></div>
@@ -653,7 +653,7 @@
     <span><span class="sw" style="background:var(--sys)"></span>macro</span>
     <span><span class="sw" style="background:var(--faint)"></span>transparent — falls through to base</span>
   </div>
-  <p class="aside fn">The right-hand 1 seat — the old 8 key — runs <code>mac_sel_word</code>: left, then ⌥left, then ⌥⇧right — three taps
+  <p class="aside fn">The ) seat — the old 8 key — runs <code>mac_sel_word</code>: left, then ⌥left, then ⌥⇧right — three taps
   5 ms apart that land the caret at a word start and select through it.</p>
 </section>
 
