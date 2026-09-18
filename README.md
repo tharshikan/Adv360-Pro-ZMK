@@ -3,6 +3,10 @@
 > 📖 The whole ecosystem — hyper layer, app-scoped remaps, Text Nav 2 — is drawn in
 > [docs/adv360-hyper-layer.html](docs/adv360-hyper-layer.html) (source; the rendered
 > wiki lives as a private Claude artifact).
+>
+> ⌨️ The Sunaku base layer and the two thumb-held command layers (0 · 7 · 8) are drawn in
+> [docs/adv360-base-command-layers.html](docs/adv360-base-command-layers.html), also
+> mirrored as a private Claude artifact.
 
 ## Text Nav 2 — the vim layer
 
