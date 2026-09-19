@@ -873,7 +873,7 @@
 &kp QUESTION    &kp Q                          &kp P                         &kp U                       &kp Y                  &kp SEMI          &none                                                                                                     &none                   &kp K   &kp F                    &kp L                               &kp R                          &kp B                             &kp BSLH
 &kp ESCAPE      &sunaku_left_pinky 12 A      &sunaku_hmr_ring 13 O          &sunaku_hmr_middle LSHFT E  &sunaku_hmr_index 5 I  &kp G             &none         &kp LCTRL                  &kp LEFT_ALT        &kp LEFT_GUI     &td_backup_sym              &none                   &kp D   &sunaku_right_index 5 H  &sunaku_right_middle RIGHT_SHIFT T  &sunaku_right_ring 6 N         &sunaku_right_pinky 12 S        &kp TAB
 &kp LEFT_SHIFT  &sunaku_left_pinky_bottom LS(LEFT_GUI) X  &sunaku_left_ring_bottom 4 J  &kp COMMA                   &kp EQUAL              &kp SINGLE_QUOTE                                           &kp LEFT_SHIFT      &macro_caps_mac                                                      &kp C   &kp M                    &kp W                               &sunaku_right_ring_bottom 4 V  &sunaku_right_pinky_bottom RS(RIGHT_GUI) DOT  &kp RSHFT
-&to 1           &kp CLCK                       &kp Z                         &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &kp LEFT_ALT        &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav_sunaku 7 SPACE          &kp DQT                  &kp LEFT_BRACE                      &kp RPAR                       &kp RIGHT_BRACE                   &macro_print_layer_sunaku
+&to 1           &kp CLCK                       &kp Z                         &kp LEFT_ARROW              &kp RIGHT                                &smart_bspc2  &mt_ctrl_esc LCTRL ESCAPE  &tog 6              &kp LALT         &mt_ctrl_enter RCTRL ENTER  &sp_nav_sunaku 7 SPACE          &kp DQT                  &kp LEFT_BRACE                      &kp RPAR                       &kp RIGHT_BRACE                   &macro_print_layer_sunaku
             >;
         };
 
@@ -939,7 +939,7 @@
 &trans  &kp COMMA   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans                                      &trans  &kp LS(LA(LC(LG(K))))  &kp LC(LEFT)           &kp LC(UP)             &kp LC(RIGHT)          &kp LG(LA(LC(LS(B))))  &trans
 &trans  &kp N0      &kp N1        &kp N2        &kp N3        &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(LA(LC(LS(D))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LC(LS(T))))  &kp LG(LA(LC(LS(N))))  &kp LG(LA(LC(LS(S))))  &trans
 &trans  &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp MINUS                  &trans      &trans                  &kp LG(NUMBER_0)       &kp LG(MINUS)          &kp LG(PLUS)           &kp D                  &kp PERIOD             &trans
-&trans  &trans      &trans        &trans        &trans                   &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
+&trans  &trans      &trans        &trans        &trans                   &trans  &trans  &to 0       &trans  &trans  &trans                         &kp LG(SPACE)          &trans                 &trans                 &trans                 &trans
             >;
         };
 
