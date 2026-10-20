@@ -412,7 +412,7 @@
         <tr><td class="c">V</td><td>type clipboard as keystrokes — defeats paste-blocking fields</td></tr>
         <tr><td class="c">Z</td><td>caffeine — keep the display awake <span class="note">(menubar ☕; z for zzz)</span></td></tr>
         <tr><td class="c">R</td><td>Bluetooth card — the radio and every paired device on a floating flexoki panel, the handoff note's palette: ↑↓ move, ⏎ flips the row it lands on, esc puts it away; hover and click work too, and it never takes key focus. Dropping a connected keyboard, mouse or trackpad — or the radio under one — wants a literal “y”, which ⏎ cannot reach: the Adv360 rides on Bluetooth <span class="note">(through HSBluetooth, a small helper app built locally: Hammerspoon.app itself isn't allowed near Bluetooth)</span> Connected devices show their battery level, red at 15% or under.</td></tr>
-        <tr><td class="c">F</td><td>audio out card — every real output with the current one marked, Teams/Zoom virtual devices filtered; paired-but-disconnected Bluetooth headphones &amp; speakers connect through the helper first, then the switch lands. Connecting is stubborn: up to three 20 s pages, and a headset that links without becoming an output is dropped and reconnected once</td></tr>
+        <tr><td class="c">F</td><td>audio out card — every real output with the current one marked, Teams/Zoom virtual devices filtered; paired-but-disconnected Bluetooth headphones &amp; speakers connect through the helper first, then the switch lands. Connecting is stubborn: up to three 20 s pages, and a headset that links without becoming an output is dropped and reconnected once. One that linked but turned down the audio because another computer holds it reads “audio held by another device” in red — disconnect it there; nothing on this side can take it over</td></tr>
         <tr><td class="c">7 · 9</td><td>display brightness down · up — via DisplayServices, so it drives the Studio Display too; 🔆 alert shows the level, repeats while held</td></tr>
         <tr><td class="c">8</td><td>toggle Night Shift <span class="note">(a 30-line CoreBrightness shim in the repo, built locally)</span></td></tr>
         <tr><td class="c">=</td><td>toggle system-wide light/dark mode — Ghostty and everything following the OS flip with it</td></tr>
@@ -446,7 +446,7 @@
     <tr><td>Finder</td><td class="c">⌘.</td><td>show hidden files (⌘⇧.)</td></tr>
     <tr><td>Finder</td><td class="c">⌘B</td><td>new folder (⌘⇧N)</td></tr>
     <tr><td>Finder</td><td class="c">⌘L</td><td>Downloads (⌘⌥L)</td></tr>
-    <tr><td>Chrome</td><td class="c">⌃E</td><td>URL-aware: ⌘⇧P on claude.ai · ⌘K palette on chatgpt · ⌘⇧K on gemini · Bookmark Manager (⌘⇧O) everywhere else</td></tr>
+    <tr><td>Chrome</td><td class="c">⌃E</td><td>URL-aware: ⌘K search on claude.ai · ⌘K palette on chatgpt · ⌘⇧K on gemini · Bookmark Manager (⌘⇧O) everywhere else</td></tr>
     <tr><td>WebStorm · IntelliJ · CLion</td><td class="c">⌘D ⌘H ⌘T ⌘N</td><td>⌘⇧ + the same letter — stretch the active splitter left · down · up · right, the cockpit's direction letters</td></tr>
     <tr><td>Chrome</td><td class="c">⌘U</td><td>focus the address bar (⌘L) — U for URL</td></tr>
     <tr><td>Chrome</td><td class="c">⌘Y</td><td>yank the current URL to the clipboard, 🔗 confirmation — shadows History, which stays in the menu</td></tr>
